@@ -31,12 +31,7 @@ format:
     toc: true
     highlight-style: github
     callout-appearance: simple
-    code-copy: true
-    code-link: true
-    toc-location: right
     code-overflow: wrap
-    fig-width: 7
-    fig-height: 4
     reference-location: margin
     citation-location: margin
     cap-location: margin
