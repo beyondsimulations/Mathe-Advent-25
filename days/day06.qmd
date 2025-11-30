@@ -1,69 +1,69 @@
 ---
-title: "Day 6: The Master Algorithm"
-format: 
+title: "Tag 6: Der Master-Algorithmus"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act I: Infiltration - Finale
+## Akt I: Infiltration - Finale
 
-### Location: GrinchTech Executive Suite, Floor 5
+### Ort: GrinchTech Chefetage, Etage 5
 
-The elevator shoots upward, crossing back over the Elbe via an underground tunnel. When the doors open, you're on Floor 5—the Executive Suite.
+Der Aufzug schießt nach oben und überquert die Elbe über einen unterirdischen Tunnel. Als die Türen aufgehen, seid ihr auf Etage 5—der Chefetage.
 
-It's minimalist to the point of sterile: glass walls overlooking Hamburg, a single standing desk with multiple 8K monitors, and a massive holographic display showing a 3D model of Hamburg with every Christmas system mapped out in red.
+Sie ist minimalistisch bis zur Sterilität: Glaswände mit Blick auf Hamburg, ein einzelner Stehschreibtisch mit mehreren 8K-Monitoren und ein riesiges holografisches Display, das ein 3D-Modell von Hamburg zeigt, auf dem jedes Weihnachtssystem rot markiert ist.
 
-The Grinch stands at the window, silhouetted against the grey December sky. He doesn't turn around.
+Der Grinch steht am Fenster, als Silhouette gegen den grauen Dezemberhimmel. Er dreht sich nicht um.
 
-"Welcome," he says, his voice bored. "You're late. I expected you five minutes ago."
+„Willkommen", sagt er, seine Stimme gelangweilt. „Ihr seid spät dran. Ich habe euch vor fünf Minuten erwartet."
 
-He gestures to the holographic display. "This is my masterpiece. **The Christmas Optimization Platform (COP).** Everything you've solved so far—number theory, factorization, logarithms—those were just the warm-up. Now let me show you the real complexity."
+Er deutet auf das holografische Display. „Das ist mein Meisterwerk. **Die Weihnachts-Optimierungsplattform (WOP).** Alles, was ihr bisher gelöst habt—Zahlentheorie, Faktorisierung, Logarithmen—das war nur die Aufwärmphase. Jetzt zeige ich euch die echte Komplexität."
 
-The display shifts, showing a massive mathematical expression that combines multiple concepts.
+Das Display wechselt und zeigt einen massiven mathematischen Ausdruck, der mehrere Konzepte kombiniert.
 
-> **System Message: The Grand Design**
+> **Systemnachricht: Der große Entwurf**
 >
-> "This is the core algorithm. Solve this, and I'll grant you read-access to the control systems. Fail, and I'll have security escort you out.
+> „Das ist der Kernalgorithmus. Löst das, und ich gewähre euch Lesezugriff auf die Kontrollsysteme. Scheitert, und ich lasse euch vom Sicherheitsdienst hinausbegleiten.
 >
-> I've combined everything. Multi-step expressions. Complex factorization. Radical simplification. Logarithmic equations.
+> Ich habe alles kombiniert. Mehrstufige Ausdrücke. Komplexe Faktorisierung. Wurzelvereinfachung. Logarithmische Gleichungen.
 >
-> Impress me. If you can."
+> Beeindruckt mich. Wenn ihr könnt."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-The holographic display presents four interconnected problems.
+Das holografische Display präsentiert vier miteinander verbundene Aufgaben.
 
-**Task a) System Stability Index**
+**Aufgabe a) Systemstabilitätsindex**
 
-The core algorithm's stability is determined by evaluating this complex expression. Order of operations is critical.
+Die Stabilität des Kernalgorithmus wird durch die Auswertung dieses komplexen Ausdrucks bestimmt. Die Reihenfolge der Operationen ist entscheidend.
 $$[(10 - 2^2) \div 2 + \sqrt{81}] \times \log_5(125)$$
 
-> **Grinch's Note:** "Everything you've learned so far, combined. Brackets, exponents, roots, logarithms. Miss one step and the whole thing falls apart. Like my faith in humanity. Which happened years ago."
+> **Grinchs Hinweis:** „Alles, was ihr bisher gelernt habt, kombiniert. Klammern, Exponenten, Wurzeln, Logarithmen. Verpasst einen Schritt und das Ganze bricht zusammen. Wie mein Glaube an die Menschheit."
 
 ::: {.puzzle-box}
-**Evaluate:**
+**Berechne:**
 <input class="quiz-input" placeholder="?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="36">Stabilize Core</button>
+  <button class="quiz-submit" disabled data-answer="36">Kern stabilisieren</button>
 </div>
 :::
 
-**Task b) Security Key Factorization**
+**Aufgabe b) Sicherheitsschlüssel-Faktorisierung**
 
-The master encryption key is a high-degree polynomial.
+Der Master-Verschlüsselungsschlüssel ist ein Polynom höheren Grades.
 
 $$x^4 - 16$$
 
-> **Grinch's Note:** "Difference of squares... but wait, there's more! One of the factors is ALSO a difference of squares. Most people stop too early. Don't be most people. I'm begging you. Not literally, I don't beg, but metaphorically."
+> **Grinchs Hinweis:** „Differenz von Quadraten... aber wartet, da gibt's noch mehr! Einer der Faktoren ist AUCH eine Differenz von Quadraten. Die meisten Leute hören zu früh auf. Seid nicht wie die meisten Leute."
 
-**Requirement:** Factorize completely (do not stop at difference of squares).
+**Anforderung:** Faktorisiert vollständig (hört nicht bei der Differenz von Quadraten auf).
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -75,80 +75,80 @@ $$x^4 - 16$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Input Key</button>
+  <button class="quiz-submit" disabled>Schlüssel eingeben</button>
 </div>
 :::
 
-**Task c) Energy Distribution Formula**
+**Aufgabe c) Energieverteilungsformel**
 
-The power grid uses a radical expression. Simplify it to restore lighting voltage.
+Das Stromnetz verwendet einen Wurzelausdruck. Vereinfacht ihn, um die Beleuchtungsspannung wiederherzustellen.
 $$\frac{\sqrt{18} + \sqrt{50}}{\sqrt{2}}$$
 
-> **Grinch's Note:** "Radical simplification. Combine like terms under the roots, rationalize if needed. Or just stare at it in confusion—that's what the last three people did. They work in retail now."
+> **Grinchs Hinweis:** „Wurzelvereinfachung. Kombiniert gleichartige Terme unter den Wurzeln, rationalisiert bei Bedarf. Oder starrt es einfach verwirrt an—das haben die letzten drei Leute gemacht. Die arbeiten jetzt im Einzelhandel."
 
 ::: {.puzzle-box}
-**Simplify:**
+**Vereinfache:**
 <input class="quiz-input" placeholder="?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="8">Optimize Voltage</button>
+  <button class="quiz-submit" disabled data-answer="8">Spannung optimieren</button>
 </div>
 :::
 
-**Task d) Market Activation Code**
+**Aufgabe d) Marktaktivierungscode**
 
-The final authentication for the market control panel is a logarithmic equation.
+Die finale Authentifizierung für das Markt-Bedienfeld ist eine logarithmische Gleichung.
 $$\log_3(y) + \log_3(2) = 2$$
 
-> **Grinch's Note:** "Log properties. When you add logs of the same base, you're really... well, if you don't know, you should have paid more attention."
+> **Grinchs Hinweis:** „Log-Eigenschaften. Wenn ihr Logarithmen derselben Basis addiert, dann... naja, wenn ihr es nicht wisst, hättet ihr besser aufpassen sollen."
 
 ::: {.puzzle-box}
-**Solve for y:**
+**Löse nach y auf:**
 <input class="quiz-input" placeholder="y = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="4.5">Activate Market Protocol</button>
+  <button class="quiz-submit" disabled data-answer="4.5">Marktprotokoll aktivieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You input the final answer: **4.5**
+Ihr gebt die finale Antwort ein: **4,5**
 
-The holographic display flashes green. Every number, every equation, every factor resolves into a single word that pulses in the air: **AUTHENTICATED**.
+Das holografische Display blinkt grün. Jede Zahl, jede Gleichung, jeder Faktor löst sich in ein einziges Wort auf, das in der Luft pulsiert: **AUTHENTIFIZIERT**.
 
-The Grinch turns to face you. He looks... annoyed. But also slightly respectful.
+Der Grinch dreht sich zu euch um. Er sieht... genervt aus. Aber auch leicht respektvoll.
 
-"Thirty-six. Complete factorization. Eight. Four-point-five." He says each answer slowly. "All correct. How disappointing. I was hoping to watch security throw you out."
+„Sechsunddreißig. Vollständige Faktorisierung. Acht. Vier Komma fünf." Er sagt jede Antwort langsam. „Alles richtig. Wie enttäuschend. Ich hatte gehofft, zuzusehen, wie der Sicherheitsdienst euch rauswirft."
 
-He taps his standing desk. The red systems on the map flicker to amber.
+Er tippt auf seinen Stehschreibtisch. Die roten Systeme auf der Karte flackern zu Bernstein.
 
-> **System Status Update**
+> **System-Statusmeldung**
 >
-> - Warehouse Access: PARTIAL (read-only)
-> - Market Controls: LOCKED
-> - Lighting Grid: LOCKED
-> - Supply Chain: ACTIVE
+> - Lagerhausszugang: TEILWEISE (nur Lesezugriff)
+> - Marktsteuerung: GESPERRT
+> - Beleuchtungsnetz: GESPERRT
+> - Lieferkette: AKTIV
 
-"Fine," the Grinch sighs. "You understand the math. But understanding my systems and dismantling them are very different things. Phase One is complete. You've infiltrated my operation. Here is your reward: **More work.**"
+„Gut", seufzt der Grinch. „Ihr versteht die Mathematik. Aber meine Systeme zu verstehen und sie zu zerlegen sind sehr unterschiedliche Dinge. Phase Eins ist abgeschlossen. Ihr habt meine Operation infiltriert. Hier ist eure Belohnung: **Mehr Arbeit.**"
 
-He gestures to the display, where new objectives appear:
+Er deutet auf das Display, wo neue Ziele erscheinen:
 
-> **Phase Two: System Debugging**
+> **Phase Zwei: System-Debugging**
 >
-> "My supply chain algorithms are still running. Presents are locked in Speicherstadt. Automated sorting systems are optimized to keep Christmas canceled.
+> „Meine Lieferketten-Algorithmen laufen noch. Geschenke sind in der Speicherstadt eingesperrt. Automatisierte Sortiersysteme sind optimiert, um Weihnachten abgesagt zu halten.
 >
-> If you want to restore Hamburg's holiday, you'll need to debug my logistics. Days 7-12 will test you in ways the foundations never could.
+> Wenn ihr Hamburgs Feiertag wiederherstellen wollt, müsst ihr meine Logistik debuggen. Die Tage 7-12 werden euch auf Weisen testen, die die Grundlagen nie konnten.
 >
-> Good luck. Try not to break anything expensive."
+> Viel Glück. Versucht, nichts Teures kaputtzumachen."
 > -- GR
 
-**Act I: Infiltration - COMPLETE**
+**Akt I: Infiltration - ABGESCHLOSSEN**
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

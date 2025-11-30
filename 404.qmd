@@ -1,7 +1,7 @@
 ---
-title: Page Not Found
+title: Seite nicht gefunden
 format:
   html: default
 ---
 
-Sorry, the page you requested cannot be found (perhaps the Grinch stole it)...
+Diese Seite wurde leider nicht gefunden (vielleicht hat der Grinch sie gestohlen)...

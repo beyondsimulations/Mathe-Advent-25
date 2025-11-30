@@ -1,0 +1,44 @@
+---
+title: "Imprint"
+subtitle: "Legal Notice (Impressum)"
+date: "2025-11-30"
+---
+
+## Information according to § 5 TMG
+
+Beyond Simulations GmbH\
+Am Eich 9d\
+22113 Oststeinbek\
+Germany
+
+## Contact
+
+Email: [info@beyondsimulations.com](mailto:info@beyondsimulations.com)\
+Website: [beyondsimulations.com](https://beyondsimulations.com)
+
+## Represented by
+
+Tobias Vlćek
+
+## Responsible for Content according to § 55 Abs. 2 RStV
+
+Beyond Simulations GmbH\
+Am Eich 9d\
+22113 Oststeinbek\
+Germany
+
+## Liability for Content
+
+As a service provider, we are responsible for our own content on these pages according to § 7 Abs. 1 TMG (German Telemedia Act). According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+
+Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such violations, we will remove this content immediately.
+
+## Liability for Links
+
+Our website contains links to external websites of third parties, over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.
+
+Permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of a violation. Upon becoming aware of legal violations, we will remove such links immediately.
+
+## Copyright
+
+You can find the license information in the the GitHub [GitHub](https://github.com/beyondsimulations) repository of this course and at the bottom of this page.

@@ -1,158 +1,158 @@
 ---
-title: "Day 13: The Business Functions"
+title: "Tag 13: Die Geschäftsfunktionen"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act III: Business Model Analysis
+## Akt III: Geschäftsmodell-Analyse
 
-### Location: Europa Passage, Hamburg City Center
+### Ort: Europa Passage, Hamburger Innenstadt
 
-The scene shifts from the industrial warehouses of Speicherstadt to the gleaming commercial heart of Hamburg: Europa Passage. Glass, chrome, and the smell of expensive coffee.
+Die Szene wechselt von den industriellen Lagerhäusern der Speicherstadt zum glänzenden kommerziellen Herzen Hamburgs: der Europa Passage. Glas, Chrom und der Duft von teurem Kaffee.
 
-You've been summoned here by an urgent message from Hamburg's Chamber of Commerce. The Christmas markets can physically reopen—the warehouses are unlocked, the supply chain works—but they remain economically frozen. The Grinch has convinced the city council that Christmas is "financially irresponsible."
+Ihr wurdet durch eine dringende Nachricht der Hamburger Handelskammer hierher gerufen. Die Weihnachtsmärkte können physisch wiedereröffnen—die Lagerhäuser sind entsperrt, die Lieferkette funktioniert—aber sie bleiben wirtschaftlich eingefroren. Der Grinch hat den Stadtrat überzeugt, dass Weihnachten „finanziell unverantwortlich" ist.
 
-You meet with Stadtrat Fischer in a conference room overlooking the shopping levels below. He looks like he hasn't slept in days.
+Ihr trefft Stadtrat Fischer in einem Konferenzraum mit Blick auf die Einkaufsebenen darunter. Er sieht aus, als hätte er seit Tagen nicht geschlafen.
 
-"The Grinch presented to the full city council yesterday," Fischer explains. "He had charts. Graphs. Economic models. All showing that Christmas markets operate at a loss. That the holiday is economically unsustainable."
+„Der Grinch hat gestern vor dem gesamten Stadtrat präsentiert," erklärt Fischer. „Er hatte Diagramme. Grafiken. Wirtschaftsmodelle. Alle zeigten, dass Weihnachtsmärkte mit Verlust arbeiten. Dass die Feiertage wirtschaftlich nicht tragbar sind."
 
-He pulls up a presentation on the screen: **GrinchTech's "Economic Analysis of Hamburg Christmas Operations."**
+Er ruft eine Präsentation auf dem Bildschirm auf: **GrinchTechs „Wirtschaftsanalyse des Hamburger Weihnachtsbetriebs."**
 
-As if on cue, the Grinch appears on a video call. He's sitting in what looks like a corner office with floor-to-ceiling windows, wearing a very expensive turtleneck.
+Wie auf Stichwort erscheint der Grinch in einem Videoanruf. Er sitzt in einem Eckbüro mit deckenhohen Fenstern und trägt einen sehr teuren Rollkragenpullover.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Good afternoon, mathematical auditors. Welcome to the grown-up table.
+> „Guten Tag, mathematische Prüfer. Willkommen am Erwachsenentisch.
 >
-> This isn't about unlocking doors anymore. This is about understanding FUNCTIONS: how outputs depend on inputs, how businesses model phenomena, how economics actually works.
+> Hier geht es nicht mehr darum, Türen zu entsperren. Hier geht es darum, FUNKTIONEN zu verstehen: wie Ausgaben von Eingaben abhängen, wie Unternehmen Phänomene modellieren, wie Wirtschaft tatsächlich funktioniert.
 >
-> I've built mathematical models proving Christmas is inefficient. My presentation to the city council was—and I say this with appropriate humility—flawless. They were impressed. Several actually applauded.
+> Ich habe mathematische Modelle erstellt, die beweisen, dass Weihnachten ineffizient ist. Meine Präsentation vor dem Stadtrat war—und ich sage das mit angemessener Bescheidenheit—makellos. Sie waren beeindruckt. Mehrere haben sogar applaudiert.
 >
-> Your job? Prove you even understand what a function IS in a business context. Spoiler: most people don't.
+> Eure Aufgabe? Beweist, dass ihr überhaupt versteht, was eine Funktion IM GESCHÄFTSKONTEXT IST. Spoiler: Die meisten Leute verstehen es nicht.
 >
-> Today's test is basic. Function evaluation. Piecewise functions. Function definitions. The kind of foundational concepts that separate people who understand mathematics from people who just memorized formulas.
+> Der heutige Test ist grundlegend. Funktionsauswertung. Abschnittsweise definierte Funktionen. Funktionsdefinitionen. Die Art von grundlegenden Konzepten, die Leute, die Mathematik verstehen, von Leuten trennt, die nur Formeln auswendig gelernt haben.
 >
-> Let's see which category you fall into."
+> Mal sehen, in welche Kategorie ihr fallt."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three problems test your understanding of functions in business applications. The Grinch has titled each one with his characteristic mix of condescension and corporate jargon.
+Drei Aufgaben testen euer Verständnis von Funktionen in Geschäftsanwendungen. Der Grinch hat jede mit seiner charakteristischen Mischung aus Herablassung und Unternehmensjargon benannt.
 
-**Lock 1: "Function Literacy 101"**
+**Schloss 1: „Funktions-Grundlagen 101"**
 
-The Grinch claims Hamburg's Christmas operations are unpredictable. He's provided a revenue function for candy cane sales:
+Der Grinch behauptet, Hamburgs Weihnachtsbetrieb sei unvorhersehbar. Er hat eine Umsatzfunktion für den Verkauf von Zuckerstangen bereitgestellt:
 
 $$f(x) = 2x^2 - 5x + 1$$
 
-where $x$ = kilograms of sugar used in production.
+wobei $x$ = verwendete Kilogramm Zucker in der Produktion.
 
-> **Grinch's Note:** "If you can't evaluate a quadratic function at a specific value, please hand in your student ID at the door. This is the mathematical equivalent of reading comprehension."
+> **Grinchs Hinweis:** „Wenn ihr eine quadratische Funktion nicht an einem bestimmten Wert auswerten könnt, gebt bitte euren Schülerausweis an der Tür ab. Das ist das mathematische Äquivalent von Leseverständnis."
 
-**Evaluate $f(3)$:**
+**Berechnet $f(3)$:**
 
 ::: {.puzzle-box}
-**Enter f(3):**
+**Gebt f(3) ein:**
 <input class="quiz-input" placeholder="f(3) = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="4">Calculate Revenue</button>
+  <button class="quiz-submit" disabled data-answer="4">Umsatz berechnen</button>
 </div>
 :::
 
-**Lock 2: "The Tax Code Gauntlet"**
+**Schloss 2: „Der Steuercode-Spießrutenlauf"**
 
-The Grinch has introduced a "Holiday Operations Tax" with a piecewise structure:
+Der Grinch hat eine „Feiertagsbetriebssteuer" mit einer abschnittsweisen Struktur eingeführt:
 
-$$T(I) = \begin{cases} 0.10I & \text{if } 0 \leq I \leq 1000 \\ 100 + 0.20(I - 1000) & \text{if } I > 1000 \end{cases}$$
+$$T(I) = \begin{cases} 0{,}10 \cdot I & \text{wenn } 0 \leq I \leq 1000 \\ 100 + 0{,}20 \cdot (I - 1000) & \text{wenn } I > 1000 \end{cases}$$
 
-where $I$ is income in euros.
+wobei $I$ das Einkommen in Euro ist.
 
-> **Grinch's Note:** "Piecewise functions are how the real world works. Tax brackets. Shipping rates. Utility bills. If you can't handle a function that changes behavior at a boundary, you can't handle economics."
+> **Grinchs Hinweis:** „Abschnittsweise definierte Funktionen sind, wie die echte Welt funktioniert. Steuerstufen. Versandkosten. Stromrechnungen. Wenn ihr nicht mit einer Funktion umgehen könnt, die ihr Verhalten an einer Grenze ändert, könnt ihr nicht mit Wirtschaft umgehen."
 
-**A vendor asks: What tax would I pay on €1,500 revenue?**
+**Ein Händler fragt: Welche Steuer würde ich auf 1.500 € Umsatz zahlen?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> €150 </button>
-  <button class="quiz-option" data-correct="true"> €200 </button>
-  <button class="quiz-option" data-correct="false"> €300 </button>
-  <button class="quiz-option" data-correct="false"> €100 </button>
+  <button class="quiz-option" data-correct="false"> 150 € </button>
+  <button class="quiz-option" data-correct="true"> 200 € </button>
+  <button class="quiz-option" data-correct="false"> 300 € </button>
+  <button class="quiz-option" data-correct="false"> 100 € </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calculate Tax</button>
+  <button class="quiz-submit" disabled>Steuer berechnen</button>
 </div>
 :::
 
-**Lock 3: "The Definition Inquisition"**
+**Schloss 3: „Das Definitions-Verhör"**
 
-The Grinch claims one of Hamburg's historical Christmas toy factories has a "broken business model" because its input-output relationship "isn't even a function."
+Der Grinch behauptet, eine von Hamburgs historischen Weihnachtsspielzeugfabriken habe ein „kaputtes Geschäftsmodell", weil ihre Eingabe-Ausgabe-Beziehung „nicht einmal eine Funktion ist."
 
-> **Challenge Question:** Which of the following correctly describes what makes a relationship a FUNCTION?
+> **Prüfungsfrage:** Welche der folgenden Aussagen beschreibt korrekt, was eine Beziehung zu einer FUNKTION macht?
 
-> **Grinch's Note:** "This is a conceptual question. No numbers. No calculations. Just pure understanding. I find these separate the students who actually learned from the ones who just passed exams."
+> **Grinchs Hinweis:** „Das ist eine konzeptuelle Frage. Keine Zahlen. Keine Berechnungen. Nur reines Verständnis. Ich finde, diese trennen die Schüler, die wirklich gelernt haben, von denen, die nur Prüfungen bestanden haben."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> Every output must have exactly one input </button>
-  <button class="quiz-option" data-correct="true"> Every input must have exactly one output </button>
-  <button class="quiz-option" data-correct="false"> Inputs and outputs must be the same type </button>
-  <button class="quiz-option" data-correct="false"> The relationship must be linear </button>
+  <button class="quiz-option" data-correct="false"> Jede Ausgabe muss genau eine Eingabe haben </button>
+  <button class="quiz-option" data-correct="true"> Jede Eingabe muss genau eine Ausgabe haben </button>
+  <button class="quiz-option" data-correct="false"> Eingaben und Ausgaben müssen vom gleichen Typ sein </button>
+  <button class="quiz-option" data-correct="false"> Die Beziehung muss linear sein </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Submit Definition</button>
+  <button class="quiz-submit" disabled>Definition einreichen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You present your analysis to Stadtrat Fischer and the video-connected Grinch:
+Ihr präsentiert eure Analyse Stadtrat Fischer und dem per Video zugeschalteten Grinch:
 
-- Revenue at 3 kg sugar: $f(3) = 2(9) - 15 + 1 = 4$ ✓
-- Tax on €1,500: $T(1500) = 100 + 0.20(500) = 200$ ✓
-- Function definition: Every input has exactly one output ✓
+- Umsatz bei 3 kg Zucker: $f(3) = 2(9) - 15 + 1 = 4$ ✓
+- Steuer auf 1.500 €: $T(1500) = 100 + 0{,}20 \cdot 500 = 200$ ✓
+- Funktionsdefinition: Jede Eingabe hat genau eine Ausgabe ✓
 
-The Grinch nods slowly. His expression is unreadable.
+Der Grinch nickt langsam. Sein Gesichtsausdruck ist unlesbar.
 
-> **#preliminary-assessment**
+> **#vorab-bewertung**
 >
-> "Correct. All correct. You understand function notation and piecewise functions. You even know what a function actually IS, which puts you ahead of most business school graduates I've hired.
+> „Richtig. Alles richtig. Ihr versteht Funktionsnotation und abschnittsweise definierte Funktionen. Ihr wisst sogar, was eine Funktion tatsächlich IST, was euch vor die meisten BWL-Absolventen stellt, die ich eingestellt habe.
 >
-> But understanding notation isn't the same as understanding BUSINESS.
+> Aber Notation zu verstehen ist nicht dasselbe wie BUSINESS zu verstehen.
 >
-> Tomorrow, we talk about linear models. Slopes. Y-intercepts. How businesses actually predict revenue and costs over time.
+> Morgen sprechen wir über lineare Modelle. Steigungen. Y-Achsenabschnitte. Wie Unternehmen tatsächlich Umsatz und Kosten über die Zeit vorhersagen.
 >
-> I'll show you my economic projections for Hamburg's Christmas markets. They're all linear functions, and they all prove the same thing: Christmas doesn't scale profitably.
+> Ich werde euch meine Wirtschaftsprognosen für Hamburgs Weihnachtsmärkte zeigen. Sie sind alle lineare Funktionen, und sie beweisen alle dasselbe: Weihnachten skaliert nicht profitabel.
 >
-> You've passed the literacy test. Now let's see if you can read the actual story."
+> Ihr habt den Alphabetisierungstest bestanden. Jetzt mal sehen, ob ihr die eigentliche Geschichte lesen könnt."
 >
 > -- GR
 
-Stadtrat Fischer looks cautiously optimistic. "That's the first time I've seen him acknowledge someone got something right without a sneer."
+Stadtrat Fischer sieht vorsichtig optimistisch aus. „Das ist das erste Mal, dass ich ihn habe zugeben sehen, dass jemand etwas richtig gemacht hat, ohne zu höhnen."
 
-**Act III Progress:**
+**Akt III Fortschritt:**
 
-- ✓ Function fundamentals verified
-- Linear business models: Tomorrow
-- Profit optimization: Pending
-- Economic validation: Incomplete
+- ✓ Funktionsgrundlagen verifiziert
+- Lineare Geschäftsmodelle: Morgen
+- Gewinnoptimierung: Ausstehend
+- Wirtschaftliche Validierung: Unvollständig
 
-**Status:** Markets can physically operate but remain financially locked.
+**Status:** Märkte können physisch betrieben werden, bleiben aber finanziell gesperrt.
 
-**Time Remaining:** 11 days until Christmas Eve
+**Verbleibende Zeit:** 11 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

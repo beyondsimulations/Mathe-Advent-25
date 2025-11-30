@@ -1,153 +1,153 @@
 ---
-title: "Day 11: The Countdown Protocol"
+title: "Tag 11: Das Countdown-Protokoll"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act II: Debugging the Supply Chain
+## Akt II: Debugging der Lieferkette
 
-### Location: Warehouse C - Distribution Control Center
+### Ort: Lagerhaus C - Verteilungskontrollzentrum
 
-The next morning, you arrive at Warehouse C to begin planning the actual distribution of presents back to Hamburg's Christmas markets. Frau Weber and her team have already started organizing shipment routes.
+Am nächsten Morgen kommt ihr bei Lagerhaus C an, um mit der Planung der eigentlichen Verteilung der Geschenke zurück zu Hamburgs Weihnachtsmärkten zu beginnen. Frau Weber und ihr Team haben bereits angefangen, Versandrouten zu organisieren.
 
-But as you approach the central terminal, every screen in the facility simultaneously switches to a countdown timer:
+Aber als ihr euch dem zentralen Terminal nähert, schalten alle Bildschirme in der Anlage gleichzeitig auf einen Countdown-Timer um:
 
-**TIME UNTIL AUTOMATIC RE-ENCRYPTION: 23:59:58... 23:59:57... 23:59:56...**
+**ZEIT BIS ZUR AUTOMATISCHEN NEU-VERSCHLÜSSELUNG: 23:59:58... 23:59:57... 23:59:56...**
 
-The Grinch's face appears on the main display. He's wearing noise-canceling headphones and looks supremely relaxed, like someone who just scheduled a disaster and is enjoying the anticipation.
+Das Gesicht des Grinchs erscheint auf dem Hauptdisplay. Er trägt Noise-Cancelling-Kopfhörer und sieht äußerst entspannt aus, wie jemand, der gerade eine Katastrophe geplant hat und die Vorfreude genießt.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Good morning, Hamburg. I hope you slept well. I didn't. I was too busy designing THIS.
+> „Guten Morgen, Hamburg. Ich hoffe, ihr habt gut geschlafen. Ich nicht. Ich war zu beschäftigt damit, DAS hier zu entwickeln.
 >
-> Did you think once you unlocked my warehouses, they'd *stay* unlocked? Oh, that's precious. That's the kind of optimism I used to have before I understood exponential depreciation.
+> Ihr dachtet, sobald ihr meine Lagerhäuser entsperrt habt, würden sie *entsperrt bleiben*? Oh, das ist niedlich. Das ist die Art von Optimismus, die ich früher hatte, bevor ich exponentielle Abwertung verstanden habe.
 >
-> I've implemented an automatic re-encryption protocol. In exactly 24 hours, every single present you've 'freed' will lock down again. Permanently this time. And the re-encryption happens exponentially faster than the original lockdown—you won't have time to solve it twice.
+> Ich habe ein automatisches Neu-Verschlüsselungsprotokoll implementiert. In genau 24 Stunden wird sich jedes einzelne Geschenk, das ihr ‚befreit' habt, wieder sperren. Dieses Mal dauerhaft. Und die Neu-Verschlüsselung passiert exponentiell schneller als die ursprüngliche Sperrung—ihr werdet keine Zeit haben, es zweimal zu lösen.
 >
-> The override? It requires understanding exponential and logarithmic mathematics. The kind of math that makes accountants weep and physics students change majors.
+> Die Überbrückung? Sie erfordert das Verständnis von Exponential- und Logarithmus-Mathematik. Die Art von Mathe, die Buchhalter zum Weinen bringt und Physikstudenten dazu, das Fach zu wechseln.
 >
-> I've disabled the calculators in the building, by the way. Because I believe in *education*.
+> Ich habe übrigens die Taschenrechner im Gebäude deaktiviert. Weil ich an *Bildung* glaube.
 >
-> Tick tock."
+> Tick-tack."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three time-based locks must be solved before the 24-hour countdown expires. The Grinch has themed each one around his favorite subject: the inevitable passage of time.
+Drei zeitbasierte Schlösser müssen gelöst werden, bevor der 24-Stunden-Countdown abläuft. Der Grinch hat jedes nach seinem Lieblingsthema benannt: dem unvermeidlichen Vergehen der Zeit.
 
-**Lock 1: "The Temporal Deceleration Unit"**
+**Schloss 1: „Die temporale Verlangsamungseinheit"**
 
-The main countdown clock runs on an exponential equation. To recalibrate it, solve:
+Die Haupt-Countdown-Uhr läuft mit einer Exponentialgleichung. Um sie neu zu kalibrieren, löst:
 
 $$2^{x+1} = 16$$
 
-> **Grinch's Note:** "This one's easy. Like, embarrassingly easy. If you can't solve this, please leave the building so the adults can work. The fire exit is clearly marked."
+> **Grinchs Hinweis:** „Die hier ist einfach. Also, peinlich einfach. Wenn ihr das nicht lösen könnt, verlasst bitte das Gebäude, damit die Erwachsenen arbeiten können. Der Notausgang ist deutlich gekennzeichnet."
 
 ::: {.puzzle-box}
-**Enter x:**
+**Gebt x ein:**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="3">Slow the Clock</button>
+  <button class="quiz-submit" disabled data-answer="3">Uhr verlangsamen</button>
 </div>
 :::
 
-**Lock 2: "The Logarithmic Time Dilation"**
+**Schloss 2: „Die logarithmische Zeitdehnung"**
 
-A backup timer threatens to accelerate the countdown. The display shows:
+Ein Backup-Timer droht, den Countdown zu beschleunigen. Das Display zeigt:
 
 $$3^t = 50$$
 
-> **Grinch's Note:** "Now THIS is where the fun begins. You'll need logarithms. Actual logarithms. Not the 'I'll just guess and check' approach that got you through high school. Round to two decimal places—precision matters when you're racing against exponential decay."
+> **Grinchs Hinweis:** „JETZT beginnt der Spaß. Ihr braucht Logarithmen. Echte Logarithmen. Nicht den ‚ich rate mal'-Ansatz, der euch durch die Schule gebracht hat. Rundet auf zwei Dezimalstellen—Präzision ist wichtig, wenn ihr gegen exponentiellen Zerfall kämpft."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> $t \approx 3.22$ </button>
-  <button class="quiz-option" data-correct="true"> $t \approx 3.56$ </button>
-  <button class="quiz-option" data-correct="false"> $t \approx 4.00$ </button>
-  <button class="quiz-option" data-correct="false"> $t \approx 2.89$ </button>
+  <button class="quiz-option" data-correct="false"> $t \approx 3{,}22$ </button>
+  <button class="quiz-option" data-correct="true"> $t \approx 3{,}56$ </button>
+  <button class="quiz-option" data-correct="false"> $t \approx 4{,}00$ </button>
+  <button class="quiz-option" data-correct="false"> $t \approx 2{,}89$ </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Prevent Acceleration</button>
+  <button class="quiz-submit" disabled>Beschleunigung verhindern</button>
 </div>
 :::
 
-**Lock 3: "The Compound Time Lock"**
+**Schloss 3: „Das kombinierte Zeitschloss"**
 
-The master timer control combines logarithmic properties. A note displays with what appears to be genuine smugness:
+Die Master-Timer-Steuerung kombiniert logarithmische Eigenschaften. Eine Notiz erscheint mit offensichtlicher Selbstgefälligkeit:
 
 $$\log_2(m - 3) + \log_2(5) = 4$$
 
-> **Grinch's Note:** "Ah, the logarithm addition rule. The one that makes students ask 'why didn't anyone tell me logs could combine?' Someone did tell you. You were on your phone. Now solve it or watch your presents turn into very expensive firewood."
+> **Grinchs Hinweis:** „Ah, die Logarithmen-Additionsregel. Die, bei der Schüler fragen ‚warum hat mir niemand gesagt, dass man Logs kombinieren kann?' Jemand hat es euch gesagt. Ihr wart an eurem Handy. Jetzt löst es oder schaut zu, wie eure Geschenke zu sehr teurem Brennholz werden."
 
 ::: {.puzzle-box}
-**Enter m (as a decimal like 6.2):**
+**Gebt m ein (als Dezimalzahl wie 6.2):**
 <input class="quiz-input" placeholder="m = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="6.2">Unlock Master Control</button>
+  <button class="quiz-submit" disabled data-answer="6.2">Master-Steuerung entsperren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You input the solutions with the countdown showing **00:14:48** remaining:
+Ihr gebt die Lösungen ein, während der Countdown **00:14:48** verbleibend zeigt:
 
-- Primary timer: $x = 3$ ✓
-- Secondary timer: $t \approx 3.56$ ✓
-- Master control: $m = 6.2$ ✓
+- Primärer Timer: $x = 3$ ✓
+- Sekundärer Timer: $t \approx 3{,}56$ ✓
+- Master-Steuerung: $m = 6{,}2$ ✓
 
-The countdown clock stutters, freezes at **00:14:47**, and then displays:
+Die Countdown-Uhr stottert, friert bei **00:14:47** ein und zeigt dann an:
 
-**COUNTDOWN PROTOCOL: DISABLED**
+**COUNTDOWN-PROTOKOLL: DEAKTIVIERT**
 
-**AUTOMATIC RE-ENCRYPTION: PERMANENTLY CANCELLED**
+**AUTOMATISCHE NEU-VERSCHLÜSSELUNG: DAUERHAFT ABGEBROCHEN**
 
-Frau Weber slumps against a console. "Fourteen minutes. We had fourteen minutes left."
+Frau Weber sackt gegen eine Konsole. „Vierzehn Minuten. Wir hatten vierzehn Minuten übrig."
 
-The workers cheer. For the first time since this began, something feels genuinely permanent.
+Die Arbeiter jubeln. Zum ersten Mal seit dies begann, fühlt sich etwas wirklich dauerhaft an.
 
-The Grinch reappears. He's taken off the headphones and is pinching the bridge of his nose—the universal gesture of someone whose brilliant plan just failed.
+Der Grinch erscheint wieder. Er hat die Kopfhörer abgenommen und kneift sich die Nasenwurzel—die universelle Geste von jemandem, dessen brillanter Plan gerade gescheitert ist.
 
-> **#tactical-retreat**
+> **#taktischer-rueckzug**
 >
-> "Fine. You've stopped my exponential countdown. The warehouses will stay unlocked. Congratulations on understanding basic logarithmic properties.
+> „Gut. Ihr habt meinen exponentiellen Countdown gestoppt. Die Lagerhäuser bleiben entsperrt. Herzlichen Glückwunsch zum Verständnis grundlegender logarithmischer Eigenschaften.
 >
-> But here's the thing about supply chains: unlocking warehouses is only HALF the battle. The presents are free, yes. But they're not MOVING.
+> Aber die Sache mit Lieferketten ist: Lagerhäuser entsperren ist nur DIE HALBE Schlacht. Die Geschenke sind frei, ja. Aber sie BEWEGEN sich nicht.
 >
-> Tomorrow, you face the Coordination Center. The master system that actually routes presents to their destinations. It's protected by real-world application problems—the kind where mathematics meets logistics.
+> Morgen steht ihr vor dem Koordinationszentrum. Dem Master-System, das Geschenke tatsächlich zu ihren Zielen leitet. Es ist durch Anwendungsprobleme aus der echten Welt geschützt—die Art, wo Mathematik auf Logistik trifft.
 >
-> Exponential functions modeling delivery times. Mixture problems for packaging materials. Number puzzles for route optimization.
+> Exponentialfunktionen, die Lieferzeiten modellieren. Mischungsaufgaben für Verpackungsmaterialien. Zahlenrätsel für Routenoptimierung.
 >
-> You've beaten my time locks. Now prove you can beat my supply chain algorithms.
+> Ihr habt meine Zeitschlösser geschlagen. Jetzt beweist, dass ihr meine Lieferketten-Algorithmen schlagen könnt.
 >
-> One more day. One more chance for you to fail."
+> Noch ein Tag. Noch eine Chance für euch zu scheitern."
 >
 > -- GR
 
-**Major Victory:** Re-encryption protocol permanently disabled
+**Großer Sieg:** Neu-Verschlüsselungsprotokoll dauerhaft deaktiviert
 
-**Progress Update:**
+**Fortschritts-Update:**
 
-- ✓ Warehouses A, B, C: Permanently unlocked
-- ✓ Failsafe protocols: Deactivated
-- ✓ Re-encryption countdown: Cancelled
-- Distribution coordination: LOCKED
-- Route optimization: PENDING
+- ✓ Lagerhäuser A, B, C: Dauerhaft entsperrt
+- ✓ Ausfallsicherheitsprotokolle: Deaktiviert
+- ✓ Neu-Verschlüsselungs-Countdown: Abgebrochen
+- Verteilungskoordination: GESPERRT
+- Routenoptimierung: AUSSTEHEND
 
-**Status:** Supply chain 75% restored. Final coordination lock tomorrow.
+**Status:** Lieferkette zu 75% wiederhergestellt. Finale Koordinationssperre morgen.
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

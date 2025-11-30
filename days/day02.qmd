@@ -1,124 +1,124 @@
 ---
-title: "Day 2: The Power Grid Protocol"
-format: 
+title: "Tag 2: Das Stromnetz-Protokoll"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act I: Infiltration
+## Akt I: Infiltration
 
-### Location: GrinchTech Headquarters - Server Room Access
+### Ort: GrinchTech Hauptquartier - Serverraum-Zugang
 
-You're inside GrinchTech HQ, but the reception area is as far as most visitors get. A sleek elevator bank dominates the far wall, its buttons glowing a cold blue. Above it, a directory lists the floors:
+Ihr seid im GrinchTech-Hauptquartier. Eine elegante Reihe von Aufzügen dominiert die hintere Wand, ihre Knöpfe leuchten in kaltem Blau. Darüber listet ein Verzeichnis die Etagen auf:
 
-- **Floor 1:** Reception & Public Relations
-- **Floor 2:** Operations & Logistics
-- **Floor 3:** Algorithm Development
-- **Floor 4:** Data Analytics
-- **Floor 5:** Executive Suite & Command Center
+- **Etage 1:** Empfang & Öffentlichkeitsarbeit
+- **Etage 2:** Betrieb & Logistik
+- **Etage 3:** Algorithmen-Entwicklung
+- **Etage 4:** Datenanalyse
+- **Etage 5:** Chefetage & Kommandozentrale
 
-You press the button for Floor 2, but nothing happens. Instead, the elevator's display screen flickers to life:
+Ihr drückt den Knopf für Etage 2, aber nichts passiert. Stattdessen flackert das Display des Aufzugs zum Leben:
 
-> **Power Management System - Locked**
+> **Energiemanagementsystem - Gesperrt**
 >
-> Oh, you made it past the front door. Congratulations. You've achieved what literally any delivery driver accomplishes daily. Truly inspiring.
+> Oh, ihr habt es durch die Eingangstür geschafft. Herzlichen Glückwunsch. Ihr habt das erreicht, was jeder Paketbote täglich schafft. Wirklich inspirierend.
 >
-> My building's power grid is controlled by precision algorithms. Every voltage calculation must be exact. One mistake in the order of operations, and the entire elevator system shorts out. Permanently. I had to replace it twice last quarter because of 'mathematically confident' visitors. The repair bills were astronomical. The schadenfreude was priceless.
+> Das Stromnetz meines Gebäudes wird von Präzisionsalgorithmen gesteuert. Jede Spannungsberechnung muss exakt sein. Ein Fehler in der Reihenfolge der Operationen, und das gesamte Aufzugsystem schmort durch. Dauerhaft. Ich musste es letztes Quartal zweimal ersetzen wegen „mathematisch selbstbewusster" Besucher. Die Reparaturrechnungen waren hoch. Die Schadenfreude war unbezahlbar.
 >
-> Let's see if you understand PEMDAS, or if you're about to join the distinguished list of people who've been trapped in a dark elevator while I watched on security cameras and ate popcorn.
+> Mal sehen, ob ihr die Punkt-vor-Strich-Regel versteht, oder ob ihr gleich der erlesenen Liste von Leuten beitretet, die in einem dunklen Aufzug feststeckten, während ich sie auf den Sicherheitskameras beobachtete und Popcorn aß.
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-**Task a) The Failsafe Protocol**
+**Aufgabe a) Das Ausfallsicherheitsprotokoll**
 
-A warning message flashes on the screen:
+Eine Warnmeldung blinkt auf dem Bildschirm:
 
-> **Grinch's Note:** "My backup power protocol includes an exponent failsafe. When things go wrong, the system calculates $(x - 5)^0$. If you don't immediately know what ANY number raised to the zero power equals, please leave now and save us both the embarrassment."
+> **Grinchs Hinweis:** „Mein Notstromprotokoll enthält eine Exponenten-Sicherung. Wenn etwas schiefgeht, berechnet das System $(x - 5)^0$. Wenn ihr nicht sofort wisst, was IRGENDEINE Zahl hoch null ergibt, geht bitte jetzt und erspart uns beiden die Peinlichkeit."
 
-**Question:** What is the value of $(x - 5)^0$ for ANY value of $x$ (assuming $x \neq 5$)?
+**Frage:** Was ist der Wert von $(x - 5)^0$ für JEDEN Wert von $x$ (vorausgesetzt $x \neq 5$)?
 
 ::: {.puzzle-box}
-**Select the correct value and substantiation:**
+**Wählt den korrekten Wert und die Begründung:**
 
 <div class="quiz-options">
   <button class="quiz-option" data-correct="false">
-    <strong>Value: 0</strong><br>
-    <em>Reasoning:</em> Because the base contains a negative number, the result is nullified.
+    <strong>Wert: 0</strong><br>
+    <em>Begründung:</em> Da die Basis eine negative Zahl enthält, wird das Ergebnis null.
   </button>
-  
+
   <button class="quiz-option" data-correct="true">
-    <strong>Value: 1</strong><br>
-    <em>Reasoning:</em> Any non-zero base raised to the power of 0 equals 1.
+    <strong>Wert: 1</strong><br>
+    <em>Begründung:</em> Jede Basis ungleich null, die mit 0 potenziert wird, ergibt 1.
   </button>
 
   <button class="quiz-option" data-correct="false">
-    <strong>Value: x - 5</strong><br>
-    <em>Reasoning:</em> The exponent 0 acts as an identity operator, leaving the base unchanged.
+    <strong>Wert: x - 5</strong><br>
+    <em>Begründung:</em> Der Exponent 0 wirkt als Identitätsoperator und lässt die Basis unverändert.
   </button>
 
   <button class="quiz-option" data-correct="false">
-    <strong>Value: 5</strong><br>
-    <em>Reasoning:</em> The exponent cancels the variable $x$, leaving the constant.
+    <strong>Wert: 5</strong><br>
+    <em>Begründung:</em> Der Exponent hebt die Variable $x$ auf und lässt die Konstante übrig.
   </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Confirm Failsafe</button>
+  <button class="quiz-submit" disabled>Ausfallsicherheit bestätigen</button>
 </div>
 :::
 
-**Task b) Voltage Calibration**
+**Aufgabe b) Spannungskalibrierung**
 
-The elevator screen displays a complex control panel labeled "Voltage Regulation System." The power supply for Floor 2 requires exact voltage calibration. The system displays the following calculation to determine the correct voltage (in volts):
+Der Aufzugbildschirm zeigt ein komplexes Bedienfeld mit der Bezeichnung „Spannungsregulierungssystem". Die Stromversorgung für Etage 2 erfordert eine exakte Spannungskalibrierung. Das System zeigt folgende Berechnung zur Bestimmung der korrekten Spannung (in Volt):
 
-**Voltage Formula:** $$5 \times (8 - 3)^2 + 12 \div 4 - |-7|$$
+**Spannungsformel:** $$5 \times (8 - 3)^2 + 12 \div 4 - |-7|$$
 
-> **Grinch's Note:** "PEMDAS. Please Excuse My Disdain At Stupidity. That's not what it stands for, but it should be. One wrong step in this calculation and you're stuck between floors. The WiFi down there is terrible."
+> **Grinchs Hinweis:** „Punkt vor Strich. Klammern zuerst. Potenzen danach. Eine falsche Stelle in dieser Berechnung und ihr steckt zwischen den Etagen fest. Das WLAN dort ist furchtbar."
 
-**Evaluate** this expression to find the correct voltage.
+**Berechnet** diesen Ausdruck, um die korrekte Spannung zu finden.
 
 ::: {.puzzle-box}
-**Enter Voltage Value:**
+**Spannungswert eingeben:**
 
-<input class="quiz-input" placeholder="e.g. 34">
+<input class="quiz-input" placeholder="z.B. 34">
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="121">Calibrate Power</button>
+  <button class="quiz-submit" disabled data-answer="121">Strom kalibrieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You enter the voltage value "121" into the control panel. The screen flashes green, and you feel a subtle vibration as power flows through the elevator shaft.
+Ihr gebt den Spannungswert „121" in das Bedienfeld ein. Der Bildschirm blinkt grün, und ihr spürt ein leichtes Vibrieren, als Strom durch den Aufzugschacht fließt.
 
-> **Voltage calibration accepted. Elevator access granted.**
+> **Spannungskalibrierung akzeptiert. Aufzugzugang gewährt.**
 
-The elevator doors open with a soft chime. As you step inside and press the button for Floor 2, another message appears:
+Die Aufzugtüren öffnen sich mit einem sanften Klingeln. Als ihr einsteigt und den Knopf für Etage 2 drückt, erscheint eine weitere Nachricht:
 
-> **#engineering-all**
+> **#technik-alle**
 >
-> Okay, fine. You understand order of operations. Parentheses before exponents. Multiplication before addition. Revolutionary stuff. Should I alert the Nobel committee, or would you prefer a sticker? I have some left over from a kindergarten visit. They have dinosaurs on them.
+> Okay, gut. Ihr versteht die Reihenfolge der Operationen. Klammern vor Exponenten. Multiplikation vor Addition. Revolutionäres Zeug. Soll ich das Nobelkomitee informieren, oder hättet ihr lieber einen Sticker? Ich habe noch welche von einem Kindergartenbesuch übrig. Da sind Dinosaurier drauf.
 >
-> But my REAL algorithms aren't simple arithmetic. They're nested, recursive, optimized by people with PhDs who cry when they look at their student loans. You're going to need more than whatever state school math department taught you to crack Floor 2.
+> Aber meine ECHTEN Algorithmen sind keine einfache Arithmetik. Sie sind verschachtelt, rekursiv, optimiert von Leuten mit Doktortiteln, die weinen, wenn sie ihre Studienkredite ansehen. Ihr werdet mehr brauchen als das, was euch der Matheunterricht beigebracht hat, um Etage 2 zu knacken.
 >
-> See you upstairs. Bring tissues. The server room has made grown engineers weep.
+> Wir sehen uns oben. Bringt Taschentücher mit. Der Serverraum hat schon gestandene Ingenieure zum Weinen gebracht.
 >
 > -- GR
 
-The elevator ascends smoothly. Through the glass walls, you watch the Elbe river glittering below and the Hamburg skyline stretching out toward the Speicherstadt warehouses. Somewhere in this building, the Grinch's algorithms are holding Christmas hostage.
+Der Aufzug fährt sanft nach oben. Durch die Glaswände beobachtet ihr, wie die Elbe unten glitzert und die Hamburger Skyline sich bis zu den Lagerhäusern der Speicherstadt erstreckt.
 
-Floor 2 awaits.
+Etage 2 wartet.
 
-**Systems Accessed:** Building Power Grid ✓
+**Systeme freigeschaltet:** Gebäude-Stromnetz ✓
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

@@ -1,46 +1,46 @@
 ---
-title: "Day 23: The Logarithmic Labyrinth"
+title: "Tag 23: Das logarithmische Labyrinth"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act IV: The Final Takeover
+## Akt IV: Die finale Übernahme
 
-### Location: Hamburg Rathaus - Central Command Center
+### Ort: Hamburger Rathaus - Zentrale Kommandozentrale
 
-December 23rd. Christmas Eve is tomorrow.
+23. Dezember. Morgen ist Heiligabend.
 
-You arrive at the Rathaus to find the Central Command Center transformed. The Grinch is already there, along with Stadtrat Fischer and Frau Weber.
+Ihr kommt am Rathaus an und findet die zentrale Kommandozentrale verwandelt vor. Der Grinch ist bereits da, zusammen mit Stadtrat Fischer und Frau Weber.
 
-"Before tomorrow's finale," the Grinch explains, "there's one more system: Hamburg's monitoring network. It uses logarithmic scaling—the mathematics of measurement. Sound levels. Structural stress. Anything that spans orders of magnitude."
+„Vor dem Finale morgen," erklärt der Grinch, „gibt es noch ein System: Hamburgs Überwachungsnetzwerk. Es verwendet logarithmische Skalierung—die Mathematik der Messung. Lautstärke. Strukturelle Belastung. Alles, was Größenordnungen überspannt."
 
-> "Logarithms are the inverse of exponentials. Where exponentials describe growth, logarithms describe scale. They compress vast ranges into manageable numbers.
+> „Logarithmen sind die Umkehrung von Exponentialfunktionen. Wo Exponentialfunktionen Wachstum beschreiben, beschreiben Logarithmen Maßstäbe. Sie komprimieren riesige Bereiche in handhabbare Zahlen.
 >
-> Hamburg's monitoring systems need logarithmic functions because they handle everything from whisper-quiet neighborhoods to festival crowd noise. From minor tremors to major structural vibrations.
+> Hamburgs Überwachungssysteme brauchen logarithmische Funktionen, weil sie alles abdecken, von flüsterleisen Wohnvierteln bis zum Lärm von Festivalmengen. Von kleinen Erschütterungen bis zu großen strukturellen Vibrationen.
 >
-> This is the last mathematical concept before tomorrow's synthesis. Master logarithms, and every system in Hamburg will be under unified control.
+> Das ist das letzte mathematische Konzept vor der Synthese morgen. Meistert Logarithmen, und jedes System in Hamburg wird unter einheitlicher Kontrolle stehen.
 >
-> One more day after this. Let's make it count."
+> Noch ein Tag nach diesem. Lasst ihn zählen."
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Four logarithmic problems controlling Hamburg's monitoring infrastructure.
+Vier logarithmische Aufgaben zur Steuerung von Hamburgs Überwachungsinfrastruktur.
 
-**System 1: "The Decibel Protocol"**
+**System 1: „Das Dezibel-Protokoll"**
 
-Hamburg's noise monitoring uses:
+Hamburgs Lärmüberwachung verwendet:
 
 $$S = 10 \cdot \log_{10}\left(\frac{I}{I_0}\right)$$
 
-At the Rathausmarkt Christmas market, the sound intensity ratio is $\frac{I}{I_0} = 1000$.
+Auf dem Rathausmarkt-Weihnachtsmarkt beträgt das Schallintensitätsverhältnis $\frac{I}{I_0} = 1000$.
 
-> **Grinch's Note:** "Logarithms ask a simple question: 'What power?' A thousand is a round number in base 10. Think about why."
+> **Grinchs Hinweis:** „Logarithmen stellen eine einfache Frage: ‚Welche Potenz?' Tausend ist eine runde Zahl zur Basis 10. Denkt darüber nach, warum."
 
-**What is the sound level in decibels?**
+**Wie hoch ist der Schallpegel in Dezibel?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -52,47 +52,45 @@ At the Rathausmarkt Christmas market, the sound intensity ratio is $\frac{I}{I_0
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calibrate Sound Monitor</button>
+  <button class="quiz-submit" disabled>Schallmonitor kalibrieren</button>
 </div>
 :::
 
-**System 2: "The Natural Log Access Code"**
+**System 2: „Der Zugangscode"**
 
-The final security layer uses:
+Die letzte Sicherheitsebene verwendet:
 
-$$\ln(x + 5) = 3$$
+$$\log_{10}(x + 5) = 2$$
 
-(Use: $e^3 \approx 20.09$)
+> **Grinchs Hinweis:** „Logarithmen und Potenzen sind Umkehroperationen. Was die eine macht, macht die andere rückgängig. Wendet dieses Prinzip an."
 
-> **Grinch's Note:** "Logarithms and exponentials are inverse operations. What one does, the other undoes. Apply that principle."
-
-**What is $x$ (approximately)?**
+**Was ist $x$?**
 
 ::: {.puzzle-box}
-**Enter x (round to one decimal):**
-<input class="quiz-input" placeholder="x ≈ ?">
+**Gebt x ein:**
+<input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="15.09">Enter Access Code</button>
+  <button class="quiz-submit" disabled data-answer="95">Zugangscode eingeben</button>
 </div>
 :::
 
-**System 3: "The Degradation Model"**
+**System 3: „Das Verschleißmodell"**
 
-The Köhlbrandbrücke bridge has stress sensors following:
+Die Köhlbrandbrücke hat Belastungssensoren, die folgen:
 
 $$S(t) = 100 - 20 \cdot \log_2(t + 1)$$
 
-where $t$ is hours since last maintenance check.
+wobei $t$ die Stunden seit der letzten Wartungsprüfung sind.
 
-> **Grinch's Note:** "Time passes. Structures age. The logarithm measures decay. Seven hours—consider what happens to the argument."
+> **Grinchs Hinweis:** „Zeit vergeht. Strukturen altern. Der Logarithmus misst den Verschleiß. Sieben Stunden—überlegt, was mit dem Argument passiert."
 
-**What is the strength index after 7 hours?**
+**Wie hoch ist der Festigkeitsindex nach 7 Stunden?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> 100 (No degradation) </button>
+  <button class="quiz-option" data-correct="false"> 100 (Kein Verschleiß) </button>
   <button class="quiz-option" data-correct="false"> 80 </button>
   <button class="quiz-option" data-correct="false"> 60 </button>
   <button class="quiz-option" data-correct="true"> 40 </button>
@@ -100,82 +98,82 @@ where $t$ is hours since last maintenance check.
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Check Structural Status</button>
+  <button class="quiz-submit" disabled>Strukturstatus prüfen</button>
 </div>
 :::
 
-**System 4: "The Transformed Monitor"**
+**System 4: „Der transformierte Monitor"**
 
-The base monitoring function $f(x) = \ln(x)$ has been shifted RIGHT by 3 units and UP by 2 units.
+Die Basis-Überwachungsfunktion $f(x) = \log_{10}(x)$ wurde um 3 Einheiten NACH RECHTS und um 2 Einheiten NACH OBEN verschoben.
 
-> **Grinch's Note:** "Transformations shift the boundaries. The original function has a wall at zero. Where does that wall move when everything shifts?"
+> **Grinchs Hinweis:** „Transformationen verschieben die Grenzen. Die ursprüngliche Funktion hat eine Mauer bei null. Wohin bewegt sich diese Mauer, wenn alles verschoben wird?"
 
-**What is the vertical asymptote of the transformed function?**
+**Was ist die vertikale Asymptote der transformierten Funktion?**
 
 ::: {.puzzle-box}
-**Enter the vertical asymptote (x = ?):**
+**Gebt die vertikale Asymptote ein (x = ?):**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="3">Define Domain Boundary</button>
+  <button class="quiz-submit" disabled data-answer="3">Definitionsbereichsgrenze definieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You submit the logarithmic solutions:
+Ihr reicht die logarithmischen Lösungen ein:
 
-- Sound level: 30 decibels ✓
-- Security code: $x \approx 15.09$ ✓
-- Bridge strength: 40 after 7 hours ✓
-- Transformed asymptote: $x = 3$ ✓
+- Schallpegel: 30 Dezibel ✓
+- Sicherheitscode: $x = 95$ ✓
+- Brückenfestigkeit: 40 nach 7 Stunden ✓
+- Transformierte Asymptote: $x = 3$ ✓
 
-The monitoring network activates. Across Hamburg, sensors come online—sound monitors, structural stress detectors, crowd analyzers—all using logarithmic scaling.
+Das Überwachungsnetzwerk aktiviert sich. In ganz Hamburg gehen Sensoren online—Schallmonitore, strukturelle Belastungsdetektoren, Menschenmengenanalysatoren—alle mit logarithmischer Skalierung.
 
-The main screen shows a unified dashboard: every Christmas market, every bridge, every system, all monitored and controlled.
+Der Hauptbildschirm zeigt ein einheitliches Dashboard: jeder Weihnachtsmarkt, jede Brücke, jedes System, alle überwacht und gesteuert.
 
-The Grinch watches with visible satisfaction:
+Der Grinch beobachtet mit sichtbarer Zufriedenheit:
 
-> **#final-preparation**
+> **#finale-vorbereitung**
 >
-> "It's complete. Every system. Every function. Every mathematical model.
+> „Es ist vollständig. Jedes System. Jede Funktion. Jedes mathematische Modell.
 >
-> Hamburg's Christmas infrastructure is now more sophisticated than any city in Europe. And you built it by solving mathematics.
+> Hamburgs Weihnachtsinfrastruktur ist jetzt ausgefeilter als in jeder anderen Stadt in Europa. Und ihr habt sie aufgebaut, indem ihr Mathematik gelöst habt.
 >
-> Tomorrow is Christmas Eve. December 24th.
+> Morgen ist Heiligabend. Der 24. Dezember.
 >
-> I have one final challenge—not to lock systems, but to demonstrate mastery. A synthesis that combines everything:
+> Ich habe eine letzte Herausforderung—nicht um Systeme zu sperren, sondern um Beherrschung zu demonstrieren. Eine Synthese, die alles kombiniert:
 >
-> - Foundations (Days 1-6)
-> - Equations (Days 7-12)
-> - Functions as Business Models (Days 13-17)
-> - Advanced Functions (Days 18-23)
+> - Grundlagen (Tage 1-6)
+> - Gleichungen (Tage 7-12)
+> - Funktionen als Geschäftsmodelle (Tage 13-17)
+> - Fortgeschrittene Funktionen (Tage 18-23)
 >
-> Solve it, and I'll make a permanent transfer of all systems. No takebacks. Christmas secured forever.
+> Löst sie, und ich werde eine dauerhafte Übertragung aller Systeme vornehmen. Keine Rücknahme. Weihnachten für immer gesichert.
 >
-> Meet me at the Rathaus at noon tomorrow. Let's finish this journey the right way."
+> Trefft mich morgen um zwölf Uhr am Rathaus. Lasst uns diese Reise richtig beenden."
 >
 > -- G. Rinch
 
-As you leave, Hamburg glows around you: markets bustling, lights twinkling, mechanical displays rotating, and everywhere—music, laughter, joy.
+Als ihr geht, leuchtet Hamburg um euch herum: Märkte lebhaft, Lichter funkelnd, mechanische Anzeigen rotierend, und überall—Musik, Lachen, Freude.
 
-Tomorrow is the finale.
+Morgen ist das Finale.
 
-**Complete Systems Status:**
+**Vollständiger Systemstatus:**
 
-- ✓ Warehouses unlocked
-- ✓ Supply chain operational
-- ✓ Markets open and profitable
-- ✓ Lighting grid active
-- ✓ Mechanical systems functional
-- ✓ Monitoring network online
-- ✓ All infrastructure integrated
+- ✓ Lagerhäuser entsperrt
+- ✓ Lieferkette betriebsbereit
+- ✓ Märkte offen und profitabel
+- ✓ Beleuchtungsnetz aktiv
+- ✓ Mechanische Systeme funktional
+- ✓ Überwachungsnetzwerk online
+- ✓ Alle Infrastruktur integriert
 
-**Time Remaining:** 1 day until Christmas Eve
+**Verbleibende Zeit:** 1 Tag bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

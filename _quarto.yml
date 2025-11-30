@@ -21,6 +21,8 @@ website:
         href: mailto:vlcek@beyondsimulations.com
       - icon: skip-backward
         href: https://beyondsimulations.github.io/lectures
+      - icon: info-circle
+        href: general/imprint.qmd
 
 format:
   html:

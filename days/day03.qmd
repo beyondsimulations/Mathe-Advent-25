@@ -1,45 +1,45 @@
 ---
-title: "Day 3: The Encryption Matrix"
-format: 
+title: "Tag 3: Die Verschlüsselungsmatrix"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act I: Infiltration
+## Akt I: Infiltration
 
-### Location: GrinchTech Headquarters - Floor 2, Network Operations Center
+### Ort: GrinchTech Hauptquartier - Etage 2, Netzwerk-Operationszentrum
 
-The elevator doors open onto Floor 2, revealing a maze of server racks humming with activity. Tangles of cables—red, blue, green—snake across the ceiling and walls like technological vines. Banks of monitors display streams of encrypted data, and in the center of the room stands a massive digital display labeled **"Christmas Asset Encryption Matrix."**
+Die Aufzugtüren öffnen sich zu Etage 2 und enthüllen ein Labyrinth aus Servern, die vor Aktivität summen. Kabelgewirr schlängelt sich über Decke und Wände. Monitore zeigen Ströme verschlüsselter Daten, und in der Mitte des Raums steht ein riesiges digitales Display mit der Aufschrift **„Weihnachts-Vermögenswert-Verschlüsselungsmatrix"**.
 
-You approach the main terminal, and immediately the screen lights up with a challenge:
+Ihr nähert euch dem Hauptterminal, und sofort leuchtet der Bildschirm mit einer Herausforderung auf:
 
-> **Network Access Denied**
+> **Netzwerkzugriff verweigert**
 >
-> Oh, you survived the elevator. How thrilling. I'll alert the media.
+> Oh, ihr habt den Aufzug überlebt. Wie toll. Ich informiere gleich die Presse.
 >
-> Welcome to Floor 2, where I keep my *actual* security. This network is protected by multi-layer polynomial encryption. Each data stream is factored into components so tangled that my own IT department needed therapy after debugging it. One of them became a yoga instructor. He seems happier now.
+> Willkommen auf Etage 2, wo ich meine *echte* Sicherheit aufbewahre. Dieses Netzwerk ist durch mehrschichtige polynomiale Verschlüsselung geschützt. Jeder Datenstrom ist in Komponenten faktorisiert, die so verwirrt sind, dass meine eigene IT-Abteilung nach der Programmierung eine Therapie brauchte. Einer von ihnen wurde Yogalehrer.
 >
-> You want my Christmas data? Break all three encryption layers. Factorization. The thing you probably think you learned in school but actually just memorized long enough to pass the test and immediately forgot.
+> Ihr wollt meine Weihnachtsdaten? Knackt alle drei Verschlüsselungsschichten. Faktorisierung. Das Ding, von dem ihr wahrscheinlich denkt, ihr hättet es in der Schule gelernt, aber eigentlich nur lange genug auswendig gelernt, um den Test zu bestehen, und dann sofort vergessen.
 >
-> I'll be here, timing you. The current record is held by a PhD candidate who took 47 minutes and then asked if we were hiring. We weren't.
+> Ich werde hier sein und die Zeit stoppen. Der aktuelle Rekord wird von einem Doktoranden gehalten, der 47 Minuten brauchte und dann fragte, ob wir noch Leute einstellen. Taten wir nicht.
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-The terminal displays three encrypted data streams. You must factorize the algebraic expression for each layer to generate the decryption key.
+Das Terminal zeigt drei verschlüsselte Datenströme. Ihr müsst den algebraischen Ausdruck für jede Schicht faktorisieren, um den Entschlüsselungsschlüssel zu generieren.
 
-**Task a) Encryption Layer Alpha**
+**Aufgabe a) Verschlüsselungsschicht Alpha**
 
-The first data stream is encoded with the polynomial:
+Der erste Datenstrom ist mit dem Polynom kodiert:
 $$x^2 + 7x + 10$$
 
-> **Grinch's Note:** "This is literally the first thing they teach in factoring."
+> **Grinchs Hinweis:** „Das ist buchstäblich das Erste, was man beim Faktorisieren lernt."
 
-This represents the number of encrypted data packets blocking your access. **Factorize** the expression to break it into components.
+Dies stellt die Anzahl der verschlüsselten Datenpakete dar, die euren Zugang blockieren. **Faktorisiert** den Ausdruck, um ihn in Komponenten zu zerlegen.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -51,18 +51,18 @@ This represents the number of encrypted data packets blocking your access. **Fac
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Decrypt Layer Alpha</button>
+  <button class="quiz-submit" disabled>Schicht Alpha entschlüsseln</button>
 </div>
 :::
 
-**Task b) Encryption Layer Beta**
+**Aufgabe b) Verschlüsselungsschicht Beta**
 
-A secondary security protocol uses a difference of squares encryption:
+Ein sekundäres Sicherheitsprotokoll verwendet folgende Verschlüsselung:
 $$4x^2 - 9$$
 
-> **Grinch's Note:** "If you don't recognize this pattern instantly, I weep for your mathematical education. Two perfect squares being subtracted. The factorization practically writes itself."
+> **Grinchs Hinweis:** „Wenn ihr dieses Muster nicht sofort erkennt, war es das mit eurer mathematischen Bildung. Zwei perfekte Quadrate werden subtrahiert. Die Faktorisierung schreibt sich praktisch von selbst."
 
-**Factorize** the expression completely.
+**Faktorisiert** den Ausdruck vollständig.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -74,18 +74,18 @@ $$4x^2 - 9$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Decrypt Layer Beta</button>
+  <button class="quiz-submit" disabled>Schicht Beta entschlüsseln</button>
 </div>
 :::
 
-**Task c) Encryption Layer Gamma**
+**Aufgabe c) Verschlüsselungsschicht Gamma**
 
-The final network protection shows overhead processing power allocated as:
+Der finale Netzwerkschutz zeigt die zugewiesene Rechenleistung als:
 $$3x^2 + 9x$$
 
-> **Grinch's Note:** "What do both terms have in common? Pull it out. It's called 'factoring out the GCF.' Greatest Common Factor. If you need me to explain what 'greatest' or 'common' means, I have pamphlets. They're condescending. You'd hate them."
+> **Grinchs Hinweis:** „Was haben beide Terme gemeinsam? Klammert es aus. Das nennt man ‚Ausklammern des ggT'. Größter gemeinsamer Teiler. Falls ich erklären muss, was ‚größter' oder ‚gemeinsam' bedeutet, habe ich Broschüren für Kindergartenkinder."
 
-**Factorize** by finding the common factor.
+**Faktorisiert** durch Finden des gemeinsamen Faktors.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -97,53 +97,53 @@ $$3x^2 + 9x$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Decrypt Layer Gamma</button>
+  <button class="quiz-submit" disabled>Schicht Gamma entschlüsseln</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You input the three factored expressions into the terminal. For a moment, nothing happens. Then, one by one, the encryption layers flash green and dissolve:
+Ihr gebt die drei faktorisierten Ausdrücke in das Terminal ein. Für einen Moment passiert nichts. Dann, einer nach dem anderen, blinken die Verschlüsselungsschichten grün und lösen sich auf:
 
-**LAYER ALPHA: DECRYPTED**
+**SCHICHT ALPHA: ENTSCHLÜSSELT**
 
-**LAYER BETA: DECRYPTED**
+**SCHICHT BETA: ENTSCHLÜSSELT**
 
-**LAYER GAMMA: DECRYPTED**
+**SCHICHT GAMMA: ENTSCHLÜSSELT**
 
-The main display changes, and you see a file directory appear—thousands of files documenting the Grinch's operations:
+Das Hauptdisplay ändert sich, und ihr seht ein Dateiverzeichnis erscheinen—Tausende von Dateien, die die Operationen des Grinchs dokumentieren:
 
-- `christmas_present_locations.db` (LOCKED)
-- `market_shutdown_protocol.exe` (LOCKED)
-- `joy_suppression_algorithm.py` (LOCKED)
-- `hamburg_lights_killswitch.cfg` (LOCKED)
+- `weihnachtsgeschenk_standorte.db` (GESPERRT)
+- `markt_abschaltung_protokoll.exe` (GESPERRT)
+- `freude_unterdrueckung_algorithmus.py` (GESPERRT)
+- `hamburg_lichter_notschalter.cfg` (GESPERRT)
 
-But before you can open any of them, they all flash red and encrypt again. A new message appears:
+Aber bevor ihr eine davon öffnen könnt, blinken sie alle rot und verschlüsseln sich wieder. Eine neue Nachricht erscheint:
 
-> **#security-alert**
+> **#sicherheits-alarm**
 >
-> **TO:** engineering-team
-> **FROM:** G. Rinch
+> **AN:** technik-team
+> **VON:** G. Rinch
 >
-> Intruders have breached Floor 2 network encryption. All three layers. Factored correctly.
+> Eindringlinge haben die Netzwerkverschlüsselung auf Etage 2 durchbrochen. Alle drei Schichten. Korrekt faktorisiert.
 >
-> I'm not going to say I'm impressed, because that would imply I expected less, and I have *standards*. But fine. They can factor polynomials. So can most scientific calculators and approximately 40% of high school students who aren't currently on their phones.
+> Ich werde nicht sagen, dass ich beeindruckt bin, denn das würde implizieren, dass ich weniger erwartet habe, und ich habe *Standards*. Aber gut. Sie können Polynome faktorisieren. Das können auch die meisten wissenschaftlichen Taschenrechner und etwa 40% der Schüler, die gerade nicht an ihren Handys sind.
 >
-> Here's the thing about my file system: seeing the files and OPENING the files are two very different things. It's like window shopping, except the window is made of mathematics you haven't even encountered yet.
+> Hier ist die Sache mit meinem Dateisystem: Die Dateien zu sehen und die Dateien zu ÖFFNEN sind zwei sehr verschiedene Dinge. Es ist wie Schaufensterbummeln, außer dass das Schaufenster aus Mathematik besteht, der ihr noch nicht einmal begegnet seid.
 >
-> Let them proceed. The algorithms only get worse from here. And by 'worse,' I mean 'better.' For me.
+> Lasst sie weitermachen. Die Algorithmen werden von hier aus nur schlimmer. Und mit „schlimmer" meine ich „besser". Für mich.
 >
 > -- GR
 
-You notice a stairwell door at the far end of the server room, labeled *"Floor 3: Algorithm Development Lab."* The electronic lock glows amber, indicating it's now accessible.
+Ihr bemerkt eine Treppentür am anderen Ende des Serverraums mit der Aufschrift *„Etage 3: Algorithmen-Entwicklungslabor."* Das elektronische Schloss leuchtet bernsteinfarben, was anzeigt, dass es jetzt zugänglich ist.
 
-**Systems Accessed:**
+**Systeme freigeschaltet:**
 
-- ✓ Building Power Grid
-- ✓ Network Operations Center
+- ✓ Gebäude-Stromnetz
+- ✓ Netzwerk-Operationszentrum
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

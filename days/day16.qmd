@@ -1,48 +1,48 @@
 ---
-title: "Day 16: The Economic Transformations"
+title: "Tag 16: Die wirtschaftlichen Transformationen"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act III: Business Model Analysis
+## Akt III: Geschäftsmodell-Analyse
 
-### Location: Hamburg Economic Forecast Center
+### Ort: Hamburger Wirtschaftsprognosezentrum
 
-The economic battle has moved to Hamburg's Forecast Center. Today's session focuses on how external factors—inflation, taxes, regulations—transform business models mathematically.
+Die wirtschaftliche Schlacht ist ins Hamburger Prognosezentrum umgezogen. Die heutige Sitzung konzentriert sich darauf, wie externe Faktoren—Inflation, Steuern, Vorschriften—Geschäftsmodelle mathematisch transformieren.
 
-The Grinch has prepared a presentation titled: "Economic Scenarios: How External Factors Destroy Christmas Profitability." He appears on screen wearing what looks like a very expensive cardigan. Academic villain chic.
+Der Grinch hat eine Präsentation vorbereitet mit dem Titel: „Wirtschaftsszenarien: Wie externe Faktoren die Weihnachtsprofitabilität zerstören." Er erscheint auf dem Bildschirm und trägt etwas, das wie ein sehr teurer Cardigan aussieht. Akademischer Bösewicht-Chic.
 
-"Economic reality is transformation," he declares. "Your baseline models might show profit at the vertex—but add inflation, impose new taxes, introduce regulations, and suddenly Christmas is mathematically doomed."
+„Wirtschaftliche Realität ist Transformation," erklärt er. „Eure Basismodelle zeigen vielleicht Gewinn am Scheitelpunkt—aber fügt Inflation hinzu, erhebt neue Steuern, führt Vorschriften ein, und plötzlich ist Weihnachten mathematisch zum Scheitern verurteilt."
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "You've proven you understand static functions. How quaint.
+> „Ihr habt bewiesen, dass ihr statische Funktionen versteht. Wie niedlich.
 >
-> But business isn't static. A 4% inflation shift. A regulatory compression. A market crash that reflects everything into negative territory. These are TRANSFORMATIONS. And they destroy your pretty profit parabolas.
+> Aber Wirtschaft ist nicht statisch. Eine 4%-Inflationsverschiebung. Eine regulatorische Kompression. Ein Marktcrash, der alles in negatives Territorium spiegelt. Das sind TRANSFORMATIONEN. Und sie zerstören eure hübschen Gewinnparabeln.
 >
-> Let's see if you can even identify transformations, let alone defend against them.
+> Mal sehen, ob ihr Transformationen überhaupt identifizieren könnt, geschweige denn euch dagegen verteidigen.
 >
-> I'll use a simple base function: $f(x) = x^2 - 2x + 3$
+> Ich verwende eine einfache Basisfunktion: $f(x) = x^2 - 2x + 3$
 >
-> Watch how easily I can transform profitability into catastrophe. Or don't watch. I'll do it anyway."
+> Schaut zu, wie leicht ich Profitabilität in Katastrophe transformieren kann. Oder schaut nicht. Ich mache es trotzdem."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Analyze how external economic factors transform the base function $f(x) = x^2 - 2x + 3$. The Grinch has named each scenario with his characteristic dramatic flair.
+Analysiert, wie externe wirtschaftliche Faktoren die Basisfunktion $f(x) = x^2 - 2x + 3$ transformieren. Der Grinch hat jedes Szenario mit seinem charakteristischen dramatischen Flair benannt.
 
-**Lock 1: "The Inflation Avalanche"**
+**Schloss 1: „Die Inflationslawine"**
 
-A 4% inflation rate effectively shifts all costs upward by 4 units.
+Eine 4%-Inflationsrate verschiebt effektiv alle Kosten um 4 Einheiten nach oben.
 
-> **Grinch's Note:** "Vertical shifts. Add to the function. This is... genuinely the easiest transformation. If you miss this, I'm going to assume you're doing it on purpose to waste my time."
+> **Grinchs Hinweis:** „Vertikale Verschiebungen. Addiert zur Funktion. Das ist... wirklich die einfachste Transformation. Wenn ihr das verpasst, nehme ich an, dass ihr es absichtlich macht, um meine Zeit zu verschwenden."
 
-**If $f(x)$ shifts UP by 4 units, what is the constant term in $g(x)$?**
+**Wenn $f(x)$ um 4 Einheiten NACH OBEN verschoben wird, wie lautet die Konstante in $g(x)$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -54,35 +54,35 @@ A 4% inflation rate effectively shifts all costs upward by 4 units.
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Apply Inflation Model</button>
+  <button class="quiz-submit" disabled>Inflationsmodell anwenden</button>
 </div>
 :::
 
-**Lock 2: "The Regulatory Shift"**
+**Schloss 2: „Die Regulierungsverschiebung"**
 
-New EU regulations create administrative overhead, shifting all operations LEFT by 3 time units. The transformation rule is $g(x) = f(x + 3)$.
+Neue EU-Vorschriften erzeugen administrativen Aufwand und verschieben alle Abläufe um 3 Zeiteinheiten NACH LINKS. Die Transformationsregel ist $g(x) = f(x + 3)$.
 
-> **Grinch's Note:** "Horizontal shifts are where students fall apart. It's counterintuitive and beautiful. Like watching someone confidently walk into a glass door. This one brings me joy."
+> **Grinchs Hinweis:** „Horizontale Verschiebungen sind der Punkt, wo Schüler zusammenbrechen. Es ist kontraintuitiv und wunderschön. Wie zuzusehen, wie jemand selbstbewusst gegen eine Glastür läuft. Das hier bereitet mir Freude."
 
-**After shifting $f(x)$ LEFT by 3 units, what is the coefficient of $x$ in the expanded form of $g(x)$?**
+**Nach der Verschiebung von $f(x)$ um 3 Einheiten NACH LINKS, wie lautet der Koeffizient von $x$ in der ausmultiplizierten Form von $g(x)$?**
 
 ::: {.puzzle-box}
-**Enter the coefficient of x:**
+**Gebt den Koeffizienten von x ein:**
 <input class="quiz-input" placeholder="? x">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="4">Apply Regulatory Model</button>
+  <button class="quiz-submit" disabled data-answer="4">Regulierungsmodell anwenden</button>
 </div>
 :::
 
-**Lock 3: "The Market Crash Mirror"**
+**Schloss 3: „Der Marktcrash-Spiegel"**
 
-An economic downturn reflects market conditions over the $x$-axis, inverting profits into losses.
+Ein wirtschaftlicher Abschwung spiegelt die Marktbedingungen an der $x$-Achse und kehrt Gewinne in Verluste um.
 
-> **Grinch's Note:** "Reflections. The mirror image of your hopes. The negative sign affects EVERYTHING, and yet somehow people still mess this up. I have a bet with my assistant. Don't prove her right."
+> **Grinchs Hinweis:** „Spiegelungen. Das Spiegelbild eurer Hoffnungen. Das Minuszeichen beeinflusst ALLES, und trotzdem vermasseln Leute das immer noch. Ich habe eine Wette mit meiner Assistentin. Beweist ihr nicht, dass sie recht hat."
 
-**After reflection over the $x$-axis, what is the constant term in $g(x)$?**
+**Nach der Spiegelung an der $x$-Achse, wie lautet die Konstante in $g(x)$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -94,75 +94,75 @@ An economic downturn reflects market conditions over the $x$-axis, inverting pro
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Apply Crash Model</button>
+  <button class="quiz-submit" disabled>Crash-Modell anwenden</button>
 </div>
 :::
 
-**Lock 4: "The Growth Multiplier"**
+**Schloss 4: „Der Wachstumsmultiplikator"**
 
-A government stimulus package doubles all economic activity (vertical stretch by factor of 2).
+Ein staatliches Konjunkturpaket verdoppelt alle wirtschaftlichen Aktivitäten (vertikale Streckung um Faktor 2).
 
-> **Grinch's Note:** "Stretching. Like what your excuses do when you can't solve a problem. The government doubles everything—and I mean EVERYTHING. Process that."
+> **Grinchs Hinweis:** „Streckung. Wie das, was eure Ausreden tun, wenn ihr ein Problem nicht lösen könnt. Der Staat verdoppelt alles—und ich meine ALLES. Verarbeitet das."
 
-**After vertical stretch by factor 2, what is the leading coefficient ($a$ in $ax^2$)?**
+**Nach der vertikalen Streckung um Faktor 2, wie lautet der führende Koeffizient ($a$ in $ax^2$)?**
 
 ::: {.puzzle-box}
-**Enter the coefficient:**
+**Gebt den Koeffizienten ein:**
 <input class="quiz-input" placeholder="a = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="2">Apply Growth Model</button>
+  <button class="quiz-submit" disabled data-answer="2">Wachstumsmodell anwenden</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You present your transformation analysis:
+Ihr präsentiert eure Transformationsanalyse:
 
-- Inflation (up 4): $g(x) = x^2 - 2x + 7$ ✓
-- Regulation (left 3): $g(x) = x^2 + 4x + 6$ ✓
-- Market crash (reflect): $g(x) = -x^2 + 2x - 3$ ✓
-- Growth (stretch 2): $g(x) = 2x^2 - 4x + 6$ ✓
+- Inflation (hoch 4): $g(x) = x^2 - 2x + 7$ ✓
+- Regulierung (links 3): $g(x) = x^2 + 4x + 6$ ✓
+- Marktcrash (Spiegelung): $g(x) = -x^2 + 2x - 3$ ✓
+- Wachstum (Streckung 2): $g(x) = 2x^2 - 4x + 6$ ✓
 
-But then you add: "However, the Grinch's analysis contains a critical flaw."
+Aber dann fügt ihr hinzu: „Allerdings enthält die Analyse des Grinchs einen kritischen Fehler."
 
-The room goes quiet.
+Der Raum wird still.
 
-"He only showed NEGATIVE transformations—inflation, crashes, costs. But transformations work both ways. Government support shifts functions UP. Efficiency improvements reflect profit-positive. Market growth stretches revenue."
+„Er hat nur NEGATIVE Transformationen gezeigt—Inflation, Crashs, Kosten. Aber Transformationen funktionieren in beide Richtungen. Staatliche Unterstützung verschiebt Funktionen NACH OBEN. Effizienzverbesserungen spiegeln positiven Gewinn. Marktwachstum streckt Einnahmen."
 
-You pull up your own analysis: "If we apply realistic positive transformations—EU Christmas market subsidies (shift up 10), local tourism growth (stretch 1.5), operational efficiencies (shift left 2 for earlier profitability)—the transformed function shows INCREASED profit, not decreased."
+Ihr ruft eure eigene Analyse auf: „Wenn wir realistische positive Transformationen anwenden—EU-Weihnachtsmarkt-Subventionen (Verschiebung nach oben um 10), lokales Tourismuswachstum (Streckung 1,5), betriebliche Effizienzsteigerungen (Verschiebung nach links um 2 für frühere Profitabilität)—zeigt die transformierte Funktion ERHÖHTEN Gewinn, nicht verringerten."
 
-The Grinch's expression flickers. He wasn't expecting a counter-analysis.
+Der Gesichtsausdruck des Grinchs flackert. Er hatte keine Gegenanalyse erwartet.
 
-> **#transformation-analysis**
+> **#transformationsanalyse**
 >
-> "Clever. You didn't just calculate transformations—you understood that transformations can be positive or negative depending on context.
+> „Clever. Ihr habt nicht nur Transformationen berechnet—ihr habt verstanden, dass Transformationen je nach Kontext positiv oder negativ sein können.
 >
-> Fine. You understand function transformations. You can defend against my external shock scenarios.
+> Gut. Ihr versteht Funktionstransformationen. Ihr könnt euch gegen meine externen Schockszenarien verteidigen.
 >
-> But here's the final business test: REVERSIBILITY. Can you undo my optimizations? Can you find inverse functions? Can you reverse-engineer my economic models to restore original Christmas operations?
+> Aber hier ist der finale Geschäftstest: UMKEHRBARKEIT. Könnt ihr meine Optimierungen rückgängig machen? Könnt ihr Umkehrfunktionen finden? Könnt ihr meine Wirtschaftsmodelle zurückentwickeln, um die ursprünglichen Weihnachtsoperationen wiederherzustellen?
 >
-> Tomorrow: Inverse functions and function composition. The mathematics of UNDOING what I've done.
+> Morgen: Umkehrfunktionen und Funktionsverkettung. Die Mathematik des RÜCKGÄNGIGMACHENS dessen, was ich getan habe.
 >
-> This is your last chance to prove Christmas is economically viable."
+> Das ist eure letzte Chance zu beweisen, dass Weihnachten wirtschaftlich tragfähig ist."
 >
 > -- GR
 
-**Act III Progress:**
+**Akt III Fortschritt:**
 
-- ✓ Function fundamentals verified
-- ✓ Linear business models validated
-- ✓ Quadratic optimization mastered
-- ✓ Function transformations mastered
-- Inverse functions: Tomorrow (Final business challenge)
+- ✓ Funktionsgrundlagen verifiziert
+- ✓ Lineare Geschäftsmodelle validiert
+- ✓ Quadratische Optimierung gemeistert
+- ✓ Funktionstransformationen gemeistert
+- Umkehrfunktionen: Morgen (Finale Geschäftsherausforderung)
 
-**Status:** Transformation defense successful; one more challenge remaining.
+**Status:** Transformationsverteidigung erfolgreich; eine weitere Herausforderung verbleibt.
 
-**Time Remaining:** 8 days until Christmas Eve
+**Verbleibende Zeit:** 8 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

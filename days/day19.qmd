@@ -1,168 +1,168 @@
 ---
-title: "Day 19: The Power Grid"
+title: "Tag 19: Das Stromnetz"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act IV: The Final Takeover
+## Akt IV: Die finale Übernahme
 
-### Location: Hamburg Energy Control Center
+### Ort: Hamburger Energiekontrollzentrum
 
-With the Christmas markets operational, attention turns to the city's festive lighting. But the entire Christmas lighting grid remains dark, controlled by GrinchTech's power management algorithms.
+Mit den betriebsbereiten Weihnachtsmärkten richtet sich die Aufmerksamkeit auf die festliche Stadtbeleuchtung. Aber das gesamte Weihnachtsbeleuchtungsnetz bleibt dunkel, gesteuert durch GrinchTechs Energiemanagement-Algorithmen.
 
-You've been brought to Hamburg's Energy Control Center. The Christmas lighting subsystem shows: **OFFLINE - GRINCHTECH OVERRIDE ACTIVE**.
+Ihr wurdet in Hamburgs Energiekontrollzentrum gebracht. Das Weihnachtsbeleuchtungs-Subsystem zeigt: **OFFLINE - GRINCHTECH-OVERRIDE AKTIV**.
 
-The Grinch appears on the main display. He looks pensive—almost nostalgic:
+Der Grinch erscheint auf dem Hauptbildschirm. Er sieht nachdenklich aus—fast nostalgisch:
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Day 19: Power Functions.
+> „Tag 19: Potenzfunktionen.
 >
-> The city's lighting grid isn't controlled by simple switches. It's governed by power functions—mathematical relationships where exponents determine how energy flows, how brightness scales, how systems behave.
+> Das städtische Beleuchtungsnetz wird nicht durch einfache Schalter gesteuert. Es wird durch Potenzfunktionen regiert—mathematische Beziehungen, bei denen Exponenten bestimmen, wie Energie fließt, wie Helligkeit skaliert, wie Systeme sich verhalten.
 >
-> Power functions are fundamental. They describe root relationships, growth rates, and behaviors that linear functions cannot capture.
+> Potenzfunktionen sind fundamental. Sie beschreiben Wurzelbeziehungen, Wachstumsraten und Verhaltensweisen, die lineare Funktionen nicht erfassen können.
 >
-> Understand power functions, and I'll restore Hamburg's Christmas lights. The city will glow again.
+> Versteht Potenzfunktionen, und ich werde Hamburgs Weihnachtsbeleuchtung wiederherstellen. Die Stadt wird wieder leuchten.
 >
-> I admit... I'd like to see that."
+> Ich gebe zu... ich würde das gerne sehen."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Four problems analyzing power functions that control Hamburg's lighting infrastructure.
+Vier Aufgaben zur Analyse von Potenzfunktionen, die Hamburgs Beleuchtungsinfrastruktur steuern.
 
-**Lock 1: "The Square Root Domain"**
+**Schloss 1: „Der Quadratwurzel-Definitionsbereich"**
 
-The main Christmas lighting generator's energy output follows:
+Die Energieausgabe des Haupt-Weihnachtsbeleuchtungsgenerators folgt:
 
 $$f(x) = x^{1/2} = \sqrt{x}$$
 
-**What is the domain of $f(x) = \sqrt{x}$?**
+**Was ist der Definitionsbereich von $f(x) = \sqrt{x}$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> All real numbers </button>
-  <button class="quiz-option" data-correct="true"> $x \geq 0$ (non-negative numbers) </button>
-  <button class="quiz-option" data-correct="false"> $x > 0$ (positive numbers only) </button>
-  <button class="quiz-option" data-correct="false"> $x \leq 0$ (non-positive numbers) </button>
+  <button class="quiz-option" data-correct="false"> Alle reellen Zahlen </button>
+  <button class="quiz-option" data-correct="true"> $x \geq 0$ (nicht-negative Zahlen) </button>
+  <button class="quiz-option" data-correct="false"> $x > 0$ (nur positive Zahlen) </button>
+  <button class="quiz-option" data-correct="false"> $x \leq 0$ (nicht-positive Zahlen) </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Configure Generator</button>
+  <button class="quiz-submit" disabled>Generator konfigurieren</button>
 </div>
 :::
 
-**Lock 2: "The Fractional Exponent Mystery"**
+**Schloss 2: „Das Geheimnis des gebrochenen Exponenten"**
 
-A backup generator operates on $g(x) = x^{2/3}$. Unlike $f(x) = x^{1/2}$, this function CAN accept negative inputs.
+Ein Backup-Generator arbeitet mit $g(x) = x^{2/3}$. Anders als $f(x) = x^{1/2}$ KANN diese Funktion negative Eingaben akzeptieren.
 
-> **Grinch's Note:** "Fractional exponents are just roots and powers in disguise. If you remember your radical rules from high school—and I use 'remember' generously—you'll figure this out."
+> **Grinchs Hinweis:** „Gebrochene Exponenten sind nur versteckte Wurzeln und Potenzen. Wenn ihr euch an eure Wurzelregeln aus der Schule erinnert—und ich verwende ‚erinnern' großzügig—werdet ihr das herausfinden."
 
-**Why can $g(x) = x^{2/3}$ accept negative $x$ values?**
+**Warum kann $g(x) = x^{2/3}$ negative $x$-Werte akzeptieren?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> Because 2 is even </button>
-  <button class="quiz-option" data-correct="true"> Because 3 is odd </button>
-  <button class="quiz-option" data-correct="false"> Because 2/3 is less than 1 </button>
-  <button class="quiz-option" data-correct="false"> Because it's a power function </button>
+  <button class="quiz-option" data-correct="false"> Weil 2 gerade ist </button>
+  <button class="quiz-option" data-correct="true"> Weil 3 ungerade ist </button>
+  <button class="quiz-option" data-correct="false"> Weil 2/3 kleiner als 1 ist </button>
+  <button class="quiz-option" data-correct="false"> Weil es eine Potenzfunktion ist </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Activate Backup</button>
+  <button class="quiz-submit" disabled>Backup aktivieren</button>
 </div>
 :::
 
-**Lock 3: "The Growth Rate Comparison"**
+**Schloss 3: „Der Wachstumsraten-Vergleich"**
 
-The main Christmas tree at Rathausmarkt has LED strands that follow $h(x) = x^4$.
+Der Hauptweihnachtsbaum am Rathausmarkt hat LED-Stränge, die $h(x) = x^4$ folgen.
 
-> **Grinch's Note:** "Compare $x^4$ to $x^2$. For large values of $x$, which grows faster? This determines brightness scaling."
+> **Grinchs Hinweis:** „Vergleicht $x^4$ mit $x^2$. Für große Werte von $x$, welche wächst schneller? Das bestimmt die Helligkeitsskalierung."
 
-**For $x > 1$, how does $x^4$ compare to $x^2$?**
+**Für $x > 1$, wie verhält sich $x^4$ im Vergleich zu $x^2$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="true"> $x^4$ grows much faster than $x^2$ </button>
-  <button class="quiz-option" data-correct="false"> $x^2$ grows much faster than $x^4$ </button>
-  <button class="quiz-option" data-correct="false"> They grow at the same rate </button>
-  <button class="quiz-option" data-correct="false"> Neither grows for $x > 1$ </button>
+  <button class="quiz-option" data-correct="true"> $x^4$ wächst viel schneller als $x^2$ </button>
+  <button class="quiz-option" data-correct="false"> $x^2$ wächst viel schneller als $x^4$ </button>
+  <button class="quiz-option" data-correct="false"> Sie wachsen mit der gleichen Rate </button>
+  <button class="quiz-option" data-correct="false"> Keine der beiden wächst für $x > 1$ </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Scale Brightness</button>
+  <button class="quiz-submit" disabled>Helligkeit skalieren</button>
 </div>
 :::
 
-**Lock 4: "The Asymptote Analysis"**
+**Schloss 4: „Die Asymptoten-Analyse"**
 
-A voltage regulator operates on $k(x) = x^{-1} = \frac{1}{x}$.
+Ein Spannungsregler arbeitet mit $k(x) = x^{-1} = \frac{1}{x}$.
 
-> **Grinch's Note:** "This function has asymptotes—lines the graph approaches but never touches. There's one vertical and one horizontal. Identify the vertical one."
+> **Grinchs Hinweis:** „Diese Funktion hat Asymptoten—Linien, denen sich der Graph nähert, aber nie berührt. Es gibt eine vertikale und eine horizontale. Identifiziert die vertikale."
 
-**What is the vertical asymptote of $k(x) = \frac{1}{x}$?**
+**Was ist die vertikale Asymptote von $k(x) = \frac{1}{x}$?**
 
 ::: {.puzzle-box}
-**Enter the vertical asymptote (as x = ?):**
+**Gebt die vertikale Asymptote ein (als x = ?):**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="0">Regulate Voltage</button>
+  <button class="quiz-submit" disabled data-answer="0">Spannung regulieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You submit your power function analysis:
+Ihr reicht eure Potenzfunktions-Analyse ein:
 
-- Domain of $\sqrt{x}$: $x \geq 0$ ✓
-- Fractional exponent: Odd root (3) allows negative inputs ✓
-- Growth comparison: $x^4$ grows faster than $x^2$ for large $x$ ✓
-- Asymptote: Vertical at $x = 0$ ✓
+- Definitionsbereich von $\sqrt{x}$: $x \geq 0$ ✓
+- Gebrochener Exponent: Ungerade Wurzel (3) erlaubt negative Eingaben ✓
+- Wachstumsvergleich: $x^4$ wächst schneller als $x^2$ für große $x$ ✓
+- Asymptote: Vertikal bei $x = 0$ ✓
 
-The lighting control systems respond immediately. Throughout Hamburg, Christmas lights begin to flicker on—first the Rathausmarkt tree, then the Jungfernstieg promenade, then street by street.
+Die Beleuchtungssteuerungssysteme reagieren sofort. In ganz Hamburg beginnen die Weihnachtslichter aufzuflackern—zuerst der Rathausmarkt-Baum, dann die Jungfernstieg-Promenade, dann Straße für Straße.
 
-From the control center windows, you watch Hamburg transform. The dark city becomes a glowing wonderland of festive lights reflecting off the Elbe.
+Von den Fenstern des Kontrollzentrums aus beobachtet ihr Hamburgs Transformation. Die dunkle Stadt wird zu einem leuchtenden Wunderland festlicher Lichter, die sich in der Elbe spiegeln.
 
-The Grinch watches the same transformation from his office. When he speaks, his voice is quieter:
+Der Grinch beobachtet dieselbe Transformation von seinem Büro aus. Als er spricht, ist seine Stimme leiser:
 
-> **#lighting-restored**
+> **#beleuchtung-wiederhergestellt**
 >
-> "Beautiful, isn't it? I'd forgotten.
+> „Schön, nicht wahr? Ich hatte es vergessen.
 >
-> The lights are back. The markets are open. Hamburg is celebrating.
+> Die Lichter sind zurück. Die Märkte sind offen. Hamburg feiert.
 >
-> But I should warn you about tomorrow. Day 20 involves my exponential failsafe systems. I built them... aggressively. There may be some complications.
+> Aber ich sollte euch vor morgen warnen. Tag 20 betrifft meine exponentiellen Ausfallsicherungssysteme. Ich habe sie... aggressiv gebaut. Es könnte einige Komplikationen geben.
 >
-> Four days left. Let's finish this properly."
+> Noch vier Tage. Lasst uns das ordentlich beenden."
 >
 > -- GR
 
-**Act IV Progress:**
+**Akt IV Fortschritt:**
 
-- ✓ Polynomial defenses cracked
-- ✓ Power function grid restored
-- ✓ Christmas markets operational
-- ✓ City lighting fully active
-- Exponential systems: Tomorrow (Warning issued)
-- Three final systems: Days 21-23
-- Master synthesis: Day 24
+- ✓ Polynom-Verteidigung geknackt
+- ✓ Potenzfunktions-Netz wiederhergestellt
+- ✓ Weihnachtsmärkte betriebsbereit
+- ✓ Stadtbeleuchtung voll aktiv
+- Exponentialsysteme: Morgen (Warnung ausgegeben)
+- Drei finale Systeme: Tage 21-23
+- Master-Synthese: Tag 24
 
-**Major Achievement:** Hamburg's Christmas lights restored!
+**Wichtiger Erfolg:** Hamburgs Weihnachtsbeleuchtung wiederhergestellt!
 
-**Time Remaining:** 5 days until Christmas Eve
+**Verbleibende Zeit:** 5 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

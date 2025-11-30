@@ -1,178 +1,178 @@
 ---
-title: "Day 22: The Asymptotic Boundaries"
+title: "Tag 22: Die asymptotischen Grenzen"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act IV: The Final Takeover
+## Akt IV: Die finale Übernahme
 
-### Location: Hamburg University of Applied Sciences - Advanced Mathematics Lab
+### Ort: Hamburger Hochschule für Angewandte Wissenschaften - Fortgeschrittenes Mathematik-Labor
 
-It's December 22nd. Christmas Eve is two days away. The transformation of Hamburg is nearly complete—markets open, lights glowing, mechanical systems operational.
+Es ist der 22. Dezember. Heiligabend ist in zwei Tagen. Die Transformation Hamburgs ist fast abgeschlossen—Märkte offen, Lichter leuchtend, mechanische Systeme betriebsbereit.
 
-The Grinch has invited you to your own university's advanced mathematics lab. "Fitting," he says, "that we should end where you study."
+Der Grinch hat euch in das fortgeschrittene Mathematik-Labor eingeladen. „Passend," sagt er, „dass wir dort enden sollten, wo gelernt wird."
 
-On the lab's main screen, complex graphs display rational functions—curves with asymptotes, holes, and discontinuities.
+Auf dem Hauptbildschirm des Labors zeigen komplexe Graphen rationale Funktionen—Kurven mit Asymptoten, Lücken und Unstetigkeiten.
 
-> "Rational functions. The mathematics of boundaries and limits.
+> „Rationale Funktionen. Die Mathematik der Grenzen und Grenzwerte.
 >
-> These describe systems with constraints—asymptotic limits that you can approach but never cross. Safety boundaries. Operational constraints. Mathematical walls.
+> Diese beschreiben Systeme mit Einschränkungen—asymptotische Grenzen, denen man sich nähern kann, die man aber nie überschreiten kann. Sicherheitsgrenzen. Betriebliche Einschränkungen. Mathematische Mauern.
 >
-> I built my final control systems using rational functions deliberately. They create invisible barriers. Too close to an asymptote, and behavior becomes unstable. Cross a discontinuity, and the system crashes.
+> Ich habe meine finalen Kontrollsysteme absichtlich mit rationalen Funktionen gebaut. Sie erzeugen unsichtbare Barrieren. Zu nah an einer Asymptote, und das Verhalten wird instabil. Überschreitet man eine Unstetigkeit, stürzt das System ab.
 >
-> Understanding these boundaries is essential for maintaining systems safely. It's engineering reality, not abstract mathematics.
+> Diese Grenzen zu verstehen ist wesentlich für die sichere Wartung von Systemen. Das ist Ingenieurswirklichkeit, keine abstrakte Mathematik.
 >
-> And honestly? I've learned something about boundaries myself recently. About lines that shouldn't be crossed. About limits that exist for good reasons."
+> Und ehrlich? Ich habe selbst kürzlich etwas über Grenzen gelernt. Über Linien, die nicht überschritten werden sollten. Über Grenzwerte, die aus gutem Grund existieren."
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Four rational function problems protecting Hamburg's final automated systems.
+Vier Aufgaben zu rationalen Funktionen, die Hamburgs finale automatisierte Systeme schützen.
 
-**System 1: "The Vertical Boundary"**
+**System 1: „Die vertikale Grenze"**
 
-The main automation system has operational limits described by:
+Das Hauptautomatisierungssystem hat Betriebsgrenzen, die beschrieben werden durch:
 
 $$f(x) = \frac{2x + 1}{x - 3}$$
 
-> **Grinch's Note:** "Every rational function has forbidden zones. Places it cannot go. Much like people, really. Find where this one fails."
+> **Grinchs Hinweis:** „Jede rationale Funktion hat verbotene Zonen. Orte, an die sie nicht gehen kann. Ähnlich wie Menschen, eigentlich. Findet heraus, wo diese versagt."
 
-**What is the vertical asymptote?**
+**Was ist die vertikale Asymptote?**
 
 ::: {.puzzle-box}
-**Enter the vertical asymptote (x = ?):**
+**Gebt die vertikale Asymptote ein (x = ?):**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="3">Define Safety Boundary</button>
+  <button class="quiz-submit" disabled data-answer="3">Sicherheitsgrenze definieren</button>
 </div>
 :::
 
-**System 2: "Hole or Asymptote?"**
+**System 2: „Lücke oder Asymptote?"**
 
-A secondary control system has the function:
+Ein sekundäres Kontrollsystem hat die Funktion:
 
 $$g(x) = \frac{x^2 - 4}{x - 2}$$
 
-> **Grinch's Note:** "Not all discontinuities are created equal. Some are catastrophic walls. Others are merely... absences. Gaps that could be filled if someone bothered. Which kind is this?"
+> **Grinchs Hinweis:** „Nicht alle Unstetigkeiten sind gleich. Manche sind katastrophale Mauern. Andere sind lediglich... Abwesenheiten. Lücken, die gefüllt werden könnten, wenn sich jemand die Mühe machen würde. Welche Art ist das?"
 
-**At $x = 2$, is there a hole or a vertical asymptote?**
+**Bei $x = 2$, gibt es eine Lücke oder eine vertikale Asymptote?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="true"> A hole </button>
-  <button class="quiz-option" data-correct="false"> A vertical asymptote </button>
-  <button class="quiz-option" data-correct="false"> Neither - the function is defined there </button>
-  <button class="quiz-option" data-correct="false"> Both simultaneously </button>
+  <button class="quiz-option" data-correct="true"> Eine Lücke </button>
+  <button class="quiz-option" data-correct="false"> Eine vertikale Asymptote </button>
+  <button class="quiz-option" data-correct="false"> Keines von beiden - die Funktion ist dort definiert </button>
+  <button class="quiz-option" data-correct="false"> Beides gleichzeitig </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Classify Discontinuity</button>
+  <button class="quiz-submit" disabled>Unstetigkeit klassifizieren</button>
 </div>
 :::
 
-**System 3: "The Horizontal Limit"**
+**System 3: „Die horizontale Grenze"**
 
-The Grinch's original cost analysis used:
+Die ursprüngliche Kostenanalyse des Grinchs verwendete:
 
 $$AC(x) = \frac{500 + 10x}{x}$$
 
-where $AC$ is average cost per household and $x$ is number of households.
+wobei $AC$ die durchschnittlichen Kosten pro Haushalt und $x$ die Anzahl der Haushalte ist.
 
-> **Grinch's Note:** "What happens when you scale to infinity? The fixed costs become irrelevant. The marginal becomes everything. I wish I'd understood that sooner."
+> **Grinchs Hinweis:** „Was passiert, wenn man ins Unendliche skaliert? Die Fixkosten werden irrelevant. Die marginalen Kosten werden alles. Ich wünschte, ich hätte das früher verstanden."
 
-**As $x \to \infty$, what value does $AC(x)$ approach?**
+**Wenn $x \to \infty$, welchem Wert nähert sich $AC(x)$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> Approaches 0 </button>
-  <button class="quiz-option" data-correct="true"> Approaches 10 </button>
-  <button class="quiz-option" data-correct="false"> Approaches infinity </button>
-  <button class="quiz-option" data-correct="false"> Approaches 500 </button>
+  <button class="quiz-option" data-correct="false"> Nähert sich 0 </button>
+  <button class="quiz-option" data-correct="true"> Nähert sich 10 </button>
+  <button class="quiz-option" data-correct="false"> Nähert sich unendlich </button>
+  <button class="quiz-option" data-correct="false"> Nähert sich 500 </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Model Scaling Behavior</button>
+  <button class="quiz-submit" disabled>Skalierungsverhalten modellieren</button>
 </div>
 :::
 
-**System 4: "The Hidden Equivalence"**
+**System 4: „Die versteckte Äquivalenz"**
 
-Two control systems must synchronize:
+Zwei Kontrollsysteme müssen synchronisiert werden:
 
 $$h(x) = \frac{x^2 + x - 6}{x + 3}$$
 
-and the linear function $y = x - 2$.
+und die lineare Funktion $y = x - 2$.
 
-> **Grinch's Note:** "Factor the numerator of $h(x)$. You'll find $(x+3)(x-2)$. Then simplify. What do you notice about the relationship between these functions?"
+> **Grinchs Hinweis:** „Faktorisiert den Zähler von $h(x)$. Ihr werdet $(x+3)(x-2)$ finden. Dann vereinfacht. Was bemerkt ihr über die Beziehung zwischen diesen Funktionen?"
 
-**After simplification, how do $h(x)$ and $y = x - 2$ compare?**
+**Nach der Vereinfachung, wie vergleichen sich $h(x)$ und $y = x - 2$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> They intersect at exactly one point </button>
-  <button class="quiz-option" data-correct="false"> They never intersect </button>
-  <button class="quiz-option" data-correct="true"> They're identical except for one missing point </button>
-  <button class="quiz-option" data-correct="false"> They're parallel lines </button>
+  <button class="quiz-option" data-correct="false"> Sie schneiden sich in genau einem Punkt </button>
+  <button class="quiz-option" data-correct="false"> Sie schneiden sich nie </button>
+  <button class="quiz-option" data-correct="true"> Sie sind identisch bis auf einen fehlenden Punkt </button>
+  <button class="quiz-option" data-correct="false"> Sie sind parallele Geraden </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Synchronize Systems</button>
+  <button class="quiz-submit" disabled>Systeme synchronisieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You submit the rational function analysis:
+Ihr reicht die Analyse der rationalen Funktionen ein:
 
-- Vertical asymptote: $x = 3$ (forbidden operating point) ✓
-- At $x = 2$: Hole, not asymptote (factor cancels) ✓
-- Long-term average cost: Approaches €10 (economies of scale) ✓
-- Function comparison: Identical except for hole at $x = -3$ ✓
+- Vertikale Asymptote: $x = 3$ (verbotener Betriebspunkt) ✓
+- Bei $x = 2$: Lücke, keine Asymptote (Faktor kürzt sich) ✓
+- Langfristige Durchschnittskosten: Nähert sich 10 € (Skaleneffekte) ✓
+- Funktionsvergleich: Identisch bis auf Lücke bei $x = -3$ ✓
 
-The final automated control systems unlock. Hamburg's complete technical infrastructure is now under unified, rational control—with proper safety boundaries, understood discontinuities, and optimized scaling.
+Die finalen automatisierten Kontrollsysteme werden entsperrt. Hamburgs komplette technische Infrastruktur ist jetzt unter einheitlicher, rationaler Kontrolle—mit ordnungsgemäßen Sicherheitsgrenzen, verstandenen Unstetigkeiten und optimierter Skalierung.
 
-The Grinch stands and looks out the window at Hamburg, glowing with Christmas lights:
+Der Grinch steht auf und schaut aus dem Fenster auf Hamburg, das von Weihnachtslichtern leuchtet:
 
-> **#final-technical-barrier**
+> **#finale-technische-barriere**
 >
-> "That's it. The technical barriers are gone. Everything is unlocked, everything is operational.
+> „Das war's. Die technischen Barrieren sind weg. Alles ist entsperrt, alles ist betriebsbereit.
 >
-> You've solved every equation. Cracked every system. Proven every economic model wrong.
+> Ihr habt jede Gleichung gelöst. Jedes System geknackt. Jedes Wirtschaftsmodell widerlegt.
 >
-> Tomorrow is December 23rd. Christmas Eve is the day after.
+> Morgen ist der 23. Dezember. Heiligabend ist übermorgen.
 >
-> I have one final challenge—not a barrier, but a synthesis. Day 23 will unlock the monitoring systems with logarithms. And Day 24 will combine everything you've learned.
+> Ich habe eine letzte Herausforderung—keine Barriere, sondern eine Synthese. Tag 23 wird die Überwachungssysteme mit Logarithmen entsperren. Und Tag 24 wird alles kombinieren, was ihr gelernt habt.
 >
-> It's the difference between passing an exam and mastering a subject.
+> Es ist der Unterschied zwischen einer Prüfung bestehen und ein Fach beherrschen.
 >
-> Come to the Rathaus tomorrow morning. Let's end this the right way."
+> Kommt morgen früh zum Rathaus. Lasst uns das richtig beenden."
 >
 > -- G. Rinch
 
-**Act IV Progress:**
+**Akt IV Fortschritt:**
 
-- ✓ Polynomial defenses cracked
-- ✓ Power function grid restored
-- ✓ Exponential crisis resolved
-- ✓ Trigonometric systems operational
-- ✓ Rational boundaries defined
-- Logarithmic systems: Tomorrow
-- Master synthesis: Day 24
+- ✓ Polynom-Verteidigung geknackt
+- ✓ Potenzfunktions-Netz wiederhergestellt
+- ✓ Exponential-Krise gelöst
+- ✓ Trigonometrische Systeme betriebsbereit
+- ✓ Rationale Grenzen definiert
+- Logarithmische Systeme: Morgen
+- Master-Synthese: Tag 24
 
-**All technical infrastructure:** OPERATIONAL
+**Gesamte technische Infrastruktur:** BETRIEBSBEREIT
 
-**Time Remaining:** 2 days until Christmas Eve
+**Verbleibende Zeit:** 2 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

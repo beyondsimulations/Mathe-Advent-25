@@ -1,168 +1,168 @@
 ---
-title: "Day 15: The Profit Optimization"
+title: "Tag 15: Die Gewinnoptimierung"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act III: Business Model Analysis
+## Akt III: Geschäftsmodell-Analyse
 
-### Location: Hamburg Chamber of Commerce - Economic Modeling Center
+### Ort: Hamburger Handelskammer - Wirtschaftsmodellierungszentrum
 
-The economic review has moved to the Chamber of Commerce's modeling center, where businesses analyze profit curves and make data-driven decisions.
+Die Wirtschaftsprüfung ist ins Modellierungszentrum der Handelskammer umgezogen, wo Unternehmen Gewinnkurven analysieren und datengestützte Entscheidungen treffen.
 
-The Grinch has submitted a comprehensive quadratic analysis of Hamburg's toy manufacturing. His models show perfect parabolas—profits that rise, peak, and then decline into losses.
+Der Grinch hat eine umfassende quadratische Analyse der Hamburger Spielzeugherstellung eingereicht. Seine Modelle zeigen perfekte Parabeln—Gewinne, die steigen, einen Höhepunkt erreichen und dann in Verluste fallen.
 
-"This is why Christmas fails mathematically," he announces via video, pointing to a series of downward-opening parabolas. "Every business follows a quadratic profit function. And Hamburg's Christmas operations? They're already past the peak. They're in the LOSS zone."
+„Deshalb scheitert Weihnachten mathematisch," verkündet er per Video und zeigt auf eine Reihe nach unten geöffneter Parabeln. „Jedes Unternehmen folgt einer quadratischen Gewinnfunktion. Und Hamburgs Weihnachtsbetrieb? Sie haben den Höhepunkt bereits überschritten. Sie sind in der VERLUSTZONE."
 
-He takes a dramatic sip of what appears to be a €40 cold-pressed juice.
+Er nimmt einen dramatischen Schluck von etwas, das wie ein 40-Euro-Kaltgepresster-Saft aussieht.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Welcome to non-linear economics. Where the real world lives.
+> „Willkommen in der nichtlinearen Wirtschaft. Wo die echte Welt lebt.
 >
-> Linear models are fairy tales—they assume infinite growth. But reality is quadratic. Parabolic. Profits rise to a maximum vertex, then fall. It's called 'optimization,' and it's mathematically inevitable.
+> Lineare Modelle sind Märchen—sie gehen von unendlichem Wachstum aus. Aber die Realität ist quadratisch. Parabelförmig. Gewinne steigen zu einem maximalen Scheitelpunkt und fallen dann. Das nennt man ‚Optimierung', und es ist mathematisch unvermeidlich.
 >
-> My analysis shows Hamburg's Christmas toy production has PASSED its optimal point. You're producing too much, spending too much, and hemorrhaging money.
+> Meine Analyse zeigt, dass Hamburgs Weihnachtsspielzeugproduktion ihren optimalen Punkt ÜBERSCHRITTEN hat. Ihr produziert zu viel, gebt zu viel aus und verliert Geld.
 >
-> Prove me wrong. Find the vertex. Calculate the maximum. Show me Hamburg can optimize its way back to profitability.
+> Beweist mir das Gegenteil. Findet den Scheitelpunkt. Berechnet das Maximum. Zeigt mir, dass Hamburg sich zurück zur Profitabilität optimieren kann.
 >
-> If you can't, Christmas stays cancelled. It's just mathematics. Beautiful, cold, indifferent mathematics."
+> Wenn ihr das nicht könnt, bleibt Weihnachten abgesagt. Es ist nur Mathematik. Schöne, kalte, gleichgültige Mathematik."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Four quadratic optimization problems that will determine Hamburg's economic fate. The Grinch has titled them with his signature blend of smugness and business jargon.
+Vier quadratische Optimierungsprobleme, die Hamburgs wirtschaftliches Schicksal bestimmen werden. Der Grinch hat sie mit seiner charakteristischen Mischung aus Selbstgefälligkeit und Geschäftsjargon benannt.
 
-**Lock 1: "The Vertex of Destiny"**
+**Schloss 1: „Der Scheitelpunkt des Schicksals"**
 
-A Hamburg toy manufacturer has a profit function $P(x)$ (in thousands of euros) for selling $x$ hundreds of toys:
+Ein Hamburger Spielzeughersteller hat eine Gewinnfunktion $P(x)$ (in Tausend Euro) für den Verkauf von $x$ Hundert Spielzeugen:
 
 $$P(x) = -x^2 + 10x - 16$$
 
-> **Grinch's Note:** "I'm not giving you the formula. That's what lectures are for. If you actually paid attention in class instead of scrolling through your phone, this would take you about 30 seconds. The clock is ticking."
+> **Grinchs Hinweis:** „Ich gebe euch die Formel nicht. Dafür gibt es den Unterricht. Wenn ihr im Unterricht tatsächlich aufgepasst hättet, anstatt auf eurem Handy zu scrollen, würde euch das etwa 30 Sekunden kosten. Die Uhr tickt."
 
-**At what production level (x, in hundreds of toys) is profit maximized?**
+**Bei welchem Produktionsniveau (x, in Hundert Spielzeugen) ist der Gewinn maximal?**
 
 ::: {.puzzle-box}
-**Enter x:**
+**Gebt x ein:**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="5">Find Optimal Production</button>
+  <button class="quiz-submit" disabled data-answer="5">Optimale Produktion finden</button>
 </div>
 :::
 
-**Lock 2: "The Peak Profit Calculation"**
+**Schloss 2: „Die Maximalgewinn-Berechnung"**
 
-Using the same profit function:
+Mit derselben Gewinnfunktion:
 
 $$P(x) = -x^2 + 10x - 16$$
 
-> **Grinch's Note:** "You found the x-coordinate. Now find the y-coordinate. This is called 'substitution.' Kindergarteners can do this. Well, *smart* kindergarteners."
+> **Grinchs Hinweis:** „Ihr habt die x-Koordinate gefunden. Jetzt findet die y-Koordinate. Das nennt man ‚Einsetzen'. Kindergartenkinder können das. Naja, *kluge* Kindergartenkinder."
 
-**What is the maximum profit (in thousands of euros)?**
-
-::: {.puzzle-box}
-<div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> €5,000 </button>
-  <button class="quiz-option" data-correct="true"> €9,000 </button>
-  <button class="quiz-option" data-correct="false"> €16,000 </button>
-  <button class="quiz-option" data-correct="false"> €25,000 </button>
-</div>
-
-<div class="quiz-actions">
-  <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calculate Maximum Profit</button>
-</div>
-:::
-
-**Lock 3: "The Interpretation Gauntlet"**
-
-The Grinch claims the vertex represents "the point of inevitable decline." But what does the vertex ACTUALLY mean in business terms?
-
-> **Grinch's Note:** "I'm testing your comprehension, not your calculation. What does the vertex mean for the business? This is where most students reveal they memorized formulas without understanding them."
-
-**Which interpretation is correct?**
+**Wie hoch ist der maximale Gewinn (in Tausend Euro)?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> The business must shut down after 500 toys </button>
-  <button class="quiz-option" data-correct="false"> The business loses €9,000 at optimal production </button>
-  <button class="quiz-option" data-correct="true"> Producing exactly 500 toys yields maximum profit of €9,000 </button>
-  <button class="quiz-option" data-correct="false"> The business should produce as many toys as possible </button>
+  <button class="quiz-option" data-correct="false"> 5.000 € </button>
+  <button class="quiz-option" data-correct="true"> 9.000 € </button>
+  <button class="quiz-option" data-correct="false"> 16.000 € </button>
+  <button class="quiz-option" data-correct="false"> 25.000 € </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Submit Interpretation</button>
+  <button class="quiz-submit" disabled>Maximalgewinn berechnen</button>
 </div>
 :::
 
-**Lock 4: "The Geometry of Efficiency"**
+**Schloss 3: „Der Interpretations-Spießrutenlauf"**
 
-A gingerbread house production area has a perimeter constraint of 40 inches. What dimensions maximize the floor area?
+Der Grinch behauptet, der Scheitelpunkt repräsentiert „den Punkt des unvermeidlichen Rückgangs." Aber was bedeutet der Scheitelpunkt TATSÄCHLICH in wirtschaftlichen Begriffen?
 
-> **Grinch's Note:** "This is a classic problem. I've seen it stump entire MBA cohorts. You'd think people with business degrees would understand floor space, but you'd be wrong. Prove you're smarter than the average executive."
+> **Grinchs Hinweis:** „Ich teste euer Verständnis, nicht eure Rechenkunst. Was bedeutet der Scheitelpunkt für das Unternehmen? Hier zeigen die meisten Schüler, dass sie Formeln auswendig gelernt haben, ohne sie zu verstehen."
 
-**For maximum area with perimeter = 40, what is the length of each side?**
+**Welche Interpretation ist korrekt?**
 
 ::: {.puzzle-box}
-**Enter the dimension (in inches):**
-<input class="quiz-input" placeholder="? inches">
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Das Unternehmen muss nach 500 Spielzeugen schließen </button>
+  <button class="quiz-option" data-correct="false"> Das Unternehmen verliert 9.000 € bei optimaler Produktion </button>
+  <button class="quiz-option" data-correct="true"> Genau 500 Spielzeuge zu produzieren ergibt einen maximalen Gewinn von 9.000 € </button>
+  <button class="quiz-option" data-correct="false"> Das Unternehmen sollte so viele Spielzeuge wie möglich produzieren </button>
+</div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="10">Optimize Floor Space</button>
+  <button class="quiz-submit" disabled>Interpretation einreichen</button>
+</div>
+:::
+
+**Schloss 4: „Die Geometrie der Effizienz"**
+
+Eine Produktionsfläche für Lebkuchenhäuser hat eine Umfangsbeschränkung von 40 cm. Welche Maße maximieren die Bodenfläche?
+
+> **Grinchs Hinweis:** „Das ist ein klassisches Problem. Ich habe ganze BWL-Jahrgänge daran scheitern sehen. Man würde denken, Leute mit Wirtschaftsabschluss verstehen Flächen, aber da liegt man falsch. Beweist, dass ihr klüger seid als der durchschnittliche Manager."
+
+**Für maximale Fläche bei Umfang = 40, wie lang ist jede Seite?**
+
+::: {.puzzle-box}
+**Gebt die Seitenlänge ein (in cm):**
+<input class="quiz-input" placeholder="? cm">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="10">Bodenfläche optimieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You present your analysis to the Chamber of Commerce:
+Ihr präsentiert eure Analyse der Handelskammer:
 
-- **Optimal production:** 500 toys (vertex at x = 5) ✓
-- **Maximum profit:** €9,000 (achievable and sustainable) ✓
-- **Vertex interpretation:** Optimal operation point, NOT inevitable decline ✓
-- **Space optimization:** 10 × 10 inches (square maximizes area) ✓
+- **Optimale Produktion:** 500 Spielzeuge (Scheitelpunkt bei x = 5) ✓
+- **Maximalgewinn:** 9.000 € (erreichbar und nachhaltig) ✓
+- **Scheitelpunkt-Interpretation:** Optimaler Betriebspunkt, NICHT unvermeidlicher Rückgang ✓
+- **Flächenoptimierung:** 10 × 10 cm (Quadrat maximiert die Fläche) ✓
 
-Stadtrat Fischer nods enthusiastically. "So the Grinch's models aren't wrong—his INTERPRETATION is wrong?"
+Stadtrat Fischer nickt begeistert. „Also sind die Modelle des Grinchs nicht falsch—seine INTERPRETATION ist falsch?"
 
-"Exactly," you confirm. "He's claiming Hamburg is past the optimization point. But the mathematics shows Hamburg should operate AT the vertex—at 500 toys with €9,000 profit—not shut down entirely. The vertex isn't a point of decline. It's the optimal operating target."
+„Genau," bestätigt ihr. „Er behauptet, Hamburg habe den Optimierungspunkt überschritten. Aber die Mathematik zeigt, dass Hamburg AM Scheitelpunkt operieren sollte—bei 500 Spielzeugen mit 9.000 € Gewinn—und nicht komplett schließen. Der Scheitelpunkt ist kein Punkt des Rückgangs. Er ist das optimale Betriebsziel."
 
-The Grinch sets down his juice. His expression suggests he just realized his argument has a significant flaw.
+Der Grinch stellt seinen Saft ab. Sein Gesichtsausdruck deutet darauf hin, dass er gerade bemerkt hat, dass sein Argument einen erheblichen Fehler hat.
 
-> **#economic-analysis-update**
+> **#wirtschaftsanalyse-update**
 >
-> "...Fine. You understand vertex optimization. You can calculate maximum profit. You interpreted the quadratic model correctly.
+> „...Gut. Ihr versteht Scheitelpunkt-Optimierung. Ihr könnt den maximalen Gewinn berechnen. Ihr habt das quadratische Modell richtig interpretiert.
 >
-> But here's the thing about static models: they're fiction. Real economies don't stay frozen at a single point—they TRANSFORM over time. Costs shift up. Revenues compress. Inflation stretches everything. External factors change the entire shape of your precious profit curve.
+> Aber hier ist die Sache mit statischen Modellen: Sie sind Fiktion. Echte Wirtschaften bleiben nicht an einem einzigen Punkt eingefroren—sie TRANSFORMIEREN sich über die Zeit. Kosten verschieben sich nach oben. Einnahmen werden komprimiert. Inflation dehnt alles. Externe Faktoren ändern die gesamte Form eurer schönen Gewinnkurve.
 >
-> Tomorrow, let's discuss transformations. How external economic factors shift, stretch, and reflect your clean mathematical models into something messier. Something more real.
+> Morgen sprechen wir über Transformationen. Wie externe wirtschaftliche Faktoren eure sauberen mathematischen Modelle verschieben, strecken und spiegeln in etwas Unordentlicheres. Etwas Realistischeres.
 >
-> Let's see how you handle functions that move."
+> Mal sehen, wie ihr mit Funktionen umgeht, die sich bewegen."
 >
 > -- GR
 
-**Act III Progress:**
+**Akt III Fortschritt:**
 
-- ✓ Function fundamentals verified
-- ✓ Linear business models validated
-- ✓ Quadratic optimization mastered
-- Function transformations: Tomorrow
-- Economic validation: Nearly complete
+- ✓ Funktionsgrundlagen verifiziert
+- ✓ Lineare Geschäftsmodelle validiert
+- ✓ Quadratische Optimierung gemeistert
+- Funktionstransformationen: Morgen
+- Wirtschaftliche Validierung: Fast abgeschlossen
 
-**Status:** Quadratic models support optimal Christmas operations at vertex.
+**Status:** Quadratische Modelle unterstützen optimalen Weihnachtsbetrieb am Scheitelpunkt.
 
-**Time Remaining:** 9 days until Christmas Eve
+**Verbleibende Zeit:** 9 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

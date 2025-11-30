@@ -1,52 +1,52 @@
 ---
-title: "Day 8: The Storage Matrix"
-format: 
+title: "Tag 8: Die Lagermatrix"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act II: Reversing the Supply Chain
+## Akt II: Umkehrung der Lieferkette
 
-### Location: Warehouse B, Speicherstadt
+### Ort: Lagerhaus B, Speicherstadt
 
-Warehouse B is huge. It houses Hamburg's presents across multiple climate-controlled storage rooms, each optimized for different types of gifts: electronics, textiles, and perishable goods.
+Lagerhaus B ist riesig. Es beherbergt Hamburgs Geschenke in mehreren klimatisierten Lagerräumen, jeder optimiert für verschiedene Arten von Geschenken: Elektronik, Textilien und verderbliche Waren.
 
-You enter through a security checkpoint. Inside, the scale is overwhelming: a three-story atrium filled with automated storage racks extending in every direction.
+Ihr betretet es durch einen Sicherheits-Checkpoint. Drinnen ist das Ausmaß überwältigend: ein dreistöckiges Atrium voller automatisierter Lagerregale, die sich in alle Richtungen erstrecken.
 
-The Grinch appears on the monitor, looking like he's in the middle of a spa day. He has cucumber slices on his eyes.
+Der Grinch erscheint auf dem Monitor und sieht aus, als wäre er mitten in einem Spa-Tag. Er hat Gurkenscheiben auf den Augen.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Ugh. You again?
+> „Ugh. Ihr schon wieder?
 >
-> Welcome to Warehouse B. This is where I store the *really* tricky stuff.
+> Willkommen in Lagerhaus B. Hier lagere ich das *wirklich* knifflige Zeug.
 >
-> Warehouse A was simple algebra. Warehouse B is a **Multi-Variable Nightmare**. I've hidden presents in Room X, Room Y, and Room Z, and I've linked their door codes together. You can't open one without balancing the others.
+> Lagerhaus A war einfache Algebra. Lagerhaus B ist ein **Mehrvariablen-Albtraum**. Ich habe Geschenke in Raum X, Raum Y und Raum Z versteckt und ihre Türcodes miteinander verknüpft. Ihr könnt einen nicht öffnen, ohne die anderen auszugleichen.
 >
-> It's called 'Systems of Equations,' and honestly, it's too sophisticated for you.
+> Das nennt man ‚Gleichungssysteme', und ehrlich gesagt ist das zu anspruchsvoll für euch.
 >
-> Go ahead, try to balance the load. I bet you'll just trip the breaker and lock everything down permanently.
+> Macht nur, versucht die Last auszugleichen. Ich wette, ihr löst nur den Schutzschalter aus und sperrt alles dauerhaft.
 >
-> Now, if you'll excuse me, my cucumber slices are getting warm."
+> Und jetzt entschuldigt mich, meine Gurkenscheiben werden warm."
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three subsystems control Warehouse B's locks. You must solve systems of equations to find the hidden inventory.
+Drei Subsysteme steuern die Schlösser von Lagerhaus B. Ihr müsst Gleichungssysteme lösen, um das versteckte Inventar zu finden.
 
-**Task a) Inventory Distribution**
+**Aufgabe a) Inventarverteilung**
 
-The Grinch has split 150 confiscated presents between Room A and Room B.
+Der Grinch hat 150 beschlagnahmte Geschenke zwischen Raum A und Raum B aufgeteilt.
 
-* **Equation 1:** Total presents: $A + B = 150$
-* **Equation 2:** Room A has 20 more presents than Room B ($A = B + 20$)
+* **Gleichung 1:** Gesamtzahl der Geschenke: $A + B = 150$
+* **Gleichung 2:** Raum A hat 20 mehr Geschenke als Raum B ($A = B + 20$)
 
-> **Grinch's Note:** "Substitution method. If you're struggling, maybe take up knitting instead."
+> **Grinchs Hinweis:** „Einsetzungsverfahren. Wenn ihr Schwierigkeiten habt, fangt vielleicht lieber mit Stricken an."
 
-**Objective:** Find the exact number of presents in each room to override the lock.
+**Ziel:** Findet die genaue Anzahl der Geschenke in jedem Raum, um das Schloss zu überschreiben.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -58,19 +58,19 @@ The Grinch has split 150 confiscated presents between Room A and Room B.
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Unlock Rooms A & B</button>
+  <button class="quiz-submit" disabled>Räume A & B entsperren</button>
 </div>
 :::
 
-**Task b) Power Distribution System**
+**Aufgabe b) Stromverteilungssystem**
 
-The climate control for Sections X, Y, and Z is interlinked. You must solve for power levels ($x, y, z$) to prevent overheating.
+Die Klimasteuerung für die Sektionen X, Y und Z ist miteinander verknüpft. Ihr müsst die Leistungspegel ($x, y, z$) lösen, um Überhitzung zu verhindern.
 
 1. $x + y + z = 12$
 2. $2x - y + z = 7$
 3. $x + 2y - z = 6$
 
-> **Grinch's Note:** "Three equations, three unknowns. Elimination or substitution, your choice. I personally use elimination because it feels more aggressive. Like mathematically eliminating hope."
+> **Grinchs Hinweis:** „Drei Gleichungen, drei Unbekannte. Eliminationsverfahren oder Einsetzungsverfahren, eure Wahl. Ich persönlich verwende Elimination, weil es sich aggressiver anfühlt. Wie mathematisch Hoffnung eliminieren."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -82,60 +82,60 @@ The climate control for Sections X, Y, and Z is interlinked. You must solve for 
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Stabilize Power Grid</button>
+  <button class="quiz-submit" disabled>Stromnetz stabilisieren</button>
 </div>
 :::
 
-**Task c) Parallel Processing Paradox**
+**Aufgabe c) Das Parallelverarbeitungs-Paradoxon**
 
-The Grinch has set up two sorting lines that are graphically represented as **parallel lines**.
+Der Grinch hat zwei Sortierlinien eingerichtet, die grafisch als **parallele Geraden** dargestellt werden.
 
-> **Grinch's Note:** "Think about what that means for a system of equations. Same slope, different intercepts. The geometry tells you everything about the algebra. It's poetic, really. In a depressing way."
+> **Grinchs Hinweis:** „Denkt darüber nach, was das für ein Gleichungssystem bedeutet. Gleiche Steigung, verschiedene y-Achsenabschnitte. Die Geometrie sagt euch alles über die Algebra. Es ist poetisch, wirklich. Auf eine deprimierende Art."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> Infinite Solutions (Consistent) </button>
-  <button class="quiz-option" data-correct="false"> One Solution (Consistent) </button>
-  <button class="quiz-option" data-correct="true"> No Solution (Inconsistent) </button>
+  <button class="quiz-option" data-correct="false"> Unendlich viele Lösungen (Konsistent) </button>
+  <button class="quiz-option" data-correct="false"> Eine Lösung (Konsistent) </button>
+  <button class="quiz-option" data-correct="true"> Keine Lösung (Inkonsistent) </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Bypass Paradox</button>
+  <button class="quiz-submit" disabled>Paradoxon umgehen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You hit Enter.
+Ihr drückt Enter.
 
-The warehouse lights flicker from red to green. The massive doors to Rooms A, B, X, Y, and Z slide open. Inside, thousands of presents sit on shelves, waiting to be rescued.
+Die Lagerbeleuchtung flackert von Rot zu Grün. Die massiven Türen zu den Räumen A, B, X, Y und Z gleiten auf. Drinnen warten Tausende von Geschenken auf den Regalen darauf, gerettet zu werden.
 
-The Grinch appears on screen. He takes a bite of a cucumber slice.
+Der Grinch erscheint auf dem Bildschirm. Er beißt in eine Gurkenscheibe.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Crunchy.
+> „Knackig.
 >
-> Also, I hate you.
+> Außerdem hasse ich euch.
 >
-> You solved a 3-variable system? With elimination? Ugh. You're like a human calculator, but with less personality.
+> Ihr habt ein 3-Variablen-System gelöst? Mit Elimination? Ugh. Ihr seid wie ein menschlicher Taschenrechner, aber mit weniger Persönlichkeit.
 >
-> Fine. Warehouse B is compromised. But here's the thing about Warehouse C... it's not just robots. I have *people* working there. Human employees. And let's just say, human problems are rarely linear.
+> Gut. Lagerhaus B ist kompromittiert. Aber die Sache mit Lagerhaus C ist... da arbeiten nicht nur Roboter. Ich habe dort *Menschen* angestellt. Echte Mitarbeiter. Und sagen wir mal so, menschliche Probleme sind selten linear.
 >
-> Tomorrow, you'll face **Quadratic Equations**. Because nothing says 'I'm ruining your day' like parabolas.
+> Morgen werdet ihr euch **quadratischen Gleichungen** stellen. Denn nichts sagt ‚Ich ruiniere euren Tag' besser als Parabeln.
 >
-> Don't be late."
+> Seid nicht zu spät."
 > -- GR
 
-**System Status:**
+**Systemstatus:**
 
-* **Warehouse B:** UNLOCKED
-* **Inventory Recovered:** 4,200 units
-* **Total Rescued:** 6,700 / 15,000
+* **Lagerhaus B:** ENTSPERRT
+* **Wiederhergestelltes Inventar:** 4.200 Einheiten
+* **Insgesamt gerettet:** 6.700 / 15.000
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

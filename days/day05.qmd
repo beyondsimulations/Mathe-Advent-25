@@ -1,106 +1,106 @@
 ---
-title: "Day 5: The Logarithmic Vault"
-format: 
+title: "Tag 5: Der logarithmische Tresor"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act I: Infiltration
+## Akt I: Infiltration
 
-### Location: GrinchTech Backup Facility, Speicherstadt
+### Ort: GrinchTech-Backup-Einrichtung, Speicherstadt
 
-You push through the heavy doors into the backup facility. It smells of ozone and... stale kale smoothies?
+Ihr drückt die schweren Türen auf und betretet die Backup-Einrichtung. Es riecht nach Ozon und... abgestandenen Grünkohl-Smoothies?
 
-The room is a cavernous brick warehouse, but the center is dominated by **The Vault**. It’s an obnoxious cylinder of glass and chrome, glowing with a smug green light. Inside, you see the Holy Grail: *The Master Plan*. Physical files. Hard drives. A half-eaten sandwich labeled "Property of CEO."
+Der Raum ist ein riesiges Backsteinlagerhaus, aber im Zentrum dominiert **Der Tresor**. Es ist ein protziger Zylinder aus Glas und Chrom, der in einem selbstgefälligen grünen Licht leuchtet. Drinnen seht ihr den Heiligen Gral: *Der Masterplan*. Physische Akten. Festplatten. Ein halb aufgegessenes Sandwich mit der Aufschrift „Eigentum des CEO".
 
-You approach the terminal. It doesn't beep; it sighs. A holographic projection of the Grinch appears—not the scary version, but the annoyed, "this meeting could have been an email" version. He looks at you with deep exhaustion.
+Ihr nähert euch dem Terminal. Es piept nicht; es seufzt. Eine holografische Projektion des Grinchs erscheint—nicht die beängstigende Version, sondern die genervte „dieses Meeting hätte eine E-Mail sein können"-Version. Er schaut euch mit tiefer Erschöpfung an.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Oh, for the love of... You're *still* here?
+> „Oh, um Himmels willen... Ihr seid *immer noch* hier?
 >
-> I honestly thought the quadratic equations would bore you to death. Literally. I had the oxygen scrubbers set to 'Ennui.'
+> Ich dachte ehrlich, die quadratischen Gleichungen würden euch zu Tode langweilen. Buchstäblich. 
 >
-> Fine. You want into my private vault? You want to see how I plan to 'disrupt' your precious little holiday into a high-efficiency void of silence?
+> Gut. Ihr wollt in meinen privaten Tresor? Ihr wollt sehen, wie ich plane, euren wertvollen kleinen Feiertag in eine hocheffiziente Leere der Stille zu ‚disrupten'?
 >
-> Then prove you aren't just counting on your fingers. This is **Logarithmic Encryption**. It scales exponentially. Unlike your IQ, which seems to have plateaued somewhere around 'hamster.'
+> Dann beweist, dass ihr zum Rechnen nicht nur an euren Fingern zählt. Das hier ist **Logarithmische Verschlüsselung**. Sie skaliert exponentiell. Anders als euer IQ, der irgendwo bei ‚Hamster' stagniert zu haben scheint.
 >
-> Unlock these four tumblers. Or don't. I have a trapdoor scheduled to open in five minutes, and my crocodiles are hungry."
+> Entriegelt diese vier Schlösser. Oder nicht. Ich habe eine Falltür, die in fünf Minuten aufgeht, und meine Krokodile sind hungrig."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-The keypad glares at you. The Grinch has renamed the security layers to mock you.
+Das Tastenfeld starrt euch an. Der Grinch hat die Sicherheitsebenen umbenannt, um euch zu verspotten.
 
-**Lock 1: "The Toddler Test"**
+**Schloss 1: „Der Kleinkindtest"**
 
-The system demands a basic evaluation to see if you're worth its CPU cycles.
+Das System verlangt eine grundlegende Auswertung, um zu sehen, ob ihr seine Rechenleistung wert seid.
 
-$$\text{Evaluate: } \log_2(32)$$
+$$\text{Berechne: } \log_2(32)$$
 
-> **Grinch's Note:** "If you need to count on your fingers for this, I'm activating the trapdoor early. The crocodiles haven't been fed for a while."
+> **Grinchs Hinweis:** „Wenn ihr dafür an euren Fingern zählen müsst, aktiviere ich die Falltür früher. Die Krokodile wurden eine Weile nicht gefüttert."
 
 ::: {.puzzle-box}
-**Enter the value:**
+**Gebt den Wert ein:**
 <input class="quiz-input" placeholder="?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="5">Prove Sentience</button>
+  <button class="quiz-submit" disabled data-answer="5">Beweise Intelligenz</button>
 </div>
 :::
 
-**Lock 2: "Redundancy for Idiots"**
+**Schloss 2: „Redundanz für Anfänger"**
 
-The Grinch assumes you'll mess up the addition rule.
+Der Grinch nimmt an, dass ihr die Additionsregel vermasselt.
 
 $$\log_3(9) + \log_3(27)$$
 
-> **Grinch's Note:** "If you try to use a calculator for this, a small electric shock will be administered to your keyboard. I'm watching."
+> **Grinchs Hinweis:** „Wenn ihr versucht, dafür einen Taschenrechner zu benutzen, wird ein kleiner Stromschlag an eure Tastatur gesendet. Ich beobachte euch."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> $6$ (Nice try) </button>
-  <button class="quiz-option" data-correct="true"> $5$ (Acceptable) </button>
-  <button class="quiz-option" data-correct="false"> $\log_3(36)$ (Horrifyingly wrong) </button>
-  <button class="quiz-option" data-correct="false"> $9$ (Just go home) </button>
+  <button class="quiz-option" data-correct="false"> $6$ (Netter Versuch) </button>
+  <button class="quiz-option" data-correct="true"> $5$ (Akzeptabel) </button>
+  <button class="quiz-option" data-correct="false"> $\log_3(36)$ (Erschreckend falsch) </button>
+  <button class="quiz-option" data-correct="false"> $9$ (Geht einfach nach Hause) </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Submit Answer</button>
+  <button class="quiz-submit" disabled>Antwort einreichen</button>
 </div>
 :::
 
-**Lock 3: "The Panic Inducer"**
+**Schloss 3: „Der Panikauslöser"**
 
-A red countdown timer appears. It's moving uncomfortably fast.
+Ein roter Countdown-Timer erscheint. Er läuft unangenehm schnell.
 
-$$\text{Solve for } x \text{ before the crocodiles are released: } \quad 5^x = 125$$
+$$\text{Löse nach } x \text{ auf, bevor die Krokodile freigelassen werden: } \quad 5^x = 125$$
 
-> **Grinch's Note:** "The clock is real. The crocodiles are real. Tick tock. They can hear your heartbeat through the floor sensors."
+> **Grinchs Hinweis:** „Die Uhr ist echt. Die Krokodile sind echt. Tick-tack. Sie können euren Herzschlag durch die Bodensensoren hören."
 
 ::: {.puzzle-box}
-**Enter x:**
+**Gebt x ein:**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="3">Stop the Timer</button>
+  <button class="quiz-submit" disabled data-answer="3">Timer stoppen</button>
 </div>
 :::
 
-**Lock 4: "The Ego check"**
+**Schloss 4: „Der Ego-Check"**
 
-The final lock uses Base-4, just because the Grinch prefers it.
+Das letzte Schloss verwendet Basis-4, nur weil der Grinch das bevorzugt.
 
-$$\text{Compute: } \log_4(64)$$
+$$\text{Berechne: } \log_4(64)$$
 
-> **System Note:** "Most people fail here. Try not to be most people."
+> **Systemhinweis:** „Die meisten Leute scheitern hier. Versucht, nicht wie die meisten Leute zu sein."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -112,45 +112,36 @@ $$\text{Compute: } \log_4(64)$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Open the Vault</button>
+  <button class="quiz-submit" disabled>Tresor öffnen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You punch in the final code. The vault lets out a disappointed groan, as if it can't believe you actually got it right. The glass slides open.
+Ihr gebt den letzten Code ein. Der Tresor stöhnt enttäuscht auf, als könnte er nicht glauben, dass ihr es tatsächlich richtig gemacht habt. Das Glas gleitet zur Seite.
 
-You grab the **Master Plan**. It's worse than you thought.
-* **Protocol "Silent Night":** Using drones to absorb sound waves from carolers.
-* **Project "Coal":** Converting all chocolate Santas into 99% dark cacao (the bitter kind).
-* **The Algorithm:** A code designed to auto-cancel holiday flight reservations randomly.
+Ihr schnappt euch den **Masterplan**. Es ist schlimmer als gedacht.
 
-Suddenly, the giant screen flickers. The Grinch appears again. He's holding a green juice and looking at his watch.
+* **Protokoll „Stille Nacht":** Einsatz von Drohnen, um Schallwellen von Weihnachtssängern zu absorbieren.
+* **Projekt „Kohle":** Umwandlung aller Schokoladen-Weihnachtsmänner in 99% dunklen Kakao (die bittere Sorte).
+* **Der Algorithmus:** Ein Code, der zufällig Flugbuchungen für die Feiertage automatisch storniert.
 
-> **Live feed - GrinchTech Executive Suite**
+Plötzlich flackert der riesige Bildschirm. Der Grinch erscheint wieder. Er hält einen grünen Saft und schaut auf seine Uhr.
+
+> **Live-Übertragung - GrinchTech Chefetage**
 >
-> "Ugh. The alarm. It's so loud. Can you hear that? I composed it myself. It's called 'The Sound of Your Futility.'
+> Also, ihr habt meine Dateien. Bravo. Ihr habt Logarithmen verstanden. Möchtet ihr eine Teilnahme-Trophäe?
 >
-> So, you have my files. Bravo. You figured out logarithms. Would you like a participation trophy? I 3D-printed some, but I threw them in the Elbe.
+> Schaut, ihr habt die Daten, aber ihr habt nicht die *Schlüssel*. Meine Lieferkette ist mit Mathematik verschlüsselt, die so nervig, so mühsam ist, dass ihr euch wünschen werdet, wieder im Mathematik-Unterricht zu sein.
 >
-> Look, you have the data, but you don't have the *keys*. My supply chain is encrypted with math so annoying, so tedious, that you'll wish you were back in algebra class.
->
-> Go ahead. Try to fix Christmas. I'll be here, shorting the stock market on tinsel companies.
->
-> Toodles."
+> Macht nur weiter. Versucht, Weihnachten zu retten. Ich werde hier sein und auf Lametta-Aktien spekulieren."
 >
 > -- GR
 
-The screen cuts to black. You have the files. You have a headache. And you have a very angry Grinch to stop.
+Der Bildschirm wird schwarz. Ihr habt die Dateien. Ihr habt Kopfschmerzen. Und ihr habt einen sehr wütenden Grinch aufzuhalten.
 
-**Critical Intel Acquired:**
-
-- ✓ The Grinch's Ego (It's massive)
-- ✓ Master Plan Files
-- ✓ Knowledge that he drinks Kale Smoothies
-
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

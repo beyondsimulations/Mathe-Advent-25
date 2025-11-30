@@ -1,129 +1,129 @@
 ---
-title: "Day 21: The Oscillating Systems"
+title: "Tag 21: Die oszillierenden Systeme"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act IV: The Final Takeover
+## Akt IV: Die finale Übernahme
 
-### Location: Hamburg Port Authority - Mechanical Systems
+### Ort: Hamburger Hafenbehörde - Mechanische Systeme
 
-After last night's crisis, the mood has shifted. The Grinch is no longer an adversary—he's a collaborator, working alongside you to restore Hamburg's Christmas systems.
+Nach der Krise letzte Nacht hat sich die Stimmung verändert. Der Grinch ist nicht mehr ein Gegner—er ist ein Mitarbeiter, der an eurer Seite arbeitet, um Hamburgs Weihnachtssysteme wiederherzustellen.
 
-Today: the mechanical infrastructure. The rotating Christmas pyramid at Jungfernstieg, the swinging decorations on the Elbe bridges, the precise timing systems for advent displays.
+Heute: die mechanische Infrastruktur. Die rotierende Weihnachtspyramide am Jungfernstieg, die schwingenden Dekorationen an den Elbbrücken, die präzisen Zeitsysteme für Adventsanzeigen.
 
-All are controlled by trigonometric functions—the mathematics of circular motion, waves, and periodic behavior.
+Alle werden durch trigonometrische Funktionen gesteuert—die Mathematik der Kreisbewegung, Wellen und periodischen Verhaltensweisen.
 
-The Grinch meets you at the Port Authority's mechanical engineering center. He looks tired, but different. More human.
+Der Grinch trifft euch im Maschinenbau-Zentrum der Hafenbehörde. Er sieht müde aus, aber anders. Menschlicher.
 
-> "Trigonometric functions. The mathematics of cycles and circles.
+> „Trigonometrische Funktionen. Die Mathematik der Zyklen und Kreise.
 >
-> I've been thinking about these all night. Sine, cosine, tangent—they describe everything that repeats. Everything that comes back around. Everything that oscillates.
+> Ich habe die ganze Nacht darüber nachgedacht. Sinus, Kosinus, Tangens—sie beschreiben alles, was sich wiederholt. Alles, was zurückkehrt. Alles, was oszilliert.
 >
-> Perhaps there's a metaphor there. About second chances. About cycles of failure and redemption.
+> Vielleicht steckt da eine Metapher drin. Über zweite Chancen. Über Zyklen von Scheitern und Wiedergutmachung.
 >
-> ...But that's getting philosophical. Let's focus on the mechanical systems.
+> ...Aber das wird philosophisch. Lasst uns auf die mechanischen Systeme konzentrieren.
 >
-> Hamburg's Christmas has many moving parts. Literally. They all follow trigonometric patterns. Solve these, and the moving displays will operate again."
+> Hamburgs Weihnachten hat viele bewegliche Teile. Wörtlich. Sie alle folgen trigonometrischen Mustern. Löst diese, und die beweglichen Anzeigen werden wieder funktionieren."
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Four trigonometric problems controlling Hamburg's mechanical Christmas systems.
+Vier trigonometrische Aufgaben zur Steuerung von Hamburgs mechanischen Weihnachtssystemen.
 
-**System 1: "The Ornament Oscillation"**
+**System 1: „Die Ornament-Oszillation"**
 
-A large Christmas ornament hangs from the Köhlbrandbrücke, swinging in the wind. Its height $h$ (in meters) above the water is:
+Ein großes Weihnachtsornament hängt von der Köhlbrandbrücke und schwingt im Wind. Seine Höhe $h$ (in Metern) über dem Wasser ist:
 
 $$h(t) = 3 + 2\sin(t)$$
 
-> **Grinch's Note:** "Oscillation. Back and forth. High and low. The center isn't the answer—it's just where things return to between extremes. Like life, really."
+> **Grinchs Hinweis:** „Oszillation. Hin und her. Hoch und tief. Die Mitte ist nicht die Antwort—sie ist nur der Ort, zu dem die Dinge zwischen den Extremen zurückkehren. Wie das Leben, eigentlich."
 
-**What is the maximum height the ornament reaches?**
+**Welche maximale Höhe erreicht das Ornament?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> 3 meters </button>
-  <button class="quiz-option" data-correct="false"> 4 meters </button>
-  <button class="quiz-option" data-correct="true"> 5 meters </button>
-  <button class="quiz-option" data-correct="false"> 6 meters </button>
+  <button class="quiz-option" data-correct="false"> 3 Meter </button>
+  <button class="quiz-option" data-correct="false"> 4 Meter </button>
+  <button class="quiz-option" data-correct="true"> 5 Meter </button>
+  <button class="quiz-option" data-correct="false"> 6 Meter </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calibrate Oscillation</button>
+  <button class="quiz-submit" disabled>Oszillation kalibrieren</button>
 </div>
 :::
 
-**System 2: "The Verification"**
+**System 2: „Die Verifikation"**
 
-A security laser sweeps in a circle with coordinates:
+Ein Sicherheitslaser streicht in einem Kreis mit den Koordinaten:
 
 - $x(t) = 5\cos(t)$
 - $y(t) = 5\sin(t)$
 
-> **Grinch's Note:** "There's a beautiful identity hiding in circles. Something always equals one, no matter what. Find it, and the laser makes sense."
+> **Grinchs Hinweis:** „Es steckt eine schöne Identität in Kreisen. Etwas ergibt immer eins, egal was. Findet sie, und der Laser ergibt Sinn."
 
-**Is $x^2 + y^2 = 25$ true for all values of $t$?**
+**Ist $x^2 + y^2 = 25$ für alle Werte von $t$ wahr?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="true"> Yes, always </button>
-  <button class="quiz-option" data-correct="false"> No - it varies with $t$ </button>
-  <button class="quiz-option" data-correct="false"> Only when $t = 0$ </button>
-  <button class="quiz-option" data-correct="false"> Only for positive values of $t$ </button>
+  <button class="quiz-option" data-correct="true"> Ja, immer </button>
+  <button class="quiz-option" data-correct="false"> Nein - es variiert mit $t$ </button>
+  <button class="quiz-option" data-correct="false"> Nur wenn $t = 0$ </button>
+  <button class="quiz-option" data-correct="false"> Nur für positive Werte von $t$ </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Verify Laser Path</button>
+  <button class="quiz-submit" disabled>Laserpfad verifizieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You submit the trigonometric solutions:
+Ihr reicht die trigonometrischen Lösungen ein:
 
-- Ornament max height: 5 meters (3 + 2×1) ✓
-- Laser verification: Confirmed ✓
+- Ornament max. Höhe: 5 Meter (3 + 2×1) ✓
+- Laser-Verifikation: Bestätigt ✓
 
-Throughout Hamburg, mechanical Christmas systems activate. The rotating pyramid at Jungfernstieg begins its slow, mesmerizing turn. Swinging decorations move in perfect periodic motion. Advent calendar mechanisms tick forward with precise timing.
+In ganz Hamburg aktivieren sich mechanische Weihnachtssysteme. Die rotierende Pyramide am Jungfernstieg beginnt ihre langsame, faszinierende Drehung. Schwingende Dekorationen bewegen sich in perfekter periodischer Bewegung. Adventskalender-Mechanismen ticken mit präzisem Timing voran.
 
-The Grinch watches the monitors showing all systems operational:
+Der Grinch beobachtet die Monitore, die alle betriebsbereiten Systeme zeigen:
 
-> **#systems-restored**
+> **#systeme-wiederhergestellt**
 >
-> "Everything is moving again. Beautiful.
+> „Alles bewegt sich wieder. Wunderschön.
 >
-> You know, I built all these security systems thinking mathematics would protect my optimization. But you've used that same mathematics to dismantle everything I built.
+> Wisst ihr, ich habe all diese Sicherheitssysteme gebaut und gedacht, Mathematik würde meine Optimierung schützen. Aber ihr habt dieselbe Mathematik benutzt, um alles zu demontieren, was ich gebaut habe.
 >
-> Mathematics doesn't pick sides. It just... is. Truth that doesn't care about my agenda.
+> Mathematik wählt keine Seiten. Sie ist einfach... da. Wahrheit, die sich nicht um meine Agenda kümmert.
 >
-> Two more days. Rational functions tomorrow—the mathematics of boundaries. Then the logarithmic systems. And finally, Day 24: everything combined.
+> Noch zwei Tage. Morgen rationale Funktionen—die Mathematik der Grenzen. Dann die logarithmischen Systeme. Und schließlich, Tag 24: alles kombiniert.
 >
-> We're almost done. Let's finish this properly."
+> Wir sind fast fertig. Lasst uns das ordentlich beenden."
 >
 > -- G. Rinch
 
-**Act IV Progress:**
+**Akt IV Fortschritt:**
 
-- ✓ Polynomial defenses cracked
-- ✓ Power function grid restored
-- ✓ Exponential crisis resolved
-- ✓ Trigonometric systems operational
-- Rational boundaries: Tomorrow
-- Logarithmic systems: Day 23
-- Master synthesis: Day 24
+- ✓ Polynom-Verteidigung geknackt
+- ✓ Potenzfunktions-Netz wiederhergestellt
+- ✓ Exponential-Krise gelöst
+- ✓ Trigonometrische Systeme betriebsbereit
+- Rationale Grenzen: Morgen
+- Logarithmische Systeme: Tag 23
+- Master-Synthese: Tag 24
 
-**All mechanical Christmas systems:** ACTIVE
+**Alle mechanischen Weihnachtssysteme:** AKTIV
 
-**Time Remaining:** 3 days until Christmas Eve
+**Verbleibende Zeit:** 3 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

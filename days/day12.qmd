@@ -1,182 +1,182 @@
 ---
-title: "Day 12: The Ultimate Supply Chain Test"
+title: "Tag 12: Der ultimative Lieferketten-Test"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act II: Debugging the Supply Chain - FINALE
+## Akt II: Debugging der Lieferkette - FINALE
 
-### Location: Speicherstadt Coordination Center
+### Ort: Speicherstadt Koordinationszentrum
 
-It's late evening. Frau Weber's team has been working around the clock to prepare the warehouse distribution systems for final activation. Presents are organized, routes are planned, and delivery vehicles are ready.
+Es ist später Abend. Frau Webers Team hat rund um die Uhr gearbeitet, um die Lagerverteilungssysteme für die finale Aktivierung vorzubereiten. Geschenke sind organisiert, Routen sind geplant und Lieferfahrzeuge stehen bereit.
 
-But there's one final obstacle.
+Aber es gibt ein letztes Hindernis.
 
-The central coordination terminal—the master system that synchronizes all three warehouses and controls the actual distribution to Hamburg's Christmas markets—remains locked. The screen glows an obnoxious shade of green as the Grinch appears, looking irritatingly well-rested.
+Das zentrale Koordinationsterminal—das Master-System, das alle drei Lagerhäuser synchronisiert und die eigentliche Verteilung an Hamburgs Weihnachtsmärkte steuert—bleibt gesperrt. Der Bildschirm leuchtet in einem nervigen Grünton, als der Grinch erscheint und irritierend ausgeruht aussieht.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Well, well. Day 12. Halfway through your little crusade. Congratulations on making it this far. I'm genuinely surprised—I had a bet with my personal assistant that you'd give up by Day 8. I owe her a very expensive coffee machine now.
+> „Nun, nun. Tag 12. Halbzeit eures kleinen Kreuzzugs. Herzlichen Glückwunsch, dass ihr es so weit geschafft habt. Ich bin ehrlich überrascht—ich hatte mit meiner persönlichen Assistentin gewettet, dass ihr bis Tag 8 aufgebt. Ich schulde ihr jetzt eine sehr teure Kaffeemaschine.
 >
-> Let me be clear about what's at stake: This terminal controls the ACTUAL distribution of presents to Hamburg's markets. Not theoretical presents. Not warehouse-locked presents. Actual, physical, needs-to-move-before-Christmas presents.
+> Lasst mich klarstellen, was auf dem Spiel steht: Dieses Terminal steuert die TATSÄCHLICHE Verteilung von Geschenken an Hamburgs Märkte. Keine theoretischen Geschenke. Keine lagergesperrten Geschenke. Echte, physische, muss-vor-Weihnachten-bewegt-werden Geschenke.
 >
-> The locks? They're *application problems*. The kind where mathematics meets the real world and most students realize they should have paid attention in class.
+> Die Schlösser? Es sind *Anwendungsaufgaben*. Die Art, bei der Mathematik auf die echte Welt trifft und die meisten Schüler merken, dass sie im Unterricht hätten aufpassen sollen.
 >
-> Exponential functions. Mixture calculations. Integer optimization.
+> Exponentialfunktionen. Mischungsberechnungen. Ganzzahlige Optimierung.
 >
-> This is where equations stop being academic exercises and start being the difference between Christmas happening or not happening.
+> Hier hören Gleichungen auf, akademische Übungen zu sein, und werden zum Unterschied zwischen Weihnachten, das stattfindet, oder nicht stattfindet.
 >
-> No pressure. Except all the pressure."
+> Kein Druck. Außer allem Druck."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three complex, real-world problems stand between you and the complete restoration of Hamburg's supply chain. The Grinch has labeled them with his signature lack of modesty.
+Drei komplexe Probleme aus der echten Welt stehen zwischen euch und der vollständigen Wiederherstellung von Hamburgs Lieferkette. Der Grinch hat sie mit seiner charakteristischen Bescheidenheit benannt.
 
-**Lock 1: "The Logistics Nightmare"**
+**Schloss 1: „Der Logistik-Albtraum"**
 
-A supply train carrying essential Christmas materials is running late. Its distance traveled $D$ (in miles) is given by a function that combines exponential and linear components:
+Ein Versorgungszug mit wichtigen Weihnachtsmaterialien hat Verspätung. Seine zurückgelegte Strecke $D$ (in Kilometern) ist durch eine Funktion gegeben, die exponentielle und lineare Komponenten kombiniert:
 
 $$D(t) = 50 \cdot 2^{t/3} + 20t$$
 
-where $t$ is time in hours since departure. The train must reach $D = 320$ miles to arrive at Hamburg Hauptbahnhof on time.
+wobei $t$ die Zeit in Stunden seit der Abfahrt ist. Der Zug muss $D = 320$ km erreichen, um rechtzeitig am Hamburg Hauptbahnhof anzukommen.
 
-> **Grinch's Note:** "This equation doesn't solve nicely with algebra. You'll need to test integer values. I know, I know—trial and error feels beneath you. Welcome to real engineering, where elegant solutions are a luxury."
+> **Grinchs Hinweis:** „Diese Gleichung lässt sich nicht schön mit Algebra lösen. Ihr müsst ganzzahlige Werte testen. Ich weiß, ich weiß—Versuch und Irrtum fühlt sich unter eurer Würde an. Willkommen in der echten Ingenieurswelt, wo elegante Lösungen ein Luxus sind."
 
-**Determine** the time $t$ when the train reaches exactly 320 miles. Test integer values.
+**Bestimmt** die Zeit $t$, wann der Zug genau 320 km erreicht. Testet ganzzahlige Werte.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> $t = 4$ hours </button>
-  <button class="quiz-option" data-correct="false"> $t = 5$ hours </button>
-  <button class="quiz-option" data-correct="true"> $t = 6$ hours </button>
-  <button class="quiz-option" data-correct="false"> $t = 7$ hours </button>
+  <button class="quiz-option" data-correct="false"> $t = 4$ Stunden </button>
+  <button class="quiz-option" data-correct="false"> $t = 5$ Stunden </button>
+  <button class="quiz-option" data-correct="true"> $t = 6$ Stunden </button>
+  <button class="quiz-option" data-correct="false"> $t = 7$ Stunden </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calculate Arrival</button>
+  <button class="quiz-submit" disabled>Ankunft berechnen</button>
 </div>
 :::
 
-**Lock 2: "The Chemistry Department's Revenge"**
+**Schloss 2: „Die Rache der Chemieabteilung"**
 
-The warehouse's climate control system needs antifreeze for the heating units before they can safely distribute temperature-sensitive presents.
+Das Klimakontrollsystem des Lagerhauses braucht Frostschutzmittel für die Heizungsanlagen, bevor temperaturempfindliche Geschenke sicher verteilt werden können.
 
-> **Current Situation:**
+> **Aktuelle Situation:**
 >
-> - Existing solution: 10 liters at 20% antifreeze concentration
-> - Required concentration: 50% antifreeze
-> - Available: Pure antifreeze (100% concentration)
+> - Vorhandene Lösung: 10 Liter mit 20% Frostschutzmittel-Konzentration
+> - Erforderliche Konzentration: 50% Frostschutzmittel
+> - Verfügbar: Reines Frostschutzmittel (100% Konzentration)
 
-> **Grinch's Note:** "Mixture problems. The bane of every student who thought 'I'll never use algebra in real life.' Spoiler: you will. Frequently. Usually when the stakes are highest."
+> **Grinchs Hinweis:** „Mischungsaufgaben. Der Albtraum jedes Schülers, der dachte ‚Ich werde nie Algebra im echten Leben brauchen.' Spoiler: werdet ihr. Häufig. Normalerweise wenn am meisten auf dem Spiel steht."
 
-**How many liters of pure antifreeze must be added?**
+**Wie viele Liter reines Frostschutzmittel müssen hinzugefügt werden?**
 
 ::: {.puzzle-box}
-**Enter the amount (in liters):**
-<input class="quiz-input" placeholder="? liters">
+**Gebt die Menge ein (in Litern):**
+<input class="quiz-input" placeholder="? Liter">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="6">Mix the Solution</button>
+  <button class="quiz-submit" disabled data-answer="6">Lösung mischen</button>
 </div>
 :::
 
-**Lock 3: "The Integer Inquisition"**
+**Schloss 3: „Das Ganzzahl-Verhör"**
 
-The warehouse's final security lock is a classic integer puzzle embedded in the route optimization system:
+Das finale Sicherheitsschloss des Lagerhauses ist ein klassisches Ganzzahl-Rätsel, eingebettet in das Routenoptimierungssystem:
 
-> **Authentication Riddle:**
+> **Authentifizierungsrätsel:**
 >
-> "The product of two consecutive positive integers is 72. Enter the LARGER of the two integers."
+> „Das Produkt zweier aufeinanderfolgender positiver ganzer Zahlen ist 72. Gebt die GRÖSSERE der beiden Zahlen ein."
 
-> **Grinch's Note:** "I could have made this harder. I could have used three consecutive integers, or asked for the sum of squares, or required you to prove uniqueness. But it's Day 12 and I'm feeling generous. Don't get used to it."
+> **Grinchs Hinweis:** „Ich hätte das schwieriger machen können. Ich hätte drei aufeinanderfolgende Zahlen nehmen können, oder nach der Summe der Quadrate fragen, oder verlangen, dass ihr die Eindeutigkeit beweist. Aber es ist Tag 12 und ich fühle mich großzügig. Gewöhnt euch nicht daran."
 
 ::: {.puzzle-box}
-**Enter the larger integer:**
+**Gebt die größere Zahl ein:**
 <input class="quiz-input" placeholder="?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="9">Submit Authentication</button>
+  <button class="quiz-submit" disabled data-answer="9">Authentifizierung einreichen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You work through each problem methodically:
+Ihr arbeitet jedes Problem methodisch durch:
 
-- Train arrival: $t = 6$ hours (verified: $50 \cdot 2^{6/3} + 20(6) = 50 \cdot 4 + 120 = 320$ ✓)
-- Antifreeze needed: 6 liters (verified: $\frac{2 + 6}{10 + 6} = \frac{8}{16} = 50\%$ ✓)
-- Consecutive integers: 8 and 9 (verified: $8 \times 9 = 72$ ✓)
+- Zugankunft: $t = 6$ Stunden (überprüft: $50 \cdot 2^{6/3} + 20(6) = 50 \cdot 4 + 120 = 320$ ✓)
+- Benötigtes Frostschutzmittel: 6 Liter (überprüft: $\frac{2 + 6}{10 + 6} = \frac{8}{16} = 50\%$ ✓)
+- Aufeinanderfolgende Zahlen: 8 und 9 (überprüft: $8 \times 9 = 72$ ✓)
 
-You input the final answer. The terminal processes for what feels like an eternity. Then:
+Ihr gebt die finale Antwort ein. Das Terminal verarbeitet für eine gefühlte Ewigkeit. Dann:
 
-**FINAL AUTHORIZATION: GRANTED**
+**FINALE AUTORISIERUNG: ERTEILT**
 
-**SUPPLY CHAIN COORDINATION SYSTEM: UNLOCKED**
+**LIEFERKETTEN-KOORDINATIONSSYSTEM: ENTSPERRT**
 
-**DISTRIBUTION TO CHRISTMAS MARKETS: ENABLED**
+**VERTEILUNG AN WEIHNACHTSMÄRKTE: AKTIVIERT**
 
-Every screen in the coordination center lights up with green status indicators. Distribution routes activate. Delivery schedules populate. The entire supply chain—from warehouses to markets—is finally operational.
+Jeder Bildschirm im Koordinationszentrum leuchtet mit grünen Statusanzeigen auf. Verteilungsrouten aktivieren sich. Lieferpläne füllen sich. Die gesamte Lieferkette—von Lagerhäusern zu Märkten—ist endlich betriebsbereit.
 
-Frau Weber pulls up a map of Hamburg on the main screen. Green markers appear at every Christmas market location: Rathausmarkt, Jungfernstieg, Mönckebergstraße, Großneumarkt.
+Frau Weber ruft eine Karte von Hamburg auf dem Hauptbildschirm auf. Grüne Markierungen erscheinen an jedem Weihnachtsmarkt-Standort: Rathausmarkt, Jungfernstieg, Mönckebergstraße, Großneumarkt.
 
-"We can start deliveries tomorrow," she says, her voice thick with emotion. "The markets can physically reopen."
+„Wir können morgen mit den Lieferungen beginnen," sagt sie mit bewegter Stimme. „Die Märkte können physisch wiedereröffnen."
 
-A message appears on screen. The Grinch's expression is... complicated. Annoyed, certainly. But maybe something else underneath.
+Eine Nachricht erscheint auf dem Bildschirm. Der Gesichtsausdruck des Grinchs ist... kompliziert. Genervt, sicherlich. Aber vielleicht noch etwas anderes darunter.
 
 > **#status-update**
 >
-> "Fine. You win the supply chain.
+> „Gut. Ihr gewinnt die Lieferkette.
 >
-> **Current Status:**
+> **Aktueller Status:**
 >
-> - ✓ Warehouses: Permanently unlocked
-> - ✓ Presents: 15,000 units freed
-> - ✓ Distribution: Fully operational
-> - ✓ Delivery routes: Optimized
+> - ✓ Lagerhäuser: Dauerhaft entsperrt
+> - ✓ Geschenke: 15.000 Einheiten befreit
+> - ✓ Verteilung: Voll betriebsbereit
+> - ✓ Lieferrouten: Optimiert
 >
-> You've proven you can handle applied mathematics. Real-world problems. Logistics under pressure.
+> Ihr habt bewiesen, dass ihr angewandte Mathematik könnt. Probleme aus der echten Welt. Logistik unter Druck.
 >
-> But here's what you STILL haven't done: You haven't proven Christmas makes ECONOMIC sense.
+> Aber hier ist, was ihr NOCH NICHT getan habt: Ihr habt nicht bewiesen, dass Weihnachten WIRTSCHAFTLICH Sinn macht.
 >
-> My business model says Christmas is financially inefficient. Negative ROI. Measurable waste. I presented this analysis to the Hamburg City Council, and mathematically? I was convincing.
+> Mein Geschäftsmodell sagt, Weihnachten ist finanziell ineffizient. Negativer ROI. Messbare Verschwendung. Ich habe diese Analyse dem Hamburger Stadtrat präsentiert, und mathematisch? Ich war überzeugend.
 >
-> Days 13-17: Functions as Business Models.
+> Tage 13-17: Funktionen als Geschäftsmodelle.
 >
-> You're moving to Europa Passage. You're going to analyze profit functions, cost curves, and optimization problems. You're going to prove—mathematically—that Christmas markets are economically viable.
+> Ihr zieht zur Europa Passage um. Ihr werdet Gewinnfunktionen, Kostenkurven und Optimierungsprobleme analysieren. Ihr werdet beweisen—mathematisch—dass Weihnachtsmärkte wirtschaftlich tragfähig sind.
 >
-> The supply chain is yours. But the economy? That's still mine.
+> Die Lieferkette gehört euch. Aber die Wirtschaft? Die gehört noch mir.
 >
-> See you in the business district."
+> Wir sehen uns im Geschäftsviertel."
 >
 > -- GR
 
-**ACT II: SUPPLY CHAIN DEBUGGING - COMPLETE ✓**
+**AKT II: LIEFERKETTEN-DEBUGGING - ABGESCHLOSSEN ✓**
 
-**Major Achievements:**
+**Wichtige Erfolge:**
 
-- ✓ All three warehouses permanently unlocked
-- ✓ 15,000 presents freed from lockdown
-- ✓ Emergency failsafes deactivated
-- ✓ Re-encryption protocols cancelled
-- ✓ Distribution system fully operational
+- ✓ Alle drei Lagerhäuser dauerhaft entsperrt
+- ✓ 15.000 Geschenke aus der Sperrung befreit
+- ✓ Notfall-Ausfallsicherungen deaktiviert
+- ✓ Neu-Verschlüsselungsprotokolle abgebrochen
+- ✓ Verteilungssystem voll betriebsbereit
 
-**ACT III: BUSINESS MODEL ANALYSIS** - Begins Tomorrow
+**AKT III: GESCHÄFTSMODELL-ANALYSE** - Beginnt morgen
 
-**Next Challenge:** Prove Christmas is economically viable
+**Nächste Herausforderung:** Beweist, dass Weihnachten wirtschaftlich tragfähig ist
 
-**Time Remaining:** 12 days until Christmas Eve
+**Verbleibende Zeit:** 12 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

@@ -1,103 +1,103 @@
 ---
-title: "Day 17: The Reversibility Test"
+title: "Tag 17: Der Umkehrbarkeitstest"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act III: Business Model Analysis - FINALE
+## Akt III: Geschäftsmodell-Analyse - FINALE
 
-### Location: Hamburg City Council Chambers
+### Ort: Hamburger Rathaus, Plenarsaal
 
-It's the final day of the economic review. The full City Council has assembled, along with business leaders, market vendors, and economists. The decision will be made today: Does Christmas reopen, or does the Grinch's economic analysis stand?
+Es ist der letzte Tag der Wirtschaftsprüfung. Der gesamte Stadtrat hat sich versammelt, zusammen mit Wirtschaftsführern, Markthändlern und Ökonomen. Die Entscheidung wird heute fallen: Öffnet Weihnachten wieder, oder bleibt die Wirtschaftsanalyse des Grinchs bestehen?
 
-The Grinch appears on the main video screen. He's wearing a formal blazer. This is clearly the most effort he's put into his appearance all month.
+Der Grinch erscheint auf dem Hauptbildschirm. Er trägt ein formelles Sakko. Das ist eindeutig die größte Mühe, die er sich den ganzen Monat mit seinem Aussehen gegeben hat.
 
-"Today's test is different," he announces. "We're not just analyzing functions. We're asking whether my optimizations can be UNDONE."
+„Der heutige Test ist anders," verkündet er. „Wir analysieren nicht nur Funktionen. Wir fragen, ob meine Optimierungen RÜCKGÄNGIG gemacht werden können."
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Hamburg City Council. Honored Guests.
+> „Hamburger Stadtrat. Geehrte Gäste.
 >
-> We've spent days analyzing functions. Linear models. Quadratic optimization. Transformations. And these mathematical auditors have impressed me—I'll admit that much.
+> Wir haben Tage damit verbracht, Funktionen zu analysieren. Lineare Modelle. Quadratische Optimierung. Transformationen. Und diese mathematischen Prüfer haben mich beeindruckt—das gebe ich zu.
 >
-> But here's the ultimate test: REVERSIBILITY.
+> Aber hier ist der ultimative Test: UMKEHRBARKEIT.
 >
-> I've 'optimized' Christmas. I've transformed Hamburg's holiday operations through multiple mathematical functions—pricing changes, cost compressions, distribution reconfigurations. These transformations are COMPOSED—layered on top of each other.
+> Ich habe Weihnachten ‚optimiert'. Ich habe Hamburgs Feiertagsbetrieb durch mehrere mathematische Funktionen transformiert—Preisänderungen, Kostenkompressionen, Verteilungsumstellungen. Diese Transformationen sind VERKETTET—übereinander geschichtet.
 >
-> To truly restore Christmas, you need to REVERSE every transformation I've applied. Find the inverse functions. Decompose my layered optimizations.
+> Um Weihnachten wirklich wiederherzustellen, müsst ihr JEDE Transformation, die ich angewandt habe, UMKEHREN. Findet die Umkehrfunktionen. Zerlegt meine geschichteten Optimierungen.
 >
-> If you can't find the inverse functions, you can't restore original operations. Christmas stays optimized into non-existence.
+> Wenn ihr die Umkehrfunktionen nicht finden könnt, könnt ihr den Originalbetrieb nicht wiederherstellen. Weihnachten bleibt ins Nichts hinein optimiert.
 >
-> This is your final economic challenge."
+> Das ist eure finale wirtschaftliche Herausforderung."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three problems testing inverse functions and function composition—the mathematics of reversal.
+Drei Aufgaben testen Umkehrfunktionen und Funktionsverkettung—die Mathematik der Umkehrung.
 
-**Lock 1: "The Price Reversal Protocol"**
+**Schloss 1: „Das Preisumkehr-Protokoll"**
 
-The Grinch has converted Hamburg's hot chocolate pricing using the function:
+Der Grinch hat Hamburgs Preisgestaltung für heiße Schokolade mit der Funktion umgestellt:
 
 $$P(q) = 50 - 2q$$
 
-where $P$ is price in euros and $q$ is quantity sold.
+wobei $P$ der Preis in Euro und $q$ die verkaufte Menge ist.
 
-> **Grinch's Note:** "Vendors need the inverse: given a price, how many units are being sold? Swap variables, solve for the new dependent variable. This is function inversion 101. If you struggle here, the rest of this will be... painful."
+> **Grinchs Hinweis:** „Händler brauchen die Umkehrfunktion: Bei einem gegebenen Preis, wie viele Einheiten werden verkauft? Tauscht die Variablen, löst nach der neuen abhängigen Variable auf. Das ist Funktionsumkehrung 101. Wenn ihr hier Schwierigkeiten habt, wird der Rest... schmerzhaft."
 
-**Find the inverse function. What is the coefficient of $P$ when $q$ is expressed in terms of $P$?**
+**Findet die Umkehrfunktion. Wie lautet der Koeffizient von $P$, wenn $q$ durch $P$ ausgedrückt wird?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
   <button class="quiz-option" data-correct="false"> $-2$ </button>
-  <button class="quiz-option" data-correct="true"> $-0.5$ or $-1/2$ </button>
-  <button class="quiz-option" data-correct="false"> $+0.5$ </button>
+  <button class="quiz-option" data-correct="true"> $-0{,}5$ oder $-1/2$ </button>
+  <button class="quiz-option" data-correct="false"> $+0{,}5$ </button>
   <button class="quiz-option" data-correct="false"> $+2$ </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Reverse Pricing Model</button>
+  <button class="quiz-submit" disabled>Preismodell umkehren</button>
 </div>
 :::
 
-**Lock 2: "The Composition Conundrum"**
+**Schloss 2: „Das Verkettungsrätsel"**
 
-The Grinch's system applies TWO transformations in sequence:
+Das System des Grinchs wendet ZWEI Transformationen nacheinander an:
 
-- First transformation: $f(x) = 2x + 1$ (pricing adjustment)
-- Second transformation: $g(x) = x - 3$ (cost reduction)
+- Erste Transformation: $f(x) = 2x + 1$ (Preisanpassung)
+- Zweite Transformation: $g(x) = x - 3$ (Kostenreduzierung)
 
-> **Grinch's Note:** "Function composition. I've seen tears. It was delightful. Figure out which function goes where."
+> **Grinchs Hinweis:** „Funktionsverkettung. Ich habe Tränen gesehen. Es war entzückend. Findet heraus, welche Funktion wohin gehört."
 
-**Calculate $(f \circ g)(x)$. What is the constant term?**
+**Berechnet $(f \circ g)(x)$. Wie lautet die Konstante?**
 
 ::: {.puzzle-box}
-**Enter the constant term:**
-<input class="quiz-input" placeholder="constant = ?">
+**Gebt die Konstante ein:**
+<input class="quiz-input" placeholder="Konstante = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="-5">Compose Functions</button>
+  <button class="quiz-submit" disabled data-answer="-5">Funktionen verketten</button>
 </div>
 :::
 
-**Lock 3: "The Core Algorithm Inversion"**
+**Schloss 3: „Die Kern-Algorithmus-Umkehrung"**
 
-The Grinch's central "Christmas Optimization" algorithm is:
+Der zentrale „Weihnachtsoptimierungs"-Algorithmus des Grinchs ist:
 
 $$f(x) = x^3 + 8$$
 
-To restore original Christmas operations, you need the inverse function.
+Um den ursprünglichen Weihnachtsbetrieb wiederherzustellen, braucht ihr die Umkehrfunktion.
 
-> **Grinch's Note:** "Cubic inversion. If you remember that cube roots can handle negative numbers (unlike square roots), you might just survive this."
+> **Grinchs Hinweis:** „Kubische Umkehrung. Wenn ihr euch daran erinnert, dass Kubikwurzeln mit negativen Zahlen umgehen können (anders als Quadratwurzeln), könntet ihr das hier überleben."
 
-**What is the inverse function $f^{-1}(x)$?**
+**Wie lautet die Umkehrfunktion $f^{-1}(x)$?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -109,66 +109,66 @@ To restore original Christmas operations, you need the inverse function.
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Restore Original Algorithm</button>
+  <button class="quiz-submit" disabled>Original-Algorithmus wiederherstellen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You present the inverse functions to the City Council:
+Ihr präsentiert die Umkehrfunktionen dem Stadtrat:
 
-- **Price reversal:** $q(P) = 25 - \frac{P}{2}$ (coefficient of P is $-\frac{1}{2}$) ✓
-- **Function composition:** $(f \circ g)(x) = 2(x-3) + 1 = 2x - 5$ (constant is $-5$) ✓
-- **Core algorithm inverse:** $f^{-1}(x) = \sqrt[3]{x - 8}$ ✓
+- **Preisumkehrung:** $q(P) = 25 - \frac{P}{2}$ (Koeffizient von P ist $-\frac{1}{2}$) ✓
+- **Funktionsverkettung:** $(f \circ g)(x) = 2(x-3) + 1 = 2x - 5$ (Konstante ist $-5$) ✓
+- **Kern-Algorithmus-Umkehrung:** $f^{-1}(x) = \sqrt[3]{x - 8}$ ✓
 
-"This means," you explain to the Council, "that every transformation the Grinch applied can be mathematically reversed. His optimizations aren't permanent. His economic models aren't irreversible. Christmas CAN be restored to its original operational state."
+„Das bedeutet," erklärt ihr dem Rat, „dass jede Transformation, die der Grinch angewandt hat, mathematisch umgekehrt werden kann. Seine Optimierungen sind nicht dauerhaft. Seine Wirtschaftsmodelle sind nicht unumkehrbar. Weihnachten KANN in seinen ursprünglichen Betriebszustand zurückversetzt werden."
 
-Stadtrat Fischer stands. "The mathematics is clear. Every economic argument GrinchTech presented has been countered with rigorous analysis. I move that we approve the reopening of Hamburg's Christmas markets."
+Stadtrat Fischer steht auf. „Die Mathematik ist eindeutig. Jedes wirtschaftliche Argument, das GrinchTech präsentiert hat, wurde mit rigoroser Analyse widerlegt. Ich beantrage, dass wir die Wiedereröffnung von Hamburgs Weihnachtsmärkten genehmigen."
 
-The vote is unanimous: **APPROVED**.
+Die Abstimmung ist einstimmig: **GENEHMIGT**.
 
-The Grinch is silent for a long moment. Then, slowly, he nods.
+Der Grinch schweigt für einen langen Moment. Dann nickt er langsam.
 
-> **#final-assessment**
+> **#finale-bewertung**
 >
-> "You did it. You actually did it.
+> „Ihr habt es geschafft. Ihr habt es wirklich geschafft.
 >
-> Functions. Linear models. Quadratic optimization. Transformations. Inverses. Composition. You proved that Christmas is economically viable. That my optimization can be reversed. That the mathematics supports holiday operations.
+> Funktionen. Lineare Modelle. Quadratische Optimierung. Transformationen. Umkehrfunktionen. Verkettung. Ihr habt bewiesen, dass Weihnachten wirtschaftlich tragfähig ist. Dass meine Optimierung umgekehrt werden kann. Dass die Mathematik den Feiertagsbetrieb unterstützt.
 >
-> I... may have been wrong about the business case.
+> Ich... lag möglicherweise falsch mit dem Geschäftsmodell.
 >
-> But there's still a problem: My TECHNICAL infrastructure. The Christmas market control systems, the city lighting grid, the distribution algorithms—they're still locked behind my advanced mathematical protocols.
+> Aber es gibt noch ein Problem: Meine TECHNISCHE Infrastruktur. Die Weihnachtsmarkt-Steuerungssysteme, das städtische Beleuchtungsnetz, die Verteilungsalgorithmen—sie sind immer noch hinter meinen fortgeschrittenen mathematischen Protokollen gesperrt.
 >
-> You've won the economic argument. Now you need to win the TECHNICAL battle.
+> Ihr habt das wirtschaftliche Argument gewonnen. Jetzt müsst ihr die TECHNISCHE Schlacht gewinnen.
 >
-> Days 18-24: Advanced Functions and Final Systems. Polynomials. Exponential systems. Logarithmic controls. Rational functions. Everything I have left.
+> Tage 18-24: Fortgeschrittene Funktionen und finale Systeme. Polynome. Exponentialsysteme. Logarithmische Steuerungen. Rationale Funktionen. Alles, was ich noch habe.
 >
-> This is the endgame. If you can crack these, I'll release full control.
+> Das ist das Endspiel. Wenn ihr diese knacken könnt, gebe ich die volle Kontrolle frei.
 >
-> See you in the final act."
+> Wir sehen uns im finalen Akt."
 >
 > -- GR
 
-**ACT III: BUSINESS MODEL ANALYSIS - COMPLETE ✓**
+**AKT III: GESCHÄFTSMODELL-ANALYSE - ABGESCHLOSSEN ✓**
 
-**Major Achievement:** City Council unanimously approves Christmas market reopening
+**Wichtiger Erfolg:** Stadtrat genehmigt einstimmig die Wiedereröffnung der Weihnachtsmärkte
 
-**Progress Update:**
+**Fortschritts-Update:**
 
-- ✓ Mathematical foundations mastered
-- ✓ Equations & problem-solving complete
-- ✓ Supply chain operational
-- ✓ Economic viability PROVEN
-- Technical systems: Still locked
-- Market controls: Still offline
-- City lighting: Still dark
+- ✓ Mathematische Grundlagen gemeistert
+- ✓ Gleichungen & Problemlösung abgeschlossen
+- ✓ Lieferkette betriebsbereit
+- ✓ Wirtschaftliche Tragfähigkeit BEWIESEN
+- Technische Systeme: Noch gesperrt
+- Marktsteuerung: Noch offline
+- Stadtbeleuchtung: Noch dunkel
 
-**ACT IV: THE FINAL TAKEOVER** - Begins Tomorrow
+**AKT IV: DIE FINALE ÜBERNAHME** - Beginnt morgen
 
-**Time Remaining:** 7 days until Christmas Eve
+**Verbleibende Zeit:** 7 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

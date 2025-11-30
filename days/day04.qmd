@@ -1,44 +1,44 @@
 ---
-title: "Day 4: The Bridge Algorithm"
-format: 
+title: "Tag 4: Der Brücken-Algorithmus"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act I: Infiltration
+## Akt I: Infiltration
 
-### Location: Crossing to GrinchTech Backup Facility, Elbe River
+### Ort: Überquerung zur GrinchTech-Backup-Einrichtung, Elbe
 
-Unfortunately, Floor 3 was completely deserted—it looked as though all the staff had hastily fled and taken everything with them. However, some notes left behind reveal that the Grinch runs a backup data facility: a converted warehouse in the Speicherstadt district.
+Leider war Etage 3 komplett verlassen—es sah so aus, als hätten alle Mitarbeiter überstürzt die Flucht ergriffen und alles mitgenommen. Allerdings enthüllen einige zurückgelassene Notizen, dass der Grinch eine Backup-Dateneinrichtung betreibt: ein umgebautes Lagerhaus im Speicherstadt-Viertel.
 
-Standing at the Magellan-Terrassen, you look across the dark water. A sleek, modern bridge has been constructed, presumably for GrinchTech's private use. But as you approach, a holographic barrier shimmers into existence, and a familiar message appears on a floating display screen:
+Ihr steht an den Magellan-Terrassen und blickt über das dunkle Wasser. Eine schlanke, moderne Brücke wurde gebaut, vermutlich für den privaten Gebrauch von GrinchTech. Aber als ihr euch nähert, schimmert eine holografische Barriere auf, und eine vertraute Nachricht erscheint auf einem schwebenden Display:
 
-> **Private GrinchTech Infrastructure - Access Restricted**
+> **Private GrinchTech-Infrastruktur - Zugang beschränkt**
 >
-> Oh, you found my private bridge. Congratulations on basic reconnaissance. I'm sure your GPS is very proud of you.
+> Oh, ihr habt meine Brücke gefunden. Herzlichen Glückwunsch. Euer GPS ist bestimmt sehr stolz auf euch.
 >
-> But this isn't just a bridge—it's a *smart* structure. I paid seven figures for this thing. Every support beam, every cable tension, every load calculation is controlled by advanced polynomial algorithms. The engineering team that built it won awards. Then I made them sign NDAs so aggressive their grandchildren can't discuss mathematics.
+> Aber das ist nicht einfach eine Brücke—es ist eine *smarte* Konstruktion. Ich habe einen siebenstelligen Betrag dafür bezahlt. Jeder Stützbalken, jede Kabelspannung, jede Lastberechnung wird von fortgeschrittenen polynomialen Algorithmen gesteuert. Das Ingenieurteam, das sie gebaut hat, hat Preise gewonnen. Dann habe ich sie Geheimhaltungsvereinbarungen unterschreiben lassen, die so aggressiv sind, dass selbst ihre Enkelkinder keine Mathematik mehr diskutieren dürfen.
 >
-> These problems are harder than anything you've seen. The AC method. Polynomial grouping. The difference of cubes—which, fun fact, 83% of engineering students get wrong on their first attempt. I have the statistics. I commissioned a study. For fun.
+> Diese Aufgaben sind schwieriger als alles, was ihr bisher gesehen habt. Die AC-Methode. Polynomgruppierung. Die Differenz von Kuben—was, lustige Tatsache, 83% der Ingenieurstudenten beim ersten Versuch falsch machen. Ich habe die Statistiken und ich habe eine Studie in Auftrag gegeben. Zum Spaß.
 >
-> Get it wrong, and the bridge calculates that you're structurally inconvenient. The Elbe is about 4°C this time of year. I'm told hypothermia sets in within minutes. Not that I'd know personally. I take a helicopter.
+> Macht es falsch, und die Brücke berechnet, dass ihr strukturell nicht tragbar seid. Die Elbe hat um diese Jahreszeit etwa 4°C. Man sagt mir, Unterkühlung setzt innerhalb von Minuten ein. Nicht dass ich das persönlich wüsste.
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three control panels block your path, each representing a critical structural algorithm.
+Drei Bedienfelder blockieren euren Weg, jedes repräsentiert einen kritischen Strukturalgorithmus.
 
-**Task a) Main Support Beam Calculation**
+**Aufgabe a) Hauptstützbalken-Berechnung**
 
-The load-bearing capacity of the bridge's primary beam is determined by the quadratic expression $6x^2 + 19x + 10$.
+Die Tragfähigkeit des primären Balkens der Brücke wird durch den quadratischen Ausdruck $6x^2 + 19x + 10$ bestimmt.
 
-> **Grinch's Note:** "The AC method. Most students give up here and guess. The bridge can tell when you're guessing. It judges you."
+> **Grinchs Hinweis:** „Die meisten Schüler geben hier auf und raten. Die Brücke merkt, wenn ihr ratet. Sie urteilt über euch."
 
-The system requires this expression to be broken down into its component factors (using the AC Method) to distribute the load properly.
+Das System erfordert, dass dieser Ausdruck in seine Faktorkomponenten zerlegt wird, um die Last richtig zu verteilen.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -50,16 +50,16 @@ The system requires this expression to be broken down into its component factors
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calibrate Beam</button>
+  <button class="quiz-submit" disabled>Balken kalibrieren</button>
 </div>
 :::
 
-**Task b) Cable Tension Distribution**
+**Aufgabe b) Kabelspannungsverteilung**
 
-The bridge's suspension cables follow a complex 4-term polynomial representing frost stress along the Elbe:
+Die Hängekabel der Brücke folgen einem komplexen 4-Term-Polynom, das den Froststress der Elbe auf die Brücke repräsentiert:
 $$x^3 + 2x^2 - 9x - 18$$
 
-> **Grinch's Note:** Yes, that thing you probably slept through in lecture. The cables are waiting. So is gravity."
+> **Grinchs Hinweis:** „Ja, das Ding, das ihr wahrscheinlich in der Schule verschlafen habt. Die Kabel warten. Die Schwerkraft auch."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -71,18 +71,18 @@ $$x^3 + 2x^2 - 9x - 18$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Adjust Tension</button>
+  <button class="quiz-submit" disabled>Spannung anpassen</button>
 </div>
 :::
 
-**Task c) Foundation Stress Test**
+**Aufgabe c) Fundamentbelastungstest**
 
-The bridge's foundation pillars are engineered using a sum/difference of cubes formula. The display shows:
+Die Fundamentpfeiler der Brücke sind mit einer anderen Formel konstruiert. Das Display zeigt:
 $$8y^3 - 27$$
 
-> **Grinch's Note:** "Difference of cubes. There's a formula. If you don't know it, you should. If you memorized it wrong, the Elbe awaits. It's scenic this time of year. Cold, but scenic."
+> **Grinchs Hinweis:** „Differenz von Kuben. Es gibt eine Formel. Wenn ihr sie nicht kennt, solltet ihr. Wenn ihr sie falsch auswendig gelernt habt, wartet die Elbe."
 
-**Factorize** this expression to verify structural stability.
+**Faktorisiert** diesen Ausdruck, um die strukturelle Stabilität zu überprüfen.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -94,40 +94,38 @@ $$8y^3 - 27$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Verify Foundation</button>
+  <button class="quiz-submit" disabled>Fundament verifizieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-As you enter the final factorization, the holographic barrier flickers and dissolves. The bridge's smart surface lights up beneath your feet, glowing green to indicate stable load distribution. You begin crossing toward the Speicherstadt.
+Als ihr die letzte Faktorisierung eingebt, flackert die holografische Barriere und löst sich auf. Die smarte Oberfläche der Brücke leuchtet unter euren Füßen auf und glüht grün, um stabile Lastverteilung anzuzeigen. Ihr beginnt die Überquerung Richtung Speicherstadt.
 
-Halfway across, your phone buzzes:
+Auf halbem Weg vibriert euer Handy:
 
-> **#engineering-urgent**
+> **#technik-dringend**
 >
-> They factored the bridge algorithms. All of them. AC method, grouping, difference of cubes. I'm genuinely annoyed. That bridge has stopped seventeen people this month alone. One of them was a professor. He had tenure and everything. Still failed.
+> Sie haben die Brücken-Algorithmen faktorisiert. Alle. Ich bin ehrlich genervt. Diese Brücke hat allein diesen Monat siebzehn Leute gestoppt. Einer davon war ein Professor. Er hatte sogar eine Festanstellung. Trotzdem durchgefallen.
 >
-> Fine. They can cross. I hope they enjoyed the view, because my backup facility is protected by logarithmic security. Do you know what logarithms are? They're what happens when exponentials have a midlife crisis and decide to work backwards. Most people's brains simply refuse to cooperate.
->
-> They won't crack the vault. I guarantee it. And my guarantees come with a money-back offer I've never had to honor.
+> Gut. Sie können rübergehen. Ich hoffe, sie haben die Aussicht genossen, denn meine Backup-Einrichtung ist durch logarithmische Sicherheit geschützt. Wisst ihr, was Logarithmen sind? 
 >
 > -- GR
 
-Ahead, the converted warehouse looms—a modern glass extension grafted onto a historic brick building. The sign reads: **GrinchTech Data Vault - Authorized Personnel Only.**
+Vor euch ragt das umgebaute Lagerhaus auf—eine moderne Glaserweiterung, die an ein historisches Backsteingebäude angebaut wurde. Das Schild lautet: **GrinchTech Datentresor - Nur autorisiertes Personal.**
 
-The real infiltration is about to begin.
+Die eigentliche Infiltration beginnt jetzt.
 
-**Systems Accessed:**
+**Systeme freigeschaltet:**
 
-- ✓ Building Power Grid
-- ✓ Network Operations Center
-- ✓ Bridge Infrastructure Protocol
+- ✓ Gebäude-Stromnetz
+- ✓ Netzwerk-Operationszentrum
+- ✓ Brücken-Infrastruktur-Protokoll
 
-**New Location Unlocked:** GrinchTech Backup Facility (Speicherstadt)
+**Neuer Ort freigeschaltet:** GrinchTech-Backup-Einrichtung (Speicherstadt)
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

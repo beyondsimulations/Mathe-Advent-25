@@ -1,70 +1,70 @@
 ---
-title: "Day 7: The Interception Hub"
-format: 
+title: "Tag 7: Die Abfang-Zentrale"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act II: Reversing the Supply Chain
+## Akt II: Umkehrung der Lieferkette
 
-### Location: GrinchTech Logistics Hub A (Formerly Hamburg Port Authority)
+### Ort: GrinchTech Logistik-Hub A (Ehemals Hamburger Hafenbehörde)
 
-You arrive at Warehouse A. It’s not a distribution center—it’s a **black hole**.
+Ihr erreicht Lagerhaus A. Es ist kein Verteilzentrum—es ist ein **schwarzes Loch**.
 
-Trucks arrive full of Christmas parcels, but they leave empty. Inside, you see the horror: Giant robotic claws are grabbing beautifully wrapped gifts, scanning them, and dropping them onto a conveyor belt labeled **"RECYCLING & INCINERATION."**
+Lastwagen kommen voll mit Weihnachtspaketen an, aber sie fahren leer wieder weg. Drinnen seht ihr das Grauen: Riesige Roboterklauen greifen wunderschön verpackte Geschenke, scannen sie und werfen sie auf ein Förderband mit der Aufschrift **„RECYCLING & VERBRENNUNG."**
 
-You scan your badge. The Grinch pops up on the monitor, looking smugly at a spreadsheet.
+Ihr scannt euren Ausweis. Der Grinch erscheint auf dem Monitor und schaut selbstgefällig auf eine Tabelle.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Welcome to the 'GrinchTech Reverse-Logistics Hub.'
+> „Willkommen beim ‚GrinchTech Rückwärts-Logistik-Hub.'
 >
-> You see, I bought the shipping rights for the entire city. Why? To save you from yourselves. Do you have any idea how much carbon footprint this 'gift-giving' generates? It’s irresponsible.
+> Wisst ihr, ich habe die Versandrechte für die gesamte Stadt gekauft. Warum? Um euch vor euch selbst zu retten. Habt ihr eine Ahnung, wie viel CO₂-Fußabdruck dieses ‚Schenken' verursacht? Es ist unverantwortlich.
 >
-> My algorithms are currently set to **Intercept and Liquidate**. We are processing 5,000 'units of joy' per hour and converting them into compressed cubes of recyclable cardboard. It’s elegant. It’s sustainable. It’s over.
+> Meine Algorithmen sind derzeit auf **Abfangen und Liquidieren** eingestellt. Wir verarbeiten 5.000 ‚Freude-Einheiten' pro Stunde und wandeln sie in komprimierte Würfel aus recycelbarer Pappe um. Es ist elegant. Es ist nachhaltig. Es ist vorbei.
 >
-> If you're here to try and switch the belts back to 'Delivery Mode,' don't bother. The math required to reverse the torque on these crushers is beyond you."
+> Wenn ihr hier seid, um zu versuchen, die Bänder wieder auf ‚Liefermodus' umzuschalten, lasst es bleiben. Die Mathematik, die erforderlich ist, um das Drehmoment dieser Schredder umzukehren, übersteigt euch."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-To save the presents, you must **reverse** the operational parameters of the machinery.
+Um die Geschenke zu retten, müsst ihr die Betriebsparameter der Maschinen **umkehren**.
 
-**Task a) The Crusher Belt**
+**Aufgabe a) Das Schredder-Band**
 
-The main conveyor belt is currently set to "Ramming Speed" ($s$) to smash packages into the incinerator. The equation governing the speed is:
+Das Hauptförderband ist derzeit auf „Ramm-Geschwindigkeit" ($s$) eingestellt, um Pakete in den Verbrennungsofen zu schleudern. Die Gleichung, die die Geschwindigkeit regelt, lautet:
 $$3(s + 4) - 2s = 20$$
 
-> **Grinch's Note:** "No pressure. Well, actually, lots of pressure."
+> **Grinchs Hinweis:** „Kein Druck. Na ja, eigentlich jede Menge Druck."
 
-**Objective:** The Grinch set this for maximum destruction. Solving this identifies the velocity. Once identified, the system will allow you to invert the motor polarity.
+**Ziel:** Der Grinch hat das für maximale Zerstörung eingestellt. Die Lösung identifiziert die Geschwindigkeit. Sobald identifiziert, erlaubt das System euch, die Motorpolarität umzukehren.
 
 ::: {.puzzle-box}
-**Solve for s (Crusher Velocity):**
+**Löse nach s auf (Schredder-Geschwindigkeit):**
 
 <input class="quiz-input" placeholder="s = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="8">Invert Motor Polarity</button>
+  <button class="quiz-submit" disabled data-answer="8">Motorpolarität umkehren</button>
 </div>
 :::
 
-**Task b) The "Waste" Audit**
+**Aufgabe b) Die „Müll"-Prüfung**
 
-The Grinch has categorized all presents as "Trash." You need to hack the inventory log to recategorize them as "Assets" so the system won't burn them.
+Der Grinch hat alle Geschenke als „Müll" kategorisiert. Ihr müsst das Inventarprotokoll hacken, um sie als „Vermögenswerte" umzukategorisieren, damit das System sie nicht verbrennt.
 
-* **Total items intercepted:** 25
-* **"Standard Junk" Value:** €3 | **"Premium Junk" Value:** €5
-* **Total Liquidation Value:** €95
+* **Abgefangene Artikel insgesamt:** 25
+* **„Standard-Schrott" Wert:** 3 € | **„Premium-Schrott" Wert:** 5 €
+* **Gesamter Liquidationswert:** 95 €
 
-> **Grinch's Note:** "A classic two-equation, two-unknown problem. Total items. Total value. I learned this in fifth grade. I was bored then too, but at least I paid attention."
+> **Grinchs Hinweis:** „Ein klassisches Zwei-Gleichungen-Zwei-Unbekannte-Problem. Gesamtanzahl der Artikel. Gesamtwert. Das habe ich in der fünften Klasse gelernt. Mir war damals auch langweilig, aber wenigstens habe ich aufgepasst."
 
-**Objective:** Identify how many Standard ($x$) and Premium ($y$) gifts are currently in the hopper so you can reroute them.
+**Ziel:** Identifiziert, wie viele Standard- ($x$) und Premium-Geschenke ($y$) derzeit im Trichter sind, damit ihr sie umleiten könnt.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -76,59 +76,59 @@ The Grinch has categorized all presents as "Trash." You need to hack the invento
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Recategorize as "Gifts"</button>
+  <button class="quiz-submit" disabled>Als „Geschenke" umkategorisieren</button>
 </div>
 :::
 
-**Task c) The Claw Calibration**
+**Aufgabe c) Die Klauen-Kalibrierung**
 
-The robotic claw is programmed to **crush** ($|2x - 7| = 3$). You need to solve this to find the grip boundaries.
+Die Roboterklaue ist programmiert zum **Zerquetschen** ($|2x - 7| = 3$). Ihr müsst das lösen, um die Griffgrenzen zu finden.
 
-> **Grinch's Note:** "The current setting applies 4,000 PSI of pressure. Enough to turn a Playstation into a frisbee. Don't touch it."
+> **Grinchs Hinweis:** „Die aktuelle Einstellung wendet 275 bar Druck an. Genug, um eine PlayStation in eine Frisbee-Scheibe zu verwandeln. Fasst es nicht an."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> $x = 3$ and $x = -3$ </button>
-  <button class="quiz-option" data-correct="false"> $x = 4$ and $x = 10$ </button>
-  <button class="quiz-option" data-correct="true"> $x = 2$ and $x = 5$ </button>
-  <button class="quiz-option" data-correct="false"> $x = 2$ and $x = -5$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 3$ und $x = -3$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 4$ und $x = 10$ </button>
+  <button class="quiz-option" data-correct="true"> $x = 2$ und $x = 5$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 2$ und $x = -5$ </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Reset Grip Strength</button>
+  <button class="quiz-submit" disabled>Griffstärke zurücksetzen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You hit Enter. The facility groans.
+Ihr drückt Enter. Die Anlage stöhnt.
 
-The conveyor belt screeches to a halt, then slowly reverses direction. The sign above the pit changes from **"INCINERATOR"** to **"OUTBOUND DELIVERY."**
+Das Förderband quietscht zum Stillstand, dann kehrt es langsam die Richtung um. Das Schild über der Grube wechselt von **„VERBRENNUNGSOFEN"** zu **„AUSGANGSLIEFERUNG."**
 
-The robotic claw stops crushing a Lego set and gently places it onto a delivery truck.
+Die Roboterklaue hört auf, ein Lego-Set zu zerquetschen, und legt es sanft auf einen Lieferwagen.
 
-The Grinch appears on the screen, looking furious. He spills a drop of his kale smoothie.
+Der Grinch erscheint auf dem Bildschirm und sieht wütend aus. Er verschüttet einen Tropfen seines Grünkohl-Smoothies.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "What did you do?!
+> „Was habt ihr getan?!
 >
-> You reversed the flow? Do you know how much paperwork this creates? I had those crushing quotas approved by the board!
+> Ihr habt den Fluss umgekehrt? Wisst ihr, wie viel Papierkram das verursacht? Ich hatte diese Schredder-Quoten vom Vorstand genehmigen lassen!
 >
-> You may have saved this batch of 'consumerist clutter,' but Warehouse B is where I keep the **difficult stuff*.
+> Vielleicht habt ihr diese Ladung ‚konsumistisches Gerümpel' gerettet, aber Lagerhaus B ist, wo ich das **schwierige Zeug** aufbewahre.
 >
-> Good job, hero."
+> Gute Arbeit, Held."
 > -- GR
 
-**System Status:**
+**Systemstatus:**
 
-* **Incinerator:** OFFLINE
-* **Delivery Mode:** ACTIVE
-* **Presents Saved:** 2,500
+* **Verbrennungsofen:** OFFLINE
+* **Liefermodus:** AKTIV
+* **Gerettete Geschenke:** 2.500
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

@@ -1,48 +1,48 @@
 ---
-title: "Day 9: The Quadratic Barrier"
-format: 
+title: "Tag 9: Die quadratische Barriere"
+format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act II: Debugging the Supply Chain
+## Akt II: Debugging der Lieferkette
 
-### Location: Warehouse C, Speicherstadt
+### Ort: Lagerhaus C, Speicherstadt
 
-Warehouse C feels different. It isn't silent. You hear shouting.
+Lagerhaus C fühlt sich anders an. Es ist nicht still. Ihr hört Geschrei.
 
-You enter through the main bay doors to find a surprising scene: GrinchTech's automated robots are fighting with human workers. A robotic forklift tries to stack a pallet of PS5s into the trash compactor, while a group of workers in safety vests pulls them back out.
+Ihr betretet es durch die Haupttore und findet eine überraschende Szene vor: GrinchTechs automatisierte Roboter kämpfen mit menschlichen Arbeitern. Ein Roboter-Gabelstapler versucht, eine Palette PS5s in den Müllverdichter zu stapeln, während eine Gruppe von Arbeitern in Sicherheitswesten sie wieder herauszieht.
 
-A woman in her fifties approaches, wiping grease on her vest. "I'm Frau Weber, shift supervisor. We're trying to save the inventory, but the Grinch updated the security protocols overnight. Everything is locked behind non-linear equations."
+Eine Frau in den Fünfzigern nähert sich und wischt sich Fett an ihrer Weste ab. „Ich bin Frau Weber, Schichtleiterin. Wir versuchen, das Inventar zu retten, aber der Grinch hat die Sicherheitsprotokolle über Nacht aktualisiert. Alles ist hinter nichtlinearen Gleichungen gesperrt."
 
-You check the terminal. The Grinch appears on screen, eating a very expensive-looking truffle.
+Ihr checkt das Terminal. Der Grinch erscheint auf dem Bildschirm und isst eine sehr teuer aussehende Trüffel.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "So, my human workforce is rebelling. How predictable.
+> „Also, meine menschliche Belegschaft rebelliert. Wie vorhersehbar.
 >
-> They don't understand *The Vision*. They think 'Christmas' is about 'Joy.' I think it's about 'Inefficient Capital Allocation.'
+> Sie verstehen *Die Vision* nicht. Sie denken, ‚Weihnachten' geht um ‚Freude'. Ich denke, es geht um ‚ineffiziente Kapitalallokation'.
 >
-> I've locked the manual override controls behind **Quadratic Barriers**. Why? Because parabolas are the shape of my disappointment in you.
+> Ich habe die manuellen Überbrückungskontrollen hinter **quadratische Barrieren** gesperrt. Warum? Weil Parabeln die Form meiner Enttäuschung in euch sind.
 >
-> You can try to crack them, but let's be honest: most of you probably still struggle with negative numbers. Don't hurt yourselves."
+> Ihr könnt versuchen, sie zu knacken, aber seien wir ehrlich: Die meisten von euch haben wahrscheinlich immer noch Probleme mit negativen Zahlen. Verletzt euch nicht."
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-The control terminal shows four critical systems locked by quadratic equations.
+Das Kontrollterminal zeigt vier kritische Systeme, die durch quadratische Gleichungen gesperrt sind.
 
-**Task a) Primary Access Barrier**
+**Aufgabe a) Primäre Zugangsbarriere**
 
-The main control panel is locked.
+Das Hauptbedienfeld ist gesperrt.
 $$x^2 - 5x + 6 = 0$$
 
-> **Grinch's Note:** "This is the mathematical equivalent of a warm-up stretch. If this takes you more than thirty seconds, I'm concerned for your academic future."
+> **Grinchs Hinweis:** „Das ist das mathematische Äquivalent einer Aufwärmübung. Wenn ihr dafür mehr als dreißig Sekunden braucht, mache ich mir Sorgen um eure akademische Zukunft."
 
-**Objective:** Enter both solutions to unlock the panel.
+**Ziel:** Gebt beide Lösungen ein, um das Bedienfeld zu entsperren.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -54,41 +54,41 @@ $$x^2 - 5x + 6 = 0$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Unlock Access Panel</button>
+  <button class="quiz-submit" disabled>Zugangspanel entsperren</button>
 </div>
 :::
 
-**Task b) Safety Override System**
+**Aufgabe b) Sicherheitsüberbrückungssystem**
 
-The emergency brakes on the crusher are disabled.
+Die Notbremsen des Schredders sind deaktiviert.
 
 $$2x^2 + 7x + 3 = 0$$
 
-> **Grinch's Note:** "The crusher is getting closer to a very nice set of Legos."
+> **Grinchs Hinweis:** „Der Schredder kommt einem sehr schönen Lego-Set immer näher."
 
-**Requirement:** Solve using the Quadratic Formula.
+**Anforderung:** Löst mit der Mitternachtsformel.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
   <button class="quiz-option" data-correct="true"> $x = -1/2, x = -3$ </button>
   <button class="quiz-option" data-correct="false"> $x = 1/2, x = 3$ </button>
   <button class="quiz-option" data-correct="false"> $x = -2, x = -7$ </button>
-  <button class="quiz-option" data-correct="false"> $x = -1, x = -1.5$ </button>
+  <button class="quiz-option" data-correct="false"> $x = -1, x = -1{,}5$ </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Engage Safety Brakes</button>
+  <button class="quiz-submit" disabled>Sicherheitsbremsen aktivieren</button>
 </div>
 :::
 
-**Task c) Machinery Calibration**
+**Aufgabe c) Maschinenkalibrierung**
 
-The robotic arm needs calibration. Solve by **Completing the Square**.
+Der Roboterarm muss kalibriert werden. Löst durch **quadratische Ergänzung**.
 
 $$x^2 - 6x + 7 = 0$$
 
-> **Grinch's Note:** "It's elegant when done right. It's a disaster when done wrong. The robotic arm doesn't forgive disasters."
+> **Grinchs Hinweis:** „Es ist elegant, wenn es richtig gemacht wird. Es ist eine Katastrophe, wenn es falsch gemacht wird. Der Roboterarm verzeiht keine Katastrophen."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -100,72 +100,72 @@ $$x^2 - 6x + 7 = 0$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calibrate Arm</button>
+  <button class="quiz-submit" disabled>Arm kalibrieren</button>
 </div>
 :::
 
-**Task d) System Diagnostics**
+**Aufgabe d) Systemdiagnose**
 
-The system asks for a pre-check analysis of:
+Das System fordert eine Vorprüfungsanalyse von:
 
 $$x^2 + 4x + 5 = 0$$
 
-> **Grinch's Note:** "The discriminant. Zero means one. Negative means... well, if you don't know what negative means for real solutions, I genuinely cannot help you."
+> **Grinchs Hinweis:** „Die Diskriminante. Null bedeutet eine. Negativ bedeutet... naja, wenn ihr nicht wisst, was negativ für reelle Lösungen bedeutet, kann ich euch wirklich nicht helfen."
 
-**Query:** "Determine the solution type using the Discriminant ($\Delta$). Do not solve."
+**Anfrage:** „Bestimmt den Lösungstyp mithilfe der Diskriminante ($\Delta$). Löst nicht auf."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
-  <button class="quiz-option" data-correct="false"> Two Real Solutions ($\Delta > 0$) </button>
-  <button class="quiz-option" data-correct="false"> One Real Solution ($\Delta = 0$) </button>
-  <button class="quiz-option" data-correct="true"> No Real Solutions ($\Delta < 0$) </button>
+  <button class="quiz-option" data-correct="false"> Zwei reelle Lösungen ($\Delta > 0$) </button>
+  <button class="quiz-option" data-correct="false"> Eine reelle Lösung ($\Delta = 0$) </button>
+  <button class="quiz-option" data-correct="true"> Keine reellen Lösungen ($\Delta < 0$) </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Submit Diagnostic</button>
+  <button class="quiz-submit" disabled>Diagnose einreichen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You hit Enter.
+Ihr drückt Enter.
 
-The warehouse lights snap to green. The robotic forklifts stop moving toward the trash and freeze. Frau Weber rushes to the manual controls. "We have control! Override successful!"
+Die Lagerbeleuchtung springt auf Grün. Die Roboter-Gabelstapler hören auf, sich zum Müll zu bewegen, und frieren ein. Frau Weber eilt zu den manuellen Kontrollen. „Wir haben die Kontrolle! Überbrückung erfolgreich!"
 
-The workers cheer. You can hear the sounds of thousands of presents being moved to the *correct* shipping lanes.
+Die Arbeiter jubeln. Ihr könnt die Geräusche von Tausenden von Geschenken hören, die auf die *richtigen* Versandbahnen gebracht werden.
 
-The Grinch appears on screen. He looks genuinely annoyed now. He puts down his truffle.
+Der Grinch erscheint auf dem Bildschirm. Er sieht jetzt wirklich genervt aus. Er legt seine Trüffel weg.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Okay. You're getting on my nerves.
+> „Okay. Ihr geht mir auf die Nerven.
 >
-> You've unlocked the main warehouse controls. 15,000 units of 'joy' are technically accessible. Congratulations on passing kindergarten-level algebra.
+> Ihr habt die Hauptlagerkontrollen entsperrt. 15.000 Einheiten ‚Freude' sind technisch zugänglich. Herzlichen Glückwunsch zum Bestehen der Kindergarten-Algebra.
 >
-> But here's the thing about genius-level security architecture: **I built failsafes**.
+> Aber die Sache mit genialer Sicherheitsarchitektur ist: **Ich habe Ausfallsicherungen eingebaut.**
 >
-> You didn't think I'd let you waltz through my warehouses without consequences, did you? The moment you cracked those quadratic barriers, you triggered my emergency protocols. Rational equations. Radical equations. Even a lovely cubic polynomial I designed while drinking a €200 bottle of wine.
+> Ihr habt nicht gedacht, ich würde euch einfach so durch meine Lagerhäuser spazieren lassen, ohne Konsequenzen, oder? In dem Moment, als ihr diese quadratischen Barrieren geknackt habt, habt ihr meine Notfallprotokolle ausgelöst. Bruchgleichungen. Wurzelgleichungen. Sogar ein hübsches kubisches Polynom, das ich beim Trinken einer 200-Euro-Flasche Wein entworfen habe.
 >
-> Tomorrow, you face **The System Failsafe**. Extraneous solutions. Domain restrictions. The kind of mathematics that catches overconfident amateurs off-guard.
+> Morgen steht ihr vor **der Systemausfallsicherung**. Scheinlösungen. Definitionsbereichsbeschränkungen. Die Art von Mathematik, die überselbstbewusste Amateure überrascht.
 >
-> Oh, and there's a countdown timer. Because I'm theatrical like that.
+> Oh, und es gibt einen Countdown-Timer. Weil ich so theatralisch bin.
 >
-> Sweet dreams."
+> Süße Träume."
 > -- GR
 
-**Progress Update:**
+**Fortschritts-Update:**
 
-* ✓ Warehouse A: Unlocked
-* ✓ Warehouse B: Unlocked
-* ✓ Warehouse C: Primary Controls Unlocked
-* Emergency Failsafe: ACTIVATED
-* Distribution System: LOCKED
+* ✓ Lagerhaus A: Entsperrt
+* ✓ Lagerhaus B: Entsperrt
+* ✓ Lagerhaus C: Primäre Kontrollen entsperrt
+* Notfall-Ausfallsicherung: AKTIVIERT
+* Verteilungssystem: GESPERRT
 
-**Warning:** Failsafe protocols triggered. Additional challenges detected.
+**Warnung:** Ausfallsicherungsprotokolle ausgelöst. Zusätzliche Herausforderungen erkannt.
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

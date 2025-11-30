@@ -1,96 +1,96 @@
 ---
-title: "Day 10: The System Failsafe"
+title: "Tag 10: Die Systemausfallsicherung"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act II: Debugging the Supply Chain
+## Akt II: Debugging der Lieferkette
 
-### Location: Warehouse C - Emergency Systems Control
+### Ort: Lagerhaus C - Notfallsystemsteuerung
 
-The celebration of unlocking the warehouses is short-lived. Thirty minutes after you solved the quadratic barriers, warning sounds begin blaring throughout Warehouse C.
+Die Feier über das Entsperren der Lagerhäuser ist nur von kurzer Dauer. Dreißig Minuten nachdem ihr die quadratischen Barrieren gelöst habt, beginnen Warnsirenen im gesamten Lagerhaus C zu heulen.
 
-Frau Weber runs to the control terminal, her face pale. "Something's wrong. The automated safety systems—they're shutting down!"
+Frau Weber rennt zum Kontrollterminal, ihr Gesicht blass. „Irgendwas stimmt nicht. Die automatischen Sicherheitssysteme—sie fahren herunter!"
 
-The screens flash red. The Grinch appears, and for once, he looks pleased. He's sipping from a mug that says "World's Best Disruptor."
+Die Bildschirme blinken rot. Der Grinch erscheint, und ausnahmsweise sieht er zufrieden aus. Er nippt aus einer Tasse mit der Aufschrift „Weltbester Disruptor".
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Oh, you thought you were done? How adorable. How... *linear* of you.
+> „Oh, ihr dachtet, ihr wärt fertig? Wie niedlich. Wie... *linear* von euch.
 >
-> I've had failsafe protocols running this entire time. You triggered them the moment you bypassed my quadratics. Think of it as a 'thank you' gift for your persistence.
+> Ich hatte die ganze Zeit Ausfallsicherheitsprotokolle laufen. Ihr habt sie in dem Moment ausgelöst, als ihr meine Quadratiken umgangen habt. Betrachtet es als ein ‚Dankeschön'-Geschenk für eure Hartnäckigkeit.
 >
-> Here's the situation: In exactly 60 minutes, this warehouse goes into permanent lockdown. Doors seal. Climate control fails. All 15,000 presents become very expensive kindling.
+> Hier ist die Situation: In genau 60 Minuten geht dieses Lagerhaus in dauerhafte Sperrung. Türen versiegeln sich. Die Klimakontrolle versagt. Alle 15.000 Geschenke werden zu sehr teurem Anzündholz.
 >
-> The override codes? They're locked behind equations that require actual mathematical reasoning. Rational equations where you might divide by zero if you're careless. Radical equations where squaring both sides creates phantom solutions. A cubic polynomial I personally designed during my yacht's last Elbe cruise.
+> Die Überbrückungscodes? Sie sind hinter Gleichungen gesperrt, die echtes mathematisches Denken erfordern. Bruchgleichungen, bei denen ihr achten müsst, was im Nenner steht. Wurzelgleichungen, bei denen das Quadrieren beider Seiten Scheinlösungen erzeugt. Ein kubisches Polynom, das ich persönlich während der letzten Elbe-Kreuzfahrt meiner Yacht entworfen habe.
 >
-> Most people panic at this point. I find it entertaining.
+> Die meisten Leute geraten an diesem Punkt in Panik. Ich finde das unterhaltsam.
 >
-> The countdown has started. Try not to cry."
+> Der Countdown hat begonnen. Versucht, nicht zu weinen."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Three emergency systems must be debugged immediately. The Grinch has named each one, because of course he has.
+Drei Notfallsysteme müssen sofort debuggt werden. Der Grinch hat jedes einzelne benannt, weil er natürlich hat.
 
-**Lock 1: "The Fire Department's Nightmare"**
+**Schloss 1: „Der Albtraum der Feuerwehr"**
 
-The sprinkler timer is controlled by a rational equation. The display flashes ominously:
+Der Sprinkler-Timer wird durch eine Bruchgleichung gesteuert. Das Display blinkt bedrohlich:
 
-$$\frac{1}{x+1} + \frac{2}{x-1} = \frac{3}{x^2-1}$$
+$$\frac{x+4}{x-2} = 3$$
 
-> **Grinch's Note:** "This equation has domain restrictions that would make most students cry. I've seen interns break down over less. Remember: if your answer makes a denominator zero, congratulations—you've just flooded the building AND failed mathematics."
+> **Grinchs Hinweis:** „Diese Gleichung hat einen Definitionsbereich, der die meisten Schüler zum Weinen bringt. Ich habe Praktikanten gesehen, die bei weniger zusammengebrochen sind. Denkt daran: Achtet darauf, was im Nenner nicht stehen darf!"
 
-**Solve for $x$ and remember to check for extraneous solutions.**
+**Löst nach $x$ auf.**
 
 ::: {.puzzle-box}
-**Enter your answer (as a fraction like 2/3):**
+**Gebt eure Antwort ein:**
 <input class="quiz-input" placeholder="x = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="2/3">Disable Sprinkler Trap</button>
+  <button class="quiz-submit" disabled data-answer="5">Sprinkler-Falle deaktivieren</button>
 </div>
 :::
 
-**Lock 2: "The Structural Integrity Gambit"**
+**Schloss 2: „Das Strukturintegritäts-Gambit"**
 
-The building's weight distribution sensors use a radical equation. A warning flashes:
+Die Gewichtsverteilungssensoren des Gebäudes verwenden eine Wurzelgleichung. Eine Warnung blinkt:
 
 $$\sqrt{y + 2} = y - 4$$
 
-> **Grinch's Note:** "Ah, radicals. Square both sides, they said. It'll be fine, they said. Except sometimes you create solutions that don't actually exist. Ghost answers. Mathematical mirages. I *love* watching people confidently submit wrong answers here."
+> **Grinchs Hinweis:** „Ah, Wurzeln. Quadriere beide Seiten, sagten sie. Es wird schon gutgehen, sagten sie. Außer dass manchmal Lösungen entstehen, die gar nicht wirklich existieren. Geisterlösungen. Mathematische Fata Morganas. Ich *liebe* es zuzusehen, wie Leute hier selbstbewusst falsche Antworten einreichen."
 
-**Solve for $y$ and verify your solution isn't extraneous.**
+**Löst nach $y$ auf und überprüft, ob eure Lösung keine Scheinlösung ist.**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
   <button class="quiz-option" data-correct="false"> $y = 2$ </button>
   <button class="quiz-option" data-correct="true"> $y = 7$ </button>
-  <button class="quiz-option" data-correct="false"> $y = 2$ and $y = 7$ </button>
-  <button class="quiz-option" data-correct="false"> No real solution exists </button>
+  <button class="quiz-option" data-correct="false"> $y = 2$ und $y = 7$ </button>
+  <button class="quiz-option" data-correct="false"> Es gibt keine reelle Lösung </button>
 </div>
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Stabilize Structure</button>
+  <button class="quiz-submit" disabled>Struktur stabilisieren</button>
 </div>
 :::
 
-**Lock 3: "The Sommelier's Polynomial"**
+**Schloss 3: „Das Sommelier-Polynom"**
 
-The master override is a cubic equation. The screen displays it with a wine glass emoji, because the Grinch is nothing if not on-brand:
+Die Master-Überbrückung ist eine kubische Gleichung. Der Bildschirm zeigt sie mit einem Weinglas-Emoji an, weil der Grinch eben so ist:
 
 $$x^3 - 6x^2 + 11x - 6 = 0$$
 
-> **Grinch's Note:** "A cubic polynomial. Three roots. I designed this one on my yacht while drinking a wine that costs more than your semester's textbooks. Factor it, guess it, pray to the mathematics gods—I don't care how you find the answers. I just care that you probably won't."
+> **Grinchs Hinweis:** „Ein kubisches Polynom. Drei Nullstellen. Ich habe dieses auf meiner Yacht entworfen, während ich einen Wein trank, der mehr kostet als eure gesamten Schulsachen. Faktorisiert es, ratet es, betet zu den Mathematik-Göttern—es ist mir egal, wie ihr die Antworten findet. Mich interessiert nur, dass ihr es wahrscheinlich nicht schafft."
 
-**Find ALL three roots of this cubic equation.**
+**Findet ALLE drei Nullstellen dieser kubischen Gleichung.**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -102,56 +102,56 @@ $$x^3 - 6x^2 + 11x - 6 = 0$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Deactivate Failsafe</button>
+  <button class="quiz-submit" disabled>Ausfallsicherung deaktivieren</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You input the solutions with trembling hands. The countdown timer shows 8 minutes remaining.
+Ihr gebt die Lösungen mit zitternden Händen ein. Der Countdown-Timer zeigt 8 Minuten verbleibend.
 
-- Fire suppression: $x = \frac{2}{3}$ ✓
-- Structural integrity: $y = 7$ (rejected $y = 2$ as extraneous) ✓
-- Master override: $x = 1, 2, 3$ ✓
+- Brandbekämpfung: $x = 5$ ✓
+- Strukturelle Integrität: $y = 7$ (abgelehnt: $y = 2$ als Scheinlösung) ✓
+- Master-Überbrückung: $x = 1, 2, 3$ ✓
 
-The klaxons stop. The red warning lights switch to amber, then green.
+Die Sirenen verstummen. Die roten Warnlichter wechseln zu Bernstein, dann zu Grün.
 
-**EMERGENCY FAILSAFE DEACTIVATED**
+**NOTFALL-AUSFALLSICHERUNG DEAKTIVIERT**
 
-**WAREHOUSE LOCKDOWN CANCELLED**
+**LAGERHAUSSPERRUNG ABGEBROCHEN**
 
-Frau Weber exhales sharply. "That was too close. Eight minutes. We had eight minutes left."
+Frau Weber atmet scharf aus. „Das war zu knapp. Acht Minuten. Wir hatten acht Minuten übrig."
 
-The workers around the warehouse look shaken but relieved. You've not only unlocked the presents—you've prevented a catastrophic lockdown that would have trapped everything inside.
+Die Arbeiter im Lagerhaus sehen erschüttert, aber erleichtert aus. Ihr habt nicht nur die Geschenke entsperrt—ihr habt eine katastrophale Sperrung verhindert, die alles drinnen eingeschlossen hätte.
 
-The Grinch reappears on screen. He's no longer smiling. He sets down his "World's Best Disruptor" mug.
+Der Grinch erscheint wieder auf dem Bildschirm. Er lächelt nicht mehr. Er stellt seine „Weltbester Disruptor"-Tasse ab.
 
-> **#security-log**
+> **#sicherheits-log**
 >
-> "Well played. You caught the extraneous solution. Most people don't.
+> „Gut gespielt. Ihr habt die Scheinlösung erkannt. Die meisten Leute tun das nicht.
 >
-> You've proven you can handle equations that fight back. Rational equations with their domain restrictions. Radical equations with their phantom solutions. Cubics that require actual technique to decompose.
+> Ihr habt bewiesen, dass ihr mit Gleichungen umgehen könnt, die zurückschlagen. Bruchgleichungen mit ihren Definitionsbereichen. Wurzelgleichungen mit ihren Phantomlösungen. Kubische Gleichungen, die echte Technik zum Zerlegen erfordern.
 >
-> But mathematics isn't just about solving individual equations. It's about solving them *fast*. Under pressure. When the numbers are exponential and the clock is logarithmic.
+> Aber Mathematik geht nicht nur darum, einzelne Gleichungen zu lösen. Es geht darum, sie *schnell* zu lösen. Unter Druck. Wenn die Zahlen exponentiell sind und die Uhr logarithmisch.
 >
-> Tomorrow, I'm introducing countdown timers that decay exponentially. Security layers that require logarithmic thinking. The kind of mathematics where every second costs you.
+> Morgen führe ich Countdown-Timer ein, die exponentiell ablaufen. Sicherheitsebenen, die logarithmisches Denken erfordern. Die Art von Mathematik, bei der jede Sekunde euch kostet.
 >
-> You beat my failsafe with 8 minutes to spare. Let's see how you do when the margin is measured in moments."
+> Ihr habt meine Ausfallsicherung mit 8 Minuten Vorsprung geschlagen. Mal sehen, wie ihr euch schlagt, wenn der Spielraum in Momenten gemessen wird."
 >
 > -- GR
 
-The warehouse is safe. The presents are secure. But you're running out of time.
+Das Lagerhaus ist sicher. Die Geschenke sind gesichert. Aber euch läuft die Zeit davon.
 
-**Critical Systems Restored:**
+**Kritische Systeme wiederhergestellt:**
 
-- ✓ Fire suppression calibrated
-- ✓ Structural integrity monitors online
-- ✓ Emergency failsafes deactivated
+- ✓ Brandbekämpfung kalibriert
+- ✓ Strukturintegritäts-Monitore online
+- ✓ Notfall-Ausfallsicherungen deaktiviert
 
-**Status:** Warehouse C emergency averted. 14 days until Christmas Eve.
+**Status:** Lagerhaus C Notfall abgewendet. 14 Tage bis Heiligabend.
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

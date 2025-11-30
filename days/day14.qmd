@@ -1,53 +1,53 @@
 ---
-title: "Day 14: The Revenue Projections"
+title: "Tag 14: Die Umsatzprognosen"
 format:
   html:
     include-after-body: ../calendar.html
 css: [../advent.css,../quiz.css]
 ---
 
-## Act III: Business Model Analysis
+## Akt III: Geschäftsmodell-Analyse
 
-### Location: Hamburg City Hall Economic Planning Office
+### Ort: Hamburger Rathaus, Wirtschaftsplanungsbüro
 
-Stadtrat Fischer has arranged a formal economic review session in City Hall's planning office. Present are representatives from Hamburg's Chamber of Commerce, Christmas market vendors, and via video link—the Grinch himself.
+Stadtrat Fischer hat eine formelle Wirtschaftsprüfungssitzung im Planungsbüro des Rathauses organisiert. Anwesend sind Vertreter der Hamburger Handelskammer, Weihnachtsmarkthändler und per Videoschaltung—der Grinch selbst.
 
-The Grinch's presentation dominates the main screen—a series of linear graphs showing projected costs rising faster than revenues, all intersecting at points that suggest inevitable losses.
+Die Präsentation des Grinchs dominiert den Hauptbildschirm—eine Reihe von linearen Graphen, die zeigen, wie prognostizierte Kosten schneller steigen als Einnahmen, alle schneiden sich an Punkten, die unvermeidliche Verluste nahelegen.
 
-He's wearing reading glasses today. They make him look like a professor about to fail your thesis defense.
+Er trägt heute eine Lesebrille. Sie lässt ihn aussehen wie ein Professor, der gleich eure Abschlussarbeit durchfallen lassen wird.
 
-> **System Message from CEO**
+> **Systemnachricht vom CEO**
 >
-> "Gentlemen. Ladies. City Council. Let me show you the mathematics of failure.
+> „Meine Herren. Meine Damen. Stadtrat. Lassen Sie mich Ihnen die Mathematik des Scheiterns zeigen.
 >
-> Every successful business understands linear functions: how costs scale with production, how revenue grows with sales, how profit margins erode over time.
+> Jedes erfolgreiche Unternehmen versteht lineare Funktionen: wie Kosten mit der Produktion skalieren, wie Umsatz mit dem Verkauf wächst, wie Gewinnmargen über die Zeit erodieren.
 >
-> I've modeled Hamburg's Christmas market economics using standard linear analysis. The numbers don't lie. The slopes don't lie. The y-intercepts are particularly unforgiving.
+> Ich habe Hamburgs Weihnachtsmarktwirtschaft mit Standard-Linearanalyse modelliert. Die Zahlen lügen nicht. Die Steigungen lügen nicht. Die Y-Achsenabschnitte sind besonders unversöhnlich.
 >
-> Your 'mathematical auditors' claim they can find flaws in my models. Ambitious. Naïve. But let's see what they've got.
+> Eure ‚mathematischen Prüfer' behaupten, sie könnten Fehler in meinen Modellen finden. Ambitioniert. Naiv. Aber mal sehen, was sie draufhaben.
 >
-> Today we test linear functions. Slopes. Intercepts. Parallel and perpendicular lines. The basic vocabulary of business mathematics.
+> Heute testen wir lineare Funktionen. Steigungen. Achsenabschnitte. Parallele und senkrechte Geraden. Das grundlegende Vokabular der Wirtschaftsmathematik.
 >
-> Impress me. Or don't. I've prepared a very elegant 'I told you so' presentation for either outcome."
+> Beeindruckt mich. Oder nicht. Ich habe eine sehr elegante ‚Ich hab's euch ja gesagt'-Präsentation für beide Ergebnisse vorbereitet."
 >
 > -- GR
 
-## The Challenge
+## Die Herausforderung
 
 ::: {.scenario-block}
 
-Four problems test your ability to analyze and construct linear business models. The Grinch has named them with his characteristic blend of condescension and corporate jargon.
+Vier Aufgaben testen eure Fähigkeit, lineare Geschäftsmodelle zu analysieren und zu erstellen. Der Grinch hat sie mit seiner charakteristischen Mischung aus Herablassung und Unternehmensjargon benannt.
 
-**Lock 1: "The Slope of Mediocrity"**
+**Schloss 1: „Die Steigung der Mittelmäßigkeit"**
 
-One of Hamburg's successful Christmas markets has consistent growth data:
+Einer von Hamburgs erfolgreichen Weihnachtsmärkten hat konsistente Wachstumsdaten:
 
-- Initial revenue: €5,000 (the y-intercept)
-- Growth: €3,000 for every 2 additional days of operation
+- Anfangsumsatz: 5.000 € (der Y-Achsenabschnitt)
+- Wachstum: 3.000 € für alle 2 zusätzlichen Betriebstage
 
-> **Grinch's Note:** "Slope-intercept form. $y = mx + b$. If you don't know this, please ask yourself why you're in a business mathematics course. What is the slope?"
+> **Grinchs Hinweis:** „Punkt-Steigungs-Form. $y = mx + b$. Wenn ihr das nicht wisst, fragt euch bitte, warum ihr in einem Wirtschaftsmathematik-Kurs seid. Wie groß ist die Steigung?"
 
-**The slope (rate of revenue per day) is:**
+**Die Steigung (Umsatzrate pro Tag) ist:**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -59,40 +59,40 @@ One of Hamburg's successful Christmas markets has consistent growth data:
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Calculate Growth Rate</button>
+  <button class="quiz-submit" disabled>Wachstumsrate berechnen</button>
 </div>
 :::
 
-**Lock 2: "Point-Slope Purgatory"**
+**Schloss 2: „Das Zwei-Punkte-Fegefeuer"**
 
-A vendor has cost data from two specific days:
+Ein Händler hat Kostendaten von zwei bestimmten Tagen:
 
-- Day 2: €7,000 in costs
-- Day 5: €13,000 in costs
+- Tag 2: 7.000 € Kosten
+- Tag 5: 13.000 € Kosten
 
-> **Grinch's Note:** "Two points determine a line. This is geometry from centuries ago. Calculate the slope first, then we'll see if you can actually use it."
+> **Grinchs Hinweis:** „Zwei Punkte bestimmen eine Gerade. Das ist Geometrie aus vergangenen Jahrhunderten. Berechnet zuerst die Steigung, dann sehen wir, ob ihr sie tatsächlich verwenden könnt."
 
-**Calculate the slope between points $(2, 7000)$ and $(5, 13000)$:**
+**Berechnet die Steigung zwischen den Punkten $(2; 7000)$ und $(5; 13000)$:**
 
 ::: {.puzzle-box}
-**Enter the slope:**
+**Gebt die Steigung ein:**
 <input class="quiz-input" placeholder="m = ?">
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="2000">Determine Cost Rate</button>
+  <button class="quiz-submit" disabled data-answer="2000">Kostenrate bestimmen</button>
 </div>
 :::
 
-**Lock 3: "The Parallel Universe"**
+**Schloss 3: „Das Paralleluniversum"**
 
-The Grinch has set his GrinchTech holiday products on a price line defined by $y = 2x + 1$.
+Der Grinch hat seine GrinchTech-Feiertagsprodukte auf einer Preisgerade definiert durch $y = 2x + 1$.
 
-A competing vendor wants to create a **parallel** pricing line that passes through the point $(3, 10)$.
+Ein konkurrierender Händler möchte eine **parallele** Preisgerade erstellen, die durch den Punkt $(3; 10)$ geht.
 
-> **Grinch's Note:** "Parallel lines have the same slope. This is... embarrassingly basic. If you get this wrong, I'm going to screenshot it and put it in my quarterly investor report under 'evidence of market opportunity.'"
+> **Grinchs Hinweis:** „Parallele Geraden haben die gleiche Steigung. Das ist... peinlich grundlegend. Wenn ihr das falsch macht, werde ich es screenshotten und in meinen Quartals-Investorenbericht unter ‚Beweis für Marktchancen' setzen."
 
-**What is the y-intercept ($b$) of the parallel line?**
+**Wie lautet der Y-Achsenabschnitt ($b$) der parallelen Gerade?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -104,17 +104,17 @@ A competing vendor wants to create a **parallel** pricing line that passes throu
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Plot Parallel Strategy</button>
+  <button class="quiz-submit" disabled>Parallelstrategie plotten</button>
 </div>
 :::
 
-**Lock 4: "The Perpendicular Paradox"**
+**Schloss 4: „Das Senkrechten-Paradoxon"**
 
-Another vendor wants to create a discount structure that's mathematically **perpendicular** to the Grinch's model $y = -\frac{1}{3}x + 4$, passing through the origin $(0, 0)$.
+Ein anderer Händler möchte eine Rabattstruktur erstellen, die mathematisch **senkrecht** zum Modell des Grinchs $y = -\frac{1}{3}x + 4$ steht und durch den Ursprung $(0; 0)$ geht.
 
-> **Grinch's Note:** "Most MBA students can't do this without a calculator. I timed them."
+> **Grinchs Hinweis:** „Die meisten BWL-Studenten können das nicht ohne Taschenrechner. Ich habe die Zeit gestoppt."
 
-**What is the equation of this perpendicular line?**
+**Wie lautet die Gleichung dieser senkrechten Gerade?**
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -126,52 +126,52 @@ Another vendor wants to create a discount structure that's mathematically **perp
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled>Execute Counter-Strategy</button>
+  <button class="quiz-submit" disabled>Gegenstrategie ausführen</button>
 </div>
 :::
 
 ::: {.revealed-text}
-### Status Update
+### Statusmeldung
 
-You present your linear models to the City Council:
+Ihr präsentiert eure linearen Modelle dem Stadtrat:
 
-- **Market growth rate:** €1,500/day (slope = 1500) ✓
-- **Vendor cost rate:** €2,000/day (slope calculated correctly) ✓
-- **Parallel pricing:** $y = 2x + 4$ (same slope, passes through point) ✓
-- **Perpendicular discount:** $y = 3x$ (negative reciprocal slope) ✓
+- **Marktwachstumsrate:** 1.500 €/Tag (Steigung = 1500) ✓
+- **Händlerkostenrate:** 2.000 €/Tag (Steigung korrekt berechnet) ✓
+- **Parallele Preisgestaltung:** $y = 2x + 4$ (gleiche Steigung, geht durch den Punkt) ✓
+- **Senkrechter Rabatt:** $y = 3x$ (negative Kehrwertsteigung) ✓
 
-Stadtrat Fischer studies the equations. "So these linear models show growth, not decline?"
+Stadtrat Fischer studiert die Gleichungen. „Also zeigen diese linearen Modelle Wachstum, nicht Rückgang?"
 
-"Exactly," you explain. "The Grinch's presentation cherry-picked data showing costs rising faster than revenue. But when we use actual market data, we see sustainable linear growth."
+„Genau," erklärt ihr. „Die Präsentation des Grinchs hat gezielt Daten ausgewählt, die zeigen, dass Kosten schneller steigen als Einnahmen. Aber wenn wir echte Marktdaten verwenden, sehen wir nachhaltiges lineares Wachstum."
 
-The Grinch removes his reading glasses and rubs his eyes—the universal gesture of someone whose airtight argument just developed holes.
+Der Grinch nimmt seine Lesebrille ab und reibt sich die Augen—die universelle Geste von jemandem, dessen wasserdichtes Argument gerade Löcher bekommen hat.
 
-> **#economic-analysis**
+> **#wirtschaftsanalyse**
 >
-> "Fine. You can construct linear models. You understand parallel and perpendicular relationships. Basic business mathematics.
+> „Gut. Ihr könnt lineare Modelle erstellen. Ihr versteht parallele und senkrechte Beziehungen. Grundlegende Wirtschaftsmathematik.
 >
-> But here's the thing about linear growth: it's a fairy tale. Real businesses don't grow linearly forever—they follow curves. Quadratic functions. Diminishing returns. There's always a peak where profit maximizes and then declines.
+> Aber hier ist die Sache mit linearem Wachstum: Es ist ein Märchen. Echte Unternehmen wachsen nicht ewig linear—sie folgen Kurven. Quadratische Funktionen. Abnehmende Erträge. Es gibt immer einen Hochpunkt, wo der Gewinn maximiert wird und dann sinkt.
 >
-> Tomorrow, I'll show you Hamburg's REAL economic models: parabolas. Vertex points. Maximum profit calculations.
+> Morgen zeige ich euch Hamburgs ECHTE Wirtschaftsmodelle: Parabeln. Scheitelpunkte. Maximale Gewinnberechnungen.
 >
-> Linear thinking says 'more is always better.' Quadratic thinking says 'there's an optimal point, and you're probably not at it.'
+> Lineares Denken sagt ‚mehr ist immer besser.' Quadratisches Denken sagt ‚es gibt einen optimalen Punkt, und ihr seid wahrscheinlich nicht dort.'
 >
-> Let's see if you can find the vertex of your own failure."
+> Mal sehen, ob ihr den Scheitelpunkt eures eigenen Scheiterns finden könnt."
 >
 > -- GR
 
-**Act III Progress:**
+**Akt III Fortschritt:**
 
-- ✓ Function fundamentals verified
-- ✓ Linear business models validated
-- Quadratic optimization: Tomorrow
-- Economic validation: In progress
+- ✓ Funktionsgrundlagen verifiziert
+- ✓ Lineare Geschäftsmodelle validiert
+- Quadratische Optimierung: Morgen
+- Wirtschaftliche Validierung: In Bearbeitung
 
-**Status:** Linear models support Christmas viability; quadratic analysis pending.
+**Status:** Lineare Modelle unterstützen die Weihnachtstragfähigkeit; quadratische Analyse ausstehend.
 
-**Time Remaining:** 10 days until Christmas Eve
+**Verbleibende Zeit:** 10 Tage bis Heiligabend
 
-[**Back to the calendar**](../index.qmd)
+[**Zurück zum Kalender**](../index.qmd)
 :::
 
 :::

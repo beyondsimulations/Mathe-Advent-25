@@ -41,7 +41,7 @@
                     door.style.cursor = "not-allowed";
                     door.onclick = (e) => {
                         e.preventDefault();
-                        alert(`Not yet! Come back on Dec ${dayNumber}.`);
+                        alert(`Noch nicht! Komm am ${dayNumber}. Dezember wieder.`);
                     };
                 } else {
                     if (
@@ -154,7 +154,7 @@
                             }
 
                             feedback.classList.add("success");
-                            feedback.innerText = "Correct.";
+                            feedback.innerText = "Richtig!";
 
                             // Hide submit button
                             submitBtn.style.display = "none";
@@ -197,11 +197,11 @@
 
                     let timeLeft = seconds;
                     feedback.style.color = "#db6b6b"; // Error Red
-                    feedback.innerText = `Incorrect. Wait ${timeLeft}s...`;
+                    feedback.innerText = `Falsch. Warte ${timeLeft}s...`;
 
                     const timer = setInterval(() => {
                         timeLeft--;
-                        feedback.innerText = `Incorrect. Wait ${timeLeft}s...`;
+                        feedback.innerText = `Falsch. Warte ${timeLeft}s...`;
                         if (timeLeft <= 0) {
                             clearInterval(timer);
                             resetState();
