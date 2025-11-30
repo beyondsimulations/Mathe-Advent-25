@@ -10,9 +10,9 @@ css: [../advent.css,../quiz.css]
 
 ### Ort: GrinchTech Logistik-Hub A (Ehemals Hamburger Hafenbehörde)
 
-Ihr erreicht Lagerhaus A. Es ist kein Verteilzentrum—es ist ein **schwarzes Loch**.
+Ihr erreicht Lagerhaus A.
 
-Lastwagen kommen voll mit Weihnachtspaketen an, aber sie fahren leer wieder weg. Drinnen seht ihr das Grauen: Riesige Roboterklauen greifen wunderschön verpackte Geschenke, scannen sie und werfen sie auf ein Förderband mit der Aufschrift **„RECYCLING & VERBRENNUNG."**
+Lastwagen kommen voll mit Weihnachtspaketen an, aber sie fahren leer wieder weg. Drinnen seht ihr das Grauen: Riesige Roboterklauen greifen verpackte Geschenke, scannen sie und werfen sie auf ein Förderband mit der Aufschrift **„RECYCLING & VERBRENNUNG."**
 
 Ihr scannt euren Ausweis. Der Grinch erscheint auf dem Monitor und schaut selbstgefällig auf eine Tabelle.
 
@@ -22,9 +22,7 @@ Ihr scannt euren Ausweis. Der Grinch erscheint auf dem Monitor und schaut selbst
 >
 > Wisst ihr, ich habe die Versandrechte für die gesamte Stadt gekauft. Warum? Um euch vor euch selbst zu retten. Habt ihr eine Ahnung, wie viel CO₂-Fußabdruck dieses ‚Schenken' verursacht? Es ist unverantwortlich.
 >
-> Meine Algorithmen sind derzeit auf **Abfangen und Liquidieren** eingestellt. Wir verarbeiten 5.000 ‚Freude-Einheiten' pro Stunde und wandeln sie in komprimierte Würfel aus recycelbarer Pappe um. Es ist elegant. Es ist nachhaltig. Es ist vorbei.
->
-> Wenn ihr hier seid, um zu versuchen, die Bänder wieder auf ‚Liefermodus' umzuschalten, lasst es bleiben. Die Mathematik, die erforderlich ist, um das Drehmoment dieser Schredder umzukehren, übersteigt euch."
+> Meine Algorithmen sind derzeit auf **Abfangen und Liquidieren** eingestellt. Wir verarbeiten 5.000 ‚Freude-Einheiten' pro Stunde und wandeln sie um. Es ist elegant. Es ist nachhaltig. Es ist vorbei.
 >
 > -- GR
 
@@ -36,12 +34,12 @@ Um die Geschenke zu retten, müsst ihr die Betriebsparameter der Maschinen **umk
 
 **Aufgabe a) Das Schredder-Band**
 
-Das Hauptförderband ist derzeit auf „Ramm-Geschwindigkeit" ($s$) eingestellt, um Pakete in den Verbrennungsofen zu schleudern. Die Gleichung, die die Geschwindigkeit regelt, lautet:
+Das Hauptförderband ist derzeit eingestellt, um Pakete in den Verbrennungsofen zu schleudern. Die Gleichung, die die Geschwindigkeit regelt, lautet:
 $$3(s + 4) - 2s = 20$$
 
 > **Grinchs Hinweis:** „Kein Druck. Na ja, eigentlich jede Menge Druck."
 
-**Ziel:** Der Grinch hat das für maximale Zerstörung eingestellt. Die Lösung identifiziert die Geschwindigkeit. Sobald identifiziert, erlaubt das System euch, die Motorpolarität umzukehren.
+**Ziel:** Der Grinch hat die Geschwindigkeit auf maximale Zerstörung eingestellt. Die Lösung identifiziert die Geschwindigkeit. Sobald identifiziert, erlaubt das System euch, die Motorpolarität umzukehren.
 
 ::: {.puzzle-box}
 **Löse nach s auf (Schredder-Geschwindigkeit):**
@@ -82,9 +80,9 @@ Der Grinch hat alle Geschenke als „Müll" kategorisiert. Ihr müsst das Invent
 
 **Aufgabe c) Die Klauen-Kalibrierung**
 
-Die Roboterklaue ist programmiert zum **Zerquetschen** ($|2x - 7| = 3$). Ihr müsst das lösen, um die Griffgrenzen zu finden.
+Die Roboterklaue ist programmiert zum **Zerquetschen** ($|2x - 7| = 3$). Ihr müsst die Gleichung nach $x$ auflösen.
 
-> **Grinchs Hinweis:** „Die aktuelle Einstellung wendet 275 bar Druck an. Genug, um eine PlayStation in eine Frisbee-Scheibe zu verwandeln. Fasst es nicht an."
+> **Grinchs Hinweis:** „Die aktuelle Einstellung wendet 275 bar Druck an. Genug, um eine PlayStation in eine Frisbee-Scheibe zu verwandeln. Fasst die Klaue lieber nicht an."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -117,9 +115,8 @@ Der Grinch erscheint auf dem Bildschirm und sieht wütend aus. Er verschüttet e
 >
 > Ihr habt den Fluss umgekehrt? Wisst ihr, wie viel Papierkram das verursacht? Ich hatte diese Schredder-Quoten vom Vorstand genehmigen lassen!
 >
-> Vielleicht habt ihr diese Ladung ‚konsumistisches Gerümpel' gerettet, aber Lagerhaus B ist, wo ich das **schwierige Zeug** aufbewahre.
+> Vielleicht habt ihr diese Ladung ‚Gerümpel' gerettet, aber Lagerhaus B ist, wo ich das **schwierige Zeug** aufbewahre.
 >
-> Gute Arbeit, Held."
 > -- GR
 
 **Systemstatus:**

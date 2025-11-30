@@ -44,7 +44,7 @@ Der Grinch hat 150 beschlagnahmte Geschenke zwischen Raum A und Raum B aufgeteil
 * **Gleichung 1:** Gesamtzahl der Geschenke: $A + B = 150$
 * **Gleichung 2:** Raum A hat 20 mehr Geschenke als Raum B ($A = B + 20$)
 
-> **Grinchs Hinweis:** „Einsetzungsverfahren. Wenn ihr Schwierigkeiten habt, fangt vielleicht lieber mit Stricken an."
+> **Grinchs Hinweis:** „Wenn ihr Schwierigkeiten habt, fangt vielleicht lieber mit Stricken an."
 
 **Ziel:** Findet die genaue Anzahl der Geschenke in jedem Raum, um das Schloss zu überschreiben.
 
@@ -90,7 +90,7 @@ Die Klimasteuerung für die Sektionen X, Y und Z ist miteinander verknüpft. Ihr
 
 Der Grinch hat zwei Sortierlinien eingerichtet, die grafisch als **parallele Geraden** dargestellt werden.
 
-> **Grinchs Hinweis:** „Denkt darüber nach, was das für ein Gleichungssystem bedeutet. Gleiche Steigung, verschiedene y-Achsenabschnitte. Die Geometrie sagt euch alles über die Algebra. Es ist poetisch, wirklich. Auf eine deprimierende Art."
+> **Grinchs Hinweis:** „Denkt darüber nach, was das für ein Gleichungssystem bedeutet. Gleiche Steigung, verschiedene y-Achsenabschnitte. Die Geometrie sagt euch alles. Es ist poetisch, wirklich. Auf eine deprimierende Art."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -127,6 +127,7 @@ Der Grinch erscheint auf dem Bildschirm. Er beißt in eine Gurkenscheibe.
 > Morgen werdet ihr euch **quadratischen Gleichungen** stellen. Denn nichts sagt ‚Ich ruiniere euren Tag' besser als Parabeln.
 >
 > Seid nicht zu spät."
+>
 > -- GR
 
 **Systemstatus:**

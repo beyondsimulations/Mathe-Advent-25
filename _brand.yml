@@ -11,12 +11,13 @@ color:
     greyer: "#3D5369"
     lighter: "#FFFDFC"
     burgundy: "#800020"
+    green: "#00a353"
 
   foreground: darker #The main text color. Typically will be close to black and must have high contrast with the background color.
   background: lighter #The main background color. Tyically will be close to white and must have high contrast with the foreground color.
 
   primary: twoDark #The primary accent color, used for hyperlinks, active states, and primary action buttons.
-  secondary: burgundy #The secondary accent color, often used for lighter text or disabled states.
+  secondary: green #The secondary accent color, often used for lighter text or disabled states.
   tertiary: oneDark #The tertiary accent color, used for hover states, accents, and wells.
 
   success: twoLight #The color used for positive or successful actions and information.

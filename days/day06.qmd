@@ -109,7 +109,7 @@ $$\log_3(y) + \log_3(2) = 2$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="4.5">Marktprotokoll aktivieren</button>
+  <button class="quiz-submit" disabled data-answer="4,5">Marktprotokoll aktivieren</button>
 </div>
 :::
 

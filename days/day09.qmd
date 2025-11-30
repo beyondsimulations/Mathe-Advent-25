@@ -27,6 +27,7 @@ Ihr checkt das Terminal. Der Grinch erscheint auf dem Bildschirm und isst eine s
 > Ich habe die manuellen Überbrückungskontrollen hinter **quadratische Barrieren** gesperrt. Warum? Weil Parabeln die Form meiner Enttäuschung in euch sind.
 >
 > Ihr könnt versuchen, sie zu knacken, aber seien wir ehrlich: Die meisten von euch haben wahrscheinlich immer noch Probleme mit negativen Zahlen. Verletzt euch nicht."
+>
 > -- GR
 
 ## Die Herausforderung
@@ -66,7 +67,7 @@ $$2x^2 + 7x + 3 = 0$$
 
 > **Grinchs Hinweis:** „Der Schredder kommt einem sehr schönen Lego-Set immer näher."
 
-**Anforderung:** Löst mit der Mitternachtsformel.
+**Anforderung:** Löst mit der PQ-Formel.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
