@@ -1,0 +1,176 @@
+/* =========================================
+   QUIZ & PUZZLE STYLING
+   ========================================= */
+
+/* Wrapper for Puzzle + Story */
+.scenario-block {
+    margin-bottom: 25px; /* Reduced from 40px */
+    width: 100%;
+}
+
+/* The White Box Container */
+.puzzle-box {
+    background: #fffdfc; /* Warm White */
+    border: 1px solid #ddd;
+    padding: 20px; /* Reduced padding from 25px */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px; /* Reduced spacing */
+}
+
+/* --- BUTTONS (Multiple Choice) --- */
+.quiz-option {
+    display: block;
+    width: 100%;
+    padding: 10px 12px; /* Tighter padding */
+    margin-bottom: 6px;
+    text-align: left;
+    background: #fffdfc;
+    border: 1px solid #ccc; /* Thinner border */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s;
+    color: #333;
+}
+
+.quiz-option:hover:not(:disabled) {
+    border-color: #a00028;
+    background-color: #fff0f3; /* Very faint pink */
+}
+
+/* Selected State */
+.quiz-option.selected {
+    border-color: #a00028;
+    background-color: #fffdfc;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px #a00028 inset; /* Inner border glow */
+}
+
+/* Correct State (Persistent even if disabled) */
+.quiz-option.correct,
+.quiz-option.correct:disabled {
+    color: #363d45 !important;
+    opacity: 1 !important;
+    background-color: #a7c7c6 !important;
+    border-color: #537e8f !important;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Wrong State */
+.quiz-option.wrong {
+    border-color: #db6b6b !important;
+    background-color: #ebadad !important;
+}
+
+/* --- INPUT FIELDS (Type Answer) --- */
+.quiz-input {
+    /* Layout & Size */
+    display: block; /* Forces it to be on its own line */
+    width: 100%; /* Takes up full width of the box */
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+    margin: 10px 0; /* Adds space above and below */
+
+    /* Visuals */
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #fffdfc;
+    transition: all 0.2s ease;
+}
+
+.quiz-input:focus {
+    outline: none;
+    border-color: #a00028; /* Burgundy Glow */
+    box-shadow: 0 0 8px rgba(160, 0, 40, 0.15);
+}
+
+.quiz-input:disabled {
+    background-color: #f0f0f0;
+    color: #666;
+    border-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Success State (Green) */
+.quiz-input.correct {
+    background-color: #a7c7c6 !important;
+    border-color: #537e8f !important;
+    color: #363d45;
+    font-weight: bold;
+}
+
+/* Error State (Red) */
+.quiz-input.wrong {
+    border-color: #db6b6b !important;
+    background-color: #ebadad !important;
+}
+
+/* --- ACTION AREA --- */
+.quiz-submit {
+    background-color: #a00028;
+    color: white;
+    border: none;
+    padding: 8px 16px; /* Compact button */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.95rem;
+}
+
+.quiz-submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* --- Success Feedback Color --- */
+.quiz-feedback.success {
+    color: #537e8f !important; /* Force dark green, override default red */
+}
+
+/* --- REVEALED TEXT (Story) --- */
+.revealed-text {
+    display: none; /* Hidden by default */
+    margin-top: 15px; /* Reduced spacing */
+    animation: fadeText 1.5s;
+}
+
+@keyframes fadeText {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- ERROR ANIMATION (Shake) --- */
+.shake {
+    animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
