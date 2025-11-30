@@ -1,0 +1,171 @@
+---
+title: "Day 9: The Quadratic Barrier"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act II: Debugging the Supply Chain
+
+### Location: Warehouse C, Speicherstadt
+
+Warehouse C feels different. It isn't silent. You hear shouting.
+
+You enter through the main bay doors to find a surprising scene: GrinchTech's automated robots are fighting with human workers. A robotic forklift tries to stack a pallet of PS5s into the trash compactor, while a group of workers in safety vests pulls them back out.
+
+A woman in her fifties approaches, wiping grease on her vest. "I'm Frau Weber, shift supervisor. We're trying to save the inventory, but the Grinch updated the security protocols overnight. Everything is locked behind non-linear equations."
+
+You check the terminal. The Grinch appears on screen, eating a very expensive-looking truffle.
+
+> **System Message from CEO**
+>
+> "So, my human workforce is rebelling. How predictable.
+>
+> They don't understand *The Vision*. They think 'Christmas' is about 'Joy.' I think it's about 'Inefficient Capital Allocation.'
+>
+> I've locked the manual override controls behind **Quadratic Barriers**. Why? Because parabolas are the shape of my disappointment in you.
+>
+> You can try to crack them, but let's be honest: most of you probably still struggle with negative numbers. Don't hurt yourselves."
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+The control terminal shows four critical systems locked by quadratic equations.
+
+**Task a) Primary Access Barrier**
+
+The main control panel is locked.
+$$x^2 - 5x + 6 = 0$$
+
+> **Grinch's Note:** "This is the mathematical equivalent of a warm-up stretch. If this takes you more than thirty seconds, I'm concerned for your academic future."
+
+**Objective:** Enter both solutions to unlock the panel.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $x = -2, x = -3$ </button>
+  <button class="quiz-option" data-correct="true"> $x = 2, x = 3$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 1, x = 6$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 5, x = 6$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Unlock Access Panel</button>
+</div>
+:::
+
+**Task b) Safety Override System**
+
+The emergency brakes on the crusher are disabled.
+
+$$2x^2 + 7x + 3 = 0$$
+
+> **Grinch's Note:** "The crusher is getting closer to a very nice set of Legos."
+
+**Requirement:** Solve using the Quadratic Formula.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="true"> $x = -1/2, x = -3$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 1/2, x = 3$ </button>
+  <button class="quiz-option" data-correct="false"> $x = -2, x = -7$ </button>
+  <button class="quiz-option" data-correct="false"> $x = -1, x = -1.5$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Engage Safety Brakes</button>
+</div>
+:::
+
+**Task c) Machinery Calibration**
+
+The robotic arm needs calibration. Solve by **Completing the Square**.
+
+$$x^2 - 6x + 7 = 0$$
+
+> **Grinch's Note:** "It's elegant when done right. It's a disaster when done wrong. The robotic arm doesn't forgive disasters."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $x = 3 \pm \sqrt{7}$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 6 \pm \sqrt{2}$ </button>
+  <button class="quiz-option" data-correct="true"> $x = 3 \pm \sqrt{2}$ </button>
+  <button class="quiz-option" data-correct="false"> $x = -3 \pm \sqrt{2}$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calibrate Arm</button>
+</div>
+:::
+
+**Task d) System Diagnostics**
+
+The system asks for a pre-check analysis of:
+
+$$x^2 + 4x + 5 = 0$$
+
+> **Grinch's Note:** "The discriminant. Zero means one. Negative means... well, if you don't know what negative means for real solutions, I genuinely cannot help you."
+
+**Query:** "Determine the solution type using the Discriminant ($\Delta$). Do not solve."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Two Real Solutions ($\Delta > 0$) </button>
+  <button class="quiz-option" data-correct="false"> One Real Solution ($\Delta = 0$) </button>
+  <button class="quiz-option" data-correct="true"> No Real Solutions ($\Delta < 0$) </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit Diagnostic</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You hit Enter.
+
+The warehouse lights snap to green. The robotic forklifts stop moving toward the trash and freeze. Frau Weber rushes to the manual controls. "We have control! Override successful!"
+
+The workers cheer. You can hear the sounds of thousands of presents being moved to the *correct* shipping lanes.
+
+The Grinch appears on screen. He looks genuinely annoyed now. He puts down his truffle.
+
+> **System Message from CEO**
+>
+> "Okay. You're getting on my nerves.
+>
+> You've unlocked the main warehouse controls. 15,000 units of 'joy' are technically accessible. Congratulations on passing kindergarten-level algebra.
+>
+> But here's the thing about genius-level security architecture: **I built failsafes**.
+>
+> You didn't think I'd let you waltz through my warehouses without consequences, did you? The moment you cracked those quadratic barriers, you triggered my emergency protocols. Rational equations. Radical equations. Even a lovely cubic polynomial I designed while drinking a €200 bottle of wine.
+>
+> Tomorrow, you face **The System Failsafe**. Extraneous solutions. Domain restrictions. The kind of mathematics that catches overconfident amateurs off-guard.
+>
+> Oh, and there's a countdown timer. Because I'm theatrical like that.
+>
+> Sweet dreams."
+> -- GR
+
+**Progress Update:**
+
+* ✓ Warehouse A: Unlocked
+* ✓ Warehouse B: Unlocked
+* ✓ Warehouse C: Primary Controls Unlocked
+* Emergency Failsafe: ACTIVATED
+* Distribution System: LOCKED
+
+**Warning:** Failsafe protocols triggered. Additional challenges detected.
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

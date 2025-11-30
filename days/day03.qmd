@@ -1,0 +1,149 @@
+---
+title: "Day 3: The Encryption Matrix"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act I: Infiltration
+
+### Location: GrinchTech Headquarters - Floor 2, Network Operations Center
+
+The elevator doors open onto Floor 2, revealing a maze of server racks humming with activity. Tangles of cables—red, blue, green—snake across the ceiling and walls like technological vines. Banks of monitors display streams of encrypted data, and in the center of the room stands a massive digital display labeled **"Christmas Asset Encryption Matrix."**
+
+You approach the main terminal, and immediately the screen lights up with a challenge:
+
+> **Network Access Denied**
+>
+> Oh, you survived the elevator. How thrilling. I'll alert the media.
+>
+> Welcome to Floor 2, where I keep my *actual* security. This network is protected by multi-layer polynomial encryption. Each data stream is factored into components so tangled that my own IT department needed therapy after debugging it. One of them became a yoga instructor. He seems happier now.
+>
+> You want my Christmas data? Break all three encryption layers. Factorization. The thing you probably think you learned in school but actually just memorized long enough to pass the test and immediately forgot.
+>
+> I'll be here, timing you. The current record is held by a PhD candidate who took 47 minutes and then asked if we were hiring. We weren't.
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+The terminal displays three encrypted data streams. You must factorize the algebraic expression for each layer to generate the decryption key.
+
+**Task a) Encryption Layer Alpha**
+
+The first data stream is encoded with the polynomial:
+$$x^2 + 7x + 10$$
+
+> **Grinch's Note:** "This is literally the first thing they teach in factoring."
+
+This represents the number of encrypted data packets blocking your access. **Factorize** the expression to break it into components.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $(x + 1)(x + 10)$ </button>
+  <button class="quiz-option" data-correct="true"> $(x + 2)(x + 5)$ </button>
+  <button class="quiz-option" data-correct="false"> $(x - 2)(x - 5)$ </button>
+  <button class="quiz-option" data-correct="false"> $x(x + 7) + 10$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Decrypt Layer Alpha</button>
+</div>
+:::
+
+**Task b) Encryption Layer Beta**
+
+A secondary security protocol uses a difference of squares encryption:
+$$4x^2 - 9$$
+
+> **Grinch's Note:** "If you don't recognize this pattern instantly, I weep for your mathematical education. Two perfect squares being subtracted. The factorization practically writes itself."
+
+**Factorize** the expression completely.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $(2x - 3)^2$ </button>
+  <button class="quiz-option" data-correct="false"> $(4x - 3)(4x + 3)$ </button>
+  <button class="quiz-option" data-correct="true"> $(2x - 3)(2x + 3)$ </button>
+  <button class="quiz-option" data-correct="false"> $(2x - 9)(2x + 9)$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Decrypt Layer Beta</button>
+</div>
+:::
+
+**Task c) Encryption Layer Gamma**
+
+The final network protection shows overhead processing power allocated as:
+$$3x^2 + 9x$$
+
+> **Grinch's Note:** "What do both terms have in common? Pull it out. It's called 'factoring out the GCF.' Greatest Common Factor. If you need me to explain what 'greatest' or 'common' means, I have pamphlets. They're condescending. You'd hate them."
+
+**Factorize** by finding the common factor.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $3(x^2 + 3x)$ </button>
+  <button class="quiz-option" data-correct="false"> $x(3x + 9)$ </button>
+  <button class="quiz-option" data-correct="true"> $3x(x + 3)$ </button>
+  <button class="quiz-option" data-correct="false"> $3x(x + 9)$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Decrypt Layer Gamma</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You input the three factored expressions into the terminal. For a moment, nothing happens. Then, one by one, the encryption layers flash green and dissolve:
+
+**LAYER ALPHA: DECRYPTED**
+
+**LAYER BETA: DECRYPTED**
+
+**LAYER GAMMA: DECRYPTED**
+
+The main display changes, and you see a file directory appear—thousands of files documenting the Grinch's operations:
+
+- `christmas_present_locations.db` (LOCKED)
+- `market_shutdown_protocol.exe` (LOCKED)
+- `joy_suppression_algorithm.py` (LOCKED)
+- `hamburg_lights_killswitch.cfg` (LOCKED)
+
+But before you can open any of them, they all flash red and encrypt again. A new message appears:
+
+> **#security-alert**
+>
+> **TO:** engineering-team
+> **FROM:** G. Rinch
+>
+> Intruders have breached Floor 2 network encryption. All three layers. Factored correctly.
+>
+> I'm not going to say I'm impressed, because that would imply I expected less, and I have *standards*. But fine. They can factor polynomials. So can most scientific calculators and approximately 40% of high school students who aren't currently on their phones.
+>
+> Here's the thing about my file system: seeing the files and OPENING the files are two very different things. It's like window shopping, except the window is made of mathematics you haven't even encountered yet.
+>
+> Let them proceed. The algorithms only get worse from here. And by 'worse,' I mean 'better.' For me.
+>
+> -- GR
+
+You notice a stairwell door at the far end of the server room, labeled *"Floor 3: Algorithm Development Lab."* The electronic lock glows amber, indicating it's now accessible.
+
+**Systems Accessed:**
+
+- ✓ Building Power Grid
+- ✓ Network Operations Center
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

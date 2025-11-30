@@ -1,0 +1,124 @@
+---
+title: "Day 2: The Power Grid Protocol"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act I: Infiltration
+
+### Location: GrinchTech Headquarters - Server Room Access
+
+You're inside GrinchTech HQ, but the reception area is as far as most visitors get. A sleek elevator bank dominates the far wall, its buttons glowing a cold blue. Above it, a directory lists the floors:
+
+- **Floor 1:** Reception & Public Relations
+- **Floor 2:** Operations & Logistics
+- **Floor 3:** Algorithm Development
+- **Floor 4:** Data Analytics
+- **Floor 5:** Executive Suite & Command Center
+
+You press the button for Floor 2, but nothing happens. Instead, the elevator's display screen flickers to life:
+
+> **Power Management System - Locked**
+>
+> Oh, you made it past the front door. Congratulations. You've achieved what literally any delivery driver accomplishes daily. Truly inspiring.
+>
+> My building's power grid is controlled by precision algorithms. Every voltage calculation must be exact. One mistake in the order of operations, and the entire elevator system shorts out. Permanently. I had to replace it twice last quarter because of 'mathematically confident' visitors. The repair bills were astronomical. The schadenfreude was priceless.
+>
+> Let's see if you understand PEMDAS, or if you're about to join the distinguished list of people who've been trapped in a dark elevator while I watched on security cameras and ate popcorn.
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+**Task a) The Failsafe Protocol**
+
+A warning message flashes on the screen:
+
+> **Grinch's Note:** "My backup power protocol includes an exponent failsafe. When things go wrong, the system calculates $(x - 5)^0$. If you don't immediately know what ANY number raised to the zero power equals, please leave now and save us both the embarrassment."
+
+**Question:** What is the value of $(x - 5)^0$ for ANY value of $x$ (assuming $x \neq 5$)?
+
+::: {.puzzle-box}
+**Select the correct value and substantiation:**
+
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">
+    <strong>Value: 0</strong><br>
+    <em>Reasoning:</em> Because the base contains a negative number, the result is nullified.
+  </button>
+  
+  <button class="quiz-option" data-correct="true">
+    <strong>Value: 1</strong><br>
+    <em>Reasoning:</em> Any non-zero base raised to the power of 0 equals 1.
+  </button>
+
+  <button class="quiz-option" data-correct="false">
+    <strong>Value: x - 5</strong><br>
+    <em>Reasoning:</em> The exponent 0 acts as an identity operator, leaving the base unchanged.
+  </button>
+
+  <button class="quiz-option" data-correct="false">
+    <strong>Value: 5</strong><br>
+    <em>Reasoning:</em> The exponent cancels the variable $x$, leaving the constant.
+  </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Confirm Failsafe</button>
+</div>
+:::
+
+**Task b) Voltage Calibration**
+
+The elevator screen displays a complex control panel labeled "Voltage Regulation System." The power supply for Floor 2 requires exact voltage calibration. The system displays the following calculation to determine the correct voltage (in volts):
+
+**Voltage Formula:** $$5 \times (8 - 3)^2 + 12 \div 4 - |-7|$$
+
+> **Grinch's Note:** "PEMDAS. Please Excuse My Disdain At Stupidity. That's not what it stands for, but it should be. One wrong step in this calculation and you're stuck between floors. The WiFi down there is terrible."
+
+**Evaluate** this expression to find the correct voltage.
+
+::: {.puzzle-box}
+**Enter Voltage Value:**
+
+<input class="quiz-input" placeholder="e.g. 34">
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="121">Calibrate Power</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You enter the voltage value "121" into the control panel. The screen flashes green, and you feel a subtle vibration as power flows through the elevator shaft.
+
+> **Voltage calibration accepted. Elevator access granted.**
+
+The elevator doors open with a soft chime. As you step inside and press the button for Floor 2, another message appears:
+
+> **#engineering-all**
+>
+> Okay, fine. You understand order of operations. Parentheses before exponents. Multiplication before addition. Revolutionary stuff. Should I alert the Nobel committee, or would you prefer a sticker? I have some left over from a kindergarten visit. They have dinosaurs on them.
+>
+> But my REAL algorithms aren't simple arithmetic. They're nested, recursive, optimized by people with PhDs who cry when they look at their student loans. You're going to need more than whatever state school math department taught you to crack Floor 2.
+>
+> See you upstairs. Bring tissues. The server room has made grown engineers weep.
+>
+> -- GR
+
+The elevator ascends smoothly. Through the glass walls, you watch the Elbe river glittering below and the Hamburg skyline stretching out toward the Speicherstadt warehouses. Somewhere in this building, the Grinch's algorithms are holding Christmas hostage.
+
+Floor 2 awaits.
+
+**Systems Accessed:** Building Power Grid ✓
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

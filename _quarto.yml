@@ -1,0 +1,53 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - 404.qmd
+    - days/*.qmd
+website:
+  title: "Mathe Advent 2025"
+  site-url: https://beyondsimulations.github.io/Mathe-Advent-25
+  navbar: false
+  bread-crumbs: false
+
+  page-footer:
+    center: "Mathe Advent 2025, Tobias Vlćek </br> MIT License"
+    left:
+      - icon: github
+        href: https://github.com/beyondsimulations/Mathe-Advent-25
+      - icon: linkedin
+        href: https://linkedin.com/in/tobiasvlcek
+      - icon: envelope
+        href: mailto:vlcek@beyondsimulations.com
+      - icon: skip-backward
+        href: https://beyondsimulations.github.io/lectures
+
+format:
+  html:
+    theme:
+      - default
+      - styles.scss
+      - brand
+    toc: true
+    highlight-style: github
+    callout-appearance: simple
+    code-copy: true
+    code-link: true
+    toc-location: right
+    code-overflow: wrap
+    fig-width: 7
+    fig-height: 4
+    reference-location: margin
+    citation-location: margin
+    cap-location: margin
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    include-in-header:
+      - general/header.html
+
+execute:
+  freeze: auto
+  echo: false
+
+brand: _brand.yml

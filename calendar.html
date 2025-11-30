@@ -1,0 +1,246 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("🎄 Math Advent Calendar Script Loaded 🎄");
+
+        // ==========================================
+        // PART 1: CALENDAR DOOR LOCKING LOGIC
+        // ==========================================
+
+        const targetYear = 2025;
+        const debugMode = false; // Set to true to unlock everything for testing
+
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth();
+        const currentDay = now.getDate();
+
+        const doors = document.querySelectorAll(".door");
+
+        if (doors.length > 0) {
+            doors.forEach((door) => {
+                let dayNumber = parseInt(
+                    door.getAttribute("data-day") || door.innerText,
+                );
+                let isLocked = false;
+
+                if (!debugMode) {
+                    if (currentYear < targetYear) isLocked = true;
+                    else if (currentYear === targetYear && currentMonth < 11)
+                        isLocked = true;
+                    else if (
+                        currentYear === targetYear &&
+                        currentMonth === 11 &&
+                        dayNumber > currentDay
+                    )
+                        isLocked = true;
+                }
+
+                if (isLocked) {
+                    door.classList.add("future");
+                    door.removeAttribute("href");
+                    door.style.cursor = "not-allowed";
+                    door.onclick = (e) => {
+                        e.preventDefault();
+                        alert(`Not yet! Come back on Dec ${dayNumber}.`);
+                    };
+                } else {
+                    if (
+                        dayNumber === currentDay &&
+                        currentMonth === 11 &&
+                        currentYear === targetYear
+                    ) {
+                        door.classList.add("today");
+                    } else {
+                        door.classList.add("past");
+                    }
+                }
+            });
+        }
+
+        // ==========================================
+        // PART 2: MULTI-LOCK QUIZ & INPUT LOGIC
+        // ==========================================
+
+        const scenarios = document.querySelectorAll(".scenario-block");
+
+        scenarios.forEach((scenario) => {
+            const hiddenText = scenario.querySelector(".revealed-text");
+            const boxes = scenario.querySelectorAll(".puzzle-box");
+
+            // We keep track of how many boxes are solved
+            const totalRequired = boxes.length;
+
+            boxes.forEach((box) => {
+                const options = box.querySelectorAll(".quiz-option");
+                const inputField = box.querySelector(".quiz-input");
+                const submitBtn = box.querySelector(".quiz-submit");
+                const feedback = box.querySelector(".quiz-feedback");
+
+                let selectedBtn = null;
+
+                // --- LOGIC A: BUTTONS (Multiple Choice) ---
+                if (options.length > 0) {
+                    options.forEach((opt) => {
+                        opt.addEventListener("click", function () {
+                            if (submitBtn.style.display === "none") return; // Already solved
+                            if (this.disabled) return; // Penalty active
+
+                            // Visual selection
+                            options.forEach((o) =>
+                                o.classList.remove("selected"),
+                            );
+                            this.classList.add("selected");
+                            selectedBtn = this;
+
+                            submitBtn.disabled = false;
+                        });
+                    });
+                }
+
+                // --- LOGIC B: INPUT FIELD (Type Answer) ---
+                if (inputField) {
+                    inputField.addEventListener("input", function () {
+                        if (submitBtn.style.display === "none") return;
+
+                        // Enable button only if text is typed
+                        if (this.value.trim().length > 0) {
+                            submitBtn.disabled = false;
+                        } else {
+                            submitBtn.disabled = true;
+                        }
+                    });
+
+                    // Allow pressing "Enter"
+                    inputField.addEventListener("keypress", function (event) {
+                        if (event.key === "Enter" && !submitBtn.disabled) {
+                            submitBtn.click();
+                        }
+                    });
+                }
+
+                // --- SUBMISSION HANDLER ---
+                if (submitBtn) {
+                    submitBtn.addEventListener("click", function () {
+                        let isCorrect = false;
+
+                        // Check MCQ
+                        if (selectedBtn) {
+                            isCorrect =
+                                selectedBtn.getAttribute("data-correct") ===
+                                "true";
+                        }
+                        // Check Input (Case Insensitive)
+                        else if (inputField) {
+                            const rawUser = inputField.value
+                                .trim()
+                                .toLowerCase();
+                            const rawCorrect = submitBtn
+                                .getAttribute("data-answer")
+                                .toLowerCase();
+                            isCorrect = rawUser === rawCorrect;
+                        }
+
+                        if (isCorrect) {
+                            // === SUCCESS ===
+                            box.classList.add("solved");
+
+                            if (selectedBtn) {
+                                selectedBtn.classList.remove("selected");
+                                selectedBtn.classList.add("correct");
+                                selectedBtn.innerHTML = selectedBtn.innerHTML;
+                            } else if (inputField) {
+                                inputField.classList.add("correct");
+                                inputField.disabled = true;
+                            }
+
+                            feedback.classList.add("success");
+                            feedback.innerText = "Correct.";
+
+                            // Hide submit button
+                            submitBtn.style.display = "none";
+
+                            // Lock options
+                            if (options)
+                                options.forEach((o) => (o.disabled = true));
+
+                            // Check if ALL boxes in this scenario are done
+                            checkAllSolved();
+                        } else {
+                            // === FAILURE ===
+
+                            // Identify element to Shake
+                            const errorEl = selectedBtn || inputField;
+
+                            if (errorEl) {
+                                if (selectedBtn)
+                                    selectedBtn.classList.remove("selected");
+                                errorEl.classList.add("wrong");
+                                errorEl.classList.add("shake");
+
+                                // Remove shake after animation (0.5s)
+                                setTimeout(() => {
+                                    errorEl.classList.remove("shake");
+                                }, 500);
+                            }
+
+                            // Penalty Timer
+                            startPenaltyTimer(10);
+                        }
+                    });
+                }
+
+                // --- HELPER: PENALTY TIMER ---
+                function startPenaltyTimer(seconds) {
+                    if (options) options.forEach((o) => (o.disabled = true));
+                    if (inputField) inputField.disabled = true;
+                    submitBtn.disabled = true;
+
+                    let timeLeft = seconds;
+                    feedback.style.color = "#db6b6b"; // Error Red
+                    feedback.innerText = `Incorrect. Wait ${timeLeft}s...`;
+
+                    const timer = setInterval(() => {
+                        timeLeft--;
+                        feedback.innerText = `Incorrect. Wait ${timeLeft}s...`;
+                        if (timeLeft <= 0) {
+                            clearInterval(timer);
+                            resetState();
+                        }
+                    }, 1000);
+                }
+
+                // --- HELPER: RESET AFTER PENALTY ---
+                function resetState() {
+                    feedback.innerText = "";
+
+                    if (options)
+                        options.forEach((o) => {
+                            o.disabled = false;
+                        });
+
+                    if (inputField) {
+                        inputField.disabled = false;
+                        inputField.focus();
+                        inputField.classList.remove("wrong");
+                    }
+
+                    submitBtn.disabled = true;
+                    selectedBtn = null;
+                }
+            });
+
+            // --- HELPER: GLOBAL CHECK ---
+            function checkAllSolved() {
+                const currentSolved =
+                    scenario.querySelectorAll(".puzzle-box.solved").length;
+
+                if (currentSolved === totalRequired) {
+                    if (hiddenText) {
+                        hiddenText.style.display = "block";
+                        // Gentle fade in logic is handled by CSS animation 'fadeText'
+                    }
+                }
+            }
+        });
+    });
+</script>

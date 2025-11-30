@@ -1,0 +1,156 @@
+---
+title: "Day 5: The Logarithmic Vault"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act I: Infiltration
+
+### Location: GrinchTech Backup Facility, Speicherstadt
+
+You push through the heavy doors into the backup facility. It smells of ozone and... stale kale smoothies?
+
+The room is a cavernous brick warehouse, but the center is dominated by **The Vault**. It’s an obnoxious cylinder of glass and chrome, glowing with a smug green light. Inside, you see the Holy Grail: *The Master Plan*. Physical files. Hard drives. A half-eaten sandwich labeled "Property of CEO."
+
+You approach the terminal. It doesn't beep; it sighs. A holographic projection of the Grinch appears—not the scary version, but the annoyed, "this meeting could have been an email" version. He looks at you with deep exhaustion.
+
+> **System Message from CEO**
+>
+> "Oh, for the love of... You're *still* here?
+>
+> I honestly thought the quadratic equations would bore you to death. Literally. I had the oxygen scrubbers set to 'Ennui.'
+>
+> Fine. You want into my private vault? You want to see how I plan to 'disrupt' your precious little holiday into a high-efficiency void of silence?
+>
+> Then prove you aren't just counting on your fingers. This is **Logarithmic Encryption**. It scales exponentially. Unlike your IQ, which seems to have plateaued somewhere around 'hamster.'
+>
+> Unlock these four tumblers. Or don't. I have a trapdoor scheduled to open in five minutes, and my crocodiles are hungry."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+The keypad glares at you. The Grinch has renamed the security layers to mock you.
+
+**Lock 1: "The Toddler Test"**
+
+The system demands a basic evaluation to see if you're worth its CPU cycles.
+
+$$\text{Evaluate: } \log_2(32)$$
+
+> **Grinch's Note:** "If you need to count on your fingers for this, I'm activating the trapdoor early. The crocodiles haven't been fed for a while."
+
+::: {.puzzle-box}
+**Enter the value:**
+<input class="quiz-input" placeholder="?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="5">Prove Sentience</button>
+</div>
+:::
+
+**Lock 2: "Redundancy for Idiots"**
+
+The Grinch assumes you'll mess up the addition rule.
+
+$$\log_3(9) + \log_3(27)$$
+
+> **Grinch's Note:** "If you try to use a calculator for this, a small electric shock will be administered to your keyboard. I'm watching."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $6$ (Nice try) </button>
+  <button class="quiz-option" data-correct="true"> $5$ (Acceptable) </button>
+  <button class="quiz-option" data-correct="false"> $\log_3(36)$ (Horrifyingly wrong) </button>
+  <button class="quiz-option" data-correct="false"> $9$ (Just go home) </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit Answer</button>
+</div>
+:::
+
+**Lock 3: "The Panic Inducer"**
+
+A red countdown timer appears. It's moving uncomfortably fast.
+
+$$\text{Solve for } x \text{ before the crocodiles are released: } \quad 5^x = 125$$
+
+> **Grinch's Note:** "The clock is real. The crocodiles are real. Tick tock. They can hear your heartbeat through the floor sensors."
+
+::: {.puzzle-box}
+**Enter x:**
+<input class="quiz-input" placeholder="x = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="3">Stop the Timer</button>
+</div>
+:::
+
+**Lock 4: "The Ego check"**
+
+The final lock uses Base-4, just because the Grinch prefers it.
+
+$$\text{Compute: } \log_4(64)$$
+
+> **System Note:** "Most people fail here. Try not to be most people."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $16$ </button>
+  <button class="quiz-option" data-correct="false"> $4$ </button>
+  <button class="quiz-option" data-correct="true"> $3$ </button>
+  <button class="quiz-option" data-correct="false"> $8$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Open the Vault</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You punch in the final code. The vault lets out a disappointed groan, as if it can't believe you actually got it right. The glass slides open.
+
+You grab the **Master Plan**. It's worse than you thought.
+* **Protocol "Silent Night":** Using drones to absorb sound waves from carolers.
+* **Project "Coal":** Converting all chocolate Santas into 99% dark cacao (the bitter kind).
+* **The Algorithm:** A code designed to auto-cancel holiday flight reservations randomly.
+
+Suddenly, the giant screen flickers. The Grinch appears again. He's holding a green juice and looking at his watch.
+
+> **Live feed - GrinchTech Executive Suite**
+>
+> "Ugh. The alarm. It's so loud. Can you hear that? I composed it myself. It's called 'The Sound of Your Futility.'
+>
+> So, you have my files. Bravo. You figured out logarithms. Would you like a participation trophy? I 3D-printed some, but I threw them in the Elbe.
+>
+> Look, you have the data, but you don't have the *keys*. My supply chain is encrypted with math so annoying, so tedious, that you'll wish you were back in algebra class.
+>
+> Go ahead. Try to fix Christmas. I'll be here, shorting the stock market on tinsel companies.
+>
+> Toodles."
+>
+> -- GR
+
+The screen cuts to black. You have the files. You have a headache. And you have a very angry Grinch to stop.
+
+**Critical Intel Acquired:**
+
+- ✓ The Grinch's Ego (It's massive)
+- ✓ Master Plan Files
+- ✓ Knowledge that he drinks Kale Smoothies
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

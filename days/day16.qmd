@@ -1,0 +1,168 @@
+---
+title: "Day 16: The Economic Transformations"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act III: Business Model Analysis
+
+### Location: Hamburg Economic Forecast Center
+
+The economic battle has moved to Hamburg's Forecast Center. Today's session focuses on how external factors—inflation, taxes, regulations—transform business models mathematically.
+
+The Grinch has prepared a presentation titled: "Economic Scenarios: How External Factors Destroy Christmas Profitability." He appears on screen wearing what looks like a very expensive cardigan. Academic villain chic.
+
+"Economic reality is transformation," he declares. "Your baseline models might show profit at the vertex—but add inflation, impose new taxes, introduce regulations, and suddenly Christmas is mathematically doomed."
+
+> **System Message from CEO**
+>
+> "You've proven you understand static functions. How quaint.
+>
+> But business isn't static. A 4% inflation shift. A regulatory compression. A market crash that reflects everything into negative territory. These are TRANSFORMATIONS. And they destroy your pretty profit parabolas.
+>
+> Let's see if you can even identify transformations, let alone defend against them.
+>
+> I'll use a simple base function: $f(x) = x^2 - 2x + 3$
+>
+> Watch how easily I can transform profitability into catastrophe. Or don't watch. I'll do it anyway."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Analyze how external economic factors transform the base function $f(x) = x^2 - 2x + 3$. The Grinch has named each scenario with his characteristic dramatic flair.
+
+**Lock 1: "The Inflation Avalanche"**
+
+A 4% inflation rate effectively shifts all costs upward by 4 units.
+
+> **Grinch's Note:** "Vertical shifts. Add to the function. This is... genuinely the easiest transformation. If you miss this, I'm going to assume you're doing it on purpose to waste my time."
+
+**If $f(x)$ shifts UP by 4 units, what is the constant term in $g(x)$?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $+3$ </button>
+  <button class="quiz-option" data-correct="true"> $+7$ </button>
+  <button class="quiz-option" data-correct="false"> $-1$ </button>
+  <button class="quiz-option" data-correct="false"> $+4$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Apply Inflation Model</button>
+</div>
+:::
+
+**Lock 2: "The Regulatory Shift"**
+
+New EU regulations create administrative overhead, shifting all operations LEFT by 3 time units. The transformation rule is $g(x) = f(x + 3)$.
+
+> **Grinch's Note:** "Horizontal shifts are where students fall apart. It's counterintuitive and beautiful. Like watching someone confidently walk into a glass door. This one brings me joy."
+
+**After shifting $f(x)$ LEFT by 3 units, what is the coefficient of $x$ in the expanded form of $g(x)$?**
+
+::: {.puzzle-box}
+**Enter the coefficient of x:**
+<input class="quiz-input" placeholder="? x">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="4">Apply Regulatory Model</button>
+</div>
+:::
+
+**Lock 3: "The Market Crash Mirror"**
+
+An economic downturn reflects market conditions over the $x$-axis, inverting profits into losses.
+
+> **Grinch's Note:** "Reflections. The mirror image of your hopes. The negative sign affects EVERYTHING, and yet somehow people still mess this up. I have a bet with my assistant. Don't prove her right."
+
+**After reflection over the $x$-axis, what is the constant term in $g(x)$?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $+3$ </button>
+  <button class="quiz-option" data-correct="true"> $-3$ </button>
+  <button class="quiz-option" data-correct="false"> $0$ </button>
+  <button class="quiz-option" data-correct="false"> $-1$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Apply Crash Model</button>
+</div>
+:::
+
+**Lock 4: "The Growth Multiplier"**
+
+A government stimulus package doubles all economic activity (vertical stretch by factor of 2).
+
+> **Grinch's Note:** "Stretching. Like what your excuses do when you can't solve a problem. The government doubles everything—and I mean EVERYTHING. Process that."
+
+**After vertical stretch by factor 2, what is the leading coefficient ($a$ in $ax^2$)?**
+
+::: {.puzzle-box}
+**Enter the coefficient:**
+<input class="quiz-input" placeholder="a = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="2">Apply Growth Model</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You present your transformation analysis:
+
+- Inflation (up 4): $g(x) = x^2 - 2x + 7$ ✓
+- Regulation (left 3): $g(x) = x^2 + 4x + 6$ ✓
+- Market crash (reflect): $g(x) = -x^2 + 2x - 3$ ✓
+- Growth (stretch 2): $g(x) = 2x^2 - 4x + 6$ ✓
+
+But then you add: "However, the Grinch's analysis contains a critical flaw."
+
+The room goes quiet.
+
+"He only showed NEGATIVE transformations—inflation, crashes, costs. But transformations work both ways. Government support shifts functions UP. Efficiency improvements reflect profit-positive. Market growth stretches revenue."
+
+You pull up your own analysis: "If we apply realistic positive transformations—EU Christmas market subsidies (shift up 10), local tourism growth (stretch 1.5), operational efficiencies (shift left 2 for earlier profitability)—the transformed function shows INCREASED profit, not decreased."
+
+The Grinch's expression flickers. He wasn't expecting a counter-analysis.
+
+> **#transformation-analysis**
+>
+> "Clever. You didn't just calculate transformations—you understood that transformations can be positive or negative depending on context.
+>
+> Fine. You understand function transformations. You can defend against my external shock scenarios.
+>
+> But here's the final business test: REVERSIBILITY. Can you undo my optimizations? Can you find inverse functions? Can you reverse-engineer my economic models to restore original Christmas operations?
+>
+> Tomorrow: Inverse functions and function composition. The mathematics of UNDOING what I've done.
+>
+> This is your last chance to prove Christmas is economically viable."
+>
+> -- GR
+
+**Act III Progress:**
+
+- ✓ Function fundamentals verified
+- ✓ Linear business models validated
+- ✓ Quadratic optimization mastered
+- ✓ Function transformations mastered
+- Inverse functions: Tomorrow (Final business challenge)
+
+**Status:** Transformation defense successful; one more challenge remaining.
+
+**Time Remaining:** 8 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

@@ -1,0 +1,154 @@
+---
+title: "Day 6: The Master Algorithm"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act I: Infiltration - Finale
+
+### Location: GrinchTech Executive Suite, Floor 5
+
+The elevator shoots upward, crossing back over the Elbe via an underground tunnel. When the doors open, you're on Floor 5—the Executive Suite.
+
+It's minimalist to the point of sterile: glass walls overlooking Hamburg, a single standing desk with multiple 8K monitors, and a massive holographic display showing a 3D model of Hamburg with every Christmas system mapped out in red.
+
+The Grinch stands at the window, silhouetted against the grey December sky. He doesn't turn around.
+
+"Welcome," he says, his voice bored. "You're late. I expected you five minutes ago."
+
+He gestures to the holographic display. "This is my masterpiece. **The Christmas Optimization Platform (COP).** Everything you've solved so far—number theory, factorization, logarithms—those were just the warm-up. Now let me show you the real complexity."
+
+The display shifts, showing a massive mathematical expression that combines multiple concepts.
+
+> **System Message: The Grand Design**
+>
+> "This is the core algorithm. Solve this, and I'll grant you read-access to the control systems. Fail, and I'll have security escort you out.
+>
+> I've combined everything. Multi-step expressions. Complex factorization. Radical simplification. Logarithmic equations.
+>
+> Impress me. If you can."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+The holographic display presents four interconnected problems.
+
+**Task a) System Stability Index**
+
+The core algorithm's stability is determined by evaluating this complex expression. Order of operations is critical.
+$$[(10 - 2^2) \div 2 + \sqrt{81}] \times \log_5(125)$$
+
+> **Grinch's Note:** "Everything you've learned so far, combined. Brackets, exponents, roots, logarithms. Miss one step and the whole thing falls apart. Like my faith in humanity. Which happened years ago."
+
+::: {.puzzle-box}
+**Evaluate:**
+<input class="quiz-input" placeholder="?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="36">Stabilize Core</button>
+</div>
+:::
+
+**Task b) Security Key Factorization**
+
+The master encryption key is a high-degree polynomial.
+
+$$x^4 - 16$$
+
+> **Grinch's Note:** "Difference of squares... but wait, there's more! One of the factors is ALSO a difference of squares. Most people stop too early. Don't be most people. I'm begging you. Not literally, I don't beg, but metaphorically."
+
+**Requirement:** Factorize completely (do not stop at difference of squares).
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $(x^2 - 4)(x^2 + 4)$ </button>
+  <button class="quiz-option" data-correct="true"> $(x - 2)(x + 2)(x^2 + 4)$ </button>
+  <button class="quiz-option" data-correct="false"> $(x - 2)^2(x + 2)^2$ </button>
+  <button class="quiz-option" data-correct="false"> $(x - 2)(x + 2)(x - 2)(x + 2)$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Input Key</button>
+</div>
+:::
+
+**Task c) Energy Distribution Formula**
+
+The power grid uses a radical expression. Simplify it to restore lighting voltage.
+$$\frac{\sqrt{18} + \sqrt{50}}{\sqrt{2}}$$
+
+> **Grinch's Note:** "Radical simplification. Combine like terms under the roots, rationalize if needed. Or just stare at it in confusion—that's what the last three people did. They work in retail now."
+
+::: {.puzzle-box}
+**Simplify:**
+<input class="quiz-input" placeholder="?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="8">Optimize Voltage</button>
+</div>
+:::
+
+**Task d) Market Activation Code**
+
+The final authentication for the market control panel is a logarithmic equation.
+$$\log_3(y) + \log_3(2) = 2$$
+
+> **Grinch's Note:** "Log properties. When you add logs of the same base, you're really... well, if you don't know, you should have paid more attention."
+
+::: {.puzzle-box}
+**Solve for y:**
+<input class="quiz-input" placeholder="y = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="4.5">Activate Market Protocol</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You input the final answer: **4.5**
+
+The holographic display flashes green. Every number, every equation, every factor resolves into a single word that pulses in the air: **AUTHENTICATED**.
+
+The Grinch turns to face you. He looks... annoyed. But also slightly respectful.
+
+"Thirty-six. Complete factorization. Eight. Four-point-five." He says each answer slowly. "All correct. How disappointing. I was hoping to watch security throw you out."
+
+He taps his standing desk. The red systems on the map flicker to amber.
+
+> **System Status Update**
+>
+> - Warehouse Access: PARTIAL (read-only)
+> - Market Controls: LOCKED
+> - Lighting Grid: LOCKED
+> - Supply Chain: ACTIVE
+
+"Fine," the Grinch sighs. "You understand the math. But understanding my systems and dismantling them are very different things. Phase One is complete. You've infiltrated my operation. Here is your reward: **More work.**"
+
+He gestures to the display, where new objectives appear:
+
+> **Phase Two: System Debugging**
+>
+> "My supply chain algorithms are still running. Presents are locked in Speicherstadt. Automated sorting systems are optimized to keep Christmas canceled.
+>
+> If you want to restore Hamburg's holiday, you'll need to debug my logistics. Days 7-12 will test you in ways the foundations never could.
+>
+> Good luck. Try not to break anything expensive."
+> -- GR
+
+**Act I: Infiltration - COMPLETE**
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

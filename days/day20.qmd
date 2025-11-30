@@ -1,0 +1,185 @@
+---
+title: "Day 20: The Exponential Crisis"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act IV: The Final Takeover
+
+### Location: GrinchTech Headquarters - Climate Control Emergency
+
+It's 2 AM when the emergency alert wakes you: **CRITICAL SYSTEM FAILURE - GRINCHTECH HEADQUARTERS**.
+
+You rush to Hafencity to find the GrinchTech building glowing an ominous red. Emergency vehicles surround it. Frau Weber meets you at the entrance, her face grim.
+
+"The climate control has gone haywire," she explains. "The backup facility—where all the presents are stored—is overheating. Exponentially."
+
+Inside the control room, you find the Grinch. He's not on a video call. He's actually here, in person, frantically working at his terminal. He's sweating. His hands are shaking.
+
+This is not the smug CEO you've been facing for 19 days.
+
+> **EMERGENCY - DIRECT ADDRESS**
+>
+> "This isn't me! I didn't activate this!
+>
+> It's a failsafe I built months ago—an exponential escalation protocol designed to trigger if someone bypassed too many of my security systems. And you've bypassed everything.
+>
+> The temperature is rising exponentially. The lights are failing exponentially. My entire infrastructure is in exponential collapse.
+>
+> I can't stop it alone. The override codes are mathematical—exponential equations and decay models. I need help.
+>
+> This isn't a test anymore. This is a crisis.
+>
+> Please."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Four exponential problems that must be solved to prevent catastrophic system collapse. The Grinch works alongside you, no longer an adversary.
+
+**Emergency 1: "Temperature Escalation"**
+
+The warehouse temperature $T$ (in °C) is rising according to:
+
+$$T(t) = 20 \cdot 2^{t/5}$$
+
+where $t$ is time in minutes since the crisis began (currently $t = 0$).
+
+> **Grinch's Note:** "At 140°C, irreversible damage begins. I need to know when we hit critical. Calculate the temperature at 20 minutes. We need to know how much time we have."
+
+**What is the temperature after 20 minutes?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> 80°C </button>
+  <button class="quiz-option" data-correct="false"> 160°C </button>
+  <button class="quiz-option" data-correct="true"> 320°C </button>
+  <button class="quiz-option" data-correct="false"> 400°C </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calculate Temperature</button>
+</div>
+:::
+
+**Emergency 2: "Lighting Decay"**
+
+Christmas lights throughout the warehouse are failing according to exponential decay:
+
+$$N(t) = 1000 \cdot (0.8)^t$$
+
+where $N$ is working lights and $t$ is hours since crisis began.
+
+> **Grinch's Note:** "How many lights will still work after 5 hours? If it drops below 300, the emergency systems lose visibility."
+
+**How many lights remain after 5 hours? (Round to nearest whole number)**
+
+::: {.puzzle-box}
+**Enter the number of lights:**
+<input class="quiz-input" placeholder="? lights">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="328">Stabilize Lighting</button>
+</div>
+:::
+
+**Emergency 3: "Backup Fund Access"**
+
+The Grinch reveals he's been investing in a Christmas restoration fund (apparently feeling guilty). The account grows according to:
+
+$$A(t) = 5000 \cdot e^{0.06t}$$
+
+where $t$ is years.
+
+> **Grinch's Note:** "We need €5,985 for emergency repairs. After 3 years, is there enough? I genuinely don't know—I haven't checked this account in months."
+
+**Is €5,985 available after 3 years? (Calculate $A(3)$ using $e^{0.18} \approx 1.197$)**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> No, only about €5,500 </button>
+  <button class="quiz-option" data-correct="true"> Yes, approximately €5,985 </button>
+  <button class="quiz-option" data-correct="false"> No, account is frozen </button>
+  <button class="quiz-option" data-correct="false"> Yes, over €7,000 </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Access Funds</button>
+</div>
+:::
+
+**Emergency 4: "The Fundamental Error"**
+
+The Grinch needs to understand why his original projections failed. His linear Christmas market model: $f(x) = 100x$ stalls/year. His exponential tech projection: $g(x) = 10 \cdot 2^x$ facilities/year.
+
+> **Grinch's Note:** "After 8 years, which dominates? I need to understand my own mistake. I compared short-term data and made long-term conclusions."
+
+**After 8 years, which value is larger?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Linear growth dominates </button>
+  <button class="quiz-option" data-correct="true"> Exponential growth dominates </button>
+  <button class="quiz-option" data-correct="false"> They're approximately equal </button>
+  <button class="quiz-option" data-correct="false"> Need more data to determine </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Analyze Error</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You input the calculations rapidly:
+
+- Temperature at 20 minutes: 320°C (CRITICAL - must act within 15 minutes!) ✓
+- Lights remaining at 5 hours: ~328 (above emergency threshold) ✓
+- Backup funds: ~€5,985 available ✓
+- Growth comparison: Exponential (2,560) far exceeds linear (800) ✓
+
+The system accepts the codes. The temperature escalation **STOPS** at 75°C. Emergency cooling activates. The lighting failure stabilizes.
+
+The Grinch collapses into a chair, physically exhausted. When he looks at you, there's something different in his eyes. Gratitude. And something else—understanding.
+
+> **DIRECT ADDRESS - G. RINCH**
+>
+> "You stopped it. Everything's safe.
+>
+> And you showed me my fundamental error. I was comparing short-term linear growth against long-term exponential potential. I was looking at year 3, not year 8.
+>
+> If Hamburg had let Christmas markets grow for another 5 years, they would have exponentially exceeded my projections. I shut them down precisely when they were about to explode with growth.
+>
+> I made a mathematical error. And nearly destroyed everything because of it.
+>
+> Thank you. For the math, and for... for helping when you didn't have to.
+>
+> Three more systems remain. But I'm not testing you anymore. We're working together now. Let's finish this. Properly."
+>
+> -- G. Rinch
+
+**Act IV Progress:**
+
+- ✓ Polynomial defenses cracked
+- ✓ Power function grid restored
+- ✓ Exponential crisis RESOLVED
+- ✓ Grinch fundamental error identified
+- Three final systems: Days 21-23
+- Master synthesis: Day 24
+
+**Time Remaining:** 4 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

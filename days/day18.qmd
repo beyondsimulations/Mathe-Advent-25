@@ -1,0 +1,165 @@
+---
+title: "Day 18: The Polynomial Defenses"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act IV: The Final Takeover
+
+### Location: Hamburg Rathaus - Technical Control Room
+
+The economic battle is won, but the technical war remains. You've been granted access to City Hall's Technical Control Room—a secure facility where Hamburg's critical infrastructure is monitored.
+
+The Christmas market control systems, the city lighting grid, traffic management—all displayed on massive screens. All showing the same status: **LOCKED BY GRINCHTECH PROTOCOLS**.
+
+The Grinch appears on the main screen. Something's different. He's less antagonistic. Almost... respectful:
+
+> **System Message from CEO**
+>
+> "Welcome to the endgame.
+>
+> You've proven Christmas is economically viable. I concede that point. My business models were... flawed. My optimization was based on incomplete data and pessimistic assumptions. It happens. Even to me.
+>
+> But I'm a technologist, not just an economist. And my technical systems are protected by university-level mathematics.
+>
+> If you can crack these final seven challenges—Days 18 through 24—I'll release full control. No tricks. No failsafes. Complete transfer.
+>
+> These aren't basic equations. These are polynomial roots. Synthetic division. The Intermediate Value Theorem. Mathematics that separates students who passed calculus from students who understood it.
+>
+> Let's see how far your knowledge truly extends."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Three polynomial problems protecting Hamburg's core technical systems.
+
+**Lock 1: "The Cubic Root Extraction"**
+
+The primary market control mechanism is locked behind a cubic polynomial:
+
+$$P(x) = x^3 - 2x^2 - 5x + 6$$
+
+System logs show one root has already been verified: $x = 1$
+
+> **Grinch's Note:** "I've given you one root for free. You're welcome. Now find the other two. This should take you about 90 seconds if you actually learned factoring techniques in class. The stopwatch is running."
+
+**What are the other two roots?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $x = 2$ and $x = -3$ </button>
+  <button class="quiz-option" data-correct="true"> $x = 3$ and $x = -2$ </button>
+  <button class="quiz-option" data-correct="false"> $x = -1$ and $x = 6$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 2$ and $x = 3$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Unlock Market System</button>
+</div>
+:::
+
+**Lock 2: "The Multiplicity Mapper"**
+
+The city's Christmas lighting system follows a polynomial power distribution:
+
+$$f(x) = x(x - 2)^2(x + 3)$$
+
+> **Grinch's Note:** "Look at the exponents. Look at what they tell you about behavior. If you need me to explain multiplicities, you should probably reconsider your life choices. And your course selection."
+
+**At $x = 2$, what does the graph do?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Crosses through the x-axis </button>
+  <button class="quiz-option" data-correct="true"> Touches and bounces off the x-axis </button>
+  <button class="quiz-option" data-correct="false"> Has a vertical asymptote </button>
+  <button class="quiz-option" data-correct="false"> Is undefined </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Configure Lighting</button>
+</div>
+:::
+
+**Lock 3: "The IVT Investigation"**
+
+A critical distribution routing algorithm uses:
+
+$$f(x) = x^3 - 3x^2 + 2x - 5$$
+
+The system asks: Is there a root between $x = 3$ and $x = 4$?
+
+> **Grinch's Note:** "The Intermediate Value Theorem. You learned it. I assume."
+
+**Can the IVT confirm a root between $x = 3$ and $x = 4$?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Yes, because both values are positive </button>
+  <button class="quiz-option" data-correct="false"> Yes, because one is positive and one is negative </button>
+  <button class="quiz-option" data-correct="true"> No, because both values are positive </button>
+  <button class="quiz-option" data-correct="false"> No, because both values are negative </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Validate Routing</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You input the polynomial analysis:
+
+- Market roots: $x = 1, 3, -2$ (complete factorization) ✓
+- Lighting at $x = 2$: Touches and bounces (multiplicity 2) ✓
+- IVT analysis: Cannot confirm root (both $f(3)=1$ and $f(4)=19$ are positive) ✓
+
+The City Hall systems respond immediately:
+
+**MARKET CONTROL SYSTEM: UNLOCKED**
+
+**CHRISTMAS MARKETS: FULLY OPERATIONAL**
+
+Through the windows, you see the Rathausmarkt Christmas market below—lights flickering on for the first time in weeks, vendor booths opening, people gathering in the glow.
+
+The Grinch appears on screen, and for the first time, he's smiling. A genuine smile.
+
+> **#system-transfer**
+>
+> "Impressive. You understand polynomials at an advanced level.
+>
+> The Christmas markets are now under your control, not mine. Hamburg can celebrate again.
+>
+> But six more systems remain locked. Power functions tomorrow. Then exponentials—and I should warn you, Day 20 might get... interesting. My systems have layers I'm not entirely sure I can control anymore.
+>
+> Six more days. Six more challenges.
+>
+> You've earned this final push. Let's finish what we started."
+>
+> -- GR
+
+**Act IV Progress:**
+
+- ✓ Polynomial defenses cracked
+- ✓ Christmas markets fully operational
+- City lighting grid: Tomorrow (Day 19)
+- Five more technical systems: Days 19-23
+- Final synthesis: Day 24
+
+**Major Achievement:** Christmas markets officially reopened!
+
+**Time Remaining:** 6 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

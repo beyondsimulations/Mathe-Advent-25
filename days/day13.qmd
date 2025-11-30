@@ -1,0 +1,158 @@
+---
+title: "Day 13: The Business Functions"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act III: Business Model Analysis
+
+### Location: Europa Passage, Hamburg City Center
+
+The scene shifts from the industrial warehouses of Speicherstadt to the gleaming commercial heart of Hamburg: Europa Passage. Glass, chrome, and the smell of expensive coffee.
+
+You've been summoned here by an urgent message from Hamburg's Chamber of Commerce. The Christmas markets can physically reopen—the warehouses are unlocked, the supply chain works—but they remain economically frozen. The Grinch has convinced the city council that Christmas is "financially irresponsible."
+
+You meet with Stadtrat Fischer in a conference room overlooking the shopping levels below. He looks like he hasn't slept in days.
+
+"The Grinch presented to the full city council yesterday," Fischer explains. "He had charts. Graphs. Economic models. All showing that Christmas markets operate at a loss. That the holiday is economically unsustainable."
+
+He pulls up a presentation on the screen: **GrinchTech's "Economic Analysis of Hamburg Christmas Operations."**
+
+As if on cue, the Grinch appears on a video call. He's sitting in what looks like a corner office with floor-to-ceiling windows, wearing a very expensive turtleneck.
+
+> **System Message from CEO**
+>
+> "Good afternoon, mathematical auditors. Welcome to the grown-up table.
+>
+> This isn't about unlocking doors anymore. This is about understanding FUNCTIONS: how outputs depend on inputs, how businesses model phenomena, how economics actually works.
+>
+> I've built mathematical models proving Christmas is inefficient. My presentation to the city council was—and I say this with appropriate humility—flawless. They were impressed. Several actually applauded.
+>
+> Your job? Prove you even understand what a function IS in a business context. Spoiler: most people don't.
+>
+> Today's test is basic. Function evaluation. Piecewise functions. Function definitions. The kind of foundational concepts that separate people who understand mathematics from people who just memorized formulas.
+>
+> Let's see which category you fall into."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Three problems test your understanding of functions in business applications. The Grinch has titled each one with his characteristic mix of condescension and corporate jargon.
+
+**Lock 1: "Function Literacy 101"**
+
+The Grinch claims Hamburg's Christmas operations are unpredictable. He's provided a revenue function for candy cane sales:
+
+$$f(x) = 2x^2 - 5x + 1$$
+
+where $x$ = kilograms of sugar used in production.
+
+> **Grinch's Note:** "If you can't evaluate a quadratic function at a specific value, please hand in your student ID at the door. This is the mathematical equivalent of reading comprehension."
+
+**Evaluate $f(3)$:**
+
+::: {.puzzle-box}
+**Enter f(3):**
+<input class="quiz-input" placeholder="f(3) = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="4">Calculate Revenue</button>
+</div>
+:::
+
+**Lock 2: "The Tax Code Gauntlet"**
+
+The Grinch has introduced a "Holiday Operations Tax" with a piecewise structure:
+
+$$T(I) = \begin{cases} 0.10I & \text{if } 0 \leq I \leq 1000 \\ 100 + 0.20(I - 1000) & \text{if } I > 1000 \end{cases}$$
+
+where $I$ is income in euros.
+
+> **Grinch's Note:** "Piecewise functions are how the real world works. Tax brackets. Shipping rates. Utility bills. If you can't handle a function that changes behavior at a boundary, you can't handle economics."
+
+**A vendor asks: What tax would I pay on €1,500 revenue?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> €150 </button>
+  <button class="quiz-option" data-correct="true"> €200 </button>
+  <button class="quiz-option" data-correct="false"> €300 </button>
+  <button class="quiz-option" data-correct="false"> €100 </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calculate Tax</button>
+</div>
+:::
+
+**Lock 3: "The Definition Inquisition"**
+
+The Grinch claims one of Hamburg's historical Christmas toy factories has a "broken business model" because its input-output relationship "isn't even a function."
+
+> **Challenge Question:** Which of the following correctly describes what makes a relationship a FUNCTION?
+
+> **Grinch's Note:** "This is a conceptual question. No numbers. No calculations. Just pure understanding. I find these separate the students who actually learned from the ones who just passed exams."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Every output must have exactly one input </button>
+  <button class="quiz-option" data-correct="true"> Every input must have exactly one output </button>
+  <button class="quiz-option" data-correct="false"> Inputs and outputs must be the same type </button>
+  <button class="quiz-option" data-correct="false"> The relationship must be linear </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit Definition</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You present your analysis to Stadtrat Fischer and the video-connected Grinch:
+
+- Revenue at 3 kg sugar: $f(3) = 2(9) - 15 + 1 = 4$ ✓
+- Tax on €1,500: $T(1500) = 100 + 0.20(500) = 200$ ✓
+- Function definition: Every input has exactly one output ✓
+
+The Grinch nods slowly. His expression is unreadable.
+
+> **#preliminary-assessment**
+>
+> "Correct. All correct. You understand function notation and piecewise functions. You even know what a function actually IS, which puts you ahead of most business school graduates I've hired.
+>
+> But understanding notation isn't the same as understanding BUSINESS.
+>
+> Tomorrow, we talk about linear models. Slopes. Y-intercepts. How businesses actually predict revenue and costs over time.
+>
+> I'll show you my economic projections for Hamburg's Christmas markets. They're all linear functions, and they all prove the same thing: Christmas doesn't scale profitably.
+>
+> You've passed the literacy test. Now let's see if you can read the actual story."
+>
+> -- GR
+
+Stadtrat Fischer looks cautiously optimistic. "That's the first time I've seen him acknowledge someone got something right without a sneer."
+
+**Act III Progress:**
+
+- ✓ Function fundamentals verified
+- Linear business models: Tomorrow
+- Profit optimization: Pending
+- Economic validation: Incomplete
+
+**Status:** Markets can physically operate but remain financially locked.
+
+**Time Remaining:** 11 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

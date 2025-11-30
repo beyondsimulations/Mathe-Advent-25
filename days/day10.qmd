@@ -1,0 +1,157 @@
+---
+title: "Day 10: The System Failsafe"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act II: Debugging the Supply Chain
+
+### Location: Warehouse C - Emergency Systems Control
+
+The celebration of unlocking the warehouses is short-lived. Thirty minutes after you solved the quadratic barriers, warning sounds begin blaring throughout Warehouse C.
+
+Frau Weber runs to the control terminal, her face pale. "Something's wrong. The automated safety systems—they're shutting down!"
+
+The screens flash red. The Grinch appears, and for once, he looks pleased. He's sipping from a mug that says "World's Best Disruptor."
+
+> **System Message from CEO**
+>
+> "Oh, you thought you were done? How adorable. How... *linear* of you.
+>
+> I've had failsafe protocols running this entire time. You triggered them the moment you bypassed my quadratics. Think of it as a 'thank you' gift for your persistence.
+>
+> Here's the situation: In exactly 60 minutes, this warehouse goes into permanent lockdown. Doors seal. Climate control fails. All 15,000 presents become very expensive kindling.
+>
+> The override codes? They're locked behind equations that require actual mathematical reasoning. Rational equations where you might divide by zero if you're careless. Radical equations where squaring both sides creates phantom solutions. A cubic polynomial I personally designed during my yacht's last Elbe cruise.
+>
+> Most people panic at this point. I find it entertaining.
+>
+> The countdown has started. Try not to cry."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Three emergency systems must be debugged immediately. The Grinch has named each one, because of course he has.
+
+**Lock 1: "The Fire Department's Nightmare"**
+
+The sprinkler timer is controlled by a rational equation. The display flashes ominously:
+
+$$\frac{1}{x+1} + \frac{2}{x-1} = \frac{3}{x^2-1}$$
+
+> **Grinch's Note:** "This equation has domain restrictions that would make most students cry. I've seen interns break down over less. Remember: if your answer makes a denominator zero, congratulations—you've just flooded the building AND failed mathematics."
+
+**Solve for $x$ and remember to check for extraneous solutions.**
+
+::: {.puzzle-box}
+**Enter your answer (as a fraction like 2/3):**
+<input class="quiz-input" placeholder="x = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="2/3">Disable Sprinkler Trap</button>
+</div>
+:::
+
+**Lock 2: "The Structural Integrity Gambit"**
+
+The building's weight distribution sensors use a radical equation. A warning flashes:
+
+$$\sqrt{y + 2} = y - 4$$
+
+> **Grinch's Note:** "Ah, radicals. Square both sides, they said. It'll be fine, they said. Except sometimes you create solutions that don't actually exist. Ghost answers. Mathematical mirages. I *love* watching people confidently submit wrong answers here."
+
+**Solve for $y$ and verify your solution isn't extraneous.**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $y = 2$ </button>
+  <button class="quiz-option" data-correct="true"> $y = 7$ </button>
+  <button class="quiz-option" data-correct="false"> $y = 2$ and $y = 7$ </button>
+  <button class="quiz-option" data-correct="false"> No real solution exists </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Stabilize Structure</button>
+</div>
+:::
+
+**Lock 3: "The Sommelier's Polynomial"**
+
+The master override is a cubic equation. The screen displays it with a wine glass emoji, because the Grinch is nothing if not on-brand:
+
+$$x^3 - 6x^2 + 11x - 6 = 0$$
+
+> **Grinch's Note:** "A cubic polynomial. Three roots. I designed this one on my yacht while drinking a wine that costs more than your semester's textbooks. Factor it, guess it, pray to the mathematics gods—I don't care how you find the answers. I just care that you probably won't."
+
+**Find ALL three roots of this cubic equation.**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $x = 1, x = 2, x = 6$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 1, x = -2, x = 3$ </button>
+  <button class="quiz-option" data-correct="true"> $x = 1, x = 2, x = 3$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 1, x = 6, x = -1$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Deactivate Failsafe</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You input the solutions with trembling hands. The countdown timer shows 8 minutes remaining.
+
+- Fire suppression: $x = \frac{2}{3}$ ✓
+- Structural integrity: $y = 7$ (rejected $y = 2$ as extraneous) ✓
+- Master override: $x = 1, 2, 3$ ✓
+
+The klaxons stop. The red warning lights switch to amber, then green.
+
+**EMERGENCY FAILSAFE DEACTIVATED**
+
+**WAREHOUSE LOCKDOWN CANCELLED**
+
+Frau Weber exhales sharply. "That was too close. Eight minutes. We had eight minutes left."
+
+The workers around the warehouse look shaken but relieved. You've not only unlocked the presents—you've prevented a catastrophic lockdown that would have trapped everything inside.
+
+The Grinch reappears on screen. He's no longer smiling. He sets down his "World's Best Disruptor" mug.
+
+> **#security-log**
+>
+> "Well played. You caught the extraneous solution. Most people don't.
+>
+> You've proven you can handle equations that fight back. Rational equations with their domain restrictions. Radical equations with their phantom solutions. Cubics that require actual technique to decompose.
+>
+> But mathematics isn't just about solving individual equations. It's about solving them *fast*. Under pressure. When the numbers are exponential and the clock is logarithmic.
+>
+> Tomorrow, I'm introducing countdown timers that decay exponentially. Security layers that require logarithmic thinking. The kind of mathematics where every second costs you.
+>
+> You beat my failsafe with 8 minutes to spare. Let's see how you do when the margin is measured in moments."
+>
+> -- GR
+
+The warehouse is safe. The presents are secure. But you're running out of time.
+
+**Critical Systems Restored:**
+
+- ✓ Fire suppression calibrated
+- ✓ Structural integrity monitors online
+- ✓ Emergency failsafes deactivated
+
+**Status:** Warehouse C emergency averted. 14 days until Christmas Eve.
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

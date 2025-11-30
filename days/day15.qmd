@@ -1,0 +1,168 @@
+---
+title: "Day 15: The Profit Optimization"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act III: Business Model Analysis
+
+### Location: Hamburg Chamber of Commerce - Economic Modeling Center
+
+The economic review has moved to the Chamber of Commerce's modeling center, where businesses analyze profit curves and make data-driven decisions.
+
+The Grinch has submitted a comprehensive quadratic analysis of Hamburg's toy manufacturing. His models show perfect parabolas—profits that rise, peak, and then decline into losses.
+
+"This is why Christmas fails mathematically," he announces via video, pointing to a series of downward-opening parabolas. "Every business follows a quadratic profit function. And Hamburg's Christmas operations? They're already past the peak. They're in the LOSS zone."
+
+He takes a dramatic sip of what appears to be a €40 cold-pressed juice.
+
+> **System Message from CEO**
+>
+> "Welcome to non-linear economics. Where the real world lives.
+>
+> Linear models are fairy tales—they assume infinite growth. But reality is quadratic. Parabolic. Profits rise to a maximum vertex, then fall. It's called 'optimization,' and it's mathematically inevitable.
+>
+> My analysis shows Hamburg's Christmas toy production has PASSED its optimal point. You're producing too much, spending too much, and hemorrhaging money.
+>
+> Prove me wrong. Find the vertex. Calculate the maximum. Show me Hamburg can optimize its way back to profitability.
+>
+> If you can't, Christmas stays cancelled. It's just mathematics. Beautiful, cold, indifferent mathematics."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Four quadratic optimization problems that will determine Hamburg's economic fate. The Grinch has titled them with his signature blend of smugness and business jargon.
+
+**Lock 1: "The Vertex of Destiny"**
+
+A Hamburg toy manufacturer has a profit function $P(x)$ (in thousands of euros) for selling $x$ hundreds of toys:
+
+$$P(x) = -x^2 + 10x - 16$$
+
+> **Grinch's Note:** "I'm not giving you the formula. That's what lectures are for. If you actually paid attention in class instead of scrolling through your phone, this would take you about 30 seconds. The clock is ticking."
+
+**At what production level (x, in hundreds of toys) is profit maximized?**
+
+::: {.puzzle-box}
+**Enter x:**
+<input class="quiz-input" placeholder="x = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="5">Find Optimal Production</button>
+</div>
+:::
+
+**Lock 2: "The Peak Profit Calculation"**
+
+Using the same profit function:
+
+$$P(x) = -x^2 + 10x - 16$$
+
+> **Grinch's Note:** "You found the x-coordinate. Now find the y-coordinate. This is called 'substitution.' Kindergarteners can do this. Well, *smart* kindergarteners."
+
+**What is the maximum profit (in thousands of euros)?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> €5,000 </button>
+  <button class="quiz-option" data-correct="true"> €9,000 </button>
+  <button class="quiz-option" data-correct="false"> €16,000 </button>
+  <button class="quiz-option" data-correct="false"> €25,000 </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calculate Maximum Profit</button>
+</div>
+:::
+
+**Lock 3: "The Interpretation Gauntlet"**
+
+The Grinch claims the vertex represents "the point of inevitable decline." But what does the vertex ACTUALLY mean in business terms?
+
+> **Grinch's Note:** "I'm testing your comprehension, not your calculation. What does the vertex mean for the business? This is where most students reveal they memorized formulas without understanding them."
+
+**Which interpretation is correct?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> The business must shut down after 500 toys </button>
+  <button class="quiz-option" data-correct="false"> The business loses €9,000 at optimal production </button>
+  <button class="quiz-option" data-correct="true"> Producing exactly 500 toys yields maximum profit of €9,000 </button>
+  <button class="quiz-option" data-correct="false"> The business should produce as many toys as possible </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit Interpretation</button>
+</div>
+:::
+
+**Lock 4: "The Geometry of Efficiency"**
+
+A gingerbread house production area has a perimeter constraint of 40 inches. What dimensions maximize the floor area?
+
+> **Grinch's Note:** "This is a classic problem. I've seen it stump entire MBA cohorts. You'd think people with business degrees would understand floor space, but you'd be wrong. Prove you're smarter than the average executive."
+
+**For maximum area with perimeter = 40, what is the length of each side?**
+
+::: {.puzzle-box}
+**Enter the dimension (in inches):**
+<input class="quiz-input" placeholder="? inches">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="10">Optimize Floor Space</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You present your analysis to the Chamber of Commerce:
+
+- **Optimal production:** 500 toys (vertex at x = 5) ✓
+- **Maximum profit:** €9,000 (achievable and sustainable) ✓
+- **Vertex interpretation:** Optimal operation point, NOT inevitable decline ✓
+- **Space optimization:** 10 × 10 inches (square maximizes area) ✓
+
+Stadtrat Fischer nods enthusiastically. "So the Grinch's models aren't wrong—his INTERPRETATION is wrong?"
+
+"Exactly," you confirm. "He's claiming Hamburg is past the optimization point. But the mathematics shows Hamburg should operate AT the vertex—at 500 toys with €9,000 profit—not shut down entirely. The vertex isn't a point of decline. It's the optimal operating target."
+
+The Grinch sets down his juice. His expression suggests he just realized his argument has a significant flaw.
+
+> **#economic-analysis-update**
+>
+> "...Fine. You understand vertex optimization. You can calculate maximum profit. You interpreted the quadratic model correctly.
+>
+> But here's the thing about static models: they're fiction. Real economies don't stay frozen at a single point—they TRANSFORM over time. Costs shift up. Revenues compress. Inflation stretches everything. External factors change the entire shape of your precious profit curve.
+>
+> Tomorrow, let's discuss transformations. How external economic factors shift, stretch, and reflect your clean mathematical models into something messier. Something more real.
+>
+> Let's see how you handle functions that move."
+>
+> -- GR
+
+**Act III Progress:**
+
+- ✓ Function fundamentals verified
+- ✓ Linear business models validated
+- ✓ Quadratic optimization mastered
+- Function transformations: Tomorrow
+- Economic validation: Nearly complete
+
+**Status:** Quadratic models support optimal Christmas operations at vertex.
+
+**Time Remaining:** 9 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

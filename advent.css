@@ -1,0 +1,73 @@
+/* =========================================
+   ADVENT CALENDAR GRID
+   ========================================= */
+
+/* The Container */
+.advent-grid ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px; /* Reduced gap slightly */
+    padding: 0;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.advent-grid li {
+    display: contents;
+}
+
+/* The Doors */
+.door {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    /* Color Scheme */
+    background-color: #800020; /* Deep Burgundy Base */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px; /* Slightly tighter radius */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s;
+}
+
+.door:hover {
+    transform: translateY(-3px);
+    background-color: #a00028; /* Brighter Burgundy */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Locked State */
+.door.future {
+    background-color: #a00028;
+    opacity: 0.4; /* More transparent to look disabled */
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Today's Door */
+.door.today {
+    background-color: #a00028;
+    border: 2px solid #ffd700; /* Gold border for today */
+    animation: pulse 2s infinite;
+    z-index: 2;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}

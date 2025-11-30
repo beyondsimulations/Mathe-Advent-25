@@ -1,0 +1,178 @@
+---
+title: "Day 22: The Asymptotic Boundaries"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act IV: The Final Takeover
+
+### Location: Hamburg University of Applied Sciences - Advanced Mathematics Lab
+
+It's December 22nd. Christmas Eve is two days away. The transformation of Hamburg is nearly complete—markets open, lights glowing, mechanical systems operational.
+
+The Grinch has invited you to your own university's advanced mathematics lab. "Fitting," he says, "that we should end where you study."
+
+On the lab's main screen, complex graphs display rational functions—curves with asymptotes, holes, and discontinuities.
+
+> "Rational functions. The mathematics of boundaries and limits.
+>
+> These describe systems with constraints—asymptotic limits that you can approach but never cross. Safety boundaries. Operational constraints. Mathematical walls.
+>
+> I built my final control systems using rational functions deliberately. They create invisible barriers. Too close to an asymptote, and behavior becomes unstable. Cross a discontinuity, and the system crashes.
+>
+> Understanding these boundaries is essential for maintaining systems safely. It's engineering reality, not abstract mathematics.
+>
+> And honestly? I've learned something about boundaries myself recently. About lines that shouldn't be crossed. About limits that exist for good reasons."
+
+## The Challenge
+
+::: {.scenario-block}
+
+Four rational function problems protecting Hamburg's final automated systems.
+
+**System 1: "The Vertical Boundary"**
+
+The main automation system has operational limits described by:
+
+$$f(x) = \frac{2x + 1}{x - 3}$$
+
+> **Grinch's Note:** "Every rational function has forbidden zones. Places it cannot go. Much like people, really. Find where this one fails."
+
+**What is the vertical asymptote?**
+
+::: {.puzzle-box}
+**Enter the vertical asymptote (x = ?):**
+<input class="quiz-input" placeholder="x = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="3">Define Safety Boundary</button>
+</div>
+:::
+
+**System 2: "Hole or Asymptote?"**
+
+A secondary control system has the function:
+
+$$g(x) = \frac{x^2 - 4}{x - 2}$$
+
+> **Grinch's Note:** "Not all discontinuities are created equal. Some are catastrophic walls. Others are merely... absences. Gaps that could be filled if someone bothered. Which kind is this?"
+
+**At $x = 2$, is there a hole or a vertical asymptote?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="true"> A hole </button>
+  <button class="quiz-option" data-correct="false"> A vertical asymptote </button>
+  <button class="quiz-option" data-correct="false"> Neither - the function is defined there </button>
+  <button class="quiz-option" data-correct="false"> Both simultaneously </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Classify Discontinuity</button>
+</div>
+:::
+
+**System 3: "The Horizontal Limit"**
+
+The Grinch's original cost analysis used:
+
+$$AC(x) = \frac{500 + 10x}{x}$$
+
+where $AC$ is average cost per household and $x$ is number of households.
+
+> **Grinch's Note:** "What happens when you scale to infinity? The fixed costs become irrelevant. The marginal becomes everything. I wish I'd understood that sooner."
+
+**As $x \to \infty$, what value does $AC(x)$ approach?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Approaches 0 </button>
+  <button class="quiz-option" data-correct="true"> Approaches 10 </button>
+  <button class="quiz-option" data-correct="false"> Approaches infinity </button>
+  <button class="quiz-option" data-correct="false"> Approaches 500 </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Model Scaling Behavior</button>
+</div>
+:::
+
+**System 4: "The Hidden Equivalence"**
+
+Two control systems must synchronize:
+
+$$h(x) = \frac{x^2 + x - 6}{x + 3}$$
+
+and the linear function $y = x - 2$.
+
+> **Grinch's Note:** "Factor the numerator of $h(x)$. You'll find $(x+3)(x-2)$. Then simplify. What do you notice about the relationship between these functions?"
+
+**After simplification, how do $h(x)$ and $y = x - 2$ compare?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> They intersect at exactly one point </button>
+  <button class="quiz-option" data-correct="false"> They never intersect </button>
+  <button class="quiz-option" data-correct="true"> They're identical except for one missing point </button>
+  <button class="quiz-option" data-correct="false"> They're parallel lines </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Synchronize Systems</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You submit the rational function analysis:
+
+- Vertical asymptote: $x = 3$ (forbidden operating point) ✓
+- At $x = 2$: Hole, not asymptote (factor cancels) ✓
+- Long-term average cost: Approaches €10 (economies of scale) ✓
+- Function comparison: Identical except for hole at $x = -3$ ✓
+
+The final automated control systems unlock. Hamburg's complete technical infrastructure is now under unified, rational control—with proper safety boundaries, understood discontinuities, and optimized scaling.
+
+The Grinch stands and looks out the window at Hamburg, glowing with Christmas lights:
+
+> **#final-technical-barrier**
+>
+> "That's it. The technical barriers are gone. Everything is unlocked, everything is operational.
+>
+> You've solved every equation. Cracked every system. Proven every economic model wrong.
+>
+> Tomorrow is December 23rd. Christmas Eve is the day after.
+>
+> I have one final challenge—not a barrier, but a synthesis. Day 23 will unlock the monitoring systems with logarithms. And Day 24 will combine everything you've learned.
+>
+> It's the difference between passing an exam and mastering a subject.
+>
+> Come to the Rathaus tomorrow morning. Let's end this the right way."
+>
+> -- G. Rinch
+
+**Act IV Progress:**
+
+- ✓ Polynomial defenses cracked
+- ✓ Power function grid restored
+- ✓ Exponential crisis resolved
+- ✓ Trigonometric systems operational
+- ✓ Rational boundaries defined
+- Logarithmic systems: Tomorrow
+- Master synthesis: Day 24
+
+**All technical infrastructure:** OPERATIONAL
+
+**Time Remaining:** 2 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

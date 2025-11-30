@@ -1,0 +1,129 @@
+---
+title: "Day 21: The Oscillating Systems"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act IV: The Final Takeover
+
+### Location: Hamburg Port Authority - Mechanical Systems
+
+After last night's crisis, the mood has shifted. The Grinch is no longer an adversary—he's a collaborator, working alongside you to restore Hamburg's Christmas systems.
+
+Today: the mechanical infrastructure. The rotating Christmas pyramid at Jungfernstieg, the swinging decorations on the Elbe bridges, the precise timing systems for advent displays.
+
+All are controlled by trigonometric functions—the mathematics of circular motion, waves, and periodic behavior.
+
+The Grinch meets you at the Port Authority's mechanical engineering center. He looks tired, but different. More human.
+
+> "Trigonometric functions. The mathematics of cycles and circles.
+>
+> I've been thinking about these all night. Sine, cosine, tangent—they describe everything that repeats. Everything that comes back around. Everything that oscillates.
+>
+> Perhaps there's a metaphor there. About second chances. About cycles of failure and redemption.
+>
+> ...But that's getting philosophical. Let's focus on the mechanical systems.
+>
+> Hamburg's Christmas has many moving parts. Literally. They all follow trigonometric patterns. Solve these, and the moving displays will operate again."
+
+## The Challenge
+
+::: {.scenario-block}
+
+Four trigonometric problems controlling Hamburg's mechanical Christmas systems.
+
+**System 1: "The Ornament Oscillation"**
+
+A large Christmas ornament hangs from the Köhlbrandbrücke, swinging in the wind. Its height $h$ (in meters) above the water is:
+
+$$h(t) = 3 + 2\sin(t)$$
+
+> **Grinch's Note:** "Oscillation. Back and forth. High and low. The center isn't the answer—it's just where things return to between extremes. Like life, really."
+
+**What is the maximum height the ornament reaches?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> 3 meters </button>
+  <button class="quiz-option" data-correct="false"> 4 meters </button>
+  <button class="quiz-option" data-correct="true"> 5 meters </button>
+  <button class="quiz-option" data-correct="false"> 6 meters </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calibrate Oscillation</button>
+</div>
+:::
+
+**System 2: "The Verification"**
+
+A security laser sweeps in a circle with coordinates:
+
+- $x(t) = 5\cos(t)$
+- $y(t) = 5\sin(t)$
+
+> **Grinch's Note:** "There's a beautiful identity hiding in circles. Something always equals one, no matter what. Find it, and the laser makes sense."
+
+**Is $x^2 + y^2 = 25$ true for all values of $t$?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="true"> Yes, always </button>
+  <button class="quiz-option" data-correct="false"> No - it varies with $t$ </button>
+  <button class="quiz-option" data-correct="false"> Only when $t = 0$ </button>
+  <button class="quiz-option" data-correct="false"> Only for positive values of $t$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Verify Laser Path</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You submit the trigonometric solutions:
+
+- Ornament max height: 5 meters (3 + 2×1) ✓
+- Laser verification: Confirmed ✓
+
+Throughout Hamburg, mechanical Christmas systems activate. The rotating pyramid at Jungfernstieg begins its slow, mesmerizing turn. Swinging decorations move in perfect periodic motion. Advent calendar mechanisms tick forward with precise timing.
+
+The Grinch watches the monitors showing all systems operational:
+
+> **#systems-restored**
+>
+> "Everything is moving again. Beautiful.
+>
+> You know, I built all these security systems thinking mathematics would protect my optimization. But you've used that same mathematics to dismantle everything I built.
+>
+> Mathematics doesn't pick sides. It just... is. Truth that doesn't care about my agenda.
+>
+> Two more days. Rational functions tomorrow—the mathematics of boundaries. Then the logarithmic systems. And finally, Day 24: everything combined.
+>
+> We're almost done. Let's finish this properly."
+>
+> -- G. Rinch
+
+**Act IV Progress:**
+
+- ✓ Polynomial defenses cracked
+- ✓ Power function grid restored
+- ✓ Exponential crisis resolved
+- ✓ Trigonometric systems operational
+- Rational boundaries: Tomorrow
+- Logarithmic systems: Day 23
+- Master synthesis: Day 24
+
+**All mechanical Christmas systems:** ACTIVE
+
+**Time Remaining:** 3 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

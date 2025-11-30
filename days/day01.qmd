@@ -1,0 +1,130 @@
+---
+title: "Day 1: The Biometric Lock"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act I: Infiltration
+
+### Location: GrinchTech Headquarters, Hafencity
+
+You arrive at the address provided: a gleaming glass tower overlooking the Elbe, its facade reflecting the grey December sky. A massive green logo pulses above the entrance: **GrinchTech Industries**.
+
+The building looks like every other startup headquarters in Hafencity, all polished chrome, floor-to-ceiling windows, and an uncomfortable number of employees wearing hoodies in a professional setting. But unlike the neighboring offices, this building emanates an eerie silence. No holiday decorations. No festive music. Just the cold hum of servers and the glow of green status lights.
+
+You approach the main entrance. The glass doors are locked, and where a normal keypad should be, there's a sleek touchscreen displaying a mathematical challenge.
+
+A message appears:
+
+> **GrinchTech Industries - Security Layer Alpha**
+>
+> Oh, look. Visitors. How... quaint.
+>
+> You people don't even understand how to classify your own data. Natural numbers? Integers? Rationals? I've interviewed MBA graduates who think $\mathbb{R}$ is a pirate noise. It's genuinely depressing.
+>
+> My building doesn't open for people who can't tell the difference between a whole unit and a fractional share. Call it elitism. I call it 'standards.'
+>
+> Solve this, or go back to whatever liberal arts program taught you that 'math is just, like, a construct, man.'
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+The touchscreen displays three security protocols that must be resolved in order.
+
+**Task a) Set Relationships**
+
+The screen shows four nested circles labeled $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, and $\mathbb{R}$.
+
+> **Grinch's Note:** "Subset notation. The mathematical equivalent of Russian nesting dolls, except less charming and more useful. Get the direction wrong and my door stays locked forever."
+
+**Characterize** the relationship between these sets using correct set notation.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $\mathbb{N} \supset \mathbb{Z} \supset \mathbb{Q} \supset \mathbb{R}$ </button>
+  <button class="quiz-option" data-correct="true"> $\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$ </button>
+  <button class="quiz-option" data-correct="false"> $\mathbb{Z} \subset \mathbb{N} \subset \mathbb{Q} \subset \mathbb{R}$ </button>
+  <button class="quiz-option" data-correct="false"> $\mathbb{R} = \mathbb{Q} + \mathbb{Z} + \mathbb{N}$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Confirm Relationship</button>
+</div>
+:::
+
+**Task b) The Biometric Lock**
+
+The lock activates, displaying a numerical keypad with the following numbers available:
+$$K = \{-5, -3, 0, 1, 2.5, 4, 4.7\}$$
+
+> **Grinch's Note:** "This is where most applicants fail their GrinchTech interview."
+
+**Authentication Protocol:**
+
+1.  **First Sequence:** Enter all numbers in $\mathbb{Z}$ but **NOT** in $\mathbb{N}$.
+2.  **Second Sequence:** Enter all numbers in $\mathbb{Q}$ but **NOT** in $\mathbb{Z}$.
+
+**Identify** the correct button sequences to unlock the door.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">
+    Seq 1: $\{-5, -3\}$ <br>
+    Seq 2: $\{0, 2.5, 4.7\}$
+  </button>
+
+  <button class="quiz-option" data-correct="true">
+    Seq 1: $\{-5, -3, 0\}$ <br>
+    Seq 2: $\{2.5, 4.7\}$
+  </button>
+
+  <button class="quiz-option" data-correct="false">
+    Seq 1: $\{0, 1, 4\}$ <br>
+    Seq 2: $\{-5, -3\}$
+  </button>
+
+  <button class="quiz-option" data-correct="false">
+    Seq 1: $\{-5, -3, 0\}$ <br>
+    Seq 2: $\{1, 4, 4.7\}$
+  </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Execute Protocol</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+The touchscreen flashes green. You hear a satisfying *click* as the magnetic locks disengage.
+
+> **Authentication successful. Welcome to GrinchTech Industries.**
+>
+> Well, well. You can categorize numbers. Congratulations. My nephew's hamster could do that, and he's been dead for three years.
+>
+> You're in the lobby. The LOBBY. I keep my actual security systems on floors you haven't even heard of. Floor 2 alone has defeated fourteen 'ethical hackers,' two government auditors, and a very confident intern who cried in the elevator afterward.
+>
+> Enjoy your brief tour. I give you until the second floor before you're begging security to escort you out.
+>
+> -- GR
+
+The glass doors slide open. Inside, you see a minimalist reception area with exposed concrete, uncomfortable-looking designer furniture, and a massive digital display showing real-time "Christmas Optimization Metrics":
+
+- **Joy Suppression Rate: 94.7%**
+- **Gift Distribution: LOCKED**
+- **Holiday Spirit Index: 0.003**
+
+You've made it inside GrinchTech. But this is only the beginning.
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

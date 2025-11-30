@@ -1,0 +1,133 @@
+---
+title: "Day 4: The Bridge Algorithm"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act I: Infiltration
+
+### Location: Crossing to GrinchTech Backup Facility, Elbe River
+
+Unfortunately, Floor 3 was completely deserted—it looked as though all the staff had hastily fled and taken everything with them. However, some notes left behind reveal that the Grinch runs a backup data facility: a converted warehouse in the Speicherstadt district.
+
+Standing at the Magellan-Terrassen, you look across the dark water. A sleek, modern bridge has been constructed, presumably for GrinchTech's private use. But as you approach, a holographic barrier shimmers into existence, and a familiar message appears on a floating display screen:
+
+> **Private GrinchTech Infrastructure - Access Restricted**
+>
+> Oh, you found my private bridge. Congratulations on basic reconnaissance. I'm sure your GPS is very proud of you.
+>
+> But this isn't just a bridge—it's a *smart* structure. I paid seven figures for this thing. Every support beam, every cable tension, every load calculation is controlled by advanced polynomial algorithms. The engineering team that built it won awards. Then I made them sign NDAs so aggressive their grandchildren can't discuss mathematics.
+>
+> These problems are harder than anything you've seen. The AC method. Polynomial grouping. The difference of cubes—which, fun fact, 83% of engineering students get wrong on their first attempt. I have the statistics. I commissioned a study. For fun.
+>
+> Get it wrong, and the bridge calculates that you're structurally inconvenient. The Elbe is about 4°C this time of year. I'm told hypothermia sets in within minutes. Not that I'd know personally. I take a helicopter.
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Three control panels block your path, each representing a critical structural algorithm.
+
+**Task a) Main Support Beam Calculation**
+
+The load-bearing capacity of the bridge's primary beam is determined by the quadratic expression $6x^2 + 19x + 10$.
+
+> **Grinch's Note:** "The AC method. Most students give up here and guess. The bridge can tell when you're guessing. It judges you."
+
+The system requires this expression to be broken down into its component factors (using the AC Method) to distribute the load properly.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $(6x + 2)(x + 5)$ </button>
+  <button class="quiz-option" data-correct="true"> $(3x + 2)(2x + 5)$ </button>
+  <button class="quiz-option" data-correct="false"> $(3x + 5)(2x + 2)$ </button>
+  <button class="quiz-option" data-correct="false"> $(6x + 1)(x + 10)$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calibrate Beam</button>
+</div>
+:::
+
+**Task b) Cable Tension Distribution**
+
+The bridge's suspension cables follow a complex 4-term polynomial representing frost stress along the Elbe:
+$$x^3 + 2x^2 - 9x - 18$$
+
+> **Grinch's Note:** Yes, that thing you probably slept through in lecture. The cables are waiting. So is gravity."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $(x^2 + 9)(x - 2)$ </button>
+  <button class="quiz-option" data-correct="false"> $(x + 2)(x - 9)$ </button>
+  <button class="quiz-option" data-correct="true"> $(x + 2)(x - 3)(x + 3)$ </button>
+  <button class="quiz-option" data-correct="false"> $(x - 2)(x - 3)(x + 3)$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Adjust Tension</button>
+</div>
+:::
+
+**Task c) Foundation Stress Test**
+
+The bridge's foundation pillars are engineered using a sum/difference of cubes formula. The display shows:
+$$8y^3 - 27$$
+
+> **Grinch's Note:** "Difference of cubes. There's a formula. If you don't know it, you should. If you memorized it wrong, the Elbe awaits. It's scenic this time of year. Cold, but scenic."
+
+**Factorize** this expression to verify structural stability.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="true"> $(2y - 3)(4y^2 + 6y + 9)$ </button>
+  <button class="quiz-option" data-correct="false"> $(2y - 3)(4y^2 - 6y + 9)$ </button>
+  <button class="quiz-option" data-correct="false"> $(2y + 3)(4y^2 - 6y + 9)$ </button>
+  <button class="quiz-option" data-correct="false"> $(2y - 3)^3$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Verify Foundation</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+As you enter the final factorization, the holographic barrier flickers and dissolves. The bridge's smart surface lights up beneath your feet, glowing green to indicate stable load distribution. You begin crossing toward the Speicherstadt.
+
+Halfway across, your phone buzzes:
+
+> **#engineering-urgent**
+>
+> They factored the bridge algorithms. All of them. AC method, grouping, difference of cubes. I'm genuinely annoyed. That bridge has stopped seventeen people this month alone. One of them was a professor. He had tenure and everything. Still failed.
+>
+> Fine. They can cross. I hope they enjoyed the view, because my backup facility is protected by logarithmic security. Do you know what logarithms are? They're what happens when exponentials have a midlife crisis and decide to work backwards. Most people's brains simply refuse to cooperate.
+>
+> They won't crack the vault. I guarantee it. And my guarantees come with a money-back offer I've never had to honor.
+>
+> -- GR
+
+Ahead, the converted warehouse looms—a modern glass extension grafted onto a historic brick building. The sign reads: **GrinchTech Data Vault - Authorized Personnel Only.**
+
+The real infiltration is about to begin.
+
+**Systems Accessed:**
+
+- ✓ Building Power Grid
+- ✓ Network Operations Center
+- ✓ Bridge Infrastructure Protocol
+
+**New Location Unlocked:** GrinchTech Backup Facility (Speicherstadt)
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

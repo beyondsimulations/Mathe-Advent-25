@@ -1,0 +1,181 @@
+---
+title: "Day 23: The Logarithmic Labyrinth"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act IV: The Final Takeover
+
+### Location: Hamburg Rathaus - Central Command Center
+
+December 23rd. Christmas Eve is tomorrow.
+
+You arrive at the Rathaus to find the Central Command Center transformed. The Grinch is already there, along with Stadtrat Fischer and Frau Weber.
+
+"Before tomorrow's finale," the Grinch explains, "there's one more system: Hamburg's monitoring network. It uses logarithmic scaling—the mathematics of measurement. Sound levels. Structural stress. Anything that spans orders of magnitude."
+
+> "Logarithms are the inverse of exponentials. Where exponentials describe growth, logarithms describe scale. They compress vast ranges into manageable numbers.
+>
+> Hamburg's monitoring systems need logarithmic functions because they handle everything from whisper-quiet neighborhoods to festival crowd noise. From minor tremors to major structural vibrations.
+>
+> This is the last mathematical concept before tomorrow's synthesis. Master logarithms, and every system in Hamburg will be under unified control.
+>
+> One more day after this. Let's make it count."
+
+## The Challenge
+
+::: {.scenario-block}
+
+Four logarithmic problems controlling Hamburg's monitoring infrastructure.
+
+**System 1: "The Decibel Protocol"**
+
+Hamburg's noise monitoring uses:
+
+$$S = 10 \cdot \log_{10}\left(\frac{I}{I_0}\right)$$
+
+At the Rathausmarkt Christmas market, the sound intensity ratio is $\frac{I}{I_0} = 1000$.
+
+> **Grinch's Note:** "Logarithms ask a simple question: 'What power?' A thousand is a round number in base 10. Think about why."
+
+**What is the sound level in decibels?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> 10 dB </button>
+  <button class="quiz-option" data-correct="false"> 20 dB </button>
+  <button class="quiz-option" data-correct="true"> 30 dB </button>
+  <button class="quiz-option" data-correct="false"> 100 dB </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calibrate Sound Monitor</button>
+</div>
+:::
+
+**System 2: "The Natural Log Access Code"**
+
+The final security layer uses:
+
+$$\ln(x + 5) = 3$$
+
+(Use: $e^3 \approx 20.09$)
+
+> **Grinch's Note:** "Logarithms and exponentials are inverse operations. What one does, the other undoes. Apply that principle."
+
+**What is $x$ (approximately)?**
+
+::: {.puzzle-box}
+**Enter x (round to one decimal):**
+<input class="quiz-input" placeholder="x ≈ ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="15.09">Enter Access Code</button>
+</div>
+:::
+
+**System 3: "The Degradation Model"**
+
+The Köhlbrandbrücke bridge has stress sensors following:
+
+$$S(t) = 100 - 20 \cdot \log_2(t + 1)$$
+
+where $t$ is hours since last maintenance check.
+
+> **Grinch's Note:** "Time passes. Structures age. The logarithm measures decay. Seven hours—consider what happens to the argument."
+
+**What is the strength index after 7 hours?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> 100 (No degradation) </button>
+  <button class="quiz-option" data-correct="false"> 80 </button>
+  <button class="quiz-option" data-correct="false"> 60 </button>
+  <button class="quiz-option" data-correct="true"> 40 </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Check Structural Status</button>
+</div>
+:::
+
+**System 4: "The Transformed Monitor"**
+
+The base monitoring function $f(x) = \ln(x)$ has been shifted RIGHT by 3 units and UP by 2 units.
+
+> **Grinch's Note:** "Transformations shift the boundaries. The original function has a wall at zero. Where does that wall move when everything shifts?"
+
+**What is the vertical asymptote of the transformed function?**
+
+::: {.puzzle-box}
+**Enter the vertical asymptote (x = ?):**
+<input class="quiz-input" placeholder="x = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="3">Define Domain Boundary</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You submit the logarithmic solutions:
+
+- Sound level: 30 decibels ✓
+- Security code: $x \approx 15.09$ ✓
+- Bridge strength: 40 after 7 hours ✓
+- Transformed asymptote: $x = 3$ ✓
+
+The monitoring network activates. Across Hamburg, sensors come online—sound monitors, structural stress detectors, crowd analyzers—all using logarithmic scaling.
+
+The main screen shows a unified dashboard: every Christmas market, every bridge, every system, all monitored and controlled.
+
+The Grinch watches with visible satisfaction:
+
+> **#final-preparation**
+>
+> "It's complete. Every system. Every function. Every mathematical model.
+>
+> Hamburg's Christmas infrastructure is now more sophisticated than any city in Europe. And you built it by solving mathematics.
+>
+> Tomorrow is Christmas Eve. December 24th.
+>
+> I have one final challenge—not to lock systems, but to demonstrate mastery. A synthesis that combines everything:
+>
+> - Foundations (Days 1-6)
+> - Equations (Days 7-12)
+> - Functions as Business Models (Days 13-17)
+> - Advanced Functions (Days 18-23)
+>
+> Solve it, and I'll make a permanent transfer of all systems. No takebacks. Christmas secured forever.
+>
+> Meet me at the Rathaus at noon tomorrow. Let's finish this journey the right way."
+>
+> -- G. Rinch
+
+As you leave, Hamburg glows around you: markets bustling, lights twinkling, mechanical displays rotating, and everywhere—music, laughter, joy.
+
+Tomorrow is the finale.
+
+**Complete Systems Status:**
+
+- ✓ Warehouses unlocked
+- ✓ Supply chain operational
+- ✓ Markets open and profitable
+- ✓ Lighting grid active
+- ✓ Mechanical systems functional
+- ✓ Monitoring network online
+- ✓ All infrastructure integrated
+
+**Time Remaining:** 1 day until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

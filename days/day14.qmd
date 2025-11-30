@@ -1,0 +1,177 @@
+---
+title: "Day 14: The Revenue Projections"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act III: Business Model Analysis
+
+### Location: Hamburg City Hall Economic Planning Office
+
+Stadtrat Fischer has arranged a formal economic review session in City Hall's planning office. Present are representatives from Hamburg's Chamber of Commerce, Christmas market vendors, and via video link—the Grinch himself.
+
+The Grinch's presentation dominates the main screen—a series of linear graphs showing projected costs rising faster than revenues, all intersecting at points that suggest inevitable losses.
+
+He's wearing reading glasses today. They make him look like a professor about to fail your thesis defense.
+
+> **System Message from CEO**
+>
+> "Gentlemen. Ladies. City Council. Let me show you the mathematics of failure.
+>
+> Every successful business understands linear functions: how costs scale with production, how revenue grows with sales, how profit margins erode over time.
+>
+> I've modeled Hamburg's Christmas market economics using standard linear analysis. The numbers don't lie. The slopes don't lie. The y-intercepts are particularly unforgiving.
+>
+> Your 'mathematical auditors' claim they can find flaws in my models. Ambitious. Naïve. But let's see what they've got.
+>
+> Today we test linear functions. Slopes. Intercepts. Parallel and perpendicular lines. The basic vocabulary of business mathematics.
+>
+> Impress me. Or don't. I've prepared a very elegant 'I told you so' presentation for either outcome."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Four problems test your ability to analyze and construct linear business models. The Grinch has named them with his characteristic blend of condescension and corporate jargon.
+
+**Lock 1: "The Slope of Mediocrity"**
+
+One of Hamburg's successful Christmas markets has consistent growth data:
+
+- Initial revenue: €5,000 (the y-intercept)
+- Growth: €3,000 for every 2 additional days of operation
+
+> **Grinch's Note:** "Slope-intercept form. $y = mx + b$. If you don't know this, please ask yourself why you're in a business mathematics course. What is the slope?"
+
+**The slope (rate of revenue per day) is:**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $m = 3000$ </button>
+  <button class="quiz-option" data-correct="true"> $m = 1500$ </button>
+  <button class="quiz-option" data-correct="false"> $m = 5000$ </button>
+  <button class="quiz-option" data-correct="false"> $m = 2$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Calculate Growth Rate</button>
+</div>
+:::
+
+**Lock 2: "Point-Slope Purgatory"**
+
+A vendor has cost data from two specific days:
+
+- Day 2: €7,000 in costs
+- Day 5: €13,000 in costs
+
+> **Grinch's Note:** "Two points determine a line. This is geometry from centuries ago. Calculate the slope first, then we'll see if you can actually use it."
+
+**Calculate the slope between points $(2, 7000)$ and $(5, 13000)$:**
+
+::: {.puzzle-box}
+**Enter the slope:**
+<input class="quiz-input" placeholder="m = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="2000">Determine Cost Rate</button>
+</div>
+:::
+
+**Lock 3: "The Parallel Universe"**
+
+The Grinch has set his GrinchTech holiday products on a price line defined by $y = 2x + 1$.
+
+A competing vendor wants to create a **parallel** pricing line that passes through the point $(3, 10)$.
+
+> **Grinch's Note:** "Parallel lines have the same slope. This is... embarrassingly basic. If you get this wrong, I'm going to screenshot it and put it in my quarterly investor report under 'evidence of market opportunity.'"
+
+**What is the y-intercept ($b$) of the parallel line?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $b = 1$ </button>
+  <button class="quiz-option" data-correct="true"> $b = 4$ </button>
+  <button class="quiz-option" data-correct="false"> $b = 10$ </button>
+  <button class="quiz-option" data-correct="false"> $b = 3$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Plot Parallel Strategy</button>
+</div>
+:::
+
+**Lock 4: "The Perpendicular Paradox"**
+
+Another vendor wants to create a discount structure that's mathematically **perpendicular** to the Grinch's model $y = -\frac{1}{3}x + 4$, passing through the origin $(0, 0)$.
+
+> **Grinch's Note:** "Most MBA students can't do this without a calculator. I timed them."
+
+**What is the equation of this perpendicular line?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $y = -3x$ </button>
+  <button class="quiz-option" data-correct="false"> $y = \frac{1}{3}x$ </button>
+  <button class="quiz-option" data-correct="true"> $y = 3x$ </button>
+  <button class="quiz-option" data-correct="false"> $y = -\frac{1}{3}x$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Execute Counter-Strategy</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You present your linear models to the City Council:
+
+- **Market growth rate:** €1,500/day (slope = 1500) ✓
+- **Vendor cost rate:** €2,000/day (slope calculated correctly) ✓
+- **Parallel pricing:** $y = 2x + 4$ (same slope, passes through point) ✓
+- **Perpendicular discount:** $y = 3x$ (negative reciprocal slope) ✓
+
+Stadtrat Fischer studies the equations. "So these linear models show growth, not decline?"
+
+"Exactly," you explain. "The Grinch's presentation cherry-picked data showing costs rising faster than revenue. But when we use actual market data, we see sustainable linear growth."
+
+The Grinch removes his reading glasses and rubs his eyes—the universal gesture of someone whose airtight argument just developed holes.
+
+> **#economic-analysis**
+>
+> "Fine. You can construct linear models. You understand parallel and perpendicular relationships. Basic business mathematics.
+>
+> But here's the thing about linear growth: it's a fairy tale. Real businesses don't grow linearly forever—they follow curves. Quadratic functions. Diminishing returns. There's always a peak where profit maximizes and then declines.
+>
+> Tomorrow, I'll show you Hamburg's REAL economic models: parabolas. Vertex points. Maximum profit calculations.
+>
+> Linear thinking says 'more is always better.' Quadratic thinking says 'there's an optimal point, and you're probably not at it.'
+>
+> Let's see if you can find the vertex of your own failure."
+>
+> -- GR
+
+**Act III Progress:**
+
+- ✓ Function fundamentals verified
+- ✓ Linear business models validated
+- Quadratic optimization: Tomorrow
+- Economic validation: In progress
+
+**Status:** Linear models support Christmas viability; quadratic analysis pending.
+
+**Time Remaining:** 10 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

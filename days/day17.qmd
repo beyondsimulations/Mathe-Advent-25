@@ -1,0 +1,174 @@
+---
+title: "Day 17: The Reversibility Test"
+format:
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act III: Business Model Analysis - FINALE
+
+### Location: Hamburg City Council Chambers
+
+It's the final day of the economic review. The full City Council has assembled, along with business leaders, market vendors, and economists. The decision will be made today: Does Christmas reopen, or does the Grinch's economic analysis stand?
+
+The Grinch appears on the main video screen. He's wearing a formal blazer. This is clearly the most effort he's put into his appearance all month.
+
+"Today's test is different," he announces. "We're not just analyzing functions. We're asking whether my optimizations can be UNDONE."
+
+> **System Message from CEO**
+>
+> "Hamburg City Council. Honored Guests.
+>
+> We've spent days analyzing functions. Linear models. Quadratic optimization. Transformations. And these mathematical auditors have impressed me—I'll admit that much.
+>
+> But here's the ultimate test: REVERSIBILITY.
+>
+> I've 'optimized' Christmas. I've transformed Hamburg's holiday operations through multiple mathematical functions—pricing changes, cost compressions, distribution reconfigurations. These transformations are COMPOSED—layered on top of each other.
+>
+> To truly restore Christmas, you need to REVERSE every transformation I've applied. Find the inverse functions. Decompose my layered optimizations.
+>
+> If you can't find the inverse functions, you can't restore original operations. Christmas stays optimized into non-existence.
+>
+> This is your final economic challenge."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+Three problems testing inverse functions and function composition—the mathematics of reversal.
+
+**Lock 1: "The Price Reversal Protocol"**
+
+The Grinch has converted Hamburg's hot chocolate pricing using the function:
+
+$$P(q) = 50 - 2q$$
+
+where $P$ is price in euros and $q$ is quantity sold.
+
+> **Grinch's Note:** "Vendors need the inverse: given a price, how many units are being sold? Swap variables, solve for the new dependent variable. This is function inversion 101. If you struggle here, the rest of this will be... painful."
+
+**Find the inverse function. What is the coefficient of $P$ when $q$ is expressed in terms of $P$?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $-2$ </button>
+  <button class="quiz-option" data-correct="true"> $-0.5$ or $-1/2$ </button>
+  <button class="quiz-option" data-correct="false"> $+0.5$ </button>
+  <button class="quiz-option" data-correct="false"> $+2$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Reverse Pricing Model</button>
+</div>
+:::
+
+**Lock 2: "The Composition Conundrum"**
+
+The Grinch's system applies TWO transformations in sequence:
+
+- First transformation: $f(x) = 2x + 1$ (pricing adjustment)
+- Second transformation: $g(x) = x - 3$ (cost reduction)
+
+> **Grinch's Note:** "Function composition. I've seen tears. It was delightful. Figure out which function goes where."
+
+**Calculate $(f \circ g)(x)$. What is the constant term?**
+
+::: {.puzzle-box}
+**Enter the constant term:**
+<input class="quiz-input" placeholder="constant = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="-5">Compose Functions</button>
+</div>
+:::
+
+**Lock 3: "The Core Algorithm Inversion"**
+
+The Grinch's central "Christmas Optimization" algorithm is:
+
+$$f(x) = x^3 + 8$$
+
+To restore original Christmas operations, you need the inverse function.
+
+> **Grinch's Note:** "Cubic inversion. If you remember that cube roots can handle negative numbers (unlike square roots), you might just survive this."
+
+**What is the inverse function $f^{-1}(x)$?**
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $f^{-1}(x) = \sqrt[3]{x + 8}$ </button>
+  <button class="quiz-option" data-correct="true"> $f^{-1}(x) = \sqrt[3]{x - 8}$ </button>
+  <button class="quiz-option" data-correct="false"> $f^{-1}(x) = \sqrt{x - 8}$ </button>
+  <button class="quiz-option" data-correct="false"> $f^{-1}(x) = x^3 - 8$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Restore Original Algorithm</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You present the inverse functions to the City Council:
+
+- **Price reversal:** $q(P) = 25 - \frac{P}{2}$ (coefficient of P is $-\frac{1}{2}$) ✓
+- **Function composition:** $(f \circ g)(x) = 2(x-3) + 1 = 2x - 5$ (constant is $-5$) ✓
+- **Core algorithm inverse:** $f^{-1}(x) = \sqrt[3]{x - 8}$ ✓
+
+"This means," you explain to the Council, "that every transformation the Grinch applied can be mathematically reversed. His optimizations aren't permanent. His economic models aren't irreversible. Christmas CAN be restored to its original operational state."
+
+Stadtrat Fischer stands. "The mathematics is clear. Every economic argument GrinchTech presented has been countered with rigorous analysis. I move that we approve the reopening of Hamburg's Christmas markets."
+
+The vote is unanimous: **APPROVED**.
+
+The Grinch is silent for a long moment. Then, slowly, he nods.
+
+> **#final-assessment**
+>
+> "You did it. You actually did it.
+>
+> Functions. Linear models. Quadratic optimization. Transformations. Inverses. Composition. You proved that Christmas is economically viable. That my optimization can be reversed. That the mathematics supports holiday operations.
+>
+> I... may have been wrong about the business case.
+>
+> But there's still a problem: My TECHNICAL infrastructure. The Christmas market control systems, the city lighting grid, the distribution algorithms—they're still locked behind my advanced mathematical protocols.
+>
+> You've won the economic argument. Now you need to win the TECHNICAL battle.
+>
+> Days 18-24: Advanced Functions and Final Systems. Polynomials. Exponential systems. Logarithmic controls. Rational functions. Everything I have left.
+>
+> This is the endgame. If you can crack these, I'll release full control.
+>
+> See you in the final act."
+>
+> -- GR
+
+**ACT III: BUSINESS MODEL ANALYSIS - COMPLETE ✓**
+
+**Major Achievement:** City Council unanimously approves Christmas market reopening
+
+**Progress Update:**
+
+- ✓ Mathematical foundations mastered
+- ✓ Equations & problem-solving complete
+- ✓ Supply chain operational
+- ✓ Economic viability PROVEN
+- Technical systems: Still locked
+- Market controls: Still offline
+- City lighting: Still dark
+
+**ACT IV: THE FINAL TAKEOVER** - Begins Tomorrow
+
+**Time Remaining:** 7 days until Christmas Eve
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::

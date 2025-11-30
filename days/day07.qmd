@@ -1,0 +1,134 @@
+---
+title: "Day 7: The Interception Hub"
+format: 
+  html:
+    include-after-body: ../calendar.html
+css: [../advent.css,../quiz.css]
+---
+
+## Act II: Reversing the Supply Chain
+
+### Location: GrinchTech Logistics Hub A (Formerly Hamburg Port Authority)
+
+You arrive at Warehouse A. It’s not a distribution center—it’s a **black hole**.
+
+Trucks arrive full of Christmas parcels, but they leave empty. Inside, you see the horror: Giant robotic claws are grabbing beautifully wrapped gifts, scanning them, and dropping them onto a conveyor belt labeled **"RECYCLING & INCINERATION."**
+
+You scan your badge. The Grinch pops up on the monitor, looking smugly at a spreadsheet.
+
+> **System Message from CEO**
+>
+> "Welcome to the 'GrinchTech Reverse-Logistics Hub.'
+>
+> You see, I bought the shipping rights for the entire city. Why? To save you from yourselves. Do you have any idea how much carbon footprint this 'gift-giving' generates? It’s irresponsible.
+>
+> My algorithms are currently set to **Intercept and Liquidate**. We are processing 5,000 'units of joy' per hour and converting them into compressed cubes of recyclable cardboard. It’s elegant. It’s sustainable. It’s over.
+>
+> If you're here to try and switch the belts back to 'Delivery Mode,' don't bother. The math required to reverse the torque on these crushers is beyond you."
+>
+> -- GR
+
+## The Challenge
+
+::: {.scenario-block}
+
+To save the presents, you must **reverse** the operational parameters of the machinery.
+
+**Task a) The Crusher Belt**
+
+The main conveyor belt is currently set to "Ramming Speed" ($s$) to smash packages into the incinerator. The equation governing the speed is:
+$$3(s + 4) - 2s = 20$$
+
+> **Grinch's Note:** "No pressure. Well, actually, lots of pressure."
+
+**Objective:** The Grinch set this for maximum destruction. Solving this identifies the velocity. Once identified, the system will allow you to invert the motor polarity.
+
+::: {.puzzle-box}
+**Solve for s (Crusher Velocity):**
+
+<input class="quiz-input" placeholder="s = ?">
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled data-answer="8">Invert Motor Polarity</button>
+</div>
+:::
+
+**Task b) The "Waste" Audit**
+
+The Grinch has categorized all presents as "Trash." You need to hack the inventory log to recategorize them as "Assets" so the system won't burn them.
+
+* **Total items intercepted:** 25
+* **"Standard Junk" Value:** €3 | **"Premium Junk" Value:** €5
+* **Total Liquidation Value:** €95
+
+> **Grinch's Note:** "A classic two-equation, two-unknown problem. Total items. Total value. I learned this in fifth grade. I was bored then too, but at least I paid attention."
+
+**Objective:** Identify how many Standard ($x$) and Premium ($y$) gifts are currently in the hopper so you can reroute them.
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> Standard: 10, Premium: 15 </button>
+  <button class="quiz-option" data-correct="true"> Standard: 15, Premium: 10 </button>
+  <button class="quiz-option" data-correct="false"> Standard: 20, Premium: 5 </button>
+  <button class="quiz-option" data-correct="false"> Standard: 12, Premium: 13 </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Recategorize as "Gifts"</button>
+</div>
+:::
+
+**Task c) The Claw Calibration**
+
+The robotic claw is programmed to **crush** ($|2x - 7| = 3$). You need to solve this to find the grip boundaries.
+
+> **Grinch's Note:** "The current setting applies 4,000 PSI of pressure. Enough to turn a Playstation into a frisbee. Don't touch it."
+
+::: {.puzzle-box}
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false"> $x = 3$ and $x = -3$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 4$ and $x = 10$ </button>
+  <button class="quiz-option" data-correct="true"> $x = 2$ and $x = 5$ </button>
+  <button class="quiz-option" data-correct="false"> $x = 2$ and $x = -5$ </button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Reset Grip Strength</button>
+</div>
+:::
+
+::: {.revealed-text}
+### Status Update
+
+You hit Enter. The facility groans.
+
+The conveyor belt screeches to a halt, then slowly reverses direction. The sign above the pit changes from **"INCINERATOR"** to **"OUTBOUND DELIVERY."**
+
+The robotic claw stops crushing a Lego set and gently places it onto a delivery truck.
+
+The Grinch appears on the screen, looking furious. He spills a drop of his kale smoothie.
+
+> **System Message from CEO**
+>
+> "What did you do?!
+>
+> You reversed the flow? Do you know how much paperwork this creates? I had those crushing quotas approved by the board!
+>
+> You may have saved this batch of 'consumerist clutter,' but Warehouse B is where I keep the **difficult stuff*.
+>
+> Good job, hero."
+> -- GR
+
+**System Status:**
+
+* **Incinerator:** OFFLINE
+* **Delivery Mode:** ACTIVE
+* **Presents Saved:** 2,500
+
+[**Back to the calendar**](../index.qmd)
+:::
+
+:::
