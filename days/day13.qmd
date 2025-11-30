@@ -52,7 +52,7 @@ $$f(x) = 2x^2 - 5x + 1$$
 
 wobei $x$ = verwendete Kilogramm Zucker in der Produktion.
 
-> **Grinchs Hinweis:** „Wenn ihr eine quadratische Funktion nicht an einem bestimmten Wert auswerten könnt, gebt bitte euren Schülerausweis an der Tür ab. Das ist das mathematische Äquivalent von Leseverständnis."
+> **Grinchs Hinweis:** „Wenn ihr eine quadratische Funktion nicht an einem bestimmten Wert auswerten könnt, gebt bitte euren Schülerausweis an der Tür ab."
 
 **Berechnet $f(3)$:**
 
