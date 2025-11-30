@@ -20,9 +20,9 @@ Die Bildschirme blinken rot. Der Grinch erscheint, und ausnahmsweise sieht er zu
 >
 > „Oh, ihr dachtet, ihr wärt fertig? Wie niedlich. Wie... *linear* von euch.
 >
-> Ich hatte die ganze Zeit Ausfallsicherheitsprotokolle laufen. Ihr habt sie in dem Moment ausgelöst, als ihr meine Quadratiken umgangen habt. Betrachtet es als ein ‚Dankeschön'-Geschenk für eure Hartnäckigkeit.
+> Ich hatte die ganze Zeit Ausfallsicherheitsprotokolle laufen. Ihr habt sie in dem Moment ausgelöst, als ihr meine letzten Protokolle umgangen habt. Betrachtet es als ein ‚Dankeschön'-Geschenk für eure Hartnäckigkeit.
 >
-> Hier ist die Situation: In genau 60 Minuten geht dieses Lagerhaus in dauerhafte Sperrung. Türen versiegeln sich. Die Klimakontrolle versagt. Alle 15.000 Geschenke werden zu sehr teurem Anzündholz.
+> Hier ist die Situation: In genau 60 Minuten geht dieses Lagerhaus in dauerhafte Sperrung. Türen versiegeln sich. Die Klimakontrolle versagt. Alle 15.000 Geschenke werden zu sehr teurem Brennholz.
 >
 > Die Überbrückungscodes? Sie sind hinter Gleichungen gesperrt, die echtes mathematisches Denken erfordern. Bruchgleichungen, bei denen ihr achten müsst, was im Nenner steht. Wurzelgleichungen, bei denen das Quadrieren beider Seiten Scheinlösungen erzeugt. Ein kubisches Polynom, das ich persönlich während der letzten Elbe-Kreuzfahrt meiner Yacht entworfen habe.
 >
@@ -36,7 +36,7 @@ Die Bildschirme blinken rot. Der Grinch erscheint, und ausnahmsweise sieht er zu
 
 ::: {.scenario-block}
 
-Drei Notfallsysteme müssen sofort debuggt werden. Der Grinch hat jedes einzelne benannt, weil er natürlich hat.
+Drei Notfallsysteme müssen sofort debuggt werden. Der Grinch hat jedes einzelne benannt, weil... natürlich einfach nur so...
 
 **Schloss 1: „Der Albtraum der Feuerwehr"**
 
@@ -44,7 +44,7 @@ Der Sprinkler-Timer wird durch eine Bruchgleichung gesteuert. Das Display blinkt
 
 $$\frac{x+4}{x-2} = 3$$
 
-> **Grinchs Hinweis:** „Diese Gleichung hat einen Definitionsbereich, der die meisten Schüler zum Weinen bringt. Ich habe Praktikanten gesehen, die bei weniger zusammengebrochen sind. Denkt daran: Achtet darauf, was im Nenner nicht stehen darf!"
+> **Grinchs Hinweis:** „Diese Gleichung hat einen Definitionsbereich, der die meisten Schüler zum Weinen bringt. Ich habe Praktikanten gesehen, die bei weniger zusammengebrochen sind."
 
 **Löst nach $x$ auf.**
 
@@ -84,7 +84,7 @@ $$\sqrt{y + 2} = y - 4$$
 
 **Schloss 3: „Das Sommelier-Polynom"**
 
-Die Master-Überbrückung ist eine kubische Gleichung. Der Bildschirm zeigt sie mit einem Weinglas-Emoji an, weil der Grinch eben so ist:
+Die Master-Überbrückung ist eine kubische Gleichung. Der Bildschirm zeigt sie mit einem Weinglas-Emoji an:
 
 $$x^3 - 6x^2 + 11x - 6 = 0$$
 
@@ -125,7 +125,7 @@ Frau Weber atmet scharf aus. „Das war zu knapp. Acht Minuten. Wir hatten acht 
 
 Die Arbeiter im Lagerhaus sehen erschüttert, aber erleichtert aus. Ihr habt nicht nur die Geschenke entsperrt—ihr habt eine katastrophale Sperrung verhindert, die alles drinnen eingeschlossen hätte.
 
-Der Grinch erscheint wieder auf dem Bildschirm. Er lächelt nicht mehr. Er stellt seine „Weltbester Disruptor"-Tasse ab.
+Der Grinch erscheint wieder auf dem Bildschirm. Er lächelt nicht mehr. Er stellt seine Tasse ab.
 
 > **#sicherheits-log**
 >

@@ -16,7 +16,7 @@ Aber als ihr euch dem zentralen Terminal nähert, schalten alle Bildschirme in d
 
 **ZEIT BIS ZUR AUTOMATISCHEN NEU-VERSCHLÜSSELUNG: 23:59:58... 23:59:57... 23:59:56...**
 
-Das Gesicht des Grinchs erscheint auf dem Hauptdisplay. Er trägt Noise-Cancelling-Kopfhörer und sieht äußerst entspannt aus, wie jemand, der gerade eine Katastrophe geplant hat und die Vorfreude genießt.
+Das Gesicht des Grinchs erscheint auf dem Hauptdisplay. Er trägt Noise-Cancelling-Kopfhörer und sieht äußerst entspannt aus, wie jemand, der gerade die Vorfreude genießt.
 
 > **Systemnachricht vom CEO**
 >
@@ -64,7 +64,7 @@ Ein Backup-Timer droht, den Countdown zu beschleunigen. Das Display zeigt:
 
 $$3^t = 50$$
 
-> **Grinchs Hinweis:** „JETZT beginnt der Spaß. Ihr braucht Logarithmen. Echte Logarithmen. Nicht den ‚ich rate mal'-Ansatz, der euch durch die Schule gebracht hat. Rundet auf zwei Dezimalstellen—Präzision ist wichtig, wenn ihr gegen exponentiellen Zerfall kämpft."
+> **Grinchs Hinweis:** „JETZT beginnt der Spaß. Ihr braucht Logarithmen. Echte Logarithmen. Nicht den ‚ich rate mal'-Ansatz, der euch bisher durch die Schule gebracht hat. Rundet auf zwei Dezimalstellen—Präzision ist wichtig, wenn ihr gegen exponentiellen Zerfall kämpft."
 
 ::: {.puzzle-box}
 <div class="quiz-options">
@@ -94,7 +94,7 @@ $$\log_2(m - 3) + \log_2(5) = 4$$
 
 <div class="quiz-actions">
   <p class="quiz-feedback"></p>
-  <button class="quiz-submit" disabled data-answer="6.2">Master-Steuerung entsperren</button>
+  <button class="quiz-submit" disabled data-answer="6,2">Master-Steuerung entsperren</button>
 </div>
 :::
 
@@ -115,9 +115,7 @@ Die Countdown-Uhr stottert, friert bei **00:14:47** ein und zeigt dann an:
 
 Frau Weber sackt gegen eine Konsole. „Vierzehn Minuten. Wir hatten vierzehn Minuten übrig."
 
-Die Arbeiter jubeln. Zum ersten Mal seit dies begann, fühlt sich etwas wirklich dauerhaft an.
-
-Der Grinch erscheint wieder. Er hat die Kopfhörer abgenommen und kneift sich die Nasenwurzel—die universelle Geste von jemandem, dessen brillanter Plan gerade gescheitert ist.
+Der Grinch erscheint wieder. Er hat die Kopfhörer abgenommen.
 
 > **#taktischer-rueckzug**
 >

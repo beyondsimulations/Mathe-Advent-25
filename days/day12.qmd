@@ -14,13 +14,13 @@ Es ist später Abend. Frau Webers Team hat rund um die Uhr gearbeitet, um die La
 
 Aber es gibt ein letztes Hindernis.
 
-Das zentrale Koordinationsterminal—das Master-System, das alle drei Lagerhäuser synchronisiert und die eigentliche Verteilung an Hamburgs Weihnachtsmärkte steuert—bleibt gesperrt. Der Bildschirm leuchtet in einem nervigen Grünton, als der Grinch erscheint und irritierend ausgeruht aussieht.
+Das zentrale Koordinationsterminal—das Master-System, das alle drei Lagerhäuser synchronisiert und die eigentliche Verteilung steuert—bleibt gesperrt. Der Bildschirm leuchtet in einem nervigen Grünton, als der Grinch erscheint und irritierend ausgeruht aussieht.
 
 > **Systemnachricht vom CEO**
 >
 > „Nun, nun. Tag 12. Halbzeit eures kleinen Kreuzzugs. Herzlichen Glückwunsch, dass ihr es so weit geschafft habt. Ich bin ehrlich überrascht—ich hatte mit meiner persönlichen Assistentin gewettet, dass ihr bis Tag 8 aufgebt. Ich schulde ihr jetzt eine sehr teure Kaffeemaschine.
 >
-> Lasst mich klarstellen, was auf dem Spiel steht: Dieses Terminal steuert die TATSÄCHLICHE Verteilung von Geschenken an Hamburgs Märkte. Keine theoretischen Geschenke. Keine lagergesperrten Geschenke. Echte, physische, muss-vor-Weihnachten-bewegt-werden Geschenke.
+> Lasst mich klarstellen, was auf dem Spiel steht: Dieses Terminal steuert die TATSÄCHLICHE Verteilung von Geschenken. Keine theoretischen Geschenke. Keine lagergesperrten Geschenke. Echte, physische, muss-vor-Weihnachten-bewegt-werden Geschenke.
 >
 > Die Schlösser? Es sind *Anwendungsaufgaben*. Die Art, bei der Mathematik auf die echte Welt trifft und die meisten Schüler merken, dass sie im Unterricht hätten aufpassen sollen.
 >
@@ -28,7 +28,7 @@ Das zentrale Koordinationsterminal—das Master-System, das alle drei Lagerhäus
 >
 > Hier hören Gleichungen auf, akademische Übungen zu sein, und werden zum Unterschied zwischen Weihnachten, das stattfindet, oder nicht stattfindet.
 >
-> Kein Druck. Außer allem Druck."
+> Kein Druck."
 >
 > -- GR
 
@@ -46,7 +46,7 @@ $$D(t) = 50 \cdot 2^{t/3} + 20t$$
 
 wobei $t$ die Zeit in Stunden seit der Abfahrt ist. Der Zug muss $D = 320$ km erreichen, um rechtzeitig am Hamburg Hauptbahnhof anzukommen.
 
-> **Grinchs Hinweis:** „Diese Gleichung lässt sich nicht schön mit Algebra lösen. Ihr müsst ganzzahlige Werte testen. Ich weiß, ich weiß—Versuch und Irrtum fühlt sich unter eurer Würde an. Willkommen in der echten Ingenieurswelt, wo elegante Lösungen ein Luxus sind."
+> **Grinchs Hinweis:** „Diese Gleichung lässt sich nicht schön mit Algebra lösen. Ihr müsst ganzzahlige Werte testen. Ich weiß, ich weiß—Versuch und Irrtum fühlt sich unter eurer Würde an. Willkommen in der echten Welt, wo elegante Lösungen ein Luxus sind."
 
 **Bestimmt** die Zeit $t$, wann der Zug genau 320 km erreicht. Testet ganzzahlige Werte.
 
@@ -90,7 +90,7 @@ Das Klimakontrollsystem des Lagerhauses braucht Frostschutzmittel für die Heizu
 
 **Schloss 3: „Das Ganzzahl-Verhör"**
 
-Das finale Sicherheitsschloss des Lagerhauses ist ein klassisches Ganzzahl-Rätsel, eingebettet in das Routenoptimierungssystem:
+Das finale Sicherheitsschloss des Lagerhauses ist ein klassisches Rätsel, eingebettet in das Routenoptimierungssystem:
 
 > **Authentifizierungsrätsel:**
 >
@@ -113,9 +113,9 @@ Das finale Sicherheitsschloss des Lagerhauses ist ein klassisches Ganzzahl-Räts
 
 Ihr arbeitet jedes Problem methodisch durch:
 
-- Zugankunft: $t = 6$ Stunden (überprüft: $50 \cdot 2^{6/3} + 20(6) = 50 \cdot 4 + 120 = 320$ ✓)
-- Benötigtes Frostschutzmittel: 6 Liter (überprüft: $\frac{2 + 6}{10 + 6} = \frac{8}{16} = 50\%$ ✓)
-- Aufeinanderfolgende Zahlen: 8 und 9 (überprüft: $8 \times 9 = 72$ ✓)
+- Zugankunft: $t = 6$ Stunden
+- Benötigtes Frostschutzmittel: 6 Liter
+- Aufeinanderfolgende Zahlen: 8 und 9
 
 Ihr gebt die finale Antwort ein. Das Terminal verarbeitet für eine gefühlte Ewigkeit. Dann:
 
@@ -125,7 +125,7 @@ Ihr gebt die finale Antwort ein. Das Terminal verarbeitet für eine gefühlte Ew
 
 **VERTEILUNG AN WEIHNACHTSMÄRKTE: AKTIVIERT**
 
-Jeder Bildschirm im Koordinationszentrum leuchtet mit grünen Statusanzeigen auf. Verteilungsrouten aktivieren sich. Lieferpläne füllen sich. Die gesamte Lieferkette—von Lagerhäusern zu Märkten—ist endlich betriebsbereit.
+Jeder Bildschirm im Koordinationszentrum leuchtet mit grünen Statusanzeigen auf. Verteilungsrouten aktivieren sich. Lieferpläne füllen sich. Die gesamte Lieferkette ist endlich betriebsbereit.
 
 Frau Weber ruft eine Karte von Hamburg auf dem Hauptbildschirm auf. Grüne Markierungen erscheinen an jedem Weihnachtsmarkt-Standort: Rathausmarkt, Jungfernstieg, Mönckebergstraße, Großneumarkt.
 
@@ -152,7 +152,7 @@ Eine Nachricht erscheint auf dem Bildschirm. Der Gesichtsausdruck des Grinchs is
 >
 > Tage 13-17: Funktionen als Geschäftsmodelle.
 >
-> Ihr zieht zur Europa Passage um. Ihr werdet Gewinnfunktionen, Kostenkurven und Optimierungsprobleme analysieren. Ihr werdet beweisen—mathematisch—dass Weihnachtsmärkte wirtschaftlich tragfähig sind.
+> Ihr werdet Gewinnfunktionen, Kostenkurven und Optimierungsprobleme analysieren. Ihr werdet beweisen—mathematisch—dass Weihnachtsmärkte wirtschaftlich tragfähig sind.
 >
 > Die Lieferkette gehört euch. Aber die Wirtschaft? Die gehört noch mir.
 >
