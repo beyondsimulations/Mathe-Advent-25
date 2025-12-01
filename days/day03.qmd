@@ -39,14 +39,14 @@ $$x^2 + 7x + 10$$
 
 > **Grinchs Hinweis:** „Das ist buchstäblich das Erste, was man beim Faktorisieren lernt."
 
-Dies stellt die Anzahl der verschlüsselten Datenpakete dar, die euren Zugang blockieren. **Faktorisiert** den Ausdruck, um ihn in Komponenten zu zerlegen.
+Dies stellt die Anzahl der verschlüsselten Datenpakete dar, die euren Zugang blockieren. **Faktorisiert** den Ausdruck vollständig, um ihn in Komponenten zu zerlegen.
 
 ::: {.puzzle-box}
 <div class="quiz-options">
   <button class="quiz-option" data-correct="false"> $(x + 1)(x + 10)$ </button>
   <button class="quiz-option" data-correct="true"> $(x + 2)(x + 5)$ </button>
   <button class="quiz-option" data-correct="false"> $(x - 2)(x - 5)$ </button>
-  <button class="quiz-option" data-correct="false"> $x(x + 7) + 10$ </button>
+  <button class="quiz-option" data-correct="false"> $x(x + 7) + 9$ </button>
 </div>
 
 <div class="quiz-actions">
