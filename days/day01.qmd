@@ -38,7 +38,7 @@ Der Touchscreen zeigt drei Sicherheitsprotokolle, die der Reihe nach gelöst wer
 
 Der Bildschirm zeigt vier ineinander verschachtelte Kreise mit den Bezeichnungen $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$ und $\mathbb{R}$.
 
-> **Grinchs Hinweis:** „Bei GrinchTech beginnen die natürlichen Zahlen $\mathbb{N}$ bei 1. Die Null? Die habe ich rausgeworfen. Wer nichts beiträgt, fliegt. Das gilt für Zahlen genauso wie für Praktikanten."
+> **Grinchs Hinweis:** „Hier scheitern die meisten Bewerber bei ihrem Vorstellungsgespräch."
 
 **Charakterisiert** die Beziehung zwischen diesen Mengen mit korrekter Mengennotation.
 
@@ -61,7 +61,7 @@ Der Bildschirm zeigt vier ineinander verschachtelte Kreise mit den Bezeichnungen
 Das Schloss aktiviert sich und zeigt ein Zahlenfeld mit folgenden verfügbaren Zahlen:
 $$K = \{-5, -3, 0, 1, 2{,}5, 4, 4{,}7\}$$
 
-> **Grinchs Hinweis:** „Hier scheitern die meisten Bewerber bei ihrem Vorstellungsgespräch."
+> **Grinchs Hinweis:** „Bei GrinchTech beginnen die natürlichen Zahlen $\mathbb{N}$ bei 1. Die Null? Die habe ich rausgeworfen. Wer nichts beiträgt, fliegt. Das gilt für Zahlen genauso wie für Praktikanten."
 
 **Authentifizierungsprotokoll:**
 
