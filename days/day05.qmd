@@ -96,7 +96,7 @@ $$\text{Löse nach } x \text{ auf, bevor die Krokodile freigelassen werden: } \q
 
 **Schloss 4: „Der Ego-Check"**
 
-Das letzte Schloss verwendet Basis-4, nur weil der Grinch das bevorzugt.
+Das letzte Schloss verwendet zur Basis 4, nur weil der Grinch das bevorzugt.
 
 $$\text{Berechne: } \log_4(64)$$
 
