@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Tag 1: Das biometrische Schloss – Mathe Advent 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46d4eb725d7d2b8695ccd307f5b3c105.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-197188da37a79cb9418c4f38e6d23e8d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-46d4eb725d7d2b8695ccd307f5b3c105.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-2814989d57e829228971f23ed55e414b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-5607ee3925b57145e08bc2bce4797f04.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2814989d57e829228971f23ed55e414b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script defer="" src="https://umi.byndsim.com/script.js" data-website-id="e230d76b-b0a6-477e-8c5d-19a7bd661e68"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../advent.css">
+<link rel="stylesheet" href="../quiz.css">
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#akt-i-infiltration" id="toc-akt-i-infiltration" class="nav-link active" data-scroll-target="#akt-i-infiltration">Akt I: Infiltration</a>
+  <ul class="collapse">
+  <li><a href="#ort-grinchtech-hauptquartier-hafencity" id="toc-ort-grinchtech-hauptquartier-hafencity" class="nav-link" data-scroll-target="#ort-grinchtech-hauptquartier-hafencity">Ort: GrinchTech Hauptquartier, Hafencity</a></li>
+  </ul></li>
+  <li><a href="#die-herausforderung" id="toc-die-herausforderung" class="nav-link" data-scroll-target="#die-herausforderung">Die Herausforderung</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tag 1: Das biometrische Schloss</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="akt-i-infiltration" class="level2">
+<h2 class="anchored" data-anchor-id="akt-i-infiltration">Akt I: Infiltration</h2>
+<section id="ort-grinchtech-hauptquartier-hafencity" class="level3">
+<h3 class="anchored" data-anchor-id="ort-grinchtech-hauptquartier-hafencity">Ort: GrinchTech Hauptquartier, Hafencity</h3>
+<p>Ihr erreicht die angegebene Adresse: ein glänzender Glasturm mit Blick auf die Elbe, dessen Fassade den grauen Dezemberhimmel widerspiegelt. Ein riesiges grünes Logo pulsiert über dem Eingang: <strong>GrinchTech Industries</strong>.</p>
+<p>Das Gebäude sieht aus wie jedes andere Startup-Hauptquartier in der Hafencity—poliertes Chrom, bodentiefe Fenster und eine ungewöhnlich hohe Anzahl von Mitarbeitern, die Hoodies in einem professionellen Umfeld tragen. Aber anders als die benachbarten Büros strahlt dieses Gebäude eine unheimliche Stille aus. Keine Weihnachtsdeko. Keine festliche Musik. Nur das kalte Summen von Servern und das Leuchten grüner Statuslichter.</p>
+<p>Ihr nähert euch dem Haupteingang. Die Glastüren sind verschlossen, und wo normalerweise ein Tastenfeld sein sollte, befindet sich ein eleganter Touchscreen mit einer mathematischen Herausforderung.</p>
+<p>Eine Nachricht erscheint:</p>
+<blockquote class="blockquote">
+<p><strong>GrinchTech Industries - Sicherheitsebene Alpha</strong></p>
+<p>Oh, schaut an. Schüler. Wie… putzig.</p>
+<p>Ihr versteht ja nicht einmal, wie man Daten klassifiziert. Natürliche Zahlen? Ganze Zahlen? Rationale Zahlen? Ich habe Bewerber interviewt, die dachten, <span class="math inline">\(\mathbb{R}\)</span> wäre ein Piratengeräusch. Es ist wirklich deprimierend.</p>
+<p>Mein Gebäude öffnet sich nicht für Personen, die den Unterschied zwischen einer ganzen Einheit und einem Bruchanteil nicht kennen. Nennt es unfreundlich. Ich nenne es „Standards”.</p>
+<p>– GR</p>
+</blockquote>
+</section>
+</section>
+<section id="die-herausforderung" class="level2">
+<h2 class="anchored" data-anchor-id="die-herausforderung">Die Herausforderung</h2>
+<div class="scenario-block">
+<p>Der Touchscreen zeigt drei Sicherheitsprotokolle, die der Reihe nach gelöst werden müssen.</p>
+<p><strong>Aufgabe a) Mengenbeziehungen</strong></p>
+<p>Der Bildschirm zeigt vier ineinander verschachtelte Kreise mit den Bezeichnungen <span class="math inline">\(\mathbb{N}\)</span>, <span class="math inline">\(\mathbb{Z}\)</span>, <span class="math inline">\(\mathbb{Q}\)</span> und <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<blockquote class="blockquote">
+<p><strong>Grinchs Hinweis:</strong> „Teilmengennotation. Das mathematische Äquivalent zu russischen Matrjoschka-Puppen, nur nützlicher. Wenn ihr die Richtung falsch wählt, bleibt meine Tür für immer verschlossen.”</p>
+</blockquote>
+<p><strong>Charakterisiert</strong> die Beziehung zwischen diesen Mengen mit korrekter Mengennotation.</p>
+<div class="puzzle-box">
+<div class="quiz-options">
+<p><button class="quiz-option" data-correct="false"> <span class="math inline">\(\mathbb{N} \supset \mathbb{Z} \supset \mathbb{Q} \supset \mathbb{R}\)</span> </button> <button class="quiz-option" data-correct="true"> <span class="math inline">\(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}\)</span> </button> <button class="quiz-option" data-correct="false"> <span class="math inline">\(\mathbb{Z} \subset \mathbb{N} \subset \mathbb{Q} \subset \mathbb{R}\)</span> </button> <button class="quiz-option" data-correct="false"> <span class="math inline">\(\mathbb{R} = \mathbb{Q} + \mathbb{Z} + \mathbb{N}\)</span> </button></p>
+</div>
+<div class="quiz-actions">
+<p class="quiz-feedback">
+</p>
+<p><button class="quiz-submit" disabled="">Beziehung bestätigen</button></p>
+</div>
+</div>
+<p><strong>Aufgabe b) Das biometrische Schloss</strong></p>
+<p>Das Schloss aktiviert sich und zeigt ein Zahlenfeld mit folgenden verfügbaren Zahlen: <span class="math display">\[K = \{-5, -3, 0, 1, 2{,}5, 4, 4{,}7\}\]</span></p>
+<blockquote class="blockquote">
+<p><strong>Grinchs Hinweis:</strong> „Hier scheitern die meisten Bewerber bei ihrem Vorstellungsgespräch.”</p>
+</blockquote>
+<p><strong>Authentifizierungsprotokoll:</strong></p>
+<ol type="1">
+<li><strong>Erste Sequenz:</strong> Gebt alle Zahlen ein, die in <span class="math inline">\(\mathbb{Z}\)</span>, aber <strong>NICHT</strong> in <span class="math inline">\(\mathbb{N}\)</span> sind.</li>
+<li><strong>Zweite Sequenz:</strong> Gebt alle Zahlen ein, die in <span class="math inline">\(\mathbb{Q}\)</span>, aber <strong>NICHT</strong> in <span class="math inline">\(\mathbb{Z}\)</span> sind.</li>
+</ol>
+<p><strong>Identifiziert</strong> die korrekten Tastenfolgen, um die Tür zu öffnen.</p>
+<div class="puzzle-box">
+<div class="quiz-options">
+<p><button class="quiz-option" data-correct="false"> Seq 1: <span class="math inline">\(\{-5, -3\}\)</span> <br> Seq 2: <span class="math inline">\(\{0, 2{,}5, 4{,}7\}\)</span> </button></p>
+<p><button class="quiz-option" data-correct="true"> Seq 1: <span class="math inline">\(\{-5, -3, 0\}\)</span> <br> Seq 2: <span class="math inline">\(\{2{,}5, 4{,}7\}\)</span> </button></p>
+<p><button class="quiz-option" data-correct="false"> Seq 1: <span class="math inline">\(\{0, 1, 4\}\)</span> <br> Seq 2: <span class="math inline">\(\{-5, -3\}\)</span> </button></p>
+<p><button class="quiz-option" data-correct="false"> Seq 1: <span class="math inline">\(\{-5, -3, 0\}\)</span> <br> Seq 2: <span class="math inline">\(\{1, 4, 4{,}7\}\)</span> </button></p>
+</div>
+<div class="quiz-actions">
+<p class="quiz-feedback">
+</p>
+<p><button class="quiz-submit" disabled="">Protokoll ausführen</button></p>
+</div>
+</div>
+<section id="statusmeldung" class="level3 revealed-text">
+<h3 class="anchored" data-anchor-id="statusmeldung">Statusmeldung</h3>
+<p>Der Touchscreen blinkt grün. Ihr hört ein befriedigendes <em>Klick</em>, als die Magnetschlösser sich lösen.</p>
+<blockquote class="blockquote">
+<p><strong>Authentifizierung erfolgreich. Willkommen bei GrinchTech Industries.</strong></p>
+<p>Na, na. Ihr könnt Zahlen kategorisieren. Herzlichen Glückwunsch. Der Hamster meines Neffen konnte das auch, und der ist bereits seit drei Jahren tot.</p>
+<p>Ihr seid in der Lobby. Der LOBBY. Meine echten Sicherheitssysteme befinden sich auf Etagen, von denen ihr noch nie gehört habt. Allein Etage 2 hat vierzehn „Hacker”, zwei Regierungsprüfer und einen sehr selbstbewussten Praktikanten besiegt, der danach im Aufzug geweint hat.</p>
+<p>Genießt eure kurze Tour. Ich gebe euch bis zur zweiten Etage, bevor ihr den Sicherheitsdienst anbettelt, euch hinauszubegleiten.</p>
+<p>– GR</p>
+</blockquote>
+<p>Die Glastüren gleiten auf. Drinnen seht ihr einen minimalistischen Empfangsbereich mit Sichtbeton, unbequem aussehenden Designermöbeln und einem riesigen digitalen Display, das „Weihnachts-Optimierungs-Kennzahlen” in Echtzeit anzeigt:</p>
+<ul>
+<li><strong>Freude-Unterdrückungsrate: 94,7%</strong></li>
+<li><strong>Geschenkverteilung: GESPERRT</strong></li>
+<li><strong>Feiertagsstimmungs-Index: 0,003</strong></li>
+</ul>
+<p>Ihr habt es ins Innere von GrinchTech geschafft. Aber das ist erst der Anfang.</p>
+<p><a href="../index.html"><strong>Zurück zum Kalender</strong></a></p>
+</section>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        console.log("🎄 Math Advent Calendar Script Loaded 🎄");
+
+        // ==========================================
+        // PART 1: CALENDAR DOOR LOCKING LOGIC
+        // ==========================================
+
+        const targetYear = 2025;
+        const debugMode = false; // Set to true to unlock everything for testing
+
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = now.getMonth();
+        const currentDay = now.getDate();
+
+        const doors = document.querySelectorAll(".door");
+
+        if (doors.length > 0) {
+            doors.forEach((door) => {
+                let dayNumber = parseInt(
+                    door.getAttribute("data-day") || door.innerText,
+                );
+                let isLocked = false;
+
+                if (!debugMode) {
+                    if (currentYear < targetYear) isLocked = true;
+                    else if (currentYear === targetYear && currentMonth < 11)
+                        isLocked = true;
+                    else if (
+                        currentYear === targetYear &&
+                        currentMonth === 11 &&
+                        dayNumber > currentDay
+                    )
+                        isLocked = true;
+                }
+
+                if (isLocked) {
+                    door.classList.add("future");
+                    door.removeAttribute("href");
+                    door.style.cursor = "not-allowed";
+                    door.onclick = (e) => {
+                        e.preventDefault();
+                        alert(`Noch nicht! Komm am ${dayNumber}. Dezember wieder.`);
+                    };
+                } else {
+                    if (
+                        dayNumber === currentDay &&
+                        currentMonth === 11 &&
+                        currentYear === targetYear
+                    ) {
+                        door.classList.add("today");
+                    } else {
+                        door.classList.add("past");
+                    }
+                }
+            });
+        }
+
+        // ==========================================
+        // PART 2: MULTI-LOCK QUIZ & INPUT LOGIC
+        // ==========================================
+
+        const scenarios = document.querySelectorAll(".scenario-block");
+
+        scenarios.forEach((scenario) => {
+            const hiddenText = scenario.querySelector(".revealed-text");
+            const boxes = scenario.querySelectorAll(".puzzle-box");
+
+            // We keep track of how many boxes are solved
+            const totalRequired = boxes.length;
+
+            boxes.forEach((box) => {
+                const options = box.querySelectorAll(".quiz-option");
+                const inputField = box.querySelector(".quiz-input");
+                const submitBtn = box.querySelector(".quiz-submit");
+                const feedback = box.querySelector(".quiz-feedback");
+
+                let selectedBtn = null;
+
+                // --- LOGIC A: BUTTONS (Multiple Choice) ---
+                if (options.length > 0) {
+                    options.forEach((opt) => {
+                        opt.addEventListener("click", function () {
+                            if (submitBtn.style.display === "none") return; // Already solved
+                            if (this.disabled) return; // Penalty active
+
+                            // Visual selection
+                            options.forEach((o) =>
+                                o.classList.remove("selected"),
+                            );
+                            this.classList.add("selected");
+                            selectedBtn = this;
+
+                            submitBtn.disabled = false;
+                        });
+                    });
+                }
+
+                // --- LOGIC B: INPUT FIELD (Type Answer) ---
+                if (inputField) {
+                    inputField.addEventListener("input", function () {
+                        if (submitBtn.style.display === "none") return;
+
+                        // Enable button only if text is typed
+                        if (this.value.trim().length > 0) {
+                            submitBtn.disabled = false;
+                        } else {
+                            submitBtn.disabled = true;
+                        }
+                    });
+
+                    // Allow pressing "Enter"
+                    inputField.addEventListener("keypress", function (event) {
+                        if (event.key === "Enter" && !submitBtn.disabled) {
+                            submitBtn.click();
+                        }
+                    });
+                }
+
+                // --- SUBMISSION HANDLER ---
+                if (submitBtn) {
+                    submitBtn.addEventListener("click", function () {
+                        let isCorrect = false;
+
+                        // Check MCQ
+                        if (selectedBtn) {
+                            isCorrect =
+                                selectedBtn.getAttribute("data-correct") ===
+                                "true";
+                        }
+                        // Check Input (Case Insensitive)
+                        else if (inputField) {
+                            const rawUser = inputField.value
+                                .trim()
+                                .toLowerCase();
+                            const rawCorrect = submitBtn
+                                .getAttribute("data-answer")
+                                .toLowerCase();
+                            isCorrect = rawUser === rawCorrect;
+                        }
+
+                        if (isCorrect) {
+                            // === SUCCESS ===
+                            box.classList.add("solved");
+
+                            if (selectedBtn) {
+                                selectedBtn.classList.remove("selected");
+                                selectedBtn.classList.add("correct");
+                                selectedBtn.innerHTML = selectedBtn.innerHTML;
+                            } else if (inputField) {
+                                inputField.classList.add("correct");
+                                inputField.disabled = true;
+                            }
+
+                            feedback.classList.add("success");
+                            feedback.innerText = "Richtig!";
+
+                            // Hide submit button
+                            submitBtn.style.display = "none";
+
+                            // Lock options
+                            if (options)
+                                options.forEach((o) => (o.disabled = true));
+
+                            // Check if ALL boxes in this scenario are done
+                            checkAllSolved();
+                        } else {
+                            // === FAILURE ===
+
+                            // Identify element to Shake
+                            const errorEl = selectedBtn || inputField;
+
+                            if (errorEl) {
+                                if (selectedBtn)
+                                    selectedBtn.classList.remove("selected");
+                                errorEl.classList.add("wrong");
+                                errorEl.classList.add("shake");
+
+                                // Remove shake after animation (0.5s)
+                                setTimeout(() => {
+                                    errorEl.classList.remove("shake");
+                                }, 500);
+                            }
+
+                            // Penalty Timer
+                            startPenaltyTimer(10);
+                        }
+                    });
+                }
+
+                // --- HELPER: PENALTY TIMER ---
+                function startPenaltyTimer(seconds) {
+                    if (options) options.forEach((o) => (o.disabled = true));
+                    if (inputField) inputField.disabled = true;
+                    submitBtn.disabled = true;
+
+                    let timeLeft = seconds;
+                    feedback.style.color = "#db6b6b"; // Error Red
+                    feedback.innerText = `Falsch. Warte ${timeLeft}s...`;
+
+                    const timer = setInterval(() => {
+                        timeLeft--;
+                        feedback.innerText = `Falsch. Warte ${timeLeft}s...`;
+                        if (timeLeft <= 0) {
+                            clearInterval(timer);
+                            resetState();
+                        }
+                    }, 1000);
+                }
+
+                // --- HELPER: RESET AFTER PENALTY ---
+                function resetState() {
+                    feedback.innerText = "";
+
+                    if (options)
+                        options.forEach((o) => {
+                            o.disabled = false;
+                        });
+
+                    if (inputField) {
+                        inputField.disabled = false;
+                        inputField.focus();
+                        inputField.classList.remove("wrong");
+                    }
+
+                    submitBtn.disabled = true;
+                    selectedBtn = null;
+                }
+            });
+
+            // --- HELPER: GLOBAL CHECK ---
+            function checkAllSolved() {
+                const currentSolved =
+                    scenario.querySelectorAll(".puzzle-box.solved").length;
+
+                if (currentSolved === totalRequired) {
+                    if (hiddenText) {
+                        hiddenText.style.display = "block";
+                        // Gentle fade in logic is handled by CSS animation 'fadeText'
+                    }
+                }
+            }
+        });
+    });
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/beyondsimulations\.github\.io\/Mathe-Advent-25");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/beyondsimulations/Mathe-Advent-25">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/tobiasvlcek">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:vlcek@beyondsimulations.com">
+      <i class="bi bi-envelope" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://beyondsimulations.github.io/lectures">
+      <i class="bi bi-skip-backward" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="../general/imprint.qmd">
+      <i class="bi bi-info-circle" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>Mathe Advent 2025, Tobias Vlćek <br> MIT License</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
