@@ -1,0 +1,137 @@
+---
+title: "Quiz Component Test"
+format:
+  html:
+    include-after-body: multiple-choice.html
+    theme: [default, multiple-choice.scss]
+---
+
+## Test 1: Basic Multiple Choice
+
+A simple question with 4 options.
+
+::: {.puzzle-box}
+**Question:** What is the capital of Germany?
+
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">Munich</button>
+  <button class="quiz-option" data-correct="true">Berlin</button>
+  <button class="quiz-option" data-correct="false">Hamburg</button>
+  <button class="quiz-option" data-correct="false">Frankfurt</button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit</button>
+</div>
+:::
+
+---
+
+## Test 2: Math Notation (MathJax)
+
+Testing that mathematical notation renders correctly in options.
+
+::: {.puzzle-box}
+**Question:** Which equation represents a quadratic function?
+
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">$f(x) = 2x + 3$</button>
+  <button class="quiz-option" data-correct="true">$f(x) = x^2 - 4x + 1$</button>
+  <button class="quiz-option" data-correct="false">$f(x) = \frac{1}{x}$</button>
+  <button class="quiz-option" data-correct="false">$f(x) = \sqrt{x}$</button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit</button>
+</div>
+:::
+
+---
+
+## Test 3: With Explanation
+
+Testing the explanation feature (shown after correct answer).
+
+::: {.puzzle-box}
+**Question:** What is $2^{10}$?
+
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">512</button>
+  <button class="quiz-option" data-correct="true" data-explanation="2&lt;sup&gt;10&lt;/sup&gt; = 1024 because 2&lt;sup&gt;5&lt;/sup&gt; × 2&lt;sup&gt;5&lt;/sup&gt; = 32 × 32 = 1024">1024</button>
+  <button class="quiz-option" data-correct="false">2048</button>
+  <button class="quiz-option" data-correct="false">1000</button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit</button>
+</div>
+:::
+
+---
+
+## Test 4: Custom Penalty Time
+
+Testing configurable penalty timer (5 seconds instead of default 10).
+
+::: {.puzzle-box}
+**Question:** Which planet is closest to the Sun?
+
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">Venus</button>
+  <button class="quiz-option" data-correct="true">Mercury</button>
+  <button class="quiz-option" data-correct="false">Earth</button>
+  <button class="quiz-option" data-correct="false">Mars</button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" data-penalty="5" disabled>Submit</button>
+</div>
+:::
+
+---
+
+## Test 5: Shuffle Disabled
+
+Testing the ability to disable randomization (options stay in authored order).
+
+::: {.puzzle-box}
+**Question:** Put these in order: Which comes first alphabetically?
+
+<div class="quiz-options" data-shuffle="false">
+  <button class="quiz-option" data-correct="true">Apple</button>
+  <button class="quiz-option" data-correct="false">Banana</button>
+  <button class="quiz-option" data-correct="false">Cherry</button>
+  <button class="quiz-option" data-correct="false">Date</button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit</button>
+</div>
+:::
+
+---
+
+## Test 6: Keyboard Navigation
+
+Use Tab to focus options, Arrow keys to navigate, Enter/Space to select.
+
+::: {.puzzle-box}
+**Question:** Test keyboard navigation - try using only your keyboard!
+
+<div class="quiz-options">
+  <button class="quiz-option" data-correct="false">Option A</button>
+  <button class="quiz-option" data-correct="false">Option B</button>
+  <button class="quiz-option" data-correct="true">Option C (correct)</button>
+  <button class="quiz-option" data-correct="false">Option D</button>
+</div>
+
+<div class="quiz-actions">
+  <p class="quiz-feedback"></p>
+  <button class="quiz-submit" disabled>Submit</button>
+</div>
+:::

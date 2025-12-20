@@ -1,0 +1,186 @@
+/*-- scss:defaults --*/
+
+// Color Variables
+$color-primary: #a00028 !default;        // Burgundy - main accent
+$color-correct: #a7c7c6 !default;        // Teal - success background
+$color-correct-border: #537e8f !default; // Dark teal - success border
+$color-wrong: #ebadad !default;          // Light red - error background
+$color-wrong-border: #db6b6b !default;   // Red - error border
+$color-text: #333 !default;
+$color-text-dark: #363d45 !default;
+$color-bg: #fffdfc !default;             // Warm white
+$color-disabled: #ccc !default;
+
+/*-- scss:rules --*/
+
+// Container for the quiz
+.puzzle-box {
+  background: $color-bg;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 15px;
+}
+
+// Multiple Choice Buttons
+.quiz-option {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  text-align: left;
+  background: $color-bg;
+  border: 1px solid $color-disabled;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+  color: $color-text;
+
+  // Hover state
+  &:hover:not(:disabled) {
+    border-color: $color-primary;
+    background-color: #fff0f3;
+  }
+
+  // Focus state (accessibility)
+  &:focus {
+    outline: 3px solid $color-primary;
+    outline-offset: 2px;
+  }
+
+  // Selected (before submit)
+  &.selected {
+    border-color: $color-primary;
+    background-color: $color-bg;
+    font-weight: bold;
+    box-shadow: 0 0 0 1px $color-primary inset;
+  }
+
+  // Correct answer (with checkmark indicator)
+  &.correct,
+  &.correct:disabled {
+    color: $color-text-dark !important;
+    opacity: 1 !important;
+    background-color: $color-correct !important;
+    border-color: $color-correct-border !important;
+    font-weight: bold;
+    cursor: default;
+
+    &::before {
+      content: "\2713 ";  // Checkmark
+      font-weight: bold;
+      margin-right: 6px;
+    }
+  }
+
+  // Wrong answer (with X indicator)
+  &.wrong {
+    border-color: $color-wrong-border !important;
+    background-color: $color-wrong !important;
+
+    &::before {
+      content: "\2717 ";  // X mark
+      font-weight: bold;
+      margin-right: 6px;
+    }
+  }
+}
+
+// Submit Button
+.quiz-submit {
+  background-color: $color-primary;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 0.95rem;
+
+  // Focus state (accessibility)
+  &:focus {
+    outline: 3px solid $color-primary;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+// Feedback text
+.quiz-feedback {
+  margin: 5px 0;
+  font-weight: 500;
+  min-height: 1.5em;
+
+  &.success {
+    color: $color-correct-border !important;
+  }
+}
+
+// Feedback icon styling
+.feedback-icon {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+// Explanation box (shown after correct answer)
+.quiz-explanation {
+  margin-top: 15px;
+  padding: 12px 15px;
+  background-color: #f0f7f7;
+  border-left: 4px solid $color-correct-border;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.95rem;
+  animation: fadeIn 0.5s ease;
+}
+
+// Shake animation for wrong answers
+.shake {
+  animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// =========================================
+// MOBILE RESPONSIVENESS
+// =========================================
+@media (max-width: 768px) {
+  .puzzle-box {
+    padding: 15px;
+  }
+
+  .quiz-option {
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  .quiz-submit {
+    padding: 12px 24px;
+    font-size: 1rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .quiz-explanation {
+    font-size: 1rem;
+    padding: 10px 12px;
+  }
+}

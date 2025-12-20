@@ -1,0 +1,321 @@
+<!--
+  Multiple Choice Quiz Component
+  ==============================
+
+  A standalone, accessible multiple-choice quiz system for Quarto websites.
+
+  USAGE:
+    Include this file in your Quarto document's YAML header:
+      format:
+        html:
+          include-after-body: multiple-choice.html
+
+  REQUIRED HTML STRUCTURE:
+    <div class="puzzle-box">
+      <div class="quiz-options">
+        <button class="quiz-option" data-correct="false">Wrong answer</button>
+        <button class="quiz-option" data-correct="true">Correct answer</button>
+      </div>
+      <div class="quiz-actions">
+        <p class="quiz-feedback"></p>
+        <button class="quiz-submit" disabled>Submit</button>
+      </div>
+    </div>
+
+  CONFIGURATION (via data attributes):
+    data-correct="true|false"  - Mark correct/incorrect options (required)
+    data-shuffle="false"       - Disable option randomization (on .quiz-options)
+    data-penalty="5"           - Custom penalty time in seconds (on .quiz-submit, default: 10)
+    data-explanation="..."     - Show explanation after correct answer (on correct option)
+                                 Note: MathJax does not work in explanations
+
+  ACCESSIBILITY:
+    - ARIA roles: radiogroup, radio
+    - Roving tabindex for keyboard navigation
+    - Arrow keys navigate options, Enter/Space selects
+    - Tab moves to Submit button
+    - Live region announces feedback to screen readers
+
+  STYLING:
+    Requires multiple-choice.scss (via theme) for visual styles.
+    See README.md for customization options.
+-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Find all quiz containers on the page
+  const boxes = document.querySelectorAll(".puzzle-box");
+
+  /**
+   * Fisher-Yates shuffle algorithm
+   * Randomizes array elements in place
+   * @param {Array} array - Array to shuffle
+   * @returns {Array} - Shuffled array
+   */
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  // Initialize each quiz box independently
+  boxes.forEach((box) => {
+
+    // =========================================
+    // ELEMENT REFERENCES
+    // =========================================
+
+    const optionsContainer = box.querySelector(".quiz-options");
+    const options = box.querySelectorAll(".quiz-option");
+    const submitBtn = box.querySelector(".quiz-submit");
+    const feedback = box.querySelector(".quiz-feedback");
+
+    // Skip initialization if required elements are missing
+    if (!optionsContainer || options.length === 0 || !submitBtn || !feedback) return;
+
+    // =========================================
+    // ACCESSIBILITY SETUP
+    // =========================================
+
+    // Set ARIA roles for screen readers
+    optionsContainer.setAttribute("role", "radiogroup");
+    optionsContainer.setAttribute("aria-label", "Answer options");
+
+    // Make feedback a live region for announcements
+    feedback.setAttribute("aria-live", "polite");
+    feedback.setAttribute("aria-atomic", "true");
+
+    // Set up roving tabindex pattern:
+    // Only the first option is tabbable, others use arrow keys
+    options.forEach((opt, index) => {
+      opt.setAttribute("role", "radio");
+      opt.setAttribute("aria-checked", "false");
+      opt.setAttribute("tabindex", index === 0 ? "0" : "-1");
+    });
+
+    // =========================================
+    // OPTION RANDOMIZATION
+    // =========================================
+
+    // Shuffle options unless data-shuffle="false" is set
+    const shouldShuffle = optionsContainer.getAttribute("data-shuffle") !== "false";
+    if (shouldShuffle && options.length > 0) {
+      const shuffled = shuffleArray(Array.from(options));
+      shuffled.forEach((opt) => optionsContainer.appendChild(opt));
+
+      // Reset tabindex after shuffle (first visible option gets tabindex 0)
+      const reorderedOptions = box.querySelectorAll(".quiz-option");
+      reorderedOptions.forEach((opt, index) => {
+        opt.setAttribute("tabindex", index === 0 ? "0" : "-1");
+      });
+    }
+
+    // =========================================
+    // STATE VARIABLES
+    // =========================================
+
+    let selectedBtn = null;   // Currently selected option
+    let attempts = 0;         // Number of submission attempts
+    let penaltyTimer = null;  // Reference to penalty countdown interval
+
+    // =========================================
+    // HELPER FUNCTIONS
+    // =========================================
+
+    /**
+     * Update roving tabindex - only focused option should be tabbable
+     * @param {HTMLElement} focusedOption - The option that should receive tabindex="0"
+     */
+    function setRovingTabindex(focusedOption) {
+      options.forEach((opt) => {
+        opt.setAttribute("tabindex", opt === focusedOption ? "0" : "-1");
+      });
+    }
+
+    // =========================================
+    // KEYBOARD NAVIGATION
+    // =========================================
+
+    optionsContainer.addEventListener("keydown", function (e) {
+      const currentOptions = Array.from(box.querySelectorAll(".quiz-option"));
+      const focusedOption = document.activeElement;
+
+      // Only handle if an option is focused
+      if (!focusedOption || !focusedOption.classList.contains("quiz-option")) return;
+
+      const currentIndex = currentOptions.indexOf(focusedOption);
+      let newIndex = currentIndex;
+
+      // Arrow keys: navigate between options (wraps around)
+      if (e.key === "ArrowDown" || e.key === "ArrowRight") {
+        e.preventDefault();
+        newIndex = (currentIndex + 1) % currentOptions.length;
+      } else if (e.key === "ArrowUp" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        newIndex = (currentIndex - 1 + currentOptions.length) % currentOptions.length;
+      } else if (e.key === "Enter" || e.key === " ") {
+        // Enter/Space: select the focused option
+        e.preventDefault();
+        focusedOption.click();
+        return;
+      } else {
+        return; // Ignore other keys
+      }
+
+      // Move focus and update tabindex
+      const newOption = currentOptions[newIndex];
+      setRovingTabindex(newOption);
+      newOption.focus();
+    });
+
+    // =========================================
+    // OPTION SELECTION (Click or Keyboard)
+    // =========================================
+
+    options.forEach((opt) => {
+      opt.addEventListener("click", function () {
+        // Ignore clicks if quiz is solved or during penalty
+        if (submitBtn.style.display === "none") return;
+        if (this.disabled) return;
+
+        // Deselect all options
+        options.forEach((o) => {
+          o.classList.remove("selected");
+          o.setAttribute("aria-checked", "false");
+        });
+
+        // Select clicked option
+        this.classList.add("selected");
+        this.setAttribute("aria-checked", "true");
+        setRovingTabindex(this);
+        selectedBtn = this;
+
+        // Enable submit button
+        submitBtn.disabled = false;
+      });
+    });
+
+    // =========================================
+    // SUBMIT HANDLER
+    // =========================================
+
+    submitBtn.addEventListener("click", function () {
+      if (!selectedBtn) return;
+
+      attempts++;
+      const isCorrect = selectedBtn.getAttribute("data-correct") === "true";
+
+      if (isCorrect) {
+        // --- CORRECT ANSWER ---
+        selectedBtn.classList.remove("selected");
+        selectedBtn.classList.add("correct");
+
+        // Show success feedback
+        feedback.classList.add("success");
+        feedback.innerHTML = '<span class="feedback-icon">&#10003;</span> Correct!';
+
+        // Disable quiz (hide submit, disable all options)
+        submitBtn.style.display = "none";
+        options.forEach((o) => {
+          o.disabled = true;
+          o.setAttribute("tabindex", "-1");
+        });
+
+        // Show explanation if provided (plain text/HTML only, no MathJax)
+        const explanation = selectedBtn.getAttribute("data-explanation");
+        if (explanation) {
+          const explanationDiv = document.createElement("div");
+          explanationDiv.className = "quiz-explanation";
+          explanationDiv.innerHTML = "<strong>Explanation:</strong> " + explanation;
+          box.appendChild(explanationDiv);
+        }
+
+      } else {
+        // --- WRONG ANSWER ---
+        selectedBtn.classList.remove("selected");
+        selectedBtn.classList.add("wrong");
+        selectedBtn.classList.add("shake"); // CSS animation
+        selectedBtn.setAttribute("aria-checked", "false");
+
+        // Remove shake class after animation completes
+        setTimeout(() => {
+          selectedBtn.classList.remove("shake");
+        }, 500);
+
+        // Start penalty timer (default 10s, configurable via data-penalty)
+        const penaltyTime = parseInt(submitBtn.getAttribute("data-penalty")) || 10;
+        startPenaltyTimer(penaltyTime);
+      }
+    });
+
+    // =========================================
+    // PENALTY TIMER
+    // =========================================
+
+    /**
+     * Disable quiz for a period after wrong answer
+     * @param {number} seconds - Penalty duration in seconds
+     */
+    function startPenaltyTimer(seconds) {
+      // Disable all interactions
+      options.forEach((o) => (o.disabled = true));
+      submitBtn.disabled = true;
+
+      let timeLeft = seconds;
+      feedback.style.color = "#db6b6b"; // Error red
+      feedback.innerHTML = `<span class="feedback-icon">&#10007;</span> Wrong (Attempt ${attempts}). Wait ${timeLeft}s...`;
+
+      // Countdown timer
+      penaltyTimer = setInterval(() => {
+        timeLeft--;
+        feedback.innerHTML = `<span class="feedback-icon">&#10007;</span> Wrong (Attempt ${attempts}). Wait ${timeLeft}s...`;
+
+        if (timeLeft <= 0) {
+          clearInterval(penaltyTimer);
+          penaltyTimer = null;
+          resetState();
+        }
+      }, 1000);
+    }
+
+    // =========================================
+    // RESET STATE (after penalty expires)
+    // =========================================
+
+    function resetState() {
+      // Clear feedback
+      feedback.innerHTML = "";
+      feedback.style.color = "";
+
+      // Re-enable options and reset tabindex
+      const currentOptions = Array.from(box.querySelectorAll(".quiz-option"));
+      currentOptions.forEach((o, index) => {
+        o.disabled = false;
+        o.classList.remove("wrong");
+        o.setAttribute("tabindex", index === 0 ? "0" : "-1");
+      });
+
+      // Reset submit button and selection
+      submitBtn.disabled = true;
+      selectedBtn = null;
+
+      // Return focus to first option for accessibility
+      currentOptions[0]?.focus();
+    }
+
+    // =========================================
+    // CLEANUP
+    // =========================================
+
+    // Clear any running timers when page unloads (prevents memory leaks)
+    window.addEventListener("beforeunload", function () {
+      if (penaltyTimer) {
+        clearInterval(penaltyTimer);
+      }
+    });
+  });
+});
+</script>
