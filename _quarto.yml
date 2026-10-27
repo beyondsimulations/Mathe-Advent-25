@@ -41,7 +41,7 @@ format:
       - styles.scss
       - brand
     toc: true
-    highlight-style: github
+    syntax-highlighting: _paper-and-ink-light.theme
     callout-appearance: simple
     code-overflow: wrap
     reference-location: margin
