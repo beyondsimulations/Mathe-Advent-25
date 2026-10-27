@@ -4,6 +4,8 @@ project:
     - index.qmd
     - 404.qmd
     - days/*.qmd
+    - general/*.qmd
+lang: de
 website:
   title: "Mathe Advent 2025"
   site-url: https://beyondsimulations.github.io/Mathe-Advent-25
@@ -11,18 +13,26 @@ website:
   bread-crumbs: false
 
   page-footer:
-    center: "Mathe Advent 2025, Tobias Vlćek </br> MIT License"
+    center: "Mathe Advent 2025, Dr. Tobias Vlćek </br> MIT License"
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Mathe-Advent-25
+        aria-label: GitHub-Repository
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
+        aria-label: LinkedIn
       - icon: envelope
         href: mailto:vlcek@beyondsimulations.com
+        aria-label: E-Mail
       - icon: skip-backward
-        href: https://beyondsimulations.github.io/lectures
+        href: https://tobiasvlcek.com/lectures/
+        aria-label: Alle Lehrveranstaltungen
+      - icon: shield-check
+        href: general/privacy.qmd
+        aria-label: Datenschutz
       - icon: info-circle
         href: general/imprint.qmd
+        aria-label: Impressum
 
 format:
   html:
@@ -48,3 +58,6 @@ execute:
   echo: false
 
 brand: _brand.yml
+
+filters:
+  - helpers/page-pauses.lua

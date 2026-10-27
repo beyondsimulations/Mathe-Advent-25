@@ -65,3 +65,13 @@ Quiz structure in `.qmd` files:
 - Math rendered with MathJax (configured in `_quarto.yml`)
 - Each day's QMD must include `include-after-body: ../calendar.html` and the CSS files
 - Colors reference brand palette variables (e.g., `$brand-twoDark`, `$brand-threeDark`)
+
+## Shared foundations
+
+`../lecture-foundations` holds the cross-course standard (branding,
+slide/tooling conventions, quizkit guides) and shared scripts, e.g. the
+revealjs slide overflow gate
+(`uv run ../lecture-foundations/scripts/check_slide_overflow.py`, needs
+`uv add --dev playwright` once). Check it before solving a problem that
+smells course-generic — it may already be solved there, and generic fixes
+belong there, not here.

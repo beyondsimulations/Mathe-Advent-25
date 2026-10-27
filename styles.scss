@@ -47,9 +47,31 @@ $lec-loud-bg:   #537E8F !default;   // = twoDark.  .loud-slide background
 // logo mark and the links (set in _brand.yml). It replaced #B3403F so every
 // red on the page is one identical red against the otherwise-teal system.
 
+// On the slate plate of `.invert-font` the three colours above fail (.task
+// 2.37:1, .highlight 1.48:1, .question 1.38:1), so there each takes a colour
+// of its palette pair that reads on slate. Contrast against `darker` #363D45.
+// #F6B265 failed as type on the pale ground (1.80:1, see below) and passes here.
+$lec-task-on-dark:      #F6B265 !default;   // = oneDark.    6.01:1
+$lec-question-on-dark:  #A7C7C6 !default;   // = twoLight.   6.09:1
+$lec-highlight-on-dark: #EBADAD !default;   // = threeLight. 5.82:1
+
 // `.question` uses $brand-greyer (#3D5369, 7.84:1) and `.invert-font` /
 // `.title-slide.title` / `.exercise-slide` use $brand-lighter / -darker /
 // -codeline. All four tokens are universal, so they are referenced directly.
+
+// Code sits on `codeline` (#FFEEE2), not on the page, and three colours fail
+// there: GitHub's comment grey #6A737D (4.26:1), its keyword red #D73A49
+// (4.04:1) and inline code in twoDark (3.91:1). Each takes a darker shade of
+// its own hue. Contrast against #FFEEE2 / Study-Business-Basics' #F2EFE6.
+$lec-code-comment: #646C76 !default;   // 4.71:1 / 4.63:1
+$lec-code-keyword: #C53543 !default;   // 4.69:1 / 4.61:1
+$lec-code-inline:  #4B7282 !default;   // 4.61:1
+
+// Quarto's slide grey ($text-muted, body colour lightened 30 %: #7C8998) is
+// 3.51:1 on the page ground. Footer, slide number, slide blockquotes and
+// asides take a darker grey. It has to hold on the section slides too, which
+// sit on `codeline`: #697480 was 4.70:1 on the page and 4.21:1 there.
+$lec-slide-muted:  #646C76 !default;   // page 5.24:1 / 5.14:1, codeline 4.71:1 / 4.63:1
 
 // ── Callouts ──────────────────────────────────────────────────────────────
 $lec-callout-note:      #FCCF9C !default;   // = oneLight
@@ -96,6 +118,63 @@ $presentation-title-slide-text-align: left;
 // Google on every page view.
 @import "fonts";
 
+// ── Slide headings ────────────────────────────────────────────────────────
+// _brand.yml gives headings a line height of 1.4, which suits a page. A slide
+// title is one line, and the 13px it costs below every title pushed slides
+// over the edge: 21 of the 40 flagged slides in Management-Science
+// (research/slide-sizes.md, 2026-10-09). 1.2 is Reveal's own value. The theme
+// reads it from this variable, so it is set here rather than on the headings.
+.reveal {
+    --r-heading-line-height: 1.2;
+}
+
+// ── Text column ───────────────────────────────────────────────────────────
+// The stage is 1280px wide, and a line of 40px text across all of it holds
+// about 65 characters: long to read from the back of a room. A slide's content
+// gets 1200px, about 61 characters, with 40px free on each side. Backgrounds
+// keep the whole stage, and so do the games.
+//
+// A border, not padding: Reveal's print rules reset a slide's padding, and the
+// width Reveal fits text to (below) leaves out borders only.
+.reveal .slides section:not(.stack) {
+    border-inline: 40px solid transparent;
+    box-sizing: border-box;
+}
+
+.reveal .slides section:not(.stack):has(.gamekit-slide) {
+    border-inline-width: 0;
+}
+
+// Reveal sizes a stretched element (r-stretch: an image, an embedded page)
+// against the stage, not against the column, and writes that width into the
+// element.
+.reveal .slides .r-stretch {
+    max-width: 100%;
+}
+
+.reveal .slides img.r-stretch {
+    object-fit: contain;
+}
+
+// ── Fitted text (r-fit-text) ──────────────────────────────────────────────
+// Reveal sizes fitted text by the slide's width alone. On the 16:9 stage a
+// loud slide of two or three lines ("Any questions?") came out taller than the
+// slide. So the slide gives the text 84% of its width, 3:2 over 16:9: the text
+// is as large as on the old stage, what fitted there fits here, and the free
+// sixth is split evenly left and right.
+//
+// A border, because Reveal fits the text to the slide's inner width, and that
+// leaves out borders but not padding. 102px is 8% of the 1280px stage (a
+// border takes no percentage); it replaces the text column's 40px here. This is plain layout, so it holds in every
+// browser and in the PDF. Two visual shortcuts did not (2026-10-09): `zoom`
+// cancels itself out in Safari's engine, which reports the zoomed width to
+// Reveal, and `scale` leaves the full-size box in the layout, which Chromium
+// pushes off the page when printing, so the PDF page came out empty.
+.reveal .slides section:has(> .r-fit-text) {
+    border-inline: 102px solid transparent;
+    box-sizing: border-box;
+}
+
 // ── Text emphasis (slides) ────────────────────────────────────────────────
 .reveal strong,
 .reveal b,
@@ -135,12 +214,69 @@ $presentation-title-slide-text-align: left;
     font-weight: bold;
 }
 
+// Emphasis on a dark ground. The emphasis colours above are tuned for the pale
+// ground and are hard to read on a dark one: teal or oxblood on slate. On a
+// slide with a dark background colour (reveal's `has-dark-background`), in an
+// `.invert-font` box and on a `.loud-slide`, weight carries the emphasis and
+// the colour follows the text. `:where()` keeps the weight of the rules
+// above, so a course's own rule still wins. In an `.invert-font` plate the
+// three classes with a meaning of their own get a light colour instead (below).
+.reveal :where(section.has-dark-background, .invert-font, .loud-slide) {
+    strong, b, em, i, .bold, .italic, .highlight, .task, .question, .errors {
+        color: inherit;
+    }
+}
+
 // ── Slide blocks ──────────────────────────────────────────────────────────
+// Text on a photo sits on a slate plate.
 .invert-font {
     color: $brand-lighter;
     background-color: $brand-darker;
     border: 5px solid $brand-darker;
     border-radius: 0;
+
+    .task { color: $lec-task-on-dark; }
+    .question { color: $lec-question-on-dark; }
+    .highlight, .errors { color: $lec-highlight-on-dark; }
+}
+// A link on a plate keeps its underline and takes the plate's text colour:
+// the link red reaches 1.5:1 on slate (the photographer's name in a photo
+// credit). `:any-link` lifts the rule over reveal's own link colours, in the
+// footer too, whatever order the theme layers come in.
+.invert-font a:any-link,
+.reveal .invert-font a:any-link,
+.reveal .footer .invert-font a:any-link {
+    color: inherit;
+}
+
+// On a slide the plate follows each line with the same room left and right
+// (`box-decoration-break`). The lines of one text join into one block; a thin
+// gap separates it from the plates above and below (title, text, question).
+// Vertical padding on an inline plate does not move any line. Only spans and
+// divs carry the class today; any other element keeps the old box.
+.reveal div.invert-font {
+    border: 0;
+    padding: 5px 16px;
+}
+.reveal span.invert-font {
+    border: 0;
+    padding: 1px 16px 3px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+// A block that opens with a plate reaches 16px into the slide's margin, so its
+// text keeps the left edge of every other slide and no line is shorter than it
+// was with the old box. Only for blocks that span the slide: in a column, a
+// list or a callout the plate stays inside its container. Two rules, so a
+// browser without `:has()` still places the block plates.
+.reveal .slides :is(section:not(.scrollable), section:not(.scrollable) > div.fragment) > div.invert-font {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+.reveal .slides :is(section:not(.scrollable), section:not(.scrollable) > div.fragment) > :is(h1, h2, h3, p):has(span.invert-font) {
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
 // Section-break slide.
@@ -149,17 +285,36 @@ $presentation-title-slide-text-align: left;
 }
 
 // Exercise-break slide ("Your turn"), from Introduction-to-Python.
-.exercise-slide {
+// Scoped to .reveal: on the HTML page the class lands on the whole
+// section.level1 and would tint every paragraph under the heading.
+.reveal .exercise-slide {
     background-color: $brand-codeline !important;
 }
 
 // Light type on the accent, not amber-on-teal: the old pairing (#F6B265 on
 // #537E8F) was 2.42:1 across 69 slides — the least readable thing on the site.
 // This is Study-Business-Basics' treatment, which reaches 4.36:1.
-.loud-slide {
+//
+// Every accent colour in the palette is tuned against the PALE ground and goes
+// invisible on this one: `strong`/`em` are $lec-emphasis, which IS this
+// background, and the link colour lands near 1.6:1. So on the accent, weight
+// carries the emphasis and hue never does.
+//
+// Bold is scoped rather than blanket: the fleet's 90 `.loud-slide`s are all
+// one-line `::: {.r-fit-text}` statements and stay bold, while a slide that
+// carries real prose (Introduction-to-Python's checkpoint procedure) gets a
+// readable body weight instead of a wall of bold.
+.reveal .loud-slide {
     background-color: $lec-loud-bg !important;
     color: $brand-lighter !important;
-    font-weight: bold !important;
+
+    h1, h2, h3, strong, b, em, i, a {
+        color: $brand-lighter !important;
+    }
+
+    h1, h2, h3, strong, b, .r-fit-text {
+        font-weight: bold !important;
+    }
 }
 
 // ── Animated section headings ─────────────────────────────────────────────
@@ -243,10 +398,157 @@ $presentation-title-slide-text-align: left;
 // Reveal implements it by setting an inline height at runtime. Excluding it
 // here keeps that explicit rather than relying on inline-style precedence.
 // (Grundlagen-OR uses r-stretch in 12 deck files, Introduction-to-Python in 10.)
+//
+// The cap must be in stage pixels, not vh: vh tracks the browser window while
+// the slide stage is a fixed 720px box that Reveal transform-scales, so a vh
+// cap makes image size (and overflow) depend on the viewer's window. And no
+// width/height:auto: that discards Quarto's logical size attributes and shows
+// retina 2x PNGs at double size and half sharpness.
+//
+// object-fit: an image with a width of its own (`width="90%"`) that reaches
+// the cap would otherwise be squashed to fit both: 28 images in
+// Applied-Optimization came out distorted (2026-10-09).
+//
+// 540px is 75% of the 720px stage: a title and one image fit up to about 570px
+// (measured in Applied-Optimization, 2026-10-09: 3 slides overflow at 540,
+// 22 at 600). It was 420px, 60% of the old 700px stage.
 .reveal .slides img:not(.r-stretch) {
-    max-height: 60vh;
-    width: auto;
+    max-height: 540px;
+    object-fit: contain;
+}
+
+// A computed figure (figure-revealjs/ output, not a hand-placed image) inside
+// ::: {.columns} fills its column. SVG output otherwise keeps its intrinsic
+// point size (a 4 in figure is ~300 px wide), so tick labels end up unreadably
+// small next to the column's text. Same cap.
+.reveal .columns .column img.quarto-figure:is([src*="figure-revealjs/"], [data-src*="figure-revealjs/"]) {
+    width: 100%;
     height: auto;
+    max-height: 540px;
+    object-fit: contain;
+}
+
+// Quarto marks the slide holding the bibliography as `.smaller .scrollable`
+// on its own, so everything on it shrinks to 0.7em: also a closing slide
+// ("Next Up", "Literature") that the list merely hangs below. Undo that for the
+// slide and keep the smaller size for the list alone. Headings need their own
+// reset: Quarto scales them by 1/0.7.
+//
+// `.csl-bib-body`, not `#refs`: split_refs_post.py spreads a long list over
+// several slides, and only the first keeps that id. The list stays small
+// because the splitter's four entries per slide are sized for it: at 40px
+// four entries are 870 to 1025px tall on a 720px stage (Applied-Optimization,
+// 2026-10-09).
+.reveal .slides section.smaller:has(.csl-bib-body) {
+    font-size: 1em;
+
+    h2 {
+        font-size: var(--r-heading2-size);
+    }
+    h3 {
+        font-size: var(--r-heading3-size);
+    }
+    .csl-bib-body {
+        font-size: 0.7em;
+    }
+}
+
+// A URL in an entry has no place to break, so it ran out of the slide to the
+// right.
+.reveal .csl-entry {
+    overflow-wrap: anywhere;
+}
+
+// ── Slide tables ──────────────────────────────────────────────────────────
+// Reveal centres a table, rules every row but the last as strongly as the
+// header and leaves no space below it: the table started at another edge
+// than the title and the text, and ran into the paragraph after it. A table
+// starts at the slide's left edge, has one strong rule under its header and
+// fainter lines between its rows, sets its digits at equal width and keeps
+// some distance from what follows. Number columns are right-aligned in
+// the source (`|---:|`); a stylesheet cannot know which columns hold numbers.
+// Two columns stay 1em apart, as before (0.5em on each side). Only the first
+// column's left and the last column's right padding are gone, so no table is
+// wider than it was.
+.reveal table {
+    margin-left: 0;
+    font-variant-numeric: tabular-nums lining-nums;
+}
+
+// The distance is for what follows the table. A table that ends its
+// container (the output of a code cell, a column, a callout) would only make
+// that container taller: a pandas table at the bottom of a full slide
+// overflowed by exactly this margin.
+.reveal table:not(:last-child) {
+    margin-bottom: 0.9em;
+}
+
+.reveal table th,
+.reveal table td {
+    padding: 0.2em 1em 0.2em 0;
+    border-bottom: 0;
+}
+
+// :where() keeps this at the weight of the rule above, so a course's own
+// table rule still wins: the simplex tableaus in Grundlagen-Operations-Research
+// set their padding themselves, and lost it on the right in the last column.
+.reveal table th:where(:last-child),
+.reveal table td:where(:last-child) {
+    padding-right: 0;
+}
+
+// Only the last header row: a DataFrame prints two (names, then types), and
+// a rule under each cut the header in half.
+.reveal table thead tr:last-child th {
+    border-bottom: 2px solid;
+}
+
+// Lines between the rows, half as dark and half as thick as the header rule.
+// Without any, a table whose cells run over several lines read as one block.
+// The line takes its pixel from the cell's padding, so no table gets taller.
+// `:where()` keeps the weight of the padding rule above, so a course's own
+// table rule still wins.
+.reveal table :where(tbody) td,
+.reveal table :where(tbody) th {
+    border-bottom: 1px solid color-mix(in srgb, currentColor 50%, transparent);
+    padding-bottom: calc(0.2em - 1px);
+}
+
+.reveal table :where(tbody tr:last-child) td,
+.reveal table :where(tbody tr:last-child) th {
+    border-bottom: 0;
+    padding-bottom: 0.2em;
+}
+
+// Slide PDFs: printing, Chromium draws the rules of a table inside an
+// .r-stack a second time, repeated at row height down to the page bottom
+// (Grundlagen-OR, lectures 02 and 04). In the PDF only (reveal sets
+// html.print-pdf), a strip at the foot of each cell draws the rules instead of
+// borders, with the widths and colours of the rules above. Borders in the
+// separate model vanish in that print entirely, and inset shadows show their
+// side edges as vertical seams. A course whose row rules differ sets
+// --print-row-rule (a colour) on such tables.
+html.print-pdf .reveal .r-stack table {
+    border-collapse: separate;
+    border-spacing: 0;
+    --bs-table-bg: transparent;
+    th, td {
+        border: 0 !important;
+        box-shadow: none !important;
+        background: none !important;
+    }
+    thead tr:last-child th {
+        background: linear-gradient(currentColor, currentColor) bottom / 100% 2px no-repeat !important;
+    }
+    tbody :is(td, th) {
+        background:
+            linear-gradient(var(--print-row-rule, color-mix(in srgb, currentColor 50%, transparent)),
+                var(--print-row-rule, color-mix(in srgb, currentColor 50%, transparent)))
+            bottom / 100% 1px no-repeat !important;
+    }
+    tbody tr:last-child :is(td, th) {
+        background: none !important;
+    }
 }
 
 // ── Document pages: columns and figures ───────────────────────────────────
@@ -261,6 +563,31 @@ $presentation-title-slide-text-align: left;
 //  · Julia plot output (.cell-output-display) carries no .img-fluid class, so
 //    it rendered at pixel width and pushed a horizontal scrollbar onto the page.
 //
+// On phones, columns that hold text or a box stack: beside a figure, a box
+// broke words mid-way and its formulas ran out of it. The text may sit in a
+// slide fragment (.fragment, .incremental); a figure's own <p> doesn't count,
+// so pairs of figures stay side by side, and so do two columns that each
+// hold just one image without caption (a <p> around the <img>). DataFrames.jl
+// tables already scroll in their .data-frame wrapper and are left alone.
+// (No :has() inside a :has(): it can't nest, and :is() would silently drop
+// that part; the image pairs are two :has() side by side in a :not().)
+// Quarto writes each column's width inline, hence !important; a flex item
+// keeps its children's margins, so the second column's top margin would
+// double the gap between two stacked boxes.
+//
+// Also on phones, wide tables and formulas scroll on their own instead of
+// widening the page (a third of the Grundlagen-OR pages did). Tables keep
+// their content's width and still wrap text; formulas scroll in their
+// paragraph (MathML or MathJax; neither breaks a line; not in a list item, whose overflow
+// would clip its bullet). Outside boxes both may reach 1.25rem into the right
+// page margin (26px on phones), as they did before, so one that is a few
+// pixels too wide is not cut off (inside a callout they would cover its
+// border). A small shadow at an edge shows there is more to swipe to: the two
+// covering gradients scroll with the content, the two shadows stay put, 1px
+// in from the edge so the edge pixel leaves no hairline. Long
+// words in headings hyphenate (`lang` is set), so a word like
+// "Produktionsprogrammplanung" and its anchor icon fit.
+//
 // 10 lectures use ::: {.columns} across 49 files.
 #quarto-document-content {
     .columns {
@@ -270,6 +597,47 @@ $presentation-title-slide-text-align: left;
     }
     .column {
         min-width: 0;
+    }
+    @media (max-width: 575.98px) {
+        .columns:has(> .column :is(p, ul, ol, table, .callout):not(figure *, .cell-output-display *)):not(:has(> .column:first-child > p:only-child > img:only-child):has(> .column:last-child > p:only-child > img:only-child)) {
+            flex-direction: column;
+            gap: 0;
+            > .column {
+                width: 100% !important;
+            }
+            > .column + .column > :first-child {
+                margin-top: 0;
+            }
+        }
+        table:not(.data-frame *) {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+        p:has(> math, > span.math.display) {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        table:not(.callout *, .data-frame *) {
+            max-width: calc(100% + 1.25rem);
+        }
+        p:has(> math, > span.math.display):not(.callout *) {
+            margin-right: -1.25rem;
+            padding-right: 1.25rem;
+        }
+        :is(table:not(.data-frame *), p:has(> math, > span.math.display)) {
+            --bs-table-bg: transparent; // cell backgrounds would hide the shadow
+            background:
+                linear-gradient(to right, var(--bs-body-bg) 40%, transparent) left center / 1.5rem 100% no-repeat local,
+                linear-gradient(to left, var(--bs-body-bg) 40%, transparent) right center / 1.5rem 100% no-repeat local,
+                radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.15), transparent) left 1px center / 0.45rem 100% no-repeat scroll,
+                radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.15), transparent) right 1px center / 0.45rem 100% no-repeat scroll;
+        }
+        :is(h1, h2, h3, h4) {
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
     }
     img {
         max-width: 100%;
@@ -294,6 +662,102 @@ $presentation-title-slide-text-align: left;
         width: 100%;
         height: 100%;
         border: 0;
+    }
+}
+
+// Table captions: Bootstrap colours them with the secondary brand colour
+// (sand), which reads as a warning and fails contrast on the light ground.
+// Keep them in the body colour, slightly smaller, like figure captions.
+caption,
+.table > caption {
+    color: var(--bs-body-color);
+    font-size: 0.9em;
+}
+
+// Figure captions on pages: Quarto's caption rule gives them the same sand
+// (about 1.4:1 on the light ground, e.g. under two graphs side by side). Body
+// colour; their size stays Quarto's. Slides keep reveal's caption grey.
+body:not(.reveal-viewport) :is(.panel-caption, .figure-caption, .subfigure-caption, .table-caption, figcaption) {
+    color: var(--bs-body-color);
+}
+
+// Gamekit and the course chat button share the bottom right corner: the chat
+// button makes way on a game's own phone page and while a game's buttons sit
+// in that corner (Gamekit >= 0.5.2 sets gamekit-at-bottom on <html>). It
+// disappears without a transition, the same both ways and without motion.
+body:has(.gamekit-solo) .cw-fab,
+html.gamekit-at-bottom .cw-fab {
+    display: none !important;
+}
+
+// Document blockquotes: Quarto colours blockquote text with the secondary brand
+// colour (sand) too, which lands near 1.4:1 on the light ground and is unreadable
+// (the emphasis inside inherits it, since only `.reveal em` carries a colour).
+// Same fix as captions: body colour; the left border and italic still mark it as
+// a quote. Quarto sets the colour on the class `.blockquote`, so the element
+// alone loses to it. Doc only; slide blockquotes do not carry the class.
+blockquote.blockquote {
+    color: var(--bs-body-color);
+}
+
+// Code colours on the codeline ground, see $lec-code-* above. Light mode only:
+// the dark theme has its own ground and colours. `code.sourceCode` outranks
+// the highlight stylesheet, which loads after this one.
+body.quarto-light {
+    code.sourceCode span:is(.an, .co, .cv, .do, .in, .re) {
+        color: $lec-code-comment;
+    }
+    code.sourceCode span:is(.at, .bu, .cf, .dt, .ex, .kw, .pp) {
+        color: $lec-code-keyword;
+    }
+    :not(pre) > code:not(.sourceCode) {
+        color: $lec-code-inline;
+    }
+}
+
+// Footer, slide number, blockquotes and asides on a light slide: everything
+// Quarto sets in its slide grey. On a dark background colour reveal flags the
+// deck (`.reveal.has-dark-background`); there they keep Quarto's lighter grey,
+// which is 5.9:1 on black where the darker one would be 4.4:1.
+.reveal:not(.has-dark-background) .footer,
+.reveal:not(.has-dark-background) .slide-number,
+.reveal:not(.has-dark-background) blockquote,
+.reveal:not(.has-dark-background) .slide aside,
+.reveal:not(.has-dark-background) .slide div.aside {
+    color: $lec-slide-muted;
+}
+
+// Footer and slide number while a `.loud-slide` is showing. Both belong to the
+// deck, not to the slide, so the slide's colours never reached them: the grey
+// above is 1.08:1 on the accent ground and the link red 1.68:1. They take the
+// slide's own light text colour, 4.36:1, the most this ground allows. A slide
+// in a stack that is not showing keeps its `.present`, so the stack is checked
+// as well. The printed deck gets the same from create_pdf.py (`on-dark-bg`).
+.reveal:has(.slides > section.present.loud-slide,
+            .slides > section.present > section.present.loud-slide) {
+    .footer, .footer a:any-link, .slide-number {
+        color: $brand-lighter;
+    }
+    // The menu icon is an SVG with the link red painted in (1.68:1 here), so
+    // `color` does not reach it; the filter turns it white.
+    .slide-menu-button .fa-bars::before {
+        filter: brightness(0) invert(1);
+    }
+}
+
+// Document pages without a TOC (quizzes, exams with `toc: false`) get Quarto's
+// `fullcontent` grid, which drops the right margin column and centres the body,
+// so the text jumps right compared with every page that has a TOC. Give those
+// pages the same grid as TOC pages; the margin column simply stays empty.
+// Values copied from Quarto's `body.floating .page-columns` per breakpoint.
+@media (min-width: 992px) {
+    body.floating.fullcontent .page-columns {
+        grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start] minmax(25px, 50px) [page-start-inset] minmax(50px, 150px) [body-start-outset] minmax(25px, 50px) [body-start] 1.5em [body-content-start] minmax(500px, calc(800px - 3em)) [body-content-end] 1.5em [body-end] minmax(25px, 50px) [body-end-outset] minmax(50px, 150px) [page-end-inset] minmax(25px, 50px) [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
+    }
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+    body.floating.fullcontent .page-columns {
+        grid-template-columns: [screen-start] 1.5em [screen-start-inset] 5fr [page-start page-start-inset body-start-outset body-start] 1.5em [body-content-start] minmax(500px, calc(750px - 3em)) [body-content-end] 1.5em [body-end] 50px [body-end-outset] minmax(75px, 150px) [page-end-inset] 25px [page-end] 5fr [screen-end-inset] 1.5em [screen-end];
     }
 }
 

@@ -1,0 +1,45 @@
+---
+title: "Datenschutz"
+---
+
+Diese Website ist ein statischer Adventskalender: Es gibt keine Anmeldung und keine Datenbank, in der personenbezogene Daten von euch gespeichert würden. Werbedienste und Tracking-Cookies bindet die Seite nicht ein. Die Rätsel laufen vollständig in eurem Browser, eure Antworten werden nicht an einen Server übertragen. Über die technisch notwendige Auslieferung hinaus verarbeitet ein Dienst Daten: eine **datenschutzfreundliche, cookielose Reichweitenmessung** (Umami). Im Folgenden erklären wir, welche Daten dabei jeweils verarbeitet werden.
+
+## Verantwortlicher
+
+Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist die im [Impressum](imprint.qmd) genannte Person. Zur Ausübung eurer Rechte oder bei Fragen zur Datenverarbeitung erreicht ihr uns über die dort genannten Kontaktdaten.
+
+## Hosting über GitHub Pages
+
+Die Website wird über **GitHub Pages** bereitgestellt, einen Dienst der GitHub, Inc. (88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Wenn ihr die Seite aufruft, überträgt euer Browser technisch notwendige Daten an die Server von GitHub, insbesondere eure **IP-Adresse**, Datum und Uhrzeit des Abrufs sowie Angaben zu Browser und Betriebssystem. GitHub kann diese Zugriffsdaten in Server-Logs verarbeiten, etwa um die Auslieferung und Sicherheit des Dienstes zu gewährleisten. Auf Umfang und Dauer dieser Verarbeitung haben wir keinen Einfluss.
+
+Eine Übermittlung in die USA ist möglich. GitHub, Inc. ist unter dem EU-U.S. Data Privacy Framework zertifiziert.
+
+Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und effizienten Bereitstellung der Seite (Art. 6 Abs. 1 lit. f DSGVO). Einzelheiten zur Datenverarbeitung findet ihr im [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+## Externe Einbindung: MathJax
+
+Auf Seiten, die **mathematische Formeln** enthalten, wird zur Formeldarstellung die Bibliothek **MathJax** über das Content-Delivery-Network **jsDelivr** (`cdn.jsdelivr.net`) nachgeladen, dazu ein kleines Hilfsskript über `cdnjs.cloudflare.com`, einen Dienst der **Cloudflare, Inc.** (101 Townsend Street, San Francisco, CA 94107, USA). Dabei übermittelt euer Browser technisch bedingt eine Anfrage an diese Dienste, wobei auch eure **IP-Adresse** übertragen wird. Eine Übermittlung in Länder außerhalb der EU, insbesondere in das Vereinigte Königreich und die USA, ist möglich; Cloudflare, Inc. ist unter dem EU-U.S. Data Privacy Framework zertifiziert. Einzelheiten stehen in den Datenschutzerklärungen von [jsDelivr](https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net) und [Cloudflare](https://www.cloudflare.com/de-de/privacypolicy/). Rechtsgrundlage ist unser berechtigtes Interesse an einer korrekten Darstellung der Inhalte (Art. 6 Abs. 1 lit. f DSGVO). Schriftarten werden demgegenüber **lokal von dieser Seite** ausgeliefert und nicht von einem externen Dienst nachgeladen.
+
+## Reichweitenmessung (Umami)
+
+Um zu verstehen, wie diese Website genutzt wird, und um ihre Inhalte zu verbessern, verwenden wir [Umami](https://umami.is), ein datenschutzfreundliches Webanalyse-Werkzeug. Umami wird auf eigener Infrastruktur (`umi.byndsim.com`) auf Servern der Hetzner Online GmbH in Deutschland betrieben; Nutzungsdaten werden nicht an Dritte weitergegeben, eine Übermittlung in Drittländer findet nicht statt.
+
+**Keine Cookies, kein seitenübergreifendes Tracking:** Umami setzt keine Cookies und speichert keine Informationen auf eurem Gerät. Es wird keine dauerhafte Kennung erstellt, und ihr werdet nicht über andere Websites hinweg verfolgt.
+
+**Verarbeitete Daten:** Umami erhebt aggregierte, anonymisierte Nutzungsstatistiken wie die aufgerufenen Seiten, die verweisende Website sowie allgemeine Informationen zu Browser, Betriebssystem, Gerätetyp und Land. Eure IP-Adresse wird nur flüchtig zur Ableitung dieser Informationen verwendet und nicht gespeichert.
+
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Analyse und Verbesserung der Seite). Da Umami keine Informationen auf eurem Gerät speichert oder darauf zugreift, ist keine Einwilligung nach § 25 Abs. 1 TDDDG erforderlich.
+
+## Eure Rechte nach der DSGVO
+
+Über die oben beschriebenen Verarbeitungen hinaus erheben oder speichern wir selbst keine personenbezogenen Daten von euch. Nach der DSGVO habt ihr grundsätzlich das Recht auf **Auskunft** (Art. 15), **Berichtigung** (Art. 16), **Löschung** (Art. 17), **Einschränkung der Verarbeitung** (Art. 18), **Datenübertragbarkeit** (Art. 20) sowie ein **Widerspruchsrecht** (Art. 21). Für Anliegen, die die oben beschriebenen Verarbeitungen betreffen, wendet euch bitte an den im [Impressum](imprint.qmd) genannten Verantwortlichen.
+
+Für die durch GitHub, jsDelivr und Cloudflare im Rahmen der Auslieferung verarbeiteten Daten könnt ihr euch zudem direkt an diese Anbieter wenden (siehe deren Datenschutzerklärungen).
+
+## Beschwerderecht bei einer Aufsichtsbehörde
+
+Ihr habt das Recht, euch bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung eurer personenbezogenen Daten zu beschweren, insbesondere in dem Mitgliedstaat eures gewöhnlichen Aufenthaltsorts, eures Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes.
+
+## Änderungen dieser Datenschutzerklärung
+
+Sollte sich der technische Aufbau der Seite ändern, passen wir diese Datenschutzerklärung entsprechend an.

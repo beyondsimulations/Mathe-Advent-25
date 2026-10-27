@@ -1,44 +1,32 @@
 ---
-title: "Imprint"
-subtitle: "Legal Notice (Impressum)"
-date: "2025-11-30"
+title: "Impressum"
+subtitle: "Mathe Advent 2025"
+date: "2026-10-12"
 ---
 
-## Information according to § 5 TMG
+## Anbieter und Verantwortlicher für den Inhalt
 
-Beyond Simulations GmbH\
+Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz) und Verantwortlichkeit für den Inhalt nach § 18 Abs. 2 MStV:
+
+Dr. Tobias Vlćek\
 Am Eich 9d\
 22113 Oststeinbek\
-Germany
+Deutschland
 
-## Contact
+E-Mail: [vlcek@beyondsimulations.com](mailto:vlcek@beyondsimulations.com)
 
-Email: [info@beyondsimulations.com](mailto:info@beyondsimulations.com)\
-Website: [beyondsimulations.com](https://beyondsimulations.com)
+## Haftung für Inhalte
 
-## Represented by
+Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Soweit gesetzlich nicht anders vorgeschrieben, dienen sie der Information und sind rechtlich unverbindlich. Als Anbieter bin ich für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Ich bin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
 
-Tobias Vlćek
+Alle Inhalte der Website können sich ändern und sind unverbindlich. Ich behalte mir vor, Inhalte ohne vorherige Ankündigung zu ändern, zu ergänzen oder zu löschen.
 
-## Responsible for Content according to § 55 Abs. 2 RStV
+## Haftung für Links
 
-Beyond Simulations GmbH\
-Am Eich 9d\
-22113 Oststeinbek\
-Germany
+Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Ich mache mir die Inhalte verlinkter externer Websites weder direkt noch indirekt zu eigen. Sollten mir Rechtsverletzungen bekannt werden, werde ich derartige Links umgehend entfernen.
 
-## Liability for Content
+## Urheberrecht
 
-As a service provider, we are responsible for our own content on these pages according to § 7 Abs. 1 TMG (German Telemedia Act). According to §§ 8 to 10 TMG, however, we as a service provider are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+Alle auf dieser Website dargestellten Inhalte wie Texte, Fotografien, Grafiken, Marken und Warenzeichen sind durch die jeweiligen Schutzrechte geschützt. Jede Nutzung, die nach dem Urheberrecht nicht gestattet ist, bedarf der vorherigen schriftlichen Zustimmung des jeweiligen Rechteinhabers.
 
-Obligations to remove or block the use of information according to general laws remain unaffected. However, liability in this regard is only possible from the time of knowledge of a specific infringement. Upon becoming aware of such violations, we will remove this content immediately.
-
-## Liability for Links
-
-Our website contains links to external websites of third parties, over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.
-
-Permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of a violation. Upon becoming aware of legal violations, we will remove such links immediately.
-
-## Copyright
-
-You can find the license information in the the GitHub [GitHub](https://github.com/beyondsimulations) repository of this course and at the bottom of this page.
+Sofern nicht anders angegeben, stehen die Inhalte dieser Website unter der MIT-Lizenz.
